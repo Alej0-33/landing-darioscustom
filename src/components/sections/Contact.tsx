@@ -15,7 +15,8 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (method === "whatsapp") {
-      const waNumber = "13055550199";
+      // Uso de variable de entorno para WhatsApp
+      const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "13055550199";
       const formattedText = `*NUEVA COTIZACIÓN WEB DARIOSCUSTOM*%0A%0A*Nombre:* ${formState.name}%0A*Correo:* ${formState.email}%0A*Teléfono:* ${formState.phone}%0A*Servicio:* ${formState.service}%0A*Mensaje:* ${formState.msg}`;
       window.open(`https://wa.me/${waNumber}?text=${formattedText}`, "_blank");
     } else {
@@ -48,7 +49,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider text-xs">Sede y Operación</h4>
-                  <p className="text-zinc-400 text-xs">Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, FL</p>
+                  <p className="text-zinc-400 text-xs">
+                    {process.env.NEXT_PUBLIC_COMPANY_ADDRESS || "Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, FL"}
+                  </p>
                 </div>
               </div>
 
@@ -58,7 +61,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider text-xs">Teléfono Oficina</h4>
-                  <p className="text-zinc-400 text-xs">+1 (305) 555-0199</p>
+                  <p className="text-zinc-400 text-xs">
+                    {process.env.NEXT_PUBLIC_COMPANY_PHONE || "+1 (305) 555-0199"}
+                  </p>
                 </div>
               </div>
 
@@ -68,7 +73,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider text-xs">Correo Electrónico</h4>
-                  <p className="text-zinc-400 text-xs">info@darioscustom.com</p>
+                  <p className="text-zinc-400 text-xs text-brand-light">
+                    {process.env.NEXT_PUBLIC_COMPANY_EMAIL || "info@darioscustom.com"}
+                  </p>
                 </div>
               </div>
 
@@ -78,17 +85,19 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider text-xs">Horas de Operación</h4>
-                  <p className="text-zinc-400 text-xs">Lunes a Sábado: 8:00 AM - 6:00 PM</p>
+                  <p className="text-zinc-400 text-xs">
+                    {process.env.NEXT_PUBLIC_OPERATING_HOURS || "Lunes a Sábado: 8:00 AM - 6:00 PM"}
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right Column Form */}
+          {/* Formulario Derecho */}
           <div className="lg:col-span-7 bg-industrial-card border border-industrial-border p-8 rounded-lg relative overflow-hidden">
             <h3 className="text-lg font-bold uppercase tracking-wider mb-6 text-white">Formulario de Cotización</h3>
 
-            {/* Method Selector */}
+            {/* Selector de Método */}
             <div className="grid grid-cols-2 gap-4 mb-6">
               <button
                 type="button"

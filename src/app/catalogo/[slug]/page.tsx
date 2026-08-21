@@ -48,7 +48,8 @@ export default async function ProductPage({ params }: Props) {
   const waMessage = encodeURIComponent(
     `Hola Darioscustom, estoy interesado en cotizar el producto "${product.title}" de su catálogo online.`
   );
-  const waLink = `https://wa.me/13055550199?text=${waMessage}`;
+  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+  const waLink = `https://wa.me/${waNumber}?text=${waMessage}`;
 
   // Preparamos el array de imágenes. Si no hay múltiples imágenes, usamos la principal en un array.
   const productImages = product.images && product.images.length > 0 

@@ -20,7 +20,8 @@ export default function Catalog() {
     const message = encodeURIComponent(
       `Hola Darioscustom, estoy interesado en cotizar el producto "${title}" de su catálogo online.`
     );
-    window.open(`https://wa.me/13055550199?text=${message}`, "_blank");
+    const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "13055550199";
+    window.open(`https://wa.me/${waNumber}?text=${message}`, "_blank");
   };
 
   return (
