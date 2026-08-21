@@ -1,41 +1,68 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ==========================================
+# 1. Dependencias (Node & Yarn)
+# ==========================================
+node_modules/
+/jspm_packages/
+web_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
+# Logs de depuración de Yarn/NPM
 yarn-debug.log*
 yarn-error.log*
+npm-debug.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# ==========================================
+# 2. Compilación y Desarrollo (Next.js)
+# ==========================================
+# Caché de compilación local de Next.js y Turbopack
+/.next/
 
-# vercel
+# Directorio de salida estática (SSG)
+# Se genera al ejecutar 'yarn build' y no debe subirse a Git ya que se
+# vuelve a generar dinámicamente en el servidor de hosting (ej. Vercel)
+/out/
+
+# Reportes de cobertura y build artifacts
+coverage/
+dist/
+build/
+
+# ==========================================
+# 3. Variables de Entorno y Secretos
+# ==========================================
+# NUNCA subas claves de API ni secretos al repositorio público
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# ==========================================
+# 4. Archivos del Sistema Operativo
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==========================================
+# 5. Configuración de Editores (IDE)
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==========================================
+# 6. Herramientas y Despliegue (Vercel / Next)
+# ==========================================
 .vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+.turbo
