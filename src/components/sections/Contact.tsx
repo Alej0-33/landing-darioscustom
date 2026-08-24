@@ -79,17 +79,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary">
-                  <Clock className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-white uppercase tracking-wider text-xs">Horas de Operación</h4>
-                  <p className="text-zinc-400 text-xs">
-                    {process.env.NEXT_PUBLIC_OPERATING_HOURS || "Lunes a Sábado: 8:00 AM - 6:00 PM"}
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
 

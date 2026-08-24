@@ -15,7 +15,7 @@ export const allProducts: Product[] = [
     slug: "1",
     img: "product1.png",
     images: ["product1.png", "product2.png"],
-    title: "Puerta Metálica con Relieves de León",
+    title: "Puerta Metálica",
     category: "Puertas",
     tags: ["Metal Plateado", "Cabezas de León", "Diseño de Rejilla", "Remaches Decorativos", "Estilo Robusto"],
     description:
@@ -59,7 +59,7 @@ export const allProducts: Product[] = [
     slug: "13",
     img: "product12.png",
     images: ["product13.png", "product12.png"],
-    title: "Conjunto de Candelabros de Hierro Forjado",
+    title: "Candelabros",
     category: "Iluminación",
     tags: ["Hierro Forjado", "Estilo Clásico", "Lámparas Colgantes", "Detalles Dorados", "Herrería Artística"],
     description:
@@ -70,7 +70,7 @@ export const allProducts: Product[] = [
     slug: "14",
     img: "product14.png",
     images: ["product14.png"],
-    title: "Candelabros Circulares de Hierro Forjado",
+    title: "Candelabros",
     category: "Iluminación",
     tags: ["Hierro Forjado", "Estilo Medieval", "Lámparas Colgantes", "Detalles Dorados", "Diseño Circular"],
     description:
@@ -81,7 +81,7 @@ export const allProducts: Product[] = [
     slug: "17",
     img: "product17.png",
     images: ["product17.png"],
-    title: "Portón Exterior Combinado de Metal y Paneles Tipo Madera",
+    title: "Portón de Metal",
     category: "Portones",
     tags: ["Metal y Madera", "Portón de Entrada", "Diseño de Rejilla", "Exterior", "Remaches Decorativos"],
     description:
@@ -92,7 +92,7 @@ export const allProducts: Product[] = [
     slug: "20",
     img: "product20.png",
     images: ["product20.png"],
-    title: "Portón Doble de Hierro Forjado con Arco",
+    title: "Portón de alumnio",
     category: "Portones",
     tags: ["Hierro Forjado", "Portón de Entrada", "Estilo Clásico", "Diseño con Arco", "Exterior"],
     description:

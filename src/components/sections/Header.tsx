@@ -20,7 +20,7 @@ export default function Header() {
     { name: "Inicio", href: "#inicio" },
     { name: "Servicios", href: "#servicios" },
     { name: "Catálogo", href: "#catalogo" },
-    { name: "Comparativa", href: "#comparativa" },
+    { name: "Materiales", href: "#comparativa" },
     { name: "Preguntas", href: "#preguntas" },
   ];
 
@@ -43,7 +43,7 @@ export default function Header() {
             />
           </div>
           <span className="font-black text-lg md:text-xl tracking-wider text-white leading-none">
-            DARIOSCUSTOM<span className="text-brand-primary">ART</span>
+            DARIO'S CUSTOM <span className="text-brand-primary">IRON ART</span>
             <span className="block text-[9px] font-semibold tracking-[0.3em] text-zinc-500 mt-0.5">
               INC
             </span>

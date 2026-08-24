@@ -4,63 +4,55 @@ import { Card } from "../ui/Card";
 export default function Services() {
   const services = [
     {
-      title: "Rejas de Seguridad Avanzadas",
-      description: "Diseño y soldadura de marcos perimetrales pesados. Cumplen normas contra intentos de intrusión y resisten cargas de impacto.",
+      title: "Portones y Cercas",
+      description: "Diseno y Fabricacion de cierres perimetrales. Cumplen normas de codigos y seguimiento de calculaciones de planos. ",
       icon: <Shield className="w-8 h-8 text-[#D4845F]" />
     },
     {
-      title: "Barandales de Alta Resistencia",
-      description: "Sistemas para balcones y escaleras en acero inoxidable y aluminio anodizado. Perfectamente nivelados y soldados bajo norma AWS.",
+      title: "Barandales y Escaleras",
+      description: "Sistemas para balcones y escaleras en acero inoxidable, hierro o aluminio. Terminacion de pintura de horno.",
       icon: <Home className="w-8 h-8 text-[#D4845F]" />
     },
     {
       title: "Corte Láser de Precisión CNC",
-      description: "Paneles personalizados y puertas decorativas de privacidad con acabados uniformes para proyectos comerciales de lujo.",
+      description: "Paneles para privacidad y puertas decorativas con acabados personalizable para proyectos comrciales de lujo o el hogar.",
       icon: <Sparkles className="w-8 h-8 text-[#D4845F]" />
     },
     {
-      title: "Acabado de Grado Exterior",
-      description: "Proceso de galvanizado en caliente y aplicación de pintura en polvo termoendurecida. Evita la penetración de salitre.",
+      title: "Esculturas de Arte",
+      description: "Diseno de Candelabros, Muebles industriales y Esculturas metalicas abstractas. Pintura de horno con terminaciones de oro a mano.",
       icon: <Anchor className="w-8 h-8 text-[#D4845F]" />
     }
   ];
 
   const materials = [
     {
-      name: "Aluminio de Grado Marino",
+      name: "Aluminio",
       spec: "Aleación 6061-T6",
-      finish: "Pintura Electrostática (Powder Coating)",
       resistance: "Extrema",
       resistanceLabel: "No se oxida",
       badgeColor: "bg-emerald-950/40 text-emerald-400 border-emerald-500/30",
-      optimal: "Balcones frente al mar, barandales costeros expuestos directamente a la brisa marina."
     },
     {
-      name: "Acero Inoxidable 316",
+      name: "Acero Inoxidable 304 o 316L",
       spec: "Grado Náutico A4",
-      finish: "Pulido Mecánico Satinado (Grano 240)",
       resistance: "Extrema",
       resistanceLabel: "Anticorrosivo",
       badgeColor: "bg-emerald-950/40 text-emerald-400 border-emerald-500/30",
-      optimal: "Barandales de cable tensor, escaleras flotantes modernas y pasamanos de alta gama."
     },
     {
-      name: "Acero de Carbono Estructural",
-      spec: "ASTM A36 Heavy Duty",
-      finish: "Galvanizado en Caliente + Powder Coat",
-      resistance: "Alta",
-      resistanceLabel: "Protección Dual",
-      badgeColor: "bg-orange-950/30 text-[#D4845F] border-[#B85227]/30",
-      optimal: "Portones corredizos de carga pesada, rejas perimetrales de seguridad y herrería pesada."
-    },
-    {
-      name: "Acero Corten Auto-protegido",
+      name: "Bronce",
       spec: "ASTM A242",
-      finish: "Oxidación Controlada Natural Activa",
       resistance: "Media / Alta",
       resistanceLabel: "Pátina Estructural",
       badgeColor: "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40",
-      optimal: "Paneles CNC decorativos, fachadas arquitectónicas y esculturas artísticas de exterior."
+    },
+    {
+      name: "Hierro",
+      spec: "ASTM A242",
+      resistance: "Media / Alta",
+      resistanceLabel: "Pátina Estructural",
+      badgeColor: "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40",
     }
   ];
 
@@ -108,16 +100,13 @@ export default function Services() {
                 <Award className="w-6 h-6 text-[#D4845F]" />
               </div>
               <div>
-                <span className="text-[9px] font-mono tracking-widest text-[#71717A] uppercase block">
-                  Estándares de Ingeniería • Miami-Dade
-                </span>
                 <h3 className="text-xl md:text-2xl font-black uppercase tracking-wider text-white mt-1">
-                  Guía de Materiales para el Sur de Florida
+                  Fabricamos los siguientes materiales
                 </h3>
               </div>
             </div>
             <p className="text-[#A1A1AA] text-xs md:text-sm max-w-xl leading-relaxed lg:text-right">
-              Los ingenieros estructurales recomiendan evaluar los metales según su nivel de exposición costera. Comparamos los metales utilizados bajo normas de soldadura <span className="text-white font-semibold">AWS D1.1</span>.
+               Para editar <span className="text-white font-semibold">..</span>.
             </p>
           </div>
 
@@ -127,9 +116,7 @@ export default function Services() {
               <thead>
                 <tr className="border-b border-[#3F3F46] text-[#D4845F] uppercase tracking-widest font-bold text-[10px] bg-[#09090B]/40">
                   <th className="py-4 px-5">Material / Especificación</th>
-                  <th className="py-4 px-5">Acabado Técnico</th>
                   <th className="py-4 px-5 text-center">Resistencia al Salitre</th>
-                  <th className="py-4 px-5">Aplicación Óptima</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#27272A] text-[#A1A1AA]">
@@ -148,13 +135,7 @@ export default function Services() {
                       </span>
                     </td>
 
-                    {/* Acabado */}
-                    <td className="py-5 px-5 font-medium text-white/90">
-                      <div className="flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#D4845F] shrink-0" />
-                        <span>{mat.finish}</span>
-                      </div>
-                    </td>
+                    
 
                     {/* Resistencia */}
                     <td className="py-5 px-5 text-center">

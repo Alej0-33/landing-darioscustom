@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { allProducts } from "@/data/products";
 
-const categories = ["Todos", "Iluminación", "Rejas", "Puertas", "Mesas", "Barandales", "Portones", "Arte"];
+const categories = ["Todos", "Iluminación", "Puertas", "Barandales", "Portones", "Arte", "Miscelaneas"];
 
 export default function Catalog() {
   const [activeCategory, setActiveCategory] = useState("Todos");
@@ -30,7 +30,7 @@ export default function Catalog() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">Catálogo Detallado</span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-4">
-            Estructuras Forjadas a Medida
+            HERRERIA ARTESANAL HECHA A TU MEDIDA
           </h2>
           <div className="w-20 h-1 bg-brand-primary mx-auto my-4" />
           <p className="text-zinc-400 text-sm md:text-base leading-relaxed">

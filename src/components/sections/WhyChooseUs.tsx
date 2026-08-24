@@ -5,7 +5,7 @@ export default function WhyChooseUs() {
     {
       icon: <Award className="w-10 h-10 text-brand-primary" />,
       title: "Acabados Exclusivos",
-      desc: "Procesos de pulido y soldaduras limpias que eliminan imperfecciones visuales."
+      desc: "Procesos de pintura electroestatica en polvo y terminados premium."
     },
     {
       icon: <ShieldAlert className="w-10 h-10 text-brand-primary" />,
@@ -15,12 +15,12 @@ export default function WhyChooseUs() {
     {
       icon: <Hammer className="w-10 h-10 text-brand-primary" />,
       title: "Métodos Tradicionales y Láser",
-      desc: "Fusionamos la solidez de la herrería tradicional con corte láser de alta precisión."
+      desc: "Fusionamos la solidez de la herrería tradicional con formacion artesanal."
     },
     {
       icon: <Clock className="w-10 h-10 text-brand-primary" />,
       title: "Compromiso de Tiempos",
-      desc: "Entregas programadas con cronogramas claros de inicio y finalización del montaje."
+      desc: "Entregas programadas con cronogramas claros de inicio a fina con seguimiento."
     }
   ];
 
@@ -34,10 +34,10 @@ export default function WhyChooseUs() {
               Excelencia Técnica en Cada Unión de Acero
             </h2>
             <p className="text-zinc-400 mb-6 leading-relaxed">
-              En Darioscustom nos enfocamos en diseñar elementos arquitectónicos que protejan tu entorno, integrándose armónicamente con el diseño exterior o interior.
+              En Dario's nos enfocamos en diseñar elementos arquitectónicos distinguidos a tu gusto personal, integrándose armónicamente con el diseño exterior o interior.
             </p>
             <p className="text-zinc-400 leading-relaxed mb-8">
-              Atendemos proyectos residenciales y comerciales garantizando acabados minuciosos en la preparación de las uniones metálicas antes de aplicar los acabados protectores.
+              Atendemos proyectos residenciales y comerciales garantizando acabados minuciosos en la preparación de las uniones metálicas.
             </p>
             <div className="border-l-4 border-brand-primary pl-4 py-2 italic text-zinc-300 bg-industrial-card/50 p-4 rounded-r">
               &quot;La excelencia en la herrería se define por la precisión que no se ve a simple vista.&quot;

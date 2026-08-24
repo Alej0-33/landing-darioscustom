@@ -57,7 +57,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-zinc-400 text-base md:text-lg mb-8 max-w-xl font-normal leading-relaxed"
           >
-            Fabricación de rejas de seguridad, barandales arquitectónicos y portones residenciales certificados contra huracanes, con recubrimiento electrostático resistente al salitre marino.
+            Fabricación artesanal a medida: barandales, balcones, candelabros, portones residenciales con recubrimiento pintura electrostática.
           </motion.p>
 
           <motion.div
@@ -80,34 +80,6 @@ export default function Hero() {
             </Button>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 border-t border-industrial-border pt-8 w-full"
-          >
-            <div className="flex items-center gap-3">
-              <ShieldCheck className="w-8 h-8 text-brand-primary shrink-0" />
-              <div>
-                <h4 className="text-white font-bold uppercase tracking-wider text-xs">Cumplimiento ASCE 7</h4>
-                <p className="text-zinc-500 text-[10px]">Carga de viento contra tormentas</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <Anchor className="w-8 h-8 text-brand-primary shrink-0" />
-              <div>
-                <h4 className="text-white font-bold uppercase tracking-wider text-xs">Garantía Marina</h4>
-                <p className="text-zinc-500 text-[10px]">Protección electrostática anticorrosiva</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <Flame className="w-8 h-8 text-brand-primary shrink-0" />
-              <div>
-                <h4 className="text-white font-bold uppercase tracking-wider text-xs">Instalación Local</h4>
-                <p className="text-zinc-500 text-[10px]">Servicio directo en todo el condado</p>
-              </div>
-            </div>
-          </motion.div>
         </div>
 
         {/* Lado Derecho: Contenedor Interactivo CAD / PRODUCTO FINAL */}

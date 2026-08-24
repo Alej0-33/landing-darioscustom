@@ -13,7 +13,7 @@ export default function Footer() {
             />
           </div>
           <span className="font-black text-lg tracking-wider text-white leading-none">
-            DARIOSCUSTOM<span className="text-brand-primary">ART</span>
+            DARIO'S CUSTOM <span className="text-brand-primary">IRON ART</span>
             <span className="block text-[9px] font-semibold tracking-[0.3em] text-zinc-500 mt-0.5">
               INC
             </span>
