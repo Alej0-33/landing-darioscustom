@@ -1,5 +1,8 @@
-import { Shield, Home, Sparkles, Palette, Award } from "lucide-react";
-import { Card } from "../ui/Card";
+"use client";
+     import { motion } from "framer-motion";
+     import { Shield, Home, Sparkles, Palette, Award } from "lucide-react";
+     import { Card } from "../ui/Card";
+     import { fadeUp, staggerContainer, staggerItem } from "@/utils/animations";
 
 export default function Services() {
   const services = [
@@ -60,7 +63,13 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Encabezado de la sección */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <motion.div
+          className="text-center max-w-3xl mx-auto mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          variants={fadeUp}
+        >
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-4">
             Ingeniería en Metal de Alta Durabilidad
           </h2>
@@ -68,25 +77,36 @@ export default function Services() {
           <p className="text-[#A1A1AA] text-sm md:text-base leading-relaxed">
             Ofrecemos soluciones metálicas certificadas contra el clima húmedo de Florida para desarrollos residenciales y corporativos de primer nivel.
           </p>
-        </div>
+        </motion.div>
 
         {/* Tarjetas de servicios principales */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          variants={staggerContainer}
+        >
           {services.map((service, index) => (
-            <Card
-              key={index}
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-            />
+            <motion.div key={index} variants={staggerItem}>
+              <Card
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Comparativa Técnica de Materiales */}
-        <div 
-          id="comparativa" 
-          className="bg-[#18181B] border border-[#27272A] p-6 md:p-10 rounded-lg relative machined-corners overflow-hidden"
-        >
+             <motion.div
+               id="comparativa"
+               className="bg-[#18181B] border border-[#27272A] p-6 md:p-10 rounded-lg relative machined-corners overflow-hidden"
+               initial="hidden"
+               whileInView="visible"
+               viewport={{ once: true, margin: "-60px" }}
+               variants={fadeUp}
+             >
           {/* Línea de acento industrial */}
           <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-[#B85227]/45 to-transparent" />
 
@@ -139,7 +159,7 @@ export default function Services() {
               </tbody>
             </table>
           </div>
-        </div>
+        </motion.div>
 
       </div>
     </section>

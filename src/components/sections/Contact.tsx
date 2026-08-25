@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { MapPin, Mail, Phone, ArrowRight, Send, Camera, Upload, X } from "lucide-react";
+import { slideFromLeft, slideFromRight } from "@/utils/animations";
 import { Button } from "../ui/Button";
 import { Input } from "../ui/Input";
 import { Select } from "../ui/Select";
@@ -50,7 +52,13 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          <div className="lg:col-span-5">
+          <motion.div
+            className="lg:col-span-5"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-60px" }}
+            variants={slideFromLeft}
+          >
             <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">Ubicación y Datos</span>
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-6">
               Coordinemos tu Visita Técnica
@@ -97,10 +105,16 @@ export default function Contact() {
               </div>
 
             </div>
-          </div>
+          </motion.div>
 
           {/* Formulario Derecho */}
-          <div className="lg:col-span-7 bg-industrial-card border border-industrial-border p-8 rounded-lg relative overflow-hidden">
+          <motion.div
+            className="lg:col-span-7 bg-industrial-card border border-industrial-border p-8 rounded-lg relative overflow-hidden"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-60px" }}
+            variants={slideFromRight}
+          >
             <h3 className="text-lg font-bold uppercase tracking-wider mb-6 text-white">Formulario de Cotización</h3>
 
             {/* Selector de Método */}
@@ -250,7 +264,7 @@ export default function Contact() {
                 </Button>
               </form>
             )}
-          </div>
+          </motion.div>
 
         </div>
       </div>

@@ -1,6 +1,8 @@
 "use client";
-import React from "react";
-import { HelpCircle } from "lucide-react";
+       import React from "react";
+       import { motion } from "framer-motion";
+       import { HelpCircle } from "lucide-react";
+       import { fadeUp, staggerContainer, staggerItem } from "@/utils/animations";
 
 const faqData = [
   {
@@ -29,7 +31,13 @@ export default function FAQ() {
   return (
     <section id="preguntas" className="py-24 relative border-t border-industrial-border">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <motion.div
+          className="text-center mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          variants={fadeUp}
+        >
           <HelpCircle className="w-12 h-12 text-brand-primary mx-auto mb-4" />
           <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">Preguntas Frecuentes</span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2">
@@ -39,24 +47,31 @@ export default function FAQ() {
           <p className="text-zinc-400 text-xs md:text-sm">
             Toda la información clave estructurada sobre nuestros materiales, regulaciones locales en Miami-Dade y procesos de entrega.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="space-y-4">
+        <motion.div
+          className="space-y-4"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          variants={staggerContainer}
+        >
           {faqData.map((item, idx) => (
-            <details
-              key={idx}
-              className="bg-industrial-card border border-industrial-border hover:border-industrial-border-high rounded-md p-5 group transition-colors cursor-pointer"
-            >
-              <summary className="font-bold text-white text-sm md:text-base uppercase tracking-wide list-none flex items-center justify-between">
-                <span>{item.q}</span>
-                <span className="text-brand-primary group-open:rotate-45 transition-transform duration-300 ml-4">+</span>
-              </summary>
-              <p className="text-zinc-400 text-xs md:text-sm leading-relaxed mt-4 pt-4 border-t border-industrial-border">
-                {item.a}
-              </p>
-            </details>
+            <motion.div key={idx} variants={staggerItem}>
+              <details
+                className="bg-industrial-card border border-industrial-border hover:border-industrial-border-high rounded-md p-5 group transition-colors cursor-pointer"
+              >
+                <summary className="font-bold text-white text-sm md:text-base uppercase tracking-wide list-none flex items-center justify-between">
+                  <span>{item.q}</span>
+                  <span className="text-brand-primary group-open:rotate-45 transition-transform duration-300 ml-4">+</span>
+                </summary>
+                <p className="text-zinc-400 text-xs md:text-sm leading-relaxed mt-4 pt-4 border-t border-industrial-border">
+                  {item.a}
+                </p>
+              </details>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

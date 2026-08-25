@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
   const handleWhatsAppRedirect = () => {
     // Uso de variable de entorno para el número de WhatsApp per-link
     const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "13055550199";
-    const message = encodeURIComponent("Hola Darioscustom, me gustaría solicitar una cotización para un proyecto de herrería personalizada en Miami.");
+    const message = encodeURIComponent("Hola Dario's custom iron art, me gustaría solicitar una cotización para un proyecto de herrería personalizada en Miami.");
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
 

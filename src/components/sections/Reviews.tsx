@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Star, ExternalLink, Award, ArrowRight } from "lucide-react";
+import { fadeUp } from "@/utils/animations";
 
 // Estructura de testimonios reales enfocados en los servicios industriales de Miami/Sur de Florida
 const googleReviews = [
@@ -82,7 +83,13 @@ export default function Reviews() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Encabezado y Resumen de Google */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
+        <motion.div
+          className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          variants={fadeUp}
+        >         
           <div>
             <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">Opiniones Reales</span>
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-4">
@@ -113,7 +120,7 @@ export default function Reviews() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Grilla de Reseñas */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

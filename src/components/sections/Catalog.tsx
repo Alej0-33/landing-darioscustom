@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { allProducts } from "@/data/products";
 import { WhatsAppIcon } from "../ui/Icons";
+import { fadeUp } from "@/utils/animations";
 
 const categories = ["Todos", "Iluminación", "Puertas", "Barandales", "Portones", "Arte", "Miscelaneas"];
 
@@ -30,7 +31,7 @@ export default function Catalog() {
     e.preventDefault();
     e.stopPropagation();
     const message = encodeURIComponent(
-      `Hola Darioscustom, estoy interesado en cotizar el producto "${title}" de su catálogo online.`
+      `Hola Dario's custom iron art, estoy interesado en cotizar el producto "${title}" de su catálogo online.`
     );
     const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "13055550199";
     window.open(`https://wa.me/${waNumber}?text=${message}`, "_blank");
@@ -44,8 +45,14 @@ export default function Catalog() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Encabezado Principal */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">Catálogo Detallado</span>
+             <motion.div
+               className="text-center max-w-3xl mx-auto mb-20"
+               initial="hidden"
+               whileInView="visible"
+               viewport={{ once: true, margin: "-60px" }}
+               variants={fadeUp}
+             >
+               <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">Catálogo Detallado</span>
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-4">
             HERRERIA ARTESANAL HECHA A TU MEDIDA
           </h2>
@@ -53,7 +60,7 @@ export default function Catalog() {
           <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
             Explora nuestra colección con las principales piezas desarrolladas por nuestros herreros en Florida. Filtra por categoría y cotiza directamente tu diseño ideal.
           </p>
-        </div>
+        </motion.div>
 
         {/* Filtros Estilo Tabulador de Planos */}
         <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center mb-16 border-b border-industrial-border pb-px">

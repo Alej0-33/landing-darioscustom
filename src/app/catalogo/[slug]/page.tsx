@@ -46,7 +46,7 @@ export default async function ProductPage({ params }: Props) {
   const related = getRelatedProducts(product.id, product.category);
 
   const waMessage = encodeURIComponent(
-    `Hola Darioscustom, estoy interesado en cotizar el producto "${product.title}" de su catálogo online.`
+    `Hola Dario's custom iron art, estoy interesado en cotizar el producto "${product.title}" de su catálogo online.`
   );
   const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
   const waLink = `https://wa.me/${waNumber}?text=${waMessage}`;

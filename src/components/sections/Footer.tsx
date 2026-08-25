@@ -1,8 +1,17 @@
+"use client";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/utils/animations";
 
 export default function Footer() {
   return (
     <footer className="border-t border-industrial-border bg-[#09090B]">
-      <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <motion.div
+        className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeIn}
+      >
         {/* Logo + Nombre */}
         <div className="flex items-center gap-3">
           <div className="w-14 h-14 flex items-center justify-center shrink-0">
@@ -25,7 +34,7 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Dario's custom iron art Inc. Todos los derechos reservados.</p>
           <p>Taller y Forjado de Precisión en Miami, Florida. Diseñado para Máxima Resistencia Estructural.</p>
         </div>
-      </div>
+      </motion.div>
     </footer>
   );
 }
