@@ -22,7 +22,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-center md:text-right text-[11px] text-zinc-500 space-y-1">
-          <p>&copy; {new Date().getFullYear()} Darioscustomart Inc. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Dario's custom iron art Inc. Todos los derechos reservados.</p>
           <p>Taller y Forjado de Precisión en Miami, Florida. Diseñado para Máxima Resistencia Estructural.</p>
         </div>
       </div>

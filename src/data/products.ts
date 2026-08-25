@@ -81,22 +81,22 @@ export const allProducts: Product[] = [
     slug: "17",
     img: "product17.png",
     images: ["product17.png"],
-    title: "Portón de Metal",
+    title: "Portón de Aluminio",
     category: "Portones",
-    tags: ["Metal y Madera", "Portón de Entrada", "Diseño de Rejilla", "Exterior", "Remaches Decorativos"],
+    tags: ["Aluminio", "Portón de Entrada", "Diseño de Rejilla", "Exterior", "Terminacion color madera Decorativa"],
     description:
-      "Portón de entrada exterior que combina estructura metálica con paneles de diseño tipo madera. Ofrece privacidad sin renunciar a la ventilación, con acabado electrostático de alta resistencia al salitre marino y la intemperie de Florida.",
+      "Portón de entrada exterior fabricado en aluminio de alta resistencia con paneles en diseño de rejilla y terminación decorativa imitación madera. Ofrece privacidad óptima y ventilación cruzada, protegido con un acabado electrostático de alta durabilidad ante el salitre marino y la intemperie de Florida.",
   },
   {
     id: 20,
     slug: "20",
     img: "product20.png",
     images: ["product20.png"],
-    title: "Portón de alumnio",
+    title: "Portón de Aluminio Clásico",
     category: "Portones",
-    tags: ["Hierro Forjado", "Portón de Entrada", "Estilo Clásico", "Diseño con Arco", "Exterior"],
+    tags: ["Aluminio", "Ligero", "Durable", "Portón de Entrada", "Estilo Clásico", "Diseño con Arco", "Exterior"],
     description:
-      "Portón de dos hojas con arco superior de hierro forjado. El diseño arqueado enmarca la entrada con elegancia clásica, mientras la estructura garantiza solidez y durabilidad extrema. Incluye cerradura de seguridad y herrajes coordinados.",
+      "Portón de entrada exterior de dos hojas con diseño arqueado, fabricado íntegramente en aluminio premium para asegurar una estructura ligera, libre de corrosión y sumamente durable. Su manufactura evoca la elegancia estética del hierro forjado clásico sin su peso ni mantenimiento. Incluye cerradura de seguridad y herrajes coordinados.",
   },
 ];
 

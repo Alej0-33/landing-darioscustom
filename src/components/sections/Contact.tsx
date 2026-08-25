@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { MapPin, Mail, Phone, Clock, ArrowRight, Send } from "lucide-react";
+import { MapPin, Mail, Phone, ArrowRight, Send, Camera, Upload, X } from "lucide-react";
 import { Button } from "../ui/Button";
 import { Input } from "../ui/Input";
 import { Select } from "../ui/Select";
@@ -8,22 +8,39 @@ import { Textarea } from "../ui/Textarea";
 import { WhatsAppIcon } from "../ui/Icons";
 
 export default function Contact() {
-  const [formState, setFormState] = useState({ name: "", email: "", phone: "", service: "Rejas", msg: "" });
+  const [formState, setFormState] = useState({ name: "", email: "", phone: "", service: "Puertas", msg: "" });
+  const [photo, setPhoto] = useState<File | null>(null);
   const [method, setMethod] = useState<"whatsapp" | "email">("whatsapp");
   const [submitted, setSubmitted] = useState(false);
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setPhoto(e.target.files[0]);
+    }
+  };
+
+  const removePhoto = () => {
+    setPhoto(null);
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (method === "whatsapp") {
-      // Uso de variable de entorno para WhatsApp
       const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "13055550199";
-      const formattedText = `*NUEVA COTIZACIÓN WEB DARIOSCUSTOM*%0A%0A*Nombre:* ${formState.name}%0A*Correo:* ${formState.email}%0A*Teléfono:* ${formState.phone}%0A*Servicio:* ${formState.service}%0A*Mensaje:* ${formState.msg}`;
+      
+      const photoNotice = photo 
+        ? `%0A*Foto de referencia:* Sí (nombre: ${photo.name}) - _Favor de adjuntar la imagen en este chat_` 
+        : "%0A*Foto de referencia:* No especificada";
+
+      const formattedText = `*NUEVA COTIZACIÓN WEB DARIO'S CUSTOM IRON ART*%0A%0A*Nombre:* ${formState.name}%0A*Correo:* ${formState.email}%0A*Teléfono:* ${formState.phone}%0A*Servicio:* ${formState.service}%0A*Mensaje:* ${formState.msg}${photoNotice}`;
       window.open(`https://wa.me/${waNumber}?text=${formattedText}`, "_blank");
     } else {
       setSubmitted(true);
       setTimeout(() => {
         setSubmitted(false);
-        setFormState({ name: "", email: "", phone: "", service: "Rejas", msg: "" });
+        // Reseteo limpio al estado inicial
+        setFormState({ name: "", email: "", phone: "", service: "Puertas", msg: "" });
+        setPhoto(null);
       }, 3500);
     }
   };
@@ -150,16 +167,20 @@ export default function Contact() {
                     onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
                     placeholder="+1 (305) 555-0100"
                   />
+                  
+                  {/* Selector con las categorías exactas del catálogo simplificadas */}
                   <Select
                     id="service"
                     label="Categoría del Proyecto"
                     value={formState.service}
                     onChange={(e) => setFormState({ ...formState, service: e.target.value })}
                   >
-                    <option value="Rejas de Seguridad">Rejas de Seguridad</option>
-                    <option value="Barandales para Escaleras o Balcones">Barandales para Escaleras o Balcón</option>
-                    <option value="Portones Corredizos">Portones Corredizos</option>
-                    <option value="Arte Metalúrgico o Paneles CNC">Arte Metalúrgico o Paneles CNC</option>
+                    <option value="Puertas">Puertas Metalicas o de Hierro</option>
+                    <option value="Portones">Portones de Aluminio o de Entrada</option>
+                    <option value="Barandales">Barandales para Escaleras o Balcones</option>
+                    <option value="Arte">Arte Metalúrgico o Paneles CNC</option>
+                    <option value="Iluminación">Lámparas y Candelabros</option>
+                    <option value="Miscelaneas">Otros Diseños Personalizados</option>
                   </Select>
                 </div>
 
@@ -172,6 +193,57 @@ export default function Contact() {
                   onChange={(e) => setFormState({ ...formState, msg: e.target.value })}
                   placeholder="Describe las especificaciones o estilo del metal deseado..."
                 />
+
+                {/* Subida de Foto de Referencia (Opcional) */}
+                <div className="space-y-2">
+                  <label className="block text-xs font-bold uppercase tracking-wider text-zinc-400">
+                    Foto de Referencia (Opcional)
+                  </label>
+                  <div className="relative border border-dashed border-industrial-border hover:border-brand-primary/50 bg-[#09090B] rounded-md p-4 transition-colors group cursor-pointer flex flex-col items-center justify-center min-h-[90px]">
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={handleFileChange}
+                      className="absolute inset-0 opacity-0 cursor-pointer z-20"
+                    />
+                    {photo ? (
+                      <div className="flex items-center justify-between w-full z-30">
+                        <div className="flex items-center gap-3 min-w-0">
+                          <div className="bg-brand-primary/10 border border-brand-primary/20 p-2 rounded text-brand-light">
+                            <Camera className="w-5 h-5" />
+                          </div>
+                          <div className="text-left min-w-0">
+                            <p className="text-xs font-semibold text-white truncate max-w-[200px] sm:max-w-xs">
+                              {photo.name}
+                            </p>
+                            <p className="text-[10px] text-zinc-500 font-mono">
+                              {(photo.size / (1024 * 1024)).toFixed(2)} MB
+                            </p>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            removePhoto();
+                          }}
+                          className="text-zinc-400 hover:text-red-400 p-1 rounded-full hover:bg-zinc-800/50 transition-colors"
+                        >
+                          <X className="w-4 h-4" />
+                        </button>
+                      </div>
+                    ) : (
+                      <div className="flex flex-col items-center text-center gap-1.5 pointer-events-none">
+                        <Upload className="w-5 h-5 text-zinc-500 group-hover:text-brand-light transition-colors" />
+                        <p className="text-xs text-zinc-400">
+                          <span className="text-brand-light font-bold">Haz clic para subir</span> o arrastra una foto
+                        </p>
+                        <p className="text-[10px] text-zinc-600">Formatos recomendados: JPG, PNG (Max 10MB)</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
 
                 <Button type="submit" variant="primary" className="w-full justify-center">
                   {method === "whatsapp" ? "Enviar a WhatsApp" : "Enviar Solicitud"} <ArrowRight className="w-4 h-4" />

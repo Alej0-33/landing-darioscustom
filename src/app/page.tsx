@@ -7,6 +7,7 @@ import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import Reviews  from "@/components/sections/Reviews";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Services />
         <Catalog />
         <WhyChooseUs />
+        <Reviews/>
         <FAQ />
         <Contact />
       </main>

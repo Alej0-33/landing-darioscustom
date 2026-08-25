@@ -1,4 +1,4 @@
-import { Shield, Home, Sparkles, Anchor, Award, CheckCircle2 } from "lucide-react";
+import { Shield, Home, Sparkles, Palette, Award } from "lucide-react";
 import { Card } from "../ui/Card";
 
 export default function Services() {
@@ -21,35 +21,31 @@ export default function Services() {
     {
       title: "Esculturas de Arte",
       description: "Diseno de Candelabros, Muebles industriales y Esculturas metalicas abstractas. Pintura de horno con terminaciones de oro a mano.",
-      icon: <Anchor className="w-8 h-8 text-[#D4845F]" />
+      icon: <Palette className="w-8 h-8 text-[#D4845F]" />
     }
   ];
 
   const materials = [
     {
       name: "Aluminio",
-      spec: "Aleación 6061-T6",
       resistance: "Extrema",
       resistanceLabel: "No se oxida",
       badgeColor: "bg-emerald-950/40 text-emerald-400 border-emerald-500/30",
     },
     {
       name: "Acero Inoxidable 304 o 316L",
-      spec: "Grado Náutico A4",
       resistance: "Extrema",
       resistanceLabel: "Anticorrosivo",
       badgeColor: "bg-emerald-950/40 text-emerald-400 border-emerald-500/30",
     },
     {
       name: "Bronce",
-      spec: "ASTM A242",
       resistance: "Media / Alta",
       resistanceLabel: "Pátina Estructural",
       badgeColor: "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40",
     },
     {
       name: "Hierro",
-      spec: "ASTM A242",
       resistance: "Media / Alta",
       resistanceLabel: "Pátina Estructural",
       badgeColor: "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40",
@@ -105,18 +101,15 @@ export default function Services() {
                 </h3>
               </div>
             </div>
-            <p className="text-[#A1A1AA] text-xs md:text-sm max-w-xl leading-relaxed lg:text-right">
-               Para editar <span className="text-white font-semibold">..</span>.
-            </p>
           </div>
 
-          {/* Tabla de Comparativa Técnica */}
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs border-collapse min-w-[750px]">
+          {/* Tabla de Comparativa Técnica - Ajustada a 2 columnas y 100% responsiva */}
+          <div className="overflow-hidden">
+            <table className="w-full text-left text-xs border-collapse">
               <thead>
                 <tr className="border-b border-[#3F3F46] text-[#D4845F] uppercase tracking-widest font-bold text-[10px] bg-[#09090B]/40">
-                  <th className="py-4 px-5">Material / Especificación</th>
-                  <th className="py-4 px-5 text-center">Resistencia al Salitre</th>
+                  <th className="py-4 px-5 w-2/3">Material / Especificación</th>
+                  <th className="py-4 px-5 text-center w-1/3">Resistencia al Salitre</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#27272A] text-[#A1A1AA]">
@@ -125,44 +118,26 @@ export default function Services() {
                     key={idx} 
                     className="hover:bg-[#09090B]/30 transition-colors duration-200"
                   >
-                    {/* Material */}
+                    {/* Columna 1: Material */}
                     <td className="py-5 px-5">
-                      <span className="block font-bold text-white text-sm uppercase tracking-wide">
+                      <span className="block font-bold text-white text-xs sm:text-sm uppercase tracking-wide">
                         {mat.name}
-                      </span>
-                      <span className="block text-[9px] font-mono text-[#71717A] mt-1 uppercase">
-                        SPEC: {mat.spec}
                       </span>
                     </td>
 
-                    
-
-                    {/* Resistencia */}
+                    {/* Columna 2: Resistencia */}
                     <td className="py-5 px-5 text-center">
-                      <span className={`inline-flex flex-col items-center justify-center px-3 py-1 rounded-sm border text-[10px] font-bold uppercase tracking-wider ${mat.badgeColor}`}>
+                      <span className={`inline-flex flex-col items-center justify-center px-3 py-1 rounded-sm border text-[9px] sm:text-[10px] font-bold uppercase tracking-wider ${mat.badgeColor}`}>
                         <span>{mat.resistance}</span>
                         <span className="text-[8px] opacity-80 font-normal mt-0.5 font-mono">
                           {mat.resistanceLabel}
                         </span>
                       </span>
                     </td>
-
-                    {/* Aplicación */}
-                    <td className="py-5 px-5 max-w-[280px]">
-                      <p className="text-xs leading-relaxed text-[#A1A1AA]">
-                        {mat.optimal}
-                      </p>
-                    </td>
                   </tr>
                 ))}
               </tbody>
             </table>
-          </div>
-
-          {/* Nota de cumplimiento al pie */}
-          <div className="mt-6 pt-4 border-t border-[#27272A] flex flex-col sm:flex-row justify-between items-center gap-3 text-[9px] font-mono text-[#71717A]">
-            <span>AWS D1.1 STRUCTURAL WELDING CODE COMPLIANT</span>
-            <span>DESIGN SPECIFICATION FOR HIGH-VELOCITY HURRICANE ZONES (HVHZ)</span>
           </div>
         </div>
 
