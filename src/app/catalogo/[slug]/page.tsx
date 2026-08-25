@@ -1,5 +1,4 @@
 // src/app/catalogo/[slug]/page.tsx
-
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -8,7 +7,7 @@ import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { WhatsAppIcon } from "@/components/ui/Icons";
-import ImageSlider from "@/components/ui/ImageSlider"; // <-- Importamos nuestro nuevo componente
+import ImageSlider from "@/components/ui/ImageSlider";
 import {
   allProducts,
   getProductBySlug,
@@ -48,16 +47,52 @@ export default async function ProductPage({ params }: Props) {
   const waMessage = encodeURIComponent(
     `Hola Dario's custom iron art, estoy interesado en cotizar el producto "${product.title}" de su catálogo online.`
   );
-  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "13055550199";
   const waLink = `https://wa.me/${waNumber}?text=${waMessage}`;
 
-  // Preparamos el array de imágenes. Si no hay múltiples imágenes, usamos la principal en un array.
   const productImages = product.images && product.images.length > 0 
     ? product.images 
     : [product.img];
 
+  // Esquema de Producto semántico para indexadores y motores de IA (AIO/GEO)
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.title,
+    "image": `https://darioscustom.com/images/${product.img}`,
+    "description": product.description,
+    "category": product.category,
+    "brand": {
+      "@type": "Brand",
+      "name": "Darioscustom"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "priceRange": "$$$",
+      "seller": {
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Darioscustom",
+        "image": "https://darioscustom.com/brand/darioscustom_logo.png",
+        "telephone": "+13055550199",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Miami",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        }
+      }
+    }
+  };
+
   return (
     <>
+      {/* Inyección estructurada de Producto */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+
       <Header />
 
       <main className="min-h-screen bg-[#09090B]">
@@ -90,12 +125,12 @@ export default async function ProductPage({ params }: Props) {
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
-              {/* ── Slider Reutilizable (Reemplazó a la imagen estática) ── */}
+              {/* Slider */}
               <div className="lg:col-span-7">
                 <ImageSlider images={productImages} alt={product.title} />
               </div>
 
-              {/* ── Info ── */}
+              {/* Info */}
               <div className="lg:col-span-5 flex flex-col">
                 <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold mb-2">
                   {product.category}
@@ -170,7 +205,7 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </section>
 
-        {/* ══ PRODUCTOS RELACIONADOS ════════════════════════════════ */}
+        {/* Productos Relacionados */}
         {related.length > 0 && (
           <section className="py-20 bg-[#09090B] border-t border-industrial-border">
             <div className="max-w-7xl mx-auto px-6">

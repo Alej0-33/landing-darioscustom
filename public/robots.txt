@@ -1,0 +1,93 @@
+# =============================================================
+# ROBOTS.TXT - DARIOSCUSTOM (Miami, FL)
+# OPTIMIZACIÓN EXPLICITA PARA IA, GEO, AEO Y BÚSQUEDA GENERATIVA
+# =============================================================
+
+# Buscadores Tradicionales (Google, Bing, Yahoo, etc.)
+User-agent: *
+Allow: /
+
+# --- OPENAI (ChatGPT, SearchGPT, GPT-4o, ChatGPT Operator) ---
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-AdsBot
+Allow: /
+
+# --- ANTHROPIC (Claude AI, Claude Search, Claude-User, Claude Code) ---
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# --- PERPLEXITY AI ---
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# --- GOOGLE (Gemini, Google AI Overviews, Google Search, Vertex AI) ---
+User-agent: Googlebot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: GoogleOther
+Allow: /
+User-agent: Google-CloudVertexBot
+Allow: /
+
+# --- MICROSOFT & BING (Copilot, Bing Chat, Bing Search) ---
+User-agent: Bingbot
+Allow: /
+User-agent: AdIdxBot
+Allow: /
+
+# --- APPLE (Siri, Apple Intelligence, Spotlight Search) ---
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# --- META (Meta AI, LLaMA, Asistentes integrados en WhatsApp/Instagram) ---
+User-agent: meta-externalagent
+Allow: /
+User-agent: FacebookBot
+Allow: /
+
+# --- DEEPSEEK ---
+User-agent: DeepseekBot
+Allow: /
+
+# --- AMAZON (Alexa for Shopping, Amazonbot) ---
+User-agent: Amazonbot
+Allow: /
+
+# --- BYTEDANCE (Bytespider / Motores de IA de TikTok) ---
+User-agent: Bytespider
+Allow: /
+
+# --- BRAVE (Leo AI, Brave Search) ---
+User-agent: Bravebot
+Allow: /
+
+# --- COMMON CRAWL (Dataset principal para docenas de modelos Open Source) ---
+User-agent: CCBot
+Allow: /
+
+# --- OTROS CRAWLERS DE ENTRENAMIENTO Y RESPUESTAS DE IA ---
+User-agent: cohere-ai
+Allow: /
+User-agent: Diffbot
+Allow: /
+User-agent: omgili
+Allow: /
+
+# Enlace al Sitemap para facilitar la indexación instantánea de tus URL
+Sitemap: https://darioscustom.com/sitemap.xml
