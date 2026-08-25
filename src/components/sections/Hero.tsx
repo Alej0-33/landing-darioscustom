@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image"; // Importamos el componente optimizado de Next.js
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, RefreshCw } from "lucide-react";
 import { Button } from "../ui/Button";
@@ -14,7 +15,6 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const blueprintOpacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
   const productOpacity = useTransform(scrollYProgress, [0, 0.4], [0, 1]);
 
   useEffect(() => {
@@ -44,7 +44,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight leading-[1.1] mb-6 uppercase text-white font-sans"
           >
-            Herrería de <span className="text-brand-primary">Alta Costura</span> y Portones a Medida
+            {/* H1 Optimizado con Keywords Locales */}
+            Herrería de <span className="text-brand-primary">Alta Costura</span> y Portones en Miami
           </motion.h1>
 
           <motion.p
@@ -149,9 +150,11 @@ export default function Hero() {
                     <span className="block text-[7px] sm:text-[8px] text-zinc-500">Forjado & Solidez • Miami, FL</span>
                   </div>
                   <div className="w-10 h-10 sm:w-14 sm:h-14 bg-industrial-card border border-brand-primary/35 p-1 sm:p-2 rounded relative machined-corners flex items-center justify-center shadow-lg">
-                    <img 
+                    <Image 
                       src="/brand/darioscustom_logo.png" 
-                      alt="Darioscustom" 
+                      alt="Darioscustom"
+                      width={60}
+                      height={60} 
                       className="w-full h-full object-contain filter brightness-110" 
                     />
                   </div>
@@ -164,9 +167,12 @@ export default function Hero() {
               style={{ opacity: showProduct ? 1 : 0 }}
               className="absolute inset-0 transition-opacity duration-1000 ease-in-out z-10"
             >
-              <img 
+              <Image 
                 src="/images/product19.png"
                 alt="Proyecto Terminado Darioscustom"
+                width={450}
+                height={562}
+                priority // Previene el render-blocking
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
@@ -177,7 +183,7 @@ export default function Hero() {
                   <h4 className="text-white text-xs sm:text-sm font-bold uppercase">Resultado en Obra</h4>
                 </div>
                 <div className="bg-brand-primary text-white text-[9px] font-bold py-1 px-3 rounded uppercase tracking-wider">
-                  100% Acero
+                  100% Aluminio
                 </div>
               </div>
             </motion.div>
@@ -187,9 +193,12 @@ export default function Hero() {
               style={{ opacity: productOpacity }} 
               className="absolute inset-0 z-30 pointer-events-none"
             >
-              <img 
+              <Image 
                 src="/images/product19.png" 
-                alt="Proyecto Terminado"
+                alt="Proyecto Terminado Visualización"
+                width={450}
+                height={562}
+                priority // Previene el render-blocking
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/10 to-transparent" />

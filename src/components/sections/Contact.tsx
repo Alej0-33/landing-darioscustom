@@ -1,19 +1,43 @@
+// src/components/sections/Contact.tsx
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Mail, Phone, ArrowRight, Send, Camera, Upload, X } from "lucide-react";
+import { 
+  MapPin, 
+  Mail, 
+  Phone, 
+  ArrowRight, 
+  Send, 
+  Camera, 
+  Upload, 
+  X, 
+  Copy, 
+  Check 
+} from "lucide-react";
 import { slideFromLeft, slideFromRight } from "@/utils/animations";
 import { Button } from "../ui/Button";
 import { Input } from "../ui/Input";
 import { Select } from "../ui/Select";
 import { Textarea } from "../ui/Textarea";
-import { WhatsAppIcon } from "../ui/Icons";
+import { WhatsAppIcon, InstagramIcon, FacebookIcon } from "../ui/Icons";
 
 export default function Contact() {
   const [formState, setFormState] = useState({ name: "", email: "", phone: "", service: "Puertas", msg: "" });
   const [photo, setPhoto] = useState<File | null>(null);
   const [method, setMethod] = useState<"whatsapp" | "email">("whatsapp");
   const [submitted, setSubmitted] = useState(false);
+  
+  const [copiedField, setCopiedField] = useState<string | null>(null);
+
+  const phoneValue = process.env.NEXT_PUBLIC_COMPANY_PHONE || "+1 (305) 555-0199";
+  const emailValue = process.env.NEXT_PUBLIC_COMPANY_EMAIL || "info@darioscustom.com";
+
+  const handleCopy = (text: string, field: string) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopiedField(field);
+      setTimeout(() => setCopiedField(null), 2000);
+    });
+  };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
@@ -67,6 +91,7 @@ export default function Contact() {
             </p>
 
             <div className="space-y-6">
+              {/* Sede y Operación */}
               <div className="flex items-start gap-4">
                 <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary shrink-0">
                   <MapPin className="w-5 h-5" />
@@ -79,30 +104,110 @@ export default function Contact() {
                 </div>
               </div>
 
+              {/* Teléfono Oficina con copiado integrado */}
               <div className="flex items-start gap-4">
                 <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary shrink-0">
                   <Phone className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <h4 className="font-bold text-white uppercase tracking-wider text-xs">Teléfono Oficina</h4>
-                  <p className="text-zinc-400 text-xs mt-0.5">
-                    {process.env.NEXT_PUBLIC_COMPANY_PHONE || "+1 (305) 555-0199"}
-                  </p>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <p className="text-zinc-400 text-xs font-mono">
+                      {phoneValue}
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => handleCopy(phoneValue, "phone")}
+                      className="text-zinc-500 hover:text-brand-light p-1 rounded hover:bg-zinc-800/40 transition-colors shrink-0"
+                      title="Copiar teléfono"
+                    >
+                      {copiedField === "phone" ? (
+                        <Check className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      ) : (
+                        <Copy className="w-3.5 h-3.5 shrink-0" />
+                      )}
+                    </button>
+                    {copiedField === "phone" && (
+                      <span className="text-[9px] font-mono text-emerald-400 uppercase tracking-wider animate-pulse">
+                        ¡Copiado!
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
 
+              {/* Correo Electrónico con copiado integrado */}
               <div className="flex items-start gap-4">
                 <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <h4 className="font-bold text-white uppercase tracking-wider text-xs">Correo Electrónico</h4>
-                  <p className="text-zinc-400 text-xs text-brand-light mt-0.5 break-all">
-                    {process.env.NEXT_PUBLIC_COMPANY_EMAIL || "info@darioscustom.com"}
-                  </p>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <p className="text-zinc-400 text-xs text-brand-light break-all font-mono">
+                      {emailValue}
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => handleCopy(emailValue, "email")}
+                      className="text-zinc-500 hover:text-brand-light p-1 rounded hover:bg-zinc-800/40 transition-colors shrink-0"
+                      title="Copiar correo"
+                    >
+                      {copiedField === "email" ? (
+                        <Check className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      ) : (
+                        <Copy className="w-3.5 h-3.5 shrink-0" />
+                      )}
+                    </button>
+                    {copiedField === "email" && (
+                      <span className="text-[9px] font-mono text-emerald-400 uppercase tracking-wider animate-pulse">
+                        ¡Copiado!
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
 
+              {/* Redes Sociales... */}
+              <div className="flex items-start gap-4">
+                <div className="bg-industrial-card border border-industrial-border p-3 rounded-md shrink-0">
+                  <InstagramIcon className="w-5 h-5" />
+                </div>
+                <div className="min-w-0">
+                  <h4 className="font-bold text-white uppercase tracking-wider text-xs">Instagram</h4>
+                  <div className="mt-0.5">
+                    <a
+                      href="https://www.instagram.com/darioscustomironart"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-zinc-400 hover:text-brand-light text-xs font-mono break-all inline-flex items-center gap-1.5 group"
+                    >
+                      <span>@darioscustomironart</span>
+                      <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all text-brand-light shrink-0" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="bg-industrial-card border border-industrial-border p-3 rounded-md shrink-0">
+                  <FacebookIcon className="w-5 h-5" />
+                </div>
+                <div className="min-w-0">
+                  <h4 className="font-bold text-white uppercase tracking-wider text-xs">Facebook</h4>
+                  <div className="mt-0.5">
+                    <a
+                      href="https://www.facebook.com/DariosCustomIronArt/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-zinc-400 hover:text-brand-light text-xs font-mono break-all inline-flex items-center gap-1.5 group"
+                    >
+                      <span>DariosCustomIronArt</span>
+                      <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all text-brand-light shrink-0" />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
 
@@ -116,7 +221,7 @@ export default function Contact() {
           >
             <h3 className="text-md sm:text-lg font-bold uppercase tracking-wider mb-6 text-white">Formulario de Cotización</h3>
 
-            {/* Selector de Método optimizado para no deformarse en móvil */}
+            {/* Selector de Método */}
             <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-6">
               <button
                 type="button"
@@ -148,10 +253,18 @@ export default function Contact() {
                 <p className="text-sm">Analizaremos las especificaciones indicadas y nos comunicaremos en menos de 24 horas laborables.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <>
+              {/* Formulario optimizado para WebMCP y Agentes IA */}
+              <form 
+                onSubmit={handleSubmit} 
+                className="space-y-5"
+                data-toolname="solicitarCotizacion"
+                data-tooldescription="Envía una solicitud de cotización para proyectos de herrería al equipo de Darioscustom."
+              >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <Input
                     id="name"
+                    name="name"
                     label="Tu Nombre Completo"
                     type="text"
                     required
@@ -161,6 +274,7 @@ export default function Contact() {
                   />
                   <Input
                     id="email"
+                    name="email"
                     label="Correo de Contacto"
                     type="email"
                     required
@@ -173,6 +287,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <Input
                     id="phone"
+                    name="phone"
                     label="Teléfono de Contacto"
                     type="tel"
                     required
@@ -183,6 +298,7 @@ export default function Contact() {
                   
                   <Select
                     id="service"
+                    name="service"
                     label="Categoría del Proyecto"
                     value={formState.service}
                     onChange={(e) => setFormState({ ...formState, service: e.target.value })}
@@ -198,6 +314,7 @@ export default function Contact() {
 
                 <Textarea
                   id="msg"
+                  name="msg"
                   label="Mensaje y Dimensiones de tu Reja"
                   rows={4}
                   required
@@ -206,17 +323,20 @@ export default function Contact() {
                   placeholder="Describe las especificaciones o estilo del metal deseado..."
                 />
 
-                {/* Subida de Foto de Referencia adaptada para evitar overflow de metadatos de archivo */}
+                {/* Subida de Foto de Referencia (Corregido accesibilidad label/id) */}
                 <div className="space-y-2">
-                  <label className="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">
+                  <label htmlFor="photo_upload" className="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">
                     Foto de Referencia (Opcional)
                   </label>
                   <div className="relative border border-dashed border-industrial-border hover:border-brand-primary/50 bg-[#09090B] rounded-md p-4 transition-colors group cursor-pointer flex flex-col items-center justify-center min-h-[90px]">
                     <input
+                      id="photo_upload"
+                      name="photo_upload"
                       type="file"
                       accept="image/*"
                       onChange={handleFileChange}
                       className="absolute inset-0 opacity-0 cursor-pointer z-20"
+                      aria-label="Subir foto de referencia"
                     />
                     {photo ? (
                       <div className="flex items-center justify-between w-full z-30 gap-2">
@@ -241,6 +361,7 @@ export default function Contact() {
                             removePhoto();
                           }}
                           className="text-zinc-400 hover:text-red-400 p-1 rounded-full hover:bg-zinc-800/50 transition-colors shrink-0"
+                          aria-label="Eliminar foto"
                         >
                           <X className="w-4 h-4" />
                         </button>
@@ -261,6 +382,7 @@ export default function Contact() {
                   {method === "whatsapp" ? "Enviar a WhatsApp" : "Enviar Solicitud"} <ArrowRight className="w-4 h-4" />
                 </Button>
               </form>
+              </>
             )}
           </motion.div>
 

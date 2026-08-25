@@ -15,11 +15,13 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Hemos agregado "Reseñas" apuntando al id "#opiniones"
   const links = [
     { name: "Inicio", href: "#inicio" },
     { name: "Servicios", href: "#servicios" },
     { name: "Catálogo", href: "#catalogo" },
     { name: "Materiales", href: "#comparativa" },
+    { name: "Reseñas", href: "#opiniones" },
     { name: "Preguntas", href: "#preguntas" },
   ];
 

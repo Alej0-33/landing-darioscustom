@@ -6,22 +6,27 @@ import { fadeUp, staggerContainer, staggerItem } from "@/utils/animations";
 
 const faqData = [
   {
+    id: "cumplimiento-codigo-florida",
     q: "¿Darioscustom cumple con el Código de Edificación de Florida (FBC) para huracanes?",
     a: "Sí. Diseñamos y soldamos todas nuestras rejas de seguridad, portones y barandales cumpliendo estrictamente con el Código de Edificación de Florida (FBC) y los requisitos de carga del viento ASCE 7 para zonas propensas a tormentas y huracanes, con capacidades de resistencia al viento de hasta 175 mph según el sector."
   },
   {
+    id: "diferencia-pintura-powder-coating",
     q: "¿Cuáles son las diferencias entre la pintura tradicional de herrería y el recubrimiento en polvo (Powder Coating)?",
     a: "La pintura convencional se desgasta y descascara rápido por el sol de Miami. Nosotros aplicamos pintura en polvo electrostática termoendurecida (Powder Coating) horneada a 400°F. Esto genera un blindaje grueso, uniforme y flexible que resiste golpes, rayos UV y la humedad sin oxidar el metal base."
   },
   {
+    id: "areas-cobertura-sur-florida",
     q: "¿Qué áreas de servicio cubren en el Sur de Florida?",
     a: "Nuestra área de cobertura local para medición, entrega e instalación incluye Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, South Miami, Kendall y alrededores del condado de Miami-Dade."
   },
   {
+    id: "mantenimiento-portones-rejas",
     q: "¿Qué tipo de mantenimiento requieren sus portones y rejas metálicas?",
     a: "Las estructuras con acabado galvanizado y pintura en polvo requieren un mantenimiento mínimo. Recomendamos lavarlas cada 3 a 6 meses con agua limpia y un jabón suave no abrasivo para retirar depósitos de polvo, sal marina e impurezas de la intemperie."
   },
   {
+    id: "proceso-cotizacion-tecnica",
     q: "¿Cuál es el proceso para solicitar una cotización técnica para mi residencia o negocio?",
     a: "Puedes contactarnos vía formulario web o haciendo clic en el enlace de WhatsApp. Envíanos medidas preliminares, fotos de la zona de instalación o referencias estéticas. Evaluaremos la información y te entregaremos una propuesta económica precisa. Posteriormente, realizamos una visita para rectificar dimensiones."
   }
@@ -61,9 +66,11 @@ export default function FAQ() {
               <details
                 className="bg-industrial-card border border-industrial-border hover:border-industrial-border-high rounded-md p-4 sm:p-5 group transition-colors cursor-pointer"
               >
-                {/* summary optimizado: items-start evita que el '+' se desplace verticalmente por el texto largo de la pregunta */}
                 <summary className="font-bold text-white text-xs sm:text-sm md:text-base uppercase tracking-wide list-none flex items-start justify-between gap-4">
-                  <span className="flex-grow pr-2">{item.q}</span>
+                  {/* Se agregó <h3> para semántica y id para deep-linking (AEO) */}
+                  <h3 id={item.id} className="flex-grow pr-2 m-0 text-inherit font-inherit">
+                    {item.q}
+                  </h3>
                   <span className="text-brand-primary font-bold text-base group-open:rotate-45 transition-transform duration-300 shrink-0">
                     +
                   </span>

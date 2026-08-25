@@ -1,79 +1,58 @@
 "use client";
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Star, ExternalLink, Award, ArrowRight } from "lucide-react";
+import { Star, ExternalLink, ArrowRight } from "lucide-react";
 import { fadeUp } from "@/utils/animations";
 import { GoogleGIcon } from "../ui/Icons";
 
-// Estructura de testimonios reales enfocados en los servicios industriales de Miami/Sur de Florida
 const googleReviews = [
   {
-    name: "Carlos Mendoza",
-    role: "Propietario Residencial",
-    location: "Coral Gables, FL",
+    name: "Dayana Gonzalez",
+    role: "Local Guide · 19 reseñas",
+    location: "Miami, FL",
     stars: 5,
-    text: "Excelente trabajo en la fabricación de nuestro portón perimetral automatizado. La precisión de los cortes de acero y el acabado de la pintura de horno superaron nuestras expectativas. Cumplen rigurosamente los códigos de viento.",
+    text: "Dario’s Custom Iron Art es el equipo perfecto si quieres traer arte y un toque único a tu hogar. Emily nos ayudó mucho a encontrar el diseño perfecto para nuestras barandas y todo el proyecto fue forjado directamente de la mano de Darío. Los recomiendo mucho !",
     date: "Hace 2 meses",
-    link: "https://g.page/r/darioscustom-review1"
+    link: "https://maps.app.goo.gl/t9BhjrzgstiSSfFe8"
   },
   {
-    name: "Elena Rostova",
-    role: "Arquitecta de Interiores",
-    location: "Miami Design District",
+    name: "Ariel Cue Fuentes",
+    role: "2 reseñas",
+    location: "Miami, FL",
     stars: 5,
-    text: "Diseñaron un panel divisor con corte láser CNC para un penthouse. La precisión del trazo, la limpieza en la soldadura y la pátina del acabado son excepcionales. Profesionales altamente recomendados.",
-    date: "Hace 3 semanas",
-    link: "https://g.page/r/darioscustom-review2"
+    text: "Tenemos un partnership con Dario’s Custom Iron Art y solo podemos decir cosas positivas acerca de esta compañía, tienen muchos años de experiencia, sus proyectos son únicos y artísticos. Barandas, puertas, camas, mesas, grills, arte para las paredes, esculturas, lámparas, cualquier idea que tengas, ellos la hacen realidad. Sus proyectos son arte fabricado a mano. Ya saben, acá tienen una compañía de confianza",
+    date: "Hace 2 meses",
+    link: "https://maps.app.goo.gl/fiSiUTJWYBw2ofUb8"
   },
   {
-    name: "Roberto S.",
-    role: "Contratista Principal",
-    location: "Brickell, Miami",
+    name: "Daniel Otero",
+    role: "1 reseña",
+    location: "Miami, FL",
     stars: 5,
-    text: "Hemos colaborado en varios proyectos de barandales flotantes para balcones. Certificación estructural impecable, cumplimiento puntual con los planos de ingeniería y un montaje de herrería robusto.",
-    date: "Hace 1 mes",
-    link: "https://g.page/r/darioscustom-review3"
+    text: "Excelente mano de obra y profesionalidad de principio a fin. El trabajo de soldadura quedó impecable y de gran calidad. Es de confianza, ofrece precios justos y presta atención a los detalles. Estoy muy contento con los resultados y lo recomiendo encarecidamente para cualquier proyecto de soldadura en el hogar.",
+    date: "Hace 2 meses",
+    link: "https://maps.app.goo.gl/hvtCFTyMeiC6S4QX8"
   },
   {
-    name: "Sofía Álvarez",
-    role: "Propietaria de Villa",
-    location: "Key Biscayne, FL",
+    name: "Fran Miles",
+    role: "Local Guide · 71 reseñas",
+    location: "Miami, FL",
     stars: 5,
-    text: "Instalaron rejas de seguridad y barandales con una altísima resistencia al salitre marino. Su asesoramiento sobre aleaciones de aluminio anticorrosivo y la terminación de pintura fue fantástico.",
-    date: "Hace 4 meses",
-    link: "https://g.page/r/darioscustom-review4"
-  },
-  {
-    name: "Daniel Tremont",
-    role: "Desarrollador Comercial",
-    location: "Doral, FL",
-    stars: 5,
-    text: "Su herrería estructural cumple estrictamente con el AWS D1.1. Fabricaron portones corredizos pesados para nuestro parque logístico. Durabilidad extrema y excelente comunicación en todo el proceso.",
-    date: "Hace 5 meses",
-    link: "https://g.page/r/darioscustom-review5"
-  },
-  {
-    name: "Marcus G.",
-    role: "Coleccionista de Arte",
-    location: "Pinecrest, FL",
-    stars: 5,
-    text: "Comisioné una escultura metálica abstracta para el jardín de mi residencia. Acabados impecables, trato premium y una verdadera obra de arte con detalles en oro aplicados meticulosamente.",
-    date: "Hace 10 días",
-    link: "https://g.page/r/darioscustom-review6"
+    text: "Hace varios años encargamos unas puertas de entrada de hierro y cristal diseñadas a medida. Son fabulosas y he recibido un montón de elogios. Están perfectamente fabricadas, se ajustaron al presupuesto y se entregaron a tiempo. Este año decidimos redecorar nuestro salón. Encontramos unos sofás que nos encantaron, pero no conseguíamos encontrar mesitas de centro ni de salón a ningún precio. Así que nos pusimos en contacto con Darío. Nos hizo unas mesas a medida fabulosas a un precio muy razonable.",
+    date: "Hace 4 años",
+    link: "https://maps.app.goo.gl/om7fvjzXJrfEwFVG6"
   }
 ];
 
-const googleProfileUrl = "https://g.page/r/darioscustomart";
+const googleProfileUrl = "https://www.google.com/maps/place/Dario's+Custom+Iron+Art,+Inc/@25.8417209,-80.2854691,17z/data=!4m6!3m5!1s0x88d9afd0a8154f4d:0xb27220b3bbeada8f!8m2!3d25.8417209!4d-80.2828942!16s%2Fg%2F11clwn4wjm?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D";
 
 export default function Reviews() {
   return (
     <section id="opiniones" className="py-24 relative border-t border-industrial-border bg-[#0d0d10] overflow-hidden">
-      {/* Fondo técnico sutil utilizando la clase de dibujo de globals.css */}
       <div className="absolute inset-0 industrial-dots opacity-15 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
-        {/* Encabezado y Resumen de Google */}
+        {/* Encabezado (H2) */}
         <motion.div
           className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8"
           initial="hidden"
@@ -91,14 +70,13 @@ export default function Reviews() {
             </p>
           </div>
 
-          {/* Tarjeta de Resumen Google Business Profile */}
           <div className="flex items-center gap-4 bg-industrial-card border border-industrial-border p-5 rounded-md self-start lg:self-auto shrink-0 shadow-lg">
             <div className="p-3 bg-industrial-bg border border-industrial-border-high rounded">
               <GoogleGIcon className="w-5 h-5" />
             </div>
             <div>
               <div className="flex items-center gap-1 text-white font-bold text-lg tracking-wide">
-                <span>4.9</span>
+                <span>5.0</span>
                 <span className="text-xs text-zinc-500 font-normal">/ 5.0</span>
                 <div className="flex items-center text-brand-light ml-2">
                   {[...Array(5)].map((_, i) => (
@@ -107,7 +85,7 @@ export default function Reviews() {
                 </div>
               </div>
               <p className="text-[10px] text-zinc-400 font-mono uppercase tracking-wider mt-1">
-                +120 Opiniones Verificadas en Google
+                Opiniones Verificadas en Google
               </p>
             </div>
           </div>
@@ -125,9 +103,9 @@ export default function Reviews() {
               className="bg-industrial-card border border-industrial-border p-6 rounded-md relative machined-corners overflow-hidden group flex flex-col justify-between min-h-[250px] transition-all hover:border-industrial-border-high"
             >
               <div>
-                {/* Cabecera de la reseña */}
                 <div className="flex items-start justify-between mb-4">
                   <div className="min-w-0">
+                    {/* Título de Tarjeta (H3) respetando la jerarquía */}
                     <h3 className="font-bold text-white text-sm uppercase tracking-wide truncate">
                       {rev.name}
                     </h3>
@@ -142,26 +120,22 @@ export default function Reviews() {
                     </div>
                   </div>
                   
-                  {/* Google G indicando origen verificado */}
                   <div className="opacity-60 group-hover:opacity-100 transition-opacity text-white">
                     <GoogleGIcon className="w-5 h-5" />
                   </div>
                 </div>
 
-                {/* Estrellas */}
                 <div className="flex items-center text-brand-light gap-0.5 mb-4">
                   {[...Array(rev.stars)].map((_, i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-brand-light stroke-brand-light" />
                   ))}
                 </div>
 
-                {/* Texto del testimonio */}
                 <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-6 italic">
                   "{rev.text}"
                 </p>
               </div>
 
-              {/* Pie de la tarjeta con enlace directo a la opinión */}
               <div className="flex items-center justify-between pt-4 border-t border-industrial-border/60">
                 <span className="text-[10px] text-[#71717A] font-mono">{rev.date}</span>
                 <a
@@ -177,7 +151,6 @@ export default function Reviews() {
           ))}
         </div>
 
-        {/* Llamado a la acción final */}
         <div className="mt-16 text-center">
           <a
             href={googleProfileUrl}
