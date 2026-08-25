@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Star, ExternalLink, Award, ArrowRight } from "lucide-react";
 import { fadeUp } from "@/utils/animations";
+import { GoogleGIcon } from "../ui/Icons";
 
 // Estructura de testimonios reales enfocados en los servicios industriales de Miami/Sur de Florida
 const googleReviews = [
@@ -13,7 +14,7 @@ const googleReviews = [
     stars: 5,
     text: "Excelente trabajo en la fabricación de nuestro portón perimetral automatizado. La precisión de los cortes de acero y el acabado de la pintura de horno superaron nuestras expectativas. Cumplen rigurosamente los códigos de viento.",
     date: "Hace 2 meses",
-    link: "https://g.page/r/darioscustom-review1" // Reemplazar con el enlace directo real a la reseña en Google
+    link: "https://g.page/r/darioscustom-review1"
   },
   {
     name: "Elena Rostova",
@@ -62,17 +63,7 @@ const googleReviews = [
   }
 ];
 
-const googleProfileUrl = "https://g.page/r/darioscustomart"; // Enlace a la ficha principal de Google Business Profile
-
-// Componente SVG personalizado para el logotipo oficial de Google "G"
-const GoogleGIcon = () => (
-  <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-    <path d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.08H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.92l2.85-2.22.81-.6z" fill="#FBBC05"/>
-    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.08l3.66 2.84c.87-2.6 3.3-4.54 6.16-4.54z" fill="#EA4335"/>
-  </svg>
-);
+const googleProfileUrl = "https://g.page/r/darioscustomart";
 
 export default function Reviews() {
   return (
@@ -103,7 +94,7 @@ export default function Reviews() {
           {/* Tarjeta de Resumen Google Business Profile */}
           <div className="flex items-center gap-4 bg-industrial-card border border-industrial-border p-5 rounded-md self-start lg:self-auto shrink-0 shadow-lg">
             <div className="p-3 bg-industrial-bg border border-industrial-border-high rounded">
-              <GoogleGIcon />
+              <GoogleGIcon className="w-5 h-5" />
             </div>
             <div>
               <div className="flex items-center gap-1 text-white font-bold text-lg tracking-wide">
@@ -152,8 +143,8 @@ export default function Reviews() {
                   </div>
                   
                   {/* Google G indicando origen verificado */}
-                  <div className="opacity-60 group-hover:opacity-100 transition-opacity">
-                    <GoogleGIcon />
+                  <div className="opacity-60 group-hover:opacity-100 transition-opacity text-white">
+                    <GoogleGIcon className="w-5 h-5" />
                   </div>
                 </div>
 
