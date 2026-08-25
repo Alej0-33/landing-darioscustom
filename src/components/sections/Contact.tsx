@@ -40,7 +40,6 @@ export default function Contact() {
       setSubmitted(true);
       setTimeout(() => {
         setSubmitted(false);
-        // Reseteo limpio al estado inicial
         setFormState({ name: "", email: "", phone: "", service: "Puertas", msg: "" });
         setPhoto(null);
       }, 3500);
@@ -48,7 +47,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacto" className="py-24 relative border-t border-industrial-border bg-[#0d0d10]">
+    <section id="contacto" className="py-20 sm:py-24 relative border-t border-industrial-border bg-[#0d0d10]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
@@ -60,45 +59,45 @@ export default function Contact() {
             variants={slideFromLeft}
           >
             <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">Ubicación y Datos</span>
-            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-6">
               Coordinemos tu Visita Técnica
             </h2>
-            <p className="text-zinc-400 mb-8 text-sm md:text-base">
+            <p className="text-zinc-400 mb-8 text-xs sm:text-sm md:text-base">
               Rellena el formulario inteligente de abajo para enviarnos tus requerimientos. Elige envío inmediato por WhatsApp para ser atendido en tiempo real por nuestro taller.
             </p>
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary">
+                <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider text-xs">Sede y Operación</h4>
-                  <p className="text-zinc-400 text-xs">
+                  <p className="text-zinc-400 text-xs mt-0.5">
                     {process.env.NEXT_PUBLIC_COMPANY_ADDRESS || "Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, FL"}
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary">
+                <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary shrink-0">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider text-xs">Teléfono Oficina</h4>
-                  <p className="text-zinc-400 text-xs">
+                  <p className="text-zinc-400 text-xs mt-0.5">
                     {process.env.NEXT_PUBLIC_COMPANY_PHONE || "+1 (305) 555-0199"}
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary">
+                <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="font-bold text-white uppercase tracking-wider text-xs">Correo Electrónico</h4>
-                  <p className="text-zinc-400 text-xs text-brand-light">
+                  <p className="text-zinc-400 text-xs text-brand-light mt-0.5 break-all">
                     {process.env.NEXT_PUBLIC_COMPANY_EMAIL || "info@darioscustom.com"}
                   </p>
                 </div>
@@ -109,37 +108,37 @@ export default function Contact() {
 
           {/* Formulario Derecho */}
           <motion.div
-            className="lg:col-span-7 bg-industrial-card border border-industrial-border p-8 rounded-lg relative overflow-hidden"
+            className="lg:col-span-7 bg-industrial-card border border-industrial-border p-4 sm:p-8 rounded-lg relative overflow-hidden w-full"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
             variants={slideFromRight}
           >
-            <h3 className="text-lg font-bold uppercase tracking-wider mb-6 text-white">Formulario de Cotización</h3>
+            <h3 className="text-md sm:text-lg font-bold uppercase tracking-wider mb-6 text-white">Formulario de Cotización</h3>
 
-            {/* Selector de Método */}
-            <div className="grid grid-cols-2 gap-4 mb-6">
+            {/* Selector de Método optimizado para no deformarse en móvil */}
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-6">
               <button
                 type="button"
                 onClick={() => setMethod("whatsapp")}
-                className={`py-3 text-xs font-bold uppercase tracking-wider rounded border cursor-pointer flex items-center justify-center gap-2 transition-all ${
+                className={`py-2.5 sm:py-3 px-1 sm:px-4 text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded border cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2 transition-all ${
                   method === "whatsapp"
                     ? "bg-emerald-600/20 border-emerald-500 text-emerald-400"
                     : "bg-[#09090B] border-industrial-border text-zinc-400"
                 }`}
               >
-                <WhatsAppIcon className="w-4 h-4" /> WhatsApp Rápido
+                <WhatsAppIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" /> WhatsApp Rápido
               </button>
               <button
                 type="button"
                 onClick={() => setMethod("email")}
-                className={`py-3 text-xs font-bold uppercase tracking-wider rounded border cursor-pointer flex items-center justify-center gap-2 transition-all ${
+                className={`py-2.5 sm:py-3 px-1 sm:px-4 text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded border cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2 transition-all ${
                   method === "email"
                     ? "bg-brand-primary/20 border-brand-primary text-brand-light"
                     : "bg-[#09090B] border-industrial-border text-zinc-400"
                 }`}
               >
-                <Send className="w-4 h-4" /> Correo Tradicional
+                <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" /> Correo Tradicional
               </button>
             </div>
 
@@ -182,7 +181,6 @@ export default function Contact() {
                     placeholder="+1 (305) 555-0100"
                   />
                   
-                  {/* Selector con las categorías exactas del catálogo simplificadas */}
                   <Select
                     id="service"
                     label="Categoría del Proyecto"
@@ -208,9 +206,9 @@ export default function Contact() {
                   placeholder="Describe las especificaciones o estilo del metal deseado..."
                 />
 
-                {/* Subida de Foto de Referencia (Opcional) */}
+                {/* Subida de Foto de Referencia adaptada para evitar overflow de metadatos de archivo */}
                 <div className="space-y-2">
-                  <label className="block text-xs font-bold uppercase tracking-wider text-zinc-400">
+                  <label className="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">
                     Foto de Referencia (Opcional)
                   </label>
                   <div className="relative border border-dashed border-industrial-border hover:border-brand-primary/50 bg-[#09090B] rounded-md p-4 transition-colors group cursor-pointer flex flex-col items-center justify-center min-h-[90px]">
@@ -221,16 +219,16 @@ export default function Contact() {
                       className="absolute inset-0 opacity-0 cursor-pointer z-20"
                     />
                     {photo ? (
-                      <div className="flex items-center justify-between w-full z-30">
-                        <div className="flex items-center gap-3 min-w-0">
-                          <div className="bg-brand-primary/10 border border-brand-primary/20 p-2 rounded text-brand-light">
-                            <Camera className="w-5 h-5" />
+                      <div className="flex items-center justify-between w-full z-30 gap-2">
+                        <div className="flex items-center gap-2.5 min-w-0">
+                          <div className="bg-brand-primary/10 border border-brand-primary/20 p-2 rounded text-brand-light shrink-0">
+                            <Camera className="w-4 h-4 sm:w-5 sm:h-5" />
                           </div>
                           <div className="text-left min-w-0">
-                            <p className="text-xs font-semibold text-white truncate max-w-[200px] sm:max-w-xs">
+                            <p className="text-[11px] sm:text-xs font-semibold text-white truncate max-w-[140px] xs:max-w-[200px] sm:max-w-xs">
                               {photo.name}
                             </p>
-                            <p className="text-[10px] text-zinc-500 font-mono">
+                            <p className="text-[9px] text-zinc-500 font-mono">
                               {(photo.size / (1024 * 1024)).toFixed(2)} MB
                             </p>
                           </div>
@@ -242,7 +240,7 @@ export default function Contact() {
                             e.stopPropagation();
                             removePhoto();
                           }}
-                          className="text-zinc-400 hover:text-red-400 p-1 rounded-full hover:bg-zinc-800/50 transition-colors"
+                          className="text-zinc-400 hover:text-red-400 p-1 rounded-full hover:bg-zinc-800/50 transition-colors shrink-0"
                         >
                           <X className="w-4 h-4" />
                         </button>
@@ -250,10 +248,10 @@ export default function Contact() {
                     ) : (
                       <div className="flex flex-col items-center text-center gap-1.5 pointer-events-none">
                         <Upload className="w-5 h-5 text-zinc-500 group-hover:text-brand-light transition-colors" />
-                        <p className="text-xs text-zinc-400">
+                        <p className="text-[11px] sm:text-xs text-zinc-400">
                           <span className="text-brand-light font-bold">Haz clic para subir</span> o arrastra una foto
                         </p>
-                        <p className="text-[10px] text-zinc-600">Formatos recomendados: JPG, PNG (Max 10MB)</p>
+                        <p className="text-[9px] text-zinc-600 font-mono uppercase tracking-wider">JPG, PNG (Max 10MB)</p>
                       </div>
                     )}
                   </div>

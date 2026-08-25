@@ -1,4 +1,3 @@
-// src/components/ui/ImageSlider.tsx
 "use client";
 
 import { useState } from "react";
@@ -12,7 +11,7 @@ interface ImageSliderProps {
 
 export default function ImageSlider({ images, alt = "Product Image" }: ImageSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0); // -1 para izquierda, 1 para derecha
+  const [direction, setDirection] = useState(0);
 
   if (!images || images.length === 0) return null;
 
@@ -31,7 +30,6 @@ export default function ImageSlider({ images, alt = "Product Image" }: ImageSlid
     setCurrentIndex(index);
   };
 
-  // Variaciones de Framer Motion para transiciones fluidas de deslizamiento
   const slideVariants = {
     enter: (dir: number) => ({
       x: dir > 0 ? "100%" : "-100%",
@@ -49,7 +47,7 @@ export default function ImageSlider({ images, alt = "Product Image" }: ImageSlid
 
   return (
     <div className="w-full flex flex-col gap-4">
-      {/* Contenedor Principal del Slider */}
+      {/* Contenedor Principal responsivo */}
       <div className="relative aspect-square machined-corners border border-industrial-border-high overflow-hidden bg-zinc-950 rounded-md">
         
         {/* Renderizado de Imágenes animadas */}
@@ -73,34 +71,34 @@ export default function ImageSlider({ images, alt = "Product Image" }: ImageSlid
           </AnimatePresence>
         </div>
 
-        {/* Controles de Navegación (Solo si hay más de 1 imagen) */}
+        {/* Controles de Navegación adaptados a móviles */}
         {images.length > 1 && (
           <>
             {/* Botón Anterior */}
             <button
               onClick={handlePrev}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 flex items-center justify-center bg-black/60 hover:bg-brand-primary text-white border border-industrial-border-high hover:border-brand-primary rounded-sm transition-all duration-300 cursor-pointer"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-black/60 hover:bg-brand-primary text-white border border-industrial-border-high hover:border-brand-primary rounded-sm transition-all duration-300 cursor-pointer"
               aria-label="Imagen anterior"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
 
             {/* Botón Siguiente */}
             <button
               onClick={handleNext}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 flex items-center justify-center bg-black/60 hover:bg-brand-primary text-white border border-industrial-border-high hover:border-brand-primary rounded-sm transition-all duration-300 cursor-pointer"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-black/60 hover:bg-brand-primary text-white border border-industrial-border-high hover:border-brand-primary rounded-sm transition-all duration-300 cursor-pointer"
               aria-label="Siguiente imagen"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
 
             {/* Puntos Indicadores (Dots) */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-1.5 bg-black/40 px-3 py-1.5 rounded-full border border-industrial-border/50 backdrop-blur-sm">
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-1 bg-black/40 px-2 py-1 sm:px-3 sm:py-1.5 rounded-full border border-industrial-border/50 backdrop-blur-sm">
               {images.map((_, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleDotClick(idx)}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                  className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all duration-300 cursor-pointer ${
                     currentIndex === idx ? "bg-brand-primary scale-125" : "bg-zinc-600 hover:bg-zinc-400"
                   }`}
                   aria-label={`Ir a imagen ${idx + 1}`}
@@ -111,9 +109,9 @@ export default function ImageSlider({ images, alt = "Product Image" }: ImageSlid
         )}
       </div>
 
-      {/* Tira de Miniaturas (Thumbnails) inferiores */}
+      {/* Tira de Miniaturas (Thumbnails) con espaciado flexible */}
       {images.length > 1 && (
-        <div className="grid grid-cols-5 gap-2.5">
+        <div className="grid grid-cols-5 gap-1.5 sm:gap-2.5">
           {images.map((img, idx) => (
             <button
               key={idx}

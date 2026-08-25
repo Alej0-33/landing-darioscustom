@@ -1,8 +1,8 @@
 "use client";
-       import React from "react";
-       import { motion } from "framer-motion";
-       import { HelpCircle } from "lucide-react";
-       import { fadeUp, staggerContainer, staggerItem } from "@/utils/animations";
+import React from "react";
+import { motion } from "framer-motion";
+import { HelpCircle } from "lucide-react";
+import { fadeUp, staggerContainer, staggerItem } from "@/utils/animations";
 
 const faqData = [
   {
@@ -29,7 +29,7 @@ const faqData = [
 
 export default function FAQ() {
   return (
-    <section id="preguntas" className="py-24 relative border-t border-industrial-border">
+    <section id="preguntas" className="py-20 sm:py-24 relative border-t border-industrial-border">
       <div className="max-w-4xl mx-auto px-6">
         <motion.div
           className="text-center mb-16"
@@ -38,13 +38,13 @@ export default function FAQ() {
           viewport={{ once: true, margin: "-60px" }}
           variants={fadeUp}
         >
-          <HelpCircle className="w-12 h-12 text-brand-primary mx-auto mb-4" />
+          <HelpCircle className="w-10 h-10 sm:w-12 sm:h-12 text-brand-primary mx-auto mb-4" />
           <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">Preguntas Frecuentes</span>
-          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2">
             Respuestas Técnicas e Ingeniería
           </h2>
-          <div className="w-20 h-1 bg-brand-primary mx-auto my-4" />
-          <p className="text-zinc-400 text-xs md:text-sm">
+          <div className="w-20 h-[3px] bg-brand-primary mx-auto my-4" />
+          <p className="text-zinc-400 text-xs sm:text-sm">
             Toda la información clave estructurada sobre nuestros materiales, regulaciones locales en Miami-Dade y procesos de entrega.
           </p>
         </motion.div>
@@ -59,13 +59,16 @@ export default function FAQ() {
           {faqData.map((item, idx) => (
             <motion.div key={idx} variants={staggerItem}>
               <details
-                className="bg-industrial-card border border-industrial-border hover:border-industrial-border-high rounded-md p-5 group transition-colors cursor-pointer"
+                className="bg-industrial-card border border-industrial-border hover:border-industrial-border-high rounded-md p-4 sm:p-5 group transition-colors cursor-pointer"
               >
-                <summary className="font-bold text-white text-sm md:text-base uppercase tracking-wide list-none flex items-center justify-between">
-                  <span>{item.q}</span>
-                  <span className="text-brand-primary group-open:rotate-45 transition-transform duration-300 ml-4">+</span>
+                {/* summary optimizado: items-start evita que el '+' se desplace verticalmente por el texto largo de la pregunta */}
+                <summary className="font-bold text-white text-xs sm:text-sm md:text-base uppercase tracking-wide list-none flex items-start justify-between gap-4">
+                  <span className="flex-grow pr-2">{item.q}</span>
+                  <span className="text-brand-primary font-bold text-base group-open:rotate-45 transition-transform duration-300 shrink-0">
+                    +
+                  </span>
                 </summary>
-                <p className="text-zinc-400 text-xs md:text-sm leading-relaxed mt-4 pt-4 border-t border-industrial-border">
+                <p className="text-zinc-400 text-[11px] sm:text-xs md:text-sm leading-relaxed mt-4 pt-4 border-t border-industrial-border">
                   {item.a}
                 </p>
               </details>

@@ -1,8 +1,8 @@
 "use client";
-     import { motion } from "framer-motion";
-     import { Shield, Home, Sparkles, Palette, Award } from "lucide-react";
-     import { Card } from "../ui/Card";
-     import { fadeUp, staggerContainer, staggerItem } from "@/utils/animations";
+import { motion } from "framer-motion";
+import { Shield, Home, Sparkles, Palette, Award } from "lucide-react";
+import { Card } from "../ui/Card";
+import { fadeUp, staggerContainer, staggerItem } from "@/utils/animations";
 
 export default function Services() {
   const services = [
@@ -56,7 +56,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="servicios" className="py-24 relative border-t border-[#27272A] bg-[#09090B]">
+    <section id="servicios" className="py-20 sm:py-24 relative border-t border-[#27272A] bg-[#09090B]">
       {/* Fondo técnico sutil */}
       <div className="absolute inset-0 industrial-dots opacity-10 pointer-events-none" />
 
@@ -70,18 +70,18 @@ export default function Services() {
           viewport={{ once: true, margin: "-60px" }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-4">
             Ingeniería en Metal de Alta Durabilidad
           </h2>
           <div className="w-20 h-[3px] bg-[#B85227] mx-auto my-4" />
-          <p className="text-[#A1A1AA] text-sm md:text-base leading-relaxed">
+          <p className="text-[#A1A1AA] text-xs sm:text-sm md:text-base leading-relaxed">
             Ofrecemos soluciones metálicas certificadas contra el clima húmedo de Florida para desarrollos residenciales y corporativos de primer nivel.
           </p>
         </motion.div>
 
         {/* Tarjetas de servicios principales */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
@@ -99,14 +99,14 @@ export default function Services() {
         </motion.div>
 
         {/* Comparativa Técnica de Materiales */}
-             <motion.div
-               id="comparativa"
-               className="bg-[#18181B] border border-[#27272A] p-6 md:p-10 rounded-lg relative machined-corners overflow-hidden"
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true, margin: "-60px" }}
-               variants={fadeUp}
-             >
+        <motion.div
+          id="comparativa"
+          className="bg-[#18181B] border border-[#27272A] p-4 sm:p-10 rounded-lg relative machined-corners overflow-hidden"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          variants={fadeUp}
+        >
           {/* Línea de acento industrial */}
           <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-[#B85227]/45 to-transparent" />
 
@@ -116,20 +116,20 @@ export default function Services() {
                 <Award className="w-6 h-6 text-[#D4845F]" />
               </div>
               <div>
-                <h3 className="text-xl md:text-2xl font-black uppercase tracking-wider text-white mt-1">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase tracking-wider text-white mt-1">
                   Fabricamos los siguientes materiales
                 </h3>
               </div>
             </div>
           </div>
 
-          {/* Tabla de Comparativa Técnica - Ajustada a 2 columnas y 100% responsiva */}
+          {/* Tabla de Comparativa Técnica - Con padding reducido y fuentes óptimas para evitar wrap roto */}
           <div className="overflow-hidden">
             <table className="w-full text-left text-xs border-collapse">
               <thead>
-                <tr className="border-b border-[#3F3F46] text-[#D4845F] uppercase tracking-widest font-bold text-[10px] bg-[#09090B]/40">
-                  <th className="py-4 px-5 w-2/3">Material / Especificación</th>
-                  <th className="py-4 px-5 text-center w-1/3">Resistencia al Salitre</th>
+                <tr className="border-b border-[#3F3F46] text-[#D4845F] uppercase tracking-widest font-bold text-[9px] sm:text-[10px] bg-[#09090B]/40">
+                  <th className="py-4 px-3 sm:px-5 w-7/12">Material / Especificación</th>
+                  <th className="py-4 px-3 sm:px-5 text-center w-5/12">Resistencia al Salitre</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#27272A] text-[#A1A1AA]">
@@ -139,17 +139,17 @@ export default function Services() {
                     className="hover:bg-[#09090B]/30 transition-colors duration-200"
                   >
                     {/* Columna 1: Material */}
-                    <td className="py-5 px-5">
-                      <span className="block font-bold text-white text-xs sm:text-sm uppercase tracking-wide">
+                    <td className="py-4 px-3 sm:px-5">
+                      <span className="block font-bold text-white text-[11px] sm:text-xs md:text-sm uppercase tracking-wide break-words">
                         {mat.name}
                       </span>
                     </td>
 
                     {/* Columna 2: Resistencia */}
-                    <td className="py-5 px-5 text-center">
-                      <span className={`inline-flex flex-col items-center justify-center px-3 py-1 rounded-sm border text-[9px] sm:text-[10px] font-bold uppercase tracking-wider ${mat.badgeColor}`}>
+                    <td className="py-4 px-3 sm:px-5 text-center">
+                      <span className={`inline-flex flex-col items-center justify-center px-2 py-1 sm:px-3 sm:py-1 rounded-sm border text-[8px] sm:text-[10px] font-bold uppercase tracking-wider ${mat.badgeColor}`}>
                         <span>{mat.resistance}</span>
-                        <span className="text-[8px] opacity-80 font-normal mt-0.5 font-mono">
+                        <span className="text-[7px] sm:text-[8px] opacity-80 font-normal mt-0.5 font-mono leading-none">
                           {mat.resistanceLabel}
                         </span>
                       </span>

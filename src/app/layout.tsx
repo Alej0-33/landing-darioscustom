@@ -93,7 +93,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${montserrat.variable} font-sans scroll-smooth`}>
+    <html lang="es" className={`${montserrat.variable} font-sans scroll-smooth`} data-scroll-behavior="smooth">
       <head>
         <script
           type="application/ld+json"
