@@ -3,56 +3,23 @@ import { motion } from "framer-motion";
 import { Shield, Home, Sparkles, Palette, Award } from "lucide-react";
 import { Card } from "../ui/Card";
 import { fadeUp, staggerContainer, staggerItem } from "@/utils/animations";
+import { useDictionary } from "../DictionaryProvider";
 
 export default function Services() {
-  const services = [
-    {
-      title: "Portones y Cercas",
-      description: "Diseño y fabricación de cierres perimetrales. Cumplen normas de códigos y seguimiento de cálculos de planos.",
-      icon: <Shield className="w-8 h-8 text-[#D4845F]" />
-    },
-    {
-      title: "Barandales y Escaleras",
-      description: "Sistemas para balcones y escaleras en acero inoxidable, hierro o aluminio. Terminación de pintura al horno.",
-      icon: <Home className="w-8 h-8 text-[#D4845F]" />
-    },
-    {
-      title: "Corte Láser de Precisión CNC",
-      description: "Paneles para privacidad y puertas decorativas con acabados personalizables para proyectos comerciales de lujo o el hogar.",
-      icon: <Sparkles className="w-8 h-8 text-[#D4845F]" />
-    },
-    {
-      title: "Esculturas de Arte",
-      description: "Diseño de candelabros, muebles industriales y esculturas metálicas abstractas. Pintura al horno con terminaciones de oro a mano.",
-      icon: <Palette className="w-8 h-8 text-[#D4845F]" />
-    }
+  const dict = useDictionary().services;
+
+  const icons = [
+    <Shield key="shield" className="w-8 h-8 text-[#D4845F]" />,
+    <Home key="home" className="w-8 h-8 text-[#D4845F]" />,
+    <Sparkles key="sparkles" className="w-8 h-8 text-[#D4845F]" />,
+    <Palette key="palette" className="w-8 h-8 text-[#D4845F]" />
   ];
 
-  const materials = [
-    {
-      name: "Aluminio",
-      resistance: "Extrema",
-      description: "No se oxida. Excelente opción para zonas costeras y ambientes con salitre.",
-      badgeColor: "bg-emerald-950/40 text-emerald-400 border-emerald-500/30",
-    },
-    {
-      name: "Acero Inoxidable 304 o 316L",
-      resistance: "Extrema",
-      description: "Altamente resistente a la corrosión. El 316L es especialmente recomendado para ambientes marinos y zonas cercanas al mar.",
-      badgeColor: "bg-emerald-950/40 text-emerald-400 border-emerald-500/30",
-    },
-    {
-      name: "Bronce",
-      resistance: "Media / Alta",
-      description: "Buena resistencia al ambiente costero. Con el tiempo, desarrolla una pátina natural que cambia su apariencia, pero ayuda a proteger el material.",
-      badgeColor: "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40",
-    },
-    {
-      name: "Hierro",
-      resistance: "Media / Alta",
-      description: "Requiere pintura y tratamiento anticorrosivo para protegerlo del salitre. Necesita más mantenimiento que el aluminio o el acero inoxidable.",
-      badgeColor: "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40",
-    }
+  const badgeColors = [
+    "bg-emerald-950/40 text-emerald-400 border-emerald-500/30",
+    "bg-emerald-950/40 text-emerald-400 border-emerald-500/30",
+    "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40",
+    "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40"
   ];
 
   return (
@@ -61,7 +28,6 @@ export default function Services() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
-        {/* Encabezado Principal (H2) */}
         <motion.div
           className="text-center max-w-3xl mx-auto mb-16"
           initial="hidden"
@@ -69,16 +35,15 @@ export default function Services() {
           viewport={{ once: true, margin: "-60px" }}
           variants={fadeUp}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-4">
-            Ingeniería en Metal de Alta Durabilidad
+          <h2 id="services-title" className="text-2xl sm:text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-4">
+            {dict.title}
           </h2>
           <div className="w-20 h-[3px] bg-[#B85227] mx-auto my-4" />
           <p className="text-[#A1A1AA] text-xs sm:text-sm md:text-base leading-relaxed">
-            Ofrecemos soluciones metálicas certificadas contra el clima húmedo de Florida para desarrollos residenciales y corporativos de primer nivel.
+            {dict.desc}
           </p>
         </motion.div>
 
-        {/* Tarjetas (Usan H3 internamente en Card.tsx) */}
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24"
           initial="hidden"
@@ -86,18 +51,17 @@ export default function Services() {
           viewport={{ once: true, margin: "-60px" }}
           variants={staggerContainer}
         >
-          {services.map((service, index) => (
+          {dict.items.map((service: any, index: number) => (
             <motion.div key={index} variants={staggerItem}>
               <Card
                 title={service.title}
-                description={service.description}
-                icon={service.icon}
+                description={service.desc}
+                icon={icons[index]}
               />
             </motion.div>
           ))}
         </motion.div>
 
-        {/* Comparativa Técnica de Materiales */}
         <motion.div
           id="comparativa"
           className="bg-[#18181B] border border-[#27272A] p-4 sm:p-10 rounded-lg relative machined-corners overflow-hidden"
@@ -114,9 +78,8 @@ export default function Services() {
                 <Award className="w-6 h-6 text-[#D4845F]" />
               </div>
               <div>
-                {/* Título Secundario (H3) respetando la jerarquía */}
-                <h3 className="text-lg sm:text-xl md:text-2xl font-black uppercase tracking-wider text-white mt-1">
-                  Materiales de Alta Gama y Acabado Artístico
+                <h3 id="materials-title" className="text-lg sm:text-xl md:text-2xl font-black uppercase tracking-wider text-white mt-1">
+                  {dict.matTitle}
                 </h3>
               </div>
             </div>
@@ -126,13 +89,13 @@ export default function Services() {
             <table className="w-full text-left text-xs border-collapse">
               <thead>
                 <tr className="border-b border-[#3F3F46] text-[#D4845F] uppercase tracking-widest font-bold text-[9px] sm:text-[10px] bg-[#09090B]/40">
-                  <th className="py-4 px-3 sm:px-5 w-3/12">Material</th>
-                  <th className="py-4 px-3 sm:px-5 text-center w-2/12">Resistencia</th>
-                  <th className="py-4 px-3 sm:px-5 w-7/12">Uso y Herrería Artística</th>
+                  <th className="py-4 px-3 sm:px-5 w-3/12">{dict.matHeaders[0]}</th>
+                  <th className="py-4 px-3 sm:px-5 text-center w-2/12">{dict.matHeaders[1]}</th>
+                  <th className="py-4 px-3 sm:px-5 w-7/12">{dict.matHeaders[2]}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#27272A] text-[#A1A1AA]">
-                {materials.map((mat, idx) => (
+                {dict.materials.map((mat: any, idx: number) => (
                   <tr 
                     key={idx} 
                     className="hover:bg-[#09090B]/30 transition-colors duration-200"
@@ -143,13 +106,13 @@ export default function Services() {
                       </span>
                     </td>
                     <td className="py-4 px-3 sm:px-5 text-center">
-                      <span className={`inline-flex items-center justify-center px-2 py-1 sm:px-3 sm:py-1 rounded-sm border text-[8px] sm:text-[10px] font-bold uppercase tracking-wider ${mat.badgeColor}`}>
-                        {mat.resistance}
+                      <span className={`inline-flex items-center justify-center px-2 py-1 sm:px-3 sm:py-1 rounded-sm border text-[8px] sm:text-[10px] font-bold uppercase tracking-wider ${badgeColors[idx]}`}>
+                        {mat.res}
                       </span>
                     </td>
                     <td className="py-4 px-3 sm:px-5">
                       <p className="text-zinc-400 text-[10px] sm:text-xs leading-relaxed max-w-lg">
-                        {mat.description}
+                        {mat.desc}
                       </p>
                     </td>
                   </tr>

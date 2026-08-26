@@ -1,14 +1,16 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image"; // Importamos el componente optimizado de Next.js
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, RefreshCw } from "lucide-react";
 import { Button } from "../ui/Button";
+import { useDictionary } from "../DictionaryProvider";
 
 export default function Hero() {
   const containerRef = useRef(null);
   const [showProduct, setShowProduct] = useState(false);
+  const dict = useDictionary().hero;
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -44,8 +46,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight leading-[1.1] mb-6 uppercase text-white font-sans"
           >
-            {/* H1 Optimizado con Keywords Locales */}
-            Herrería de <span className="text-brand-primary">Alta Costura</span> y Portones en Miami
+            {dict.title1} <span className="text-brand-primary">{dict.highlight}</span> {dict.title2}
           </motion.h1>
 
           <motion.p
@@ -54,7 +55,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-zinc-400 text-sm sm:text-base md:text-lg mb-8 max-w-xl font-normal leading-relaxed"
           >
-            Fabricación artesanal a medida: barandales, balcones, candelabros, portones residenciales con recubrimiento pintura electrostática.
+            {dict.desc}
           </motion.p>
 
           <motion.div
@@ -68,14 +69,14 @@ export default function Hero() {
               className="w-full sm:w-auto"
               onClick={() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Cotizar mi Proyecto <ArrowRight className="w-4 h-4" />
+              {dict.btnQuote} <ArrowRight className="w-4 h-4" />
             </Button>
             <Button
               variant="secondary"
               className="w-full sm:w-auto"
               onClick={() => document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Explorar Catálogo
+              {dict.btnCatalog}
             </Button>
           </motion.div>
         </div>
@@ -112,10 +113,11 @@ export default function Hero() {
               <div className="relative h-full w-full flex flex-col justify-between py-4 px-2 sm:px-4 z-10">
                 <div className="border-b border-industrial-border pb-3">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] text-brand-light font-bold">Dibujo de Taller</span>
+                    <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] text-brand-light font-bold">{dict.cadTag}</span>
                     <span className="text-[8px] sm:text-[9px] font-mono text-zinc-500">DWG #409-MIAMI</span>
                   </div>
-                  <h3 className="text-sm sm:text-md font-bold uppercase text-white tracking-wider truncate">REJA ARQUITECTÓNICA PRIVADA</h3>
+                  {/* CORRECCIÓN SEO: Cambiado de h3 a h2 */}
+                  <h2 className="text-sm sm:text-md font-bold uppercase text-white tracking-wider truncate">{dict.cadTitle}</h2>
                 </div>
 
                 <div className="flex-grow flex items-center justify-center py-4">
@@ -145,9 +147,9 @@ export default function Hero() {
 
                 <div className="border-t border-industrial-border pt-3 flex items-center justify-between">
                   <div className="space-y-0.5">
-                    <span className="block text-[7px] sm:text-[8px] uppercase tracking-wider text-zinc-500 font-bold">Especificaciones:</span>
+                    <span className="block text-[7px] sm:text-[8px] uppercase tracking-wider text-zinc-500 font-bold">{dict.cadSpecs}</span>
                     <span className="block text-[10px] sm:text-[11px] font-bold text-white uppercase tracking-wider">Darioscustom Corp.</span>
-                    <span className="block text-[7px] sm:text-[8px] text-zinc-500">Forjado & Solidez • Miami, FL</span>
+                    <span className="block text-[7px] sm:text-[8px] text-zinc-500">{dict.cadForged}</span>
                   </div>
                   <div className="w-10 h-10 sm:w-14 sm:h-14 bg-industrial-card border border-brand-primary/35 p-1 sm:p-2 rounded relative machined-corners flex items-center justify-center shadow-lg">
                     <Image 
@@ -179,8 +181,9 @@ export default function Hero() {
               
               <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between z-10">
                 <div>
-                  <span className="text-[9px] font-bold text-brand-light tracking-widest uppercase">PROYECTO FINALIZADO</span>
-                  <h4 className="text-white text-xs sm:text-sm font-bold uppercase">Resultado en Obra</h4>
+                  <span className="text-[9px] font-bold text-brand-light tracking-widest uppercase">{dict.cadFinished}</span>
+                  {/* CORRECCIÓN SEO: Cambiado de h4 a h3 */}
+                  <h3 className="text-white text-xs sm:text-sm font-bold uppercase">{dict.cadResult}</h3>
                 </div>
                 <div className="bg-brand-primary text-white text-[9px] font-bold py-1 px-3 rounded uppercase tracking-wider">
                   100% Aluminio
@@ -210,7 +213,7 @@ export default function Hero() {
             className="mt-4 flex items-center gap-2 text-zinc-500 hover:text-brand-light text-[10px] font-mono tracking-widest uppercase transition-colors p-2"
           >
             <RefreshCw className="w-3.5 h-3.5 animate-spin-slow" />
-            <span>Alternar vista (Plano / Real)</span>
+            <span>{dict.cadToggle}</span>
           </button>
         </div>
 
