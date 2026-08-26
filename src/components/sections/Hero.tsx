@@ -151,7 +151,7 @@ export default function Hero() {
                   </div>
                   <div className="w-10 h-10 sm:w-14 sm:h-14 bg-industrial-card border border-brand-primary/35 p-1 sm:p-2 rounded relative machined-corners flex items-center justify-center shadow-lg">
                     <Image 
-                      src="/brand/darioscustom_logo.png" 
+                      src="/brand/darioscustom_logo.webp" 
                       alt="Darioscustom"
                       width={60}
                       height={60} 
@@ -168,7 +168,7 @@ export default function Hero() {
               className="absolute inset-0 transition-opacity duration-1000 ease-in-out z-10"
             >
               <Image 
-                src="/images/product19.png"
+                src="/images/product19.webp"
                 alt="Proyecto Terminado Darioscustom"
                 width={450}
                 height={562}
@@ -194,7 +194,7 @@ export default function Hero() {
               className="absolute inset-0 z-30 pointer-events-none"
             >
               <Image 
-                src="/images/product19.png" 
+                src="/images/product19.webp" 
                 alt="Proyecto Terminado Visualización"
                 width={450}
                 height={562}

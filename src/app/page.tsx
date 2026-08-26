@@ -8,6 +8,7 @@ import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Reviews from "@/components/sections/Reviews";
+import Location from "@/components/sections/Location";
 
 // Schema Markup específico para las Preguntas Frecuentes (FAQPage)
 const faqSchema = {
@@ -66,12 +67,13 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Header />
-      <main className="min-h-screen overflow-x-hidden">
+      <main id="inicio" className="min-h-screen overflow-x-hidden">
         <Hero />
         <Services />
         <Catalog />
         <WhyChooseUs />
         <Reviews />
+        <Location/>
         <FAQ />
         <Contact />
       </main>

@@ -39,7 +39,7 @@ export default function Header() {
         <a href="#inicio" className="flex items-center gap-2 sm:gap-3 min-w-0">
           <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
             <img
-              src="/brand/darioscustom_logo2.png"
+              src="/brand/darioscustom_logo2.webp"
               alt="Darioscustomart Inc Logo"
               className="w-full h-full object-contain"
             />

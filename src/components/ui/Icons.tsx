@@ -1,4 +1,3 @@
-// src/components/ui/Icons.tsx
 import React from "react";
 
 interface IconProps {
@@ -27,20 +26,11 @@ export function GoogleGIcon({ className = "w-5 h-5" }: IconProps) {
   );
 }
 
-/** Logo oficial de Instagram (SVG de alta resolución con degradado original) */
+/** Logo oficial de Instagram */
 export function InstagramIcon({ className = "w-4 h-4" }: IconProps) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={`${className} shrink-0`}
-      aria-hidden="true"
-    >
+    <svg viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`${className} shrink-0`} aria-hidden="true">
       <defs>
-        {/* Degradado oficial diagonal de Instagram */}
         <linearGradient id="instagram-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
           <stop offset="0%" stopColor="#405DE6" />
           <stop offset="30%" stopColor="#C13584" />
@@ -55,16 +45,31 @@ export function InstagramIcon({ className = "w-4 h-4" }: IconProps) {
   );
 }
 
-/** Logo oficial de Facebook (SVG de alta resolución en color de marca) */
+/** Logo oficial de Facebook */
 export function FacebookIcon({ className = "w-4 h-4" }: IconProps) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="#1877F2" // Azul oficial de Facebook
-      className={`${className} shrink-0`}
-      aria-hidden="true"
-    >
+    <svg viewBox="0 0 24 24" fill="#1877F2" className={`${className} shrink-0`} aria-hidden="true">
       <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z" />
+    </svg>
+  );
+}
+
+/** Logo oficial de TikTok (Colores y efecto 3D reales) */
+export function TikTokIcon({ className = "w-4 h-4" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" className={`${className} shrink-0`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      {/* Sombras oficiales para el efecto glitch de TikTok */}
+      <defs>
+        <filter id="tiktok-glitch" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="-1" dy="-1" stdDeviation="0" floodColor="#25F4EE" />
+          <feDropShadow dx="1" dy="1" stdDeviation="0" floodColor="#FE2C55" />
+        </filter>
+      </defs>
+      <path 
+        d="M12.525.02c1.31-.02 2.61-.01 3.91 0 .73 2.05 2.22 3.32 4.36 3.66v4.21c-1.63-.06-3.05-.56-4.15-1.45v8.36c-.03 3.93-3.15 7.15-7.07 7.2-3.8.05-7.14-2.92-7.25-6.72-.1-3.69 2.76-6.86 6.45-7.16v4.28c-1.39.2-2.39 1.4-2.38 2.82.01 1.49 1.18 2.66 2.67 2.68 1.48.01 2.72-1.12 2.75-2.61V.02h.71z" 
+        fill="#FFFFFF" 
+        filter="url(#tiktok-glitch)" 
+      />
     </svg>
   );
 }

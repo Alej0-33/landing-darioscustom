@@ -73,7 +73,7 @@ export default async function ProductPage({ params }: Props) {
       "seller": {
         "@type": "HomeAndConstructionBusiness",
         "name": "Darioscustom",
-        "image": "https://darioscustom.com/brand/darioscustom_logo.png",
+        "image": "https://darioscustom.com/brand/darioscustom_logo.webp",
         "telephone": "+13055550199",
         "address": {
           "@type": "PostalAddress",

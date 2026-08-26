@@ -19,7 +19,7 @@ import { Button } from "../ui/Button";
 import { Input } from "../ui/Input";
 import { Select } from "../ui/Select";
 import { Textarea } from "../ui/Textarea";
-import { WhatsAppIcon, InstagramIcon, FacebookIcon } from "../ui/Icons";
+import { WhatsAppIcon, InstagramIcon, FacebookIcon, TikTokIcon  } from "../ui/Icons";
 
 export default function Contact() {
   const [formState, setFormState] = useState({ name: "", email: "", phone: "", service: "Puertas", msg: "" });
@@ -29,8 +29,8 @@ export default function Contact() {
   
   const [copiedField, setCopiedField] = useState<string | null>(null);
 
-  const phoneValue = process.env.NEXT_PUBLIC_COMPANY_PHONE || "+1 (305) 555-0199";
-  const emailValue = process.env.NEXT_PUBLIC_COMPANY_EMAIL || "info@darioscustom.com";
+  const phoneValue = process.env.NEXT_PUBLIC_COMPANY_PHONE || "+1 (305) 647-8966";
+  const emailValue = process.env.NEXT_PUBLIC_COMPANY_EMAIL || "darios_art@yahoo.com";
 
   const handleCopy = (text: string, field: string) => {
     navigator.clipboard.writeText(text).then(() => {
@@ -203,6 +203,25 @@ export default function Contact() {
                       className="text-zinc-400 hover:text-brand-light text-xs font-mono break-all inline-flex items-center gap-1.5 group"
                     >
                       <span>DariosCustomIronArt</span>
+                      <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all text-brand-light shrink-0" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="bg-industrial-card border border-industrial-border p-3 rounded-md shrink-0">
+                  <TikTokIcon className="w-5 h-5" />
+                </div>
+                <div className="min-w-0">
+                  <h4 className="font-bold text-white uppercase tracking-wider text-xs">TikTok</h4>
+                  <div className="mt-0.5">
+                    <a
+                      href="https://www.tiktok.com/@darioscustomironart"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-zinc-400 hover:text-brand-light text-xs font-mono break-all inline-flex items-center gap-1.5 group"
+                    >
+                      <span>@darioscustomironart</span>
                       <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all text-brand-light shrink-0" />
                     </a>
                   </div>

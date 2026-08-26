@@ -6,23 +6,23 @@ Este documento define la información comercial, los recursos gráficos y los li
 
 ## 1. Identidad de Marca y Recursos Gráficos
 * **Nombre Comercial:** Darioscustom
-* **Logotipo:** `/brand/darioscustom_logo.png` (o `.jpg` según disponibilidad)
+* **Logotipo:** `/brand/darioscustom_logo.webp` (o `.jpg` según disponibilidad)
 * **Ubicación Objetivo:** Miami, Florida (con enfoque en Coral Gables, Doral, Brickell, Key Biscayne y Pinecrest).
 
 ---
 
 ## 2. Estructura del Catálogo e Imágenes de Producto
-El catálogo debe dividirse en 3 categorías bien definidas. Utiliza las imágenes de producto existentes (`public/images/product1.png` a `product20.png`) distribuidas de la siguiente manera:
+El catálogo debe dividirse en 3 categorías bien definidas. Utiliza las imágenes de producto existentes (`public/images/product1.webp` a `product20.webp`) distribuidas de la siguiente manera:
 
 1. **Rejas de Metal de Seguridad (Metal Security Gates):**
    - *Descripción:* Rejas de metal personalizadas para fachadas, entradas principales y perímetros de alta seguridad y estética contemporánea.
-   - *Imágenes asignadas:* `/images/product1.png` hasta `/images/product6.png`.
+   - *Imágenes asignadas:* `/images/product1.webp` hasta `/images/product6.webp`.
 2. **Barandales para Balcones y Escaleras (Balcony & Stair Railings):**
    - *Descripción:* Estructuras metálicas de alta resistencia, diseños limpios con acabados industriales y modernos para interiores y exteriores.
-   - *Imágenes asignadas:* `/images/product7.png` hasta `/images/product12.png`.
+   - *Imágenes asignadas:* `/images/product7.webp` hasta `/images/product12.webp`.
 3. **Arte en Metal & Mesas Personalizadas (Custom Metal Art & Tables):**
    - *Descripción:* Mobiliario único y arte en metal. Mesas a medida combinando acero con acabados pulidos o madera, y piezas decorativas exclusivas.
-   - *Imágenes asignadas:* `/images/product13.png` hasta `/images/product20.png`.
+   - *Imágenes asignadas:* `/images/product13.webp` hasta `/images/product20.webp`.
 
 ---
 

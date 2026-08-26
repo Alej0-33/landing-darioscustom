@@ -34,7 +34,9 @@ const faqData = [
 
 export default function FAQ() {
   return (
-    <section id="preguntas" className="py-20 sm:py-24 relative border-t border-industrial-border">
+    <>
+    {/* Aplicamos el bg-[#09090B] directo a la sección para forzar el fondo asfalto mate */}
+    <section id="preguntas" className="py-20 sm:py-24 relative border-t border-[#27272A] bg-[#09090B]">
       <div className="max-w-4xl mx-auto px-6">
         <motion.div
           className="text-center mb-16"
@@ -43,13 +45,15 @@ export default function FAQ() {
           viewport={{ once: true, margin: "-60px" }}
           variants={fadeUp}
         >
-          <HelpCircle className="w-10 h-10 sm:w-12 sm:h-12 text-brand-primary mx-auto mb-4" />
-          <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">Preguntas Frecuentes</span>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2">
+          <HelpCircle className="w-10 h-10 sm:w-12 sm:h-12 text-[#B85227] mx-auto mb-4" />
+          <span className="text-xs uppercase tracking-[0.25em] text-[#D4845F] font-bold">
+            Preguntas Frecuentes
+          </span>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-black uppercase tracking-tight text-[#FFFFFF] mt-2">
             Respuestas Técnicas e Ingeniería
           </h2>
-          <div className="w-20 h-[3px] bg-brand-primary mx-auto my-4" />
-          <p className="text-zinc-400 text-xs sm:text-sm">
+          <div className="w-20 h-[3px] bg-[#B85227] mx-auto my-4" />
+          <p className="text-[#A1A1AA] text-xs sm:text-sm">
             Toda la información clave estructurada sobre nuestros materiales, regulaciones locales en Miami-Dade y procesos de entrega.
           </p>
         </motion.div>
@@ -63,19 +67,20 @@ export default function FAQ() {
         >
           {faqData.map((item, idx) => (
             <motion.div key={idx} variants={staggerItem}>
+              {/* Tarjetas usando Acero oscuro bg-[#18181B] y hover sobre los bordes según la especificación */}
               <details
-                className="bg-industrial-card border border-industrial-border hover:border-industrial-border-high rounded-md p-4 sm:p-5 group transition-colors cursor-pointer"
+                className="bg-[#18181B] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-4 sm:p-5 group transition-colors cursor-pointer"
               >
-                <summary className="font-bold text-white text-xs sm:text-sm md:text-base uppercase tracking-wide list-none flex items-start justify-between gap-4">
-                  {/* Se agregó <h3> para semántica y id para deep-linking (AEO) */}
+                <summary className="font-bold text-[#FFFFFF] text-xs sm:text-sm md:text-base uppercase tracking-wide list-none flex items-start justify-between gap-4">
                   <h3 id={item.id} className="flex-grow pr-2 m-0 text-inherit font-inherit">
                     {item.q}
                   </h3>
-                  <span className="text-brand-primary font-bold text-base group-open:rotate-45 transition-transform duration-300 shrink-0">
+                  <span className="text-[#B85227] font-bold text-base group-open:rotate-45 transition-transform duration-300 shrink-0">
                     +
                   </span>
                 </summary>
-                <p className="text-zinc-400 text-[11px] sm:text-xs md:text-sm leading-relaxed mt-4 pt-4 border-t border-industrial-border">
+                {/* Texto secundario de polvo de acero para la respuesta */}
+                <p className="text-[#A1A1AA] text-[11px] sm:text-xs md:text-sm leading-relaxed mt-4 pt-4 border-t border-[#27272A]">
                   {item.a}
                 </p>
               </details>
@@ -84,5 +89,6 @@ export default function FAQ() {
         </motion.div>
       </div>
     </section>
+    </>
   );
 }
