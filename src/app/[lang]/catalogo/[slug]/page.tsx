@@ -18,14 +18,25 @@ export function generateStaticParams() {
 
 type Props = { params: Promise<{ slug: string, lang: string }> };
 
+// 1. TIPO LIMPIO: Definimos la forma exacta de la data traducida de tus productos.
+type ProductTranslation = {
+  title?: string;
+  description?: string;
+  tags?: string[];
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, lang } = await params;
   const product = getProductBySlug(slug);
   if (!product) return {};
   
   const dictFull = await getDictionary(lang as any);
-  const localizedTitle = dictFull.productsData[product.id]?.title || product.title;
-  const localizedDesc = dictFull.productsData[product.id]?.description || product.description;
+  
+  // 2. CASTING SEGURO: Convertimos el objeto en un diccionario que permite ser indexado por números
+  const productsTranslations = dictFull.productsData as Record<number | string, ProductTranslation>;
+  
+  const localizedTitle = productsTranslations[product.id]?.title || product.title;
+  const localizedDesc = productsTranslations[product.id]?.description || product.description;
 
   return {
     title: `${localizedTitle} | Darioscustom Miami`,
@@ -47,9 +58,12 @@ export default async function ProductPage({ params }: Props) {
   const dictFull = await getDictionary(lang as any);
   const dict = dictFull.product;
   
-  const localizedTitle = dictFull.productsData[product.id]?.title || product.title;
-  const localizedDesc = dictFull.productsData[product.id]?.description || product.description;
-  const localizedTags = dictFull.productsData[product.id]?.tags || product.tags;
+  // 3. REUTILIZAMOS EL CASTING: Para acceder fácilmente a title, description y tags
+  const productsTranslations = dictFull.productsData as Record<number | string, ProductTranslation>;
+  
+  const localizedTitle = productsTranslations[product.id]?.title || product.title;
+  const localizedDesc = productsTranslations[product.id]?.description || product.description;
+  const localizedTags = productsTranslations[product.id]?.tags || product.tags;
 
   const related = getRelatedProducts(product.id, product.category);
 
@@ -164,7 +178,8 @@ export default async function ProductPage({ params }: Props) {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {related.map((p) => {
-                  const relatedTitle = dictFull.productsData[p.id]?.title || p.title;
+                  // 4. SOLUCIÓN A LA LÍNEA 167: Aquí también usamos el objeto limpio 'productsTranslations'
+                  const relatedTitle = productsTranslations[p.id]?.title || p.title;
                   return (
                     <Link key={p.id} href={`/${lang}/catalogo/${p.slug}`} className="bg-industrial-card border border-industrial-border rounded-md overflow-hidden group hover:border-industrial-border-high transition-all">
                       <div className="relative aspect-square overflow-hidden bg-zinc-950">

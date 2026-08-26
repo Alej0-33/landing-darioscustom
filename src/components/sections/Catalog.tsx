@@ -15,7 +15,7 @@ const categoryIndices: Record<string, string> = { "Todos": "00", "Iluminación":
 export default function Catalog() {
   const dictFull = useDictionary();
   const dict = dictFull.catalog;
-  const productsData = dictFull.productsData;
+  const productsData = dictFull.productsData as Record<string | number, { title?: string; tags?: string[] }>;
   const pathname = usePathname();
   const lang = pathname?.split('/')[1] || 'en';
   const [activeCategory, setActiveCategory] = useState("Todos");
