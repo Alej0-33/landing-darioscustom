@@ -9,7 +9,7 @@ import { i18n } from "@/i18n.config"; // <-- IMPORTACIÓN AÑADIDA
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: "--font-montserrat", display: "swap" });
-const SITE_URL = "https://landing-darioscustom-zxg8k.ondigitalocean.app";
+const SITE_URL = "https://dariosironart.com";
 
 // 🚀 FUNCIÓN AÑADIDA: Obligatoria para exportar de forma estática (SSG)
 export function generateStaticParams() {

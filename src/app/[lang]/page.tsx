@@ -16,7 +16,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
   const dict = await getDictionary(resolvedParams.lang as any);
   
   // URL base para el Schema
-  const SITE_URL = "https://landing-darioscustom-zxg8k.ondigitalocean.app";
+  const SITE_URL = "https://dariosironart.com";
 
   // SAGE SEO/AEO/GEO: Schema Graph unificado (LocalBusiness + WebPage + FAQ) adaptado al idioma
   const schemaGraph = {

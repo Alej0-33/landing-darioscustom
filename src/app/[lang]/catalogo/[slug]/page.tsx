@@ -83,7 +83,7 @@ export default async function ProductPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": localizedTitle,
-    "image": `https://darioscustom.com/images/${product.img}`,
+    "image": `https://dariosironart.com/images/${product.img}`,
     "description": localizedDesc,
     "category": product.category,
     "brand": { "@type": "Brand", "name": "Darioscustom" },
@@ -94,7 +94,7 @@ export default async function ProductPage({ params }: Props) {
       "seller": {
         "@type": "HomeAndConstructionBusiness",
         "name": "Darioscustom",
-        "image": "https://darioscustom.com/brand/darioscustom_logo.webp",
+        "image": "https://dariosironart.com/brand/darioscustom_logo.webp",
         "telephone": "+13055550199",
         "address": { "@type": "PostalAddress", "addressLocality": "Miami", "addressRegion": "FL", "addressCountry": "US" }
       }

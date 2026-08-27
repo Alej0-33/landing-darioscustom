@@ -90,4 +90,4 @@ User-agent: omgili
 Allow: /
 
 # Enlace al Sitemap para facilitar la indexación instantánea de tus URL
-Sitemap: https://darioscustom.com/sitemap.xml
+Sitemap: https://dariosironart.com/sitemap.xml
