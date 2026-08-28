@@ -86,6 +86,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         "@id": `${SITE_URL}/${resolvedParams.lang}/#webpage`,
         "url": `${SITE_URL}/${resolvedParams.lang}/`,
         "name": dict.seo.title,
+        "description": dict.seo.description,
         "isPartOf": { "@id": `${SITE_URL}/#website` },
         "about": { "@id": `${SITE_URL}/#organization` },
         "author": {
@@ -105,15 +106,6 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           "cssSelector": ["#inicio", "#servicios"]
         }
       },
-      {
-        "@type": "FAQPage",
-        "@id": `${SITE_URL}/${resolvedParams.lang}/#faq`,
-        "mainEntity": dict.faq.items.map((item: any) => ({
-          "@type": "Question",
-          "name": item.q,
-          "acceptedAnswer": { "@type": "Answer", "text": item.a }
-        }))
-      }
     ]
   };
 

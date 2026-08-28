@@ -57,7 +57,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <a href={`/${lang}/#inicio`} className="flex items-center gap-2 sm:gap-3 min-w-0" aria-label="Go to homepage">
             <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
-              <Image src="/brand/darioscustom_logo2.webp" alt="Darioscustomart Inc Logo" width={64} height={64} className="w-full h-full object-contain" />
+              <Image src="/brand/darioscustom_logo2.webp" alt="Darioscustomart Inc Logo" width={64} height={64} priority className="w-full h-full object-contain" />
             </div>
             <span className="font-black text-xs sm:text-base md:text-lg lg:text-xl tracking-wider text-white leading-none truncate">
               DARIO'S CUSTOM <span className="text-brand-primary">IRON ART</span>
