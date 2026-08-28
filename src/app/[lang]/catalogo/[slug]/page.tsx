@@ -105,7 +105,7 @@ export default async function ProductPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <Header />
-      <main className="min-h-screen bg-[#09090B]">
+      <main id="main-content" className="min-h-screen bg-[#09090B]">
         <section className="relative bg-[#0d0d10] border-b border-industrial-border overflow-hidden">
           <div className="absolute inset-0 industrial-grid opacity-20 pointer-events-none" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(184,82,39,0.06),transparent_70%)] pointer-events-none" />

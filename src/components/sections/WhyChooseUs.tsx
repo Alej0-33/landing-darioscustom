@@ -19,6 +19,7 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={slideFromLeft}>
             <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">{dict.tag}</span>
+            {/* ✅ ID en el H2 principal */}
             <h2 id="whyus-title" className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-6">{dict.title}</h2>
             <p className="text-zinc-400 mb-6 leading-relaxed">{dict.desc1}</p>
             <p className="text-zinc-400 leading-relaxed mb-8">{dict.desc2}</p>
@@ -27,15 +28,16 @@ export default function WhyChooseUs() {
             </div>
           </motion.div>
           
-          <motion.dl className="grid grid-cols-1 sm:grid-cols-2 gap-6" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={staggerContainer}>
+          <motion.div className="grid grid-cols-1 sm:grid-cols-2 gap-6" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={staggerContainer}>
             {dict.items.map((item: any, idx: number) => (
-              <motion.div key={idx} variants={staggerItem} className="bg-industrial-card border border-industrial-border p-6 rounded-md hover:border-brand-primary/40 transition-all duration-300">
+              <motion.article key={idx} variants={staggerItem} className="bg-industrial-card border border-industrial-border p-6 rounded-md hover:border-brand-primary/40 transition-all duration-300">
                 <div className="mb-4">{icons[idx]}</div>
-                <dt className="text-lg font-bold text-white uppercase tracking-wide mb-2">{item.title}</dt>
-                <dd className="text-zinc-400 text-xs leading-relaxed m-0">{item.desc}</dd>
-              </motion.div>
+                {/* ✅ Convertido a H3 con ID único para Deep Linking */}
+                <h3 id={`why-feature-${idx}`} className="text-lg font-bold text-white uppercase tracking-wide mb-2">{item.title}</h3>
+                <p className="text-zinc-400 text-xs leading-relaxed m-0">{item.desc}</p>
+              </motion.article>
             ))}
-          </motion.dl>
+          </motion.div>
         </div>
       </div>
     </section>

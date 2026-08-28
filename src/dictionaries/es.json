@@ -4,12 +4,15 @@
     "description": "Taller de herrería y forja artística en Miami. Diseño exclusivo en hierro y aluminio: balcones, puertas y portones. Cotizar hoy con Darioscustom.",
     "keywords": ["herrería a medida miami", "diseño de hierro y aluminio", "cotizar herrería por whatsapp", "forja artistica miami", "balcones de hierro miami", "portones de aluminio miami", "Darioscustom"]
   },
-  "header": { "links": { "home": "Inicio", "services": "Servicios", "catalog": "Catálogo", "materials": "Materiales", "reviews": "Reseñas", "faq": "Preguntas" }, "quote": "Cotizar Online" },
+  "header": { 
+    "links": { "home": "Inicio", "services": "Servicios", "catalog": "Catálogo", "materials": "Materiales", "reviews": "Reseñas", "faq": "Preguntas" }, 
+    "quote": "Cotizar Proyecto" 
+  }, 
   "hero": { 
     "title1": "Diseño de Metal y Herrería de ", 
     "highlight": "Alta Costura", 
     "title2": " en Miami", 
-    "desc": "Fabricación artesanal a medida: barandales, balcones, candelabros, portones residenciales con recubrimiento pintura electrostática.", 
+    "desc": "Fabricamos a medida en hierro, aluminio y acero. Hacemos barandales, balcones y portones. Todos con acabado en pintura electrostática.", 
     "btnQuote": "Obtener Cotización", 
     "btnCatalog": "Explorar Catálogo", 
     "cadTag": "Dibujo de Taller", 
@@ -34,16 +37,25 @@
       { "name": "Acero Inoxidable 304 o 316L", "res": "Extrema", "desc": "Altamente resistente a la corrosión. El 316L es especialmente recomendado para ambientes marinos y zonas cercanas al mar." },
       { "name": "Bronce", "res": "Media / Alta", "desc": "Buena resistencia al ambiente costero. Con el tiempo, desarrolla una pátina natural que cambia su apariencia, pero ayuda a proteger el material." },
       { "name": "Hierro", "res": "Media / Alta", "desc": "Requiere pintura y tratamiento anticorrosivo para protegerlo del salitre. Necesita más mantenimiento que el aluminio o el acero inoxidable." }
-    ]
+    ],
+    "howTo": {
+      "title": "Cómo solicitar tu diseño personalizado",
+      "steps": [
+        { "title": "Solicitud Inicial", "desc": "Envíanos medidas y fotos preliminares por WhatsApp o formulario. Así prepararemos tu cotización inicial." },
+        { "title": "Visita y Selección de Material", "desc": "Visitamos tu propiedad para tomar medidas exactas. Elegimos contigo el mejor material según tu zona: aluminio, hierro, bronce o acero inoxidable." },
+        { "title": "Fabricación a Medida", "desc": "Construimos tu diseño en nuestro taller. Aplicamos pintura electrostática (Powder Coating) para garantizar la máxima durabilidad frente al clima." },
+        { "title": "Instalación Segura", "desc": "Instalamos tu proyecto de principio a fin. Cumplimos estrictamente con los códigos de construcción y normas contra huracanes de Florida." }
+      ]
+    }
   },
   "catalog": { "tag": "Catálogo Detallado", "title": "HERRERIA ARTESANAL HECHA A TU MEDIDA", "desc": "Explora nuestra colección con las principales piezas desarrolladas por nuestros herreros en Florida. Filtra por categoría y cotiza directamente tu diseño ideal.", "categories": { "Todos": "Todos", "Iluminación": "Iluminación", "Puertas": "Puertas", "Barandales": "Barandales", "Portones": "Portones", "Arte": "Arte", "Miscelaneas": "Miscelaneas" }, "specId": "SPEC-ID // DC-00", "quoteBtn": "Cotizar vía WhatsApp", "msgPart1": "Hola Dario's custom iron art, estoy interesado en cotizar el producto", "msgPart2": "de su catálogo online." },
   "whyus": {
-    "tag": "Nuestra Diferencia", "title": "Excelencia Técnica en Cada Unión de Acero", "desc1": "En Dario's nos enfocamos en diseñar elementos arquitectónicos distinguidos a tu gusto personal, integrándose armónicamente con el diseño exterior o interior.", "desc2": "Atendemos proyectos residenciales y comerciales garantizando acabados minuciosos en la preparación de las uniones metálicas.", "quote": "\"La excelencia en la herrería se define por la precisión que no se ve a simple vista.\"",
+    "tag": "Nuestra Diferencia", "title": "Excelencia en Cada Unión de Acero", "desc1": "En Dario's diseñamos piezas a tu gusto personal. Nos adaptamos al estilo de tu hogar o negocio. Trabajamos con hierro, aluminio y bronce.", "desc2": "Atendemos proyectos residenciales y comerciales. Garantizamos acabados perfectos y uniones metálicas muy resistentes.", "quote": "\"La excelencia en la herrería se define por la precisión que no se ve a simple vista.\"",
     "items": [
-      { "title": "Acabados Exclusivos", "desc": "Procesos de pintura electroestatica en polvo y terminados premium." },
-      { "title": "Estructura de Alta Resistencia", "desc": "Especialmente fabricados para ofrecer durabilidad ante el clima del sur de Florida." },
-      { "title": "Métodos Tradicionales y Láser", "desc": "Fusionamos la solidez de la herrería tradicional con formacion artesanal." },
-      { "title": "Compromiso de Tiempos", "desc": "Entregas programadas con cronogramas claros de inicio a final con seguimiento." }
+      { "title": "Acabados Exclusivos", "desc": "Usamos pintura en polvo (Powder Coating). Esto asegura una larga vida útil al metal." },
+      { "title": "Alta Resistencia", "desc": "Estructuras creadas para resistir el sol y la humedad del sur de Florida." },
+      { "title": "Forja y Láser", "desc": "Unimos la herrería tradicional a mano con el corte láser moderno." },
+      { "title": "Entregas a Tiempo", "desc": "Cumplimos nuestros plazos. Mantenemos una comunicación clara desde el inicio." }
     ]
   },
   "reviews": { "tag": "Opiniones Reales", "title": "Clientes Satisfechos", "desc": "La calidad de nuestros productos y herrería artística respaldada por la experiencia de constructores, arquitectos y propietarios en el sur de Florida.", "verified": "Opiniones Verificadas en Google", "viewRev": "Ver Reseña", "btnMaps": "Ver Ficha en Google Maps", "list": [
@@ -54,16 +66,59 @@
     ]
   },
   "location": { "tag": "Cómo Llegar", "title": "Visita Nuestro Taller", "desc": "Te invitamos a conocer el proceso de forjado de nuestros artesanos. Agenda tu cita y ven a discutir tu proyecto en persona.", "addressName": "Dario's Custom Iron Art, Inc", "addressLoc": "Miami, Florida", "btnGoogle": "INICIAR GOOGLE MAPS", "btnWaze": "INICIAR WAZE" },
-  "faq": { "tag": "Preguntas Frecuentes", "title": "Respuestas Técnicas e Ingeniería", "desc": "Toda la información clave estructurada sobre nuestros materiales, regulaciones locales en Miami-Dade y procesos de entrega.", "items": [
-      { "q": "¿Darioscustom cumple con el Código de Edificación de Florida (FBC) para huracanes?", "a": "Sí. Diseñamos y soldamos todas nuestras rejas de seguridad, portones y barandales cumpliendo estrictamente con el Código de Edificación de Florida (FBC) y los requisitos de carga del viento ASCE 7 para zonas propensas a tormentas y huracanes, con capacidades de resistencia al viento de hasta 175 mph según el sector." },
-      { "q": "¿Cuáles son las diferencias entre la pintura tradicional de herrería y el recubrimiento en polvo (Powder Coating)?", "a": "La pintura convencional se desgasta y descascara rápido por el sol de Miami. Nosotros aplicamos pintura en polvo electrostática termoendurecida (Powder Coating) horneada a 400°F. Esto genera un blindaje grueso, uniforme y flexible que resiste golpes, rayos UV y la humedad sin oxidar el metal base." },
-      { "q": "¿Qué áreas de servicio cubren en el Sur de Florida?", "a": "Nuestra área de cobertura local para medición, entrega e instalación incluye Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, South Miami, Kendall y alrededores del condado de Miami-Dade." },
-      { "q": "¿Qué tipo de mantenimiento requieren sus portones y rejas metálicas?", "a": "Las estructuras con acabado galvanizado y pintura en polvo requieren un mantenimiento mínimo. Recomendamos lavarlas cada 3 a 6 meses con agua limpia y un jabón suave no abrasivo para retirar depósitos de polvo, sal marina e impurezas de la intemperie." },
-      { "q": "¿Cuál es el proceso para solicitar una cotización técnica para mi residencia o negocio?", "a": "Puedes contactarnos vía formulario web o haciendo clic en el enlace de WhatsApp. Envíanos medidas preliminares, fotos de la zona de instalación o referencias estéticas. Evaluaremos la información y te entregaremos una propuesta económica precisa. Posteriormente, realizamos una visita para rectificar dimensiones." }
+  "faq": {
+    "tag": "Preguntas Frecuentes",
+    "title": "Respuestas Técnicas e Ingeniería",
+    "desc": "Toda la información clave estructurada sobre nuestros materiales, regulaciones locales en Miami-Dade y procesos de entrega.",
+    "items": [
+      {
+        "id": "faq-florida-building-code",
+        "q": "¿Darioscustom cumple con el Código de Edificación de Florida (FBC) para huracanes?",
+        "a": "Sí. <strong>Darioscustom cumple estrictamente con el Código de Edificación de Florida (FBC)</strong>. Diseñamos y soldamos nuestras rejas de seguridad, portones y barandales siguiendo los requisitos de carga de viento ASCE 7, alcanzando resistencias de hasta 175 mph para zonas de huracanes."
+      },
+      {
+        "id": "faq-powder-coating",
+        "q": "¿Cuáles son las diferencias entre la pintura tradicional de herrería y el recubrimiento en polvo (Powder Coating)?",
+        "a": "<strong>El recubrimiento en polvo (Powder Coating) es</strong> un proceso de acabado en seco termoendurecido a 400°F que forma un blindaje protector. A diferencia de la pintura tradicional que se descascara con el sol de Miami, el Powder Coating resiste golpes, rayos UV y humedad extrema sin oxidarse."
+      },
+      {
+        "id": "faq-service-areas",
+        "q": "¿Qué áreas de servicio cubren en el Sur de Florida?",
+        "a": "<strong>Nuestras áreas de servicio en el Sur de Florida incluyen</strong> principalmente Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, South Miami y Kendall. Cubrimos toda el área del condado de Miami-Dade para medición, entrega e instalación de herrería personalizada."
+      },
+      {
+        "id": "faq-maintenance",
+        "q": "¿Qué tipo de mantenimiento requieren sus portones y rejas metálicas?",
+        "a": "<strong>El mantenimiento de nuestros portones y rejas metálicas consiste en</strong> lavar las estructuras cada 3 a 6 meses con agua limpia y jabón suave no abrasivo. Gracias a nuestro acabado galvanizado y pintura en polvo, este sencillo proceso basta para retirar polvo y salitre marino."
+      },
+      {
+        "id": "faq-quote-process",
+        "q": "¿Cuál es el proceso para solicitar una cotización técnica para mi residencia o negocio?",
+        "a": "<strong>El proceso para solicitar una cotización técnica consta de</strong> contactarnos por web o WhatsApp enviando medidas preliminares y fotos de referencia. Primero entregamos una propuesta económica precisa y, posteriormente, programamos una visita presencial para rectificar dimensiones exactas en su propiedad."
+      }
     ]
   },
-  "contact": { "tag": "Ubicación y Datos", "title": "Coordinemos tu Visita Técnica", "desc": "Rellena el formulario inteligente de abajo para enviarnos tus requerimientos. Elige envío inmediato por WhatsApp para ser atendido en tiempo real por nuestro taller.", "hq": "Sede y Operación", "hqDesc": "Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, FL", "phone": "Teléfono Oficina", "email": "Correo Electrónico", "copied": "¡Copiado!", "formTitle": "Formulario de Cotización", "waQuick": "WhatsApp Rápido", "emailTrad": "Correo Tradicional", "successTitle": "¡Mensaje de Correo Recibido con Éxito!", "successDesc": "Analizaremos las especificaciones indicadas y nos comunicaremos en menos de 24 horas laborables.", "fName": "Tu Nombre Completo", "fNamePl": "Ej. Juan Pérez", "fEmail": "Correo de Contacto", "fEmailPl": "ejemplo@correo.com", "fPhone": "Teléfono de Contacto", "fPhonePl": "+1 (305) 555-0100", "fService": "Categoría del Proyecto", "fServiceOpts": { "Puertas": "Puertas Metalicas o de Hierro", "Portones": "Portones de Aluminio o de Entrada", "Barandales": "Barandales para Escaleras o Balcones", "Arte": "Arte Metalúrgico o Paneles CNC", "Iluminación": "Lámparas y Candelabros", "Miscelaneas": "Otros Diseños Personalizados" }, "fMsg": "Mensaje y Dimensiones de tu Reja", "fMsgPl": "Describe las especificaciones o estilo del metal deseado...", "fPhoto": "Foto de Referencia (Opcional)", "uploadClick": "Haz clic para subir", "uploadDrag": "o arrastra una foto", "sendWa": "Enviar a WhatsApp", "sendEmail": "Enviar Solicitud", "waFormatNew": "*NUEVA COTIZACIÓN WEB DARIO'S CUSTOM IRON ART*", "waFormatName": "*Nombre:*", "waFormatEmail": "*Correo:*", "waFormatPhone": "*Teléfono:*", "waFormatService": "*Servicio:*", "waFormatMsg": "*Mensaje:*", "waFormatPhoto": "*Foto de referencia:*", "waFormatPhotoYes": "Sí (nombre:", "waFormatPhotoYesSuffix": ") - _Favor de adjuntar la imagen en este chat_", "waFormatPhotoNo": "No especificada" },
-  "footer": { "desc": "Taller y Forjado de Precisión en Miami, Florida. Diseñamos soluciones en hierro y aluminio para máxima resistencia estructural y elegancia.", "nav": "Navegación", "links1": [ { "name": "Inicio", "href": "#inicio" }, { "name": "Servicios", "href": "#servicios" }, { "name": "Catálogo", "href": "#catalogo" }, { "name": "Reseñas", "href": "#opiniones" } ], "support": "Atención al Cliente", "links2": [ { "name": "Preguntas Frecuentes", "href": "#preguntas" }, { "name": "Cotizar por WhatsApp", "href": "#contacto" } ], "rights": "Dario's Custom Iron Art Inc. Todos los derechos reservados.", "privacy": "Política de Privacidad", "terms": "Términos de Servicio" },
+  "contact": { "tag": "Ubicación y Datos", "title": "Coordinemos tu Visita Técnica", "desc": "Llena el formulario para contarnos sobre tu proyecto de metal. Puedes enviar tu solicitud directo a nuestro WhatsApp para una respuesta rápida.", "hq": "Sede y Operación", "hqDesc": "Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, FL", "phone": "Teléfono Oficina", "email": "Correo Electrónico", "copied": "¡Copiado!", "formTitle": "Formulario de Cotización", "waQuick": "WhatsApp Rápido", "emailTrad": "Correo Tradicional", "successTitle": "¡Mensaje Recibido!", "successDesc": "Revisaremos tu solicitud. Te contactaremos en menos de 24 horas laborables.", "fName": "Tu Nombre Completo", "fNamePl": "Ej. Juan Pérez", "fEmail": "Correo de Contacto", "fEmailPl": "ejemplo@correo.com", "fPhone": "Teléfono de Contacto", "fPhonePl": "+1 (305) 555-0100", "fService": "Categoría del Proyecto", "fServiceOpts": { "Puertas": "Puertas Metálicas", "Portones": "Portones de Aluminio", "Barandales": "Barandales y Balcones", "Arte": "Arte Metalúrgico CNC", "Iluminación": "Lámparas y Candelabros", "Miscelaneas": "Otros Diseños a Medida" }, "fMsg": "Mensaje y Medidas", "fMsgPl": "Describe el estilo o el material que prefieres (aluminio, hierro)...", "fPhoto": "Foto de Referencia (Opcional)", "uploadClick": "Haz clic para subir", "uploadDrag": "o arrastra una foto", "sendWa": "Enviar a WhatsApp", "sendEmail": "Enviar Solicitud", "waFormatNew": "*NUEVA COTIZACIÓN WEB DARIO'S CUSTOM IRON ART*", "waFormatName": "*Nombre:*", "waFormatEmail": "*Correo:*", "waFormatPhone": "*Teléfono:*", "waFormatService": "*Servicio:*", "waFormatMsg": "*Mensaje:*", "waFormatPhoto": "*Foto de referencia:*", "waFormatPhotoYes": "Sí (nombre:", "waFormatPhotoYesSuffix": ") - _Favor de adjuntar la imagen en este chat_", "waFormatPhotoNo": "No especificada" },
+  "footer": { 
+    "desc": "Taller y Forjado de Precisión en Miami, Florida. Diseñamos soluciones en hierro y aluminio para máxima resistencia estructural y elegancia.", 
+    "nav": "Navegación Principal", 
+    "links1": [ 
+      { "name": "Inicio de Darios", "href": "#inicio" }, 
+      { "name": "Servicios de Herrería", "href": "#servicios" }, 
+      { "name": "Catálogo de Metal", "href": "#catalogo" }, 
+      { "name": "Reseñas de Clientes", "href": "#opiniones" } 
+    ], 
+    "support": "Soporte y Contacto", 
+    "links2": [ 
+      { "name": "Sobre Nosotros", "href": "#whyus" }, 
+      { "name": "Contacto Directo", "href": "#contacto" }, 
+      { "name": "Preguntas Frecuentes", "href": "#preguntas" }, 
+      { "name": "Cotizar por WhatsApp", "href": "#contacto" } 
+    ], 
+    "rights": "Dario's Custom Iron Art Inc. Todos los derechos reservados.", 
+    "privacy": "Política de Privacidad", 
+    "terms": "Términos de Servicio" 
+  },
   "product": { "home": "Inicio", "catalog": "Catálogo", "features": "Características", "quoteBtn": "Solicitar Cotización por WhatsApp", "backBtn": "Volver al Catálogo", "badges": [ { "label": "Fabricación", "value": "A Medida" }, { "label": "Acabado", "value": "Electrostático" }, { "label": "Garantía", "value": "Incluida" } ], "relatedTag": "Más en", "relatedTitle": "También te puede interesar", "viewProd": "Ver Producto" },
   "whatsappBtn": {
     "hoverMsg1": "¿Asesoría rápida?",

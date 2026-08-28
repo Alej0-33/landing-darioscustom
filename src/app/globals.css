@@ -22,6 +22,8 @@ body {
   background-color: var(--background);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; /* ✅ Mejora nitidez en Firefox/Mac */
+  text-rendering: optimizeLegibility; /* ✅ Acelera y optimiza el pintado de las fuentes */
 }
 
 /* Patrón de cuadrícula técnica industrial */

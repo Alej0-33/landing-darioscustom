@@ -45,8 +45,31 @@ export default function Contact() {
     }
   };
 
+  const actionSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://dariosironart.com/#contacto",
+    "potentialAction": {
+      "@type": "ContactAction",
+      "name": "SubmitQuoteRequest",
+      "description": "Submit a request to get a custom ironwork quote via email or WhatsApp.",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://dariosironart.com/#contacto",
+        "inLanguage": ["en-US", "es-US"],
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  };
+
   return (
     <section id="contacto" className="py-20 sm:py-24 relative border-t border-industrial-border bg-[#0d0d10]">
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(actionSchema) }} />
+
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <motion.div className="lg:col-span-5" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={slideFromLeft}>
@@ -163,7 +186,17 @@ export default function Contact() {
                 <div className="space-y-2">
                   <label htmlFor="photo_upload" className="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">{dict.fPhoto}</label>
                   <div className="relative border border-dashed border-industrial-border hover:border-brand-primary/50 bg-[#09090B] rounded-md p-4 transition-colors group cursor-pointer flex flex-col items-center justify-center min-h-[90px]">
-                    <input id="photo_upload" name="photo_upload" type="file" accept="image/*" onChange={(e) => setPhoto(e.target.files ? e.target.files[0] : null)} className="absolute inset-0 opacity-0 cursor-pointer z-20" aria-label="Subir foto de referencia" />
+                    <input 
+                      id="photo_upload" 
+                      name="photo_upload" 
+                      type="file" 
+                      accept="image/*" 
+                      onChange={(e) => setPhoto(e.target.files ? e.target.files[0] : null)} 
+                      className="absolute inset-0 opacity-0 cursor-pointer z-20" 
+                      aria-label="Subir foto de referencia"
+                      toolparamdescription="Optional reference photo for the custom metalwork project"
+                    />
+
                     {photo ? (
                       <div className="flex items-center justify-between w-full z-30 gap-2">
                         <div className="flex items-center gap-2.5 min-w-0">

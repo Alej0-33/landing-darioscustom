@@ -47,8 +47,8 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <div className="text-xs text-zinc-500">&copy; <time dateTime={`${currentYear}-01-01`}>{currentYear}</time> {dict.rights}</div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-zinc-500">
-            <a href="#" className="hover:text-zinc-300 transition-colors">{dict.privacy}</a>
-            <a href="#" className="hover:text-zinc-300 transition-colors">{dict.terms}</a>
+            <a href={`/${lang}/privacy`} className="hover:text-zinc-300 transition-colors">{dict.privacy}</a>
+            <a href={`/${lang}/terms`} className="hover:text-zinc-300 transition-colors">{dict.terms}</a>
           </div>
         </div>
       </div>

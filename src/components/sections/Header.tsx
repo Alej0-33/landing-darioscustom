@@ -28,16 +28,34 @@ export default function Header() {
     { name: dict.links.reviews, href: `/${lang}/#opiniones` },
     { name: dict.links.faq, href: `/${lang}/#preguntas` },
   ];
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Darios Custom Iron Art",
+        "item": `https://dariosironart.com/${lang}/`
+      }
+    ]
+  };
 
   return (
     <>
-      <a href={`/${lang}/#inicio`} className="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-[#B85227] focus:text-white z-[60] top-0 left-0 rounded-br-md">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <nav aria-label="Breadcrumb" className="sr-only">
+        <ol>
+          <li><a href={`/${lang}/`}>{dict.links.home}</a></li>
+        </ol>
+      </nav>
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-[#B85227] focus:text-white z-[60] top-0 left-0 rounded-br-md">
         Skip to content
       </a>
 
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${ scrolled ? "bg-industrial-bg/95 backdrop-blur-md border-b border-industrial-border py-3" : "bg-transparent py-5" }`}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <a href={`/${lang}/#inicio`} className="flex items-center gap-2 sm:gap-3 min-w-0">
+          <a href={`/${lang}/#inicio`} className="flex items-center gap-2 sm:gap-3 min-w-0" aria-label="Go to homepage">
             <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
               <Image src="/brand/darioscustom_logo2.webp" alt="Darioscustomart Inc Logo" width={64} height={64} className="w-full h-full object-contain" />
             </div>
@@ -46,7 +64,7 @@ export default function Header() {
               <span className="block text-[8px] sm:text-[9px] font-semibold tracking-[0.3em] text-zinc-500 mt-0.5">INC</span>
             </span>
           </a>
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation desktop">
             {links.map((link) => (
               <a key={link.name} href={link.href} className="text-zinc-400 hover:text-brand-light text-[11px] font-bold tracking-widest uppercase transition-colors">{link.name}</a>
             ))}
@@ -57,7 +75,7 @@ export default function Header() {
           </nav>
           <div className="flex items-center gap-4 lg:hidden">
             <LanguageSwitcher />
-            <button className="text-zinc-300 hover:text-white cursor-pointer shrink-0 p-1" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+            <button className="text-zinc-300 hover:text-white cursor-pointer shrink-0 p-1" onClick={() => setIsOpen(!isOpen)} aria-expanded={isOpen} aria-label="Toggle Menu">
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>

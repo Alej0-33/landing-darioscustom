@@ -60,12 +60,14 @@ export default function Catalog() {
                 <motion.div layout initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.96 }} transition={{ duration: 0.3 }} key={p.id} className="relative bg-industrial-card/40 border border-industrial-border p-4 rounded-sm overflow-hidden flex flex-col group hover:border-brand-primary/40 transition-all duration-300 machined-corners">
                   <Link href={`/${lang}/catalogo/${p.slug}`} className="absolute inset-0 z-10" aria-label={`Ver detalles de ${localizedTitle}`} />
                   <div className="relative aspect-square overflow-hidden bg-zinc-950 rounded-sm border border-industrial-border flex items-center justify-center">
+                    {/* ✅ Mantenemos next/image y forzamos el Lazy Loading explícito */}
                     <Image src={`/images/${p.img}`} alt={`${localizedTitle} - Darioscustom Metal Gates`} width={500} height={500} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#09090B] via-transparent to-transparent opacity-60 pointer-events-none" />
                   </div>
                   <div className="pt-5 flex flex-col flex-grow">
                     <span className="font-mono text-[8px] text-zinc-500 tracking-wider">{dict.specId}{p.id}</span>
-                    <h3 className="text-sm font-bold text-white uppercase mt-1 mb-3 group-hover:text-brand-light transition-colors tracking-wide truncate">{localizedTitle}</h3>
+                    {/* ✅ Agregado ID al H3 del producto */}
+                    <h3 id={`product-${p.id}`} className="text-sm font-bold text-white uppercase mt-1 mb-3 group-hover:text-brand-light transition-colors tracking-wide truncate">{localizedTitle}</h3>
                     <div className="flex flex-wrap gap-1 mb-5 flex-grow content-start">
                       {localizedTags.map((tag: string, idx: number) => (
                         <span key={idx} className="text-[8px] font-mono uppercase tracking-wider text-zinc-500 bg-[#09090B]/30 border border-industrial-border/40 px-2 py-0.5 rounded-sm">{tag}</span>

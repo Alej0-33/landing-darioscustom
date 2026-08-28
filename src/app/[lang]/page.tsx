@@ -10,15 +10,19 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Reviews from "@/components/sections/Reviews";
 import Location from "@/components/sections/Location";
 import { getDictionary } from "@/lib/dictionary";
+import { i18n } from "@/i18n.config";
+
+export function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }));
+}
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const resolvedParams = await params;
   const dict = await getDictionary(resolvedParams.lang as any);
   
-  // URL base para el Schema
   const SITE_URL = "https://dariosironart.com";
+  const COMPANY_PHONE = process.env.NEXT_PUBLIC_COMPANY_PHONE || "+13056478966";
 
-  // SAGE SEO/AEO/GEO: Schema Graph unificado (LocalBusiness + WebPage + FAQ) adaptado al idioma
   const schemaGraph = {
     "@context": "https://schema.org",
     "@graph": [
@@ -31,7 +35,14 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         "email": process.env.NEXT_PUBLIC_COMPANY_EMAIL || "darios_art@yahoo.com",
         "description": dict.seo.description,
         "url": SITE_URL,
-        "telephone": process.env.NEXT_PUBLIC_COMPANY_PHONE || "+13056478966",
+        "telephone": COMPANY_PHONE,
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": COMPANY_PHONE,
+          "contactType": "customer service",
+          "areaServed": "US",
+          "availableLanguage": ["English", "Spanish"]
+        },
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Miami",
@@ -63,6 +74,8 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           "@type": "Person",
           "name": "Dario",
           "jobTitle": "Master Metal Craftsman",
+          "url": SITE_URL,
+          "image": `${SITE_URL}/brand/darioscustom_logo2.webp`,
           "sameAs": [
             "https://www.instagram.com/darioscustomironart"
           ]
@@ -77,11 +90,16 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         "about": { "@id": `${SITE_URL}/#organization` },
         "author": {
           "@type": "Person",
-          "name": "Dario - Master Metal Craftsman",
-          "url": SITE_URL
+          "name": "Dario",
+          "jobTitle": "Master Metal Craftsman",
+          "url": SITE_URL,
+          "image": `${SITE_URL}/brand/darioscustom_logo2.webp`,
+          "sameAs": [
+             "https://www.instagram.com/darioscustomironart"
+          ]
         },
         "datePublished": "2024-01-01T08:00:00+00:00", 
-        "dateModified": new Date().toISOString(), // Señal de frescura automática (Freshness signal)
+        "dateModified": new Date().toISOString(),
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": ["#inicio", "#servicios"]
@@ -103,7 +121,9 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }} />
       <Header />
-      <main id="inicio" className="min-h-screen overflow-x-hidden">
+      <main id="main-content" className="min-h-screen overflow-x-hidden">
+        <div id="inicio" aria-hidden="true" className="absolute -top-20"></div>
+        
         <Hero />
         <Services />
         <Catalog />

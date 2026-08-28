@@ -4,12 +4,15 @@
     "description": "Blacksmith and artistic forging workshop in Miami. Exclusive iron and aluminum design: balconies, doors, and gates. Quote today with Darioscustom.",
     "keywords": ["custom ironwork miami", "iron and aluminum design", "quote ironwork via whatsapp", "artistic forging miami", "iron balconies miami", "aluminum gates miami", "Darioscustom"]
   },
-  "header": { "links": { "home": "Home", "services": "Services", "catalog": "Catalog", "materials": "Materials", "reviews": "Reviews", "faq": "FAQ" }, "quote": "Quote Online" },
+  "header": { 
+    "links": { "home": "Home", "services": "Services", "catalog": "Catalog", "materials": "Materials", "reviews": "Reviews", "faq": "FAQ" }, 
+    "quote": "Quote Metal Project" 
+  },
   "hero": {
     "title1": "Luxury custom ",
     "highlight": "metal work & ironwork",
     "title2": " in miami",
-    "desc": "Custom handcrafted manufacturing: railings, balconies, chandeliers, residential gates with powder coating finish.",
+    "desc": "We custom fabricate in iron, aluminum, and steel. We make railings, balconies, and gates. All protected with powder coating finish.",
     "btnQuote": "Get a Quote",
     "btnCatalog": "Explore Catalog",
     "cadTag": "Shop Drawing",
@@ -34,16 +37,25 @@
       { "name": "Stainless Steel 304 or 316L", "res": "Extreme", "desc": "Highly corrosion resistant. 316L is especially recommended for marine environments and areas close to the sea." },
       { "name": "Bronze", "res": "Medium / High", "desc": "Good resistance to the coastal environment. Over time, it develops a natural patina that changes its appearance, but helps protect the material." },
       { "name": "Iron", "res": "Medium / High", "desc": "Requires paint and anti-corrosive treatment to protect it from saltpeter. Needs more maintenance than aluminum or stainless steel." }
-    ]
+    ],
+    "howTo": {
+      "title": "How to request your custom design",
+      "steps": [
+        { "title": "Initial Request", "desc": "Send us preliminary measurements and photos via WhatsApp or form. We will prepare your initial quote." },
+        { "title": "Visit & Material Selection", "desc": "We visit your property to take exact dimensions. We choose the best material with you: aluminum, iron, bronze, or stainless steel." },
+        { "title": "Custom Fabrication", "desc": "We build your design in our workshop. We apply electrostatic powder coating to guarantee maximum weather durability." },
+        { "title": "Safe Installation", "desc": "We install your project from start to finish. We strictly comply with Florida building codes and hurricane regulations." }
+      ]
+    }
   },
   "catalog": { "tag": "Detailed Catalog", "title": "HANDCRAFTED IRONWORK MADE TO MEASURE", "desc": "Explore our collection with the main pieces developed by our blacksmiths in Florida. Filter by category and quote your ideal design directly.", "categories": { "Todos": "All", "Iluminación": "Lighting", "Puertas": "Doors", "Barandales": "Railings", "Portones": "Gates", "Arte": "Art", "Miscelaneas": "Miscellaneous" }, "specId": "SPEC-ID // DC-00", "quoteBtn": "Quote via WhatsApp", "msgPart1": "Hello Dario's custom iron art, I am interested in quoting the product", "msgPart2": "from your online catalog." },
   "whyus": {
-    "tag": "Our Difference", "title": "Technical Excellence in Every Steel Joint", "desc1": "At Dario's we focus on designing distinguished architectural elements to your personal taste, harmoniously integrating with the exterior or interior design.", "desc2": "We serve residential and commercial projects guaranteeing meticulous finishes in the preparation of metal joints.", "quote": "\"Excellence in blacksmithing is defined by the precision that is not seen at first glance.\"",
+    "tag": "Our Difference", "title": "Technical Excellence in Every Joint", "desc1": "At Dario's, we design pieces to your personal taste. We adapt to your home or business style. We work with iron, aluminum, and bronze.", "desc2": "We serve residential and commercial projects. We guarantee perfect finishes and highly resistant metal joints.", "quote": "\"Excellence in blacksmithing is defined by the precision that is not seen at first glance.\"",
     "items": [
-      { "title": "Exclusive Finishes", "desc": "Electrostatic powder coating processes and premium finishes." },
-      { "title": "High Resistance Structure", "desc": "Specially manufactured to offer durability against the South Florida climate." },
-      { "title": "Traditional and Laser Methods", "desc": "We fuse the solidity of traditional blacksmithing with artisanal training." },
-      { "title": "Time Commitment", "desc": "Scheduled deliveries with clear start-to-finish timelines and tracking." }
+      { "title": "Exclusive Finishes", "desc": "We use powder coating. This ensures a long lifespan for the metal." },
+      { "title": "High Resistance", "desc": "Structures built to withstand the sun and humidity of South Florida." },
+      { "title": "Forging and Laser", "desc": "We combine handmade traditional blacksmithing with modern laser cutting." },
+      { "title": "On-Time Delivery", "desc": "We meet our deadlines. We maintain clear communication from the start." }
     ]
   },
   "reviews": { "tag": "Real Reviews", "title": "Satisfied Customers", "desc": "The quality of our products and artistic ironwork backed by the experience of builders, architects and homeowners in South Florida.", "verified": "Verified Google Reviews", "viewRev": "View Review", "btnMaps": "View Google Maps Profile", "list": [
@@ -54,16 +66,59 @@
     ]
   },
   "location": { "tag": "How to Get Here", "title": "Visit Our Workshop", "desc": "We invite you to learn about the forging process of our artisans. Schedule your appointment and come discuss your project in person.", "addressName": "Dario's Custom Iron Art, Inc", "addressLoc": "Miami, Florida", "btnGoogle": "START GOOGLE MAPS", "btnWaze": "START WAZE" },
-  "faq": { "tag": "Frequently Asked Questions", "title": "Technical & Engineering Answers", "desc": "All key information structured about our materials, local regulations in Miami-Dade and delivery processes.", "items": [
-      { "q": "Does Dario's comply with the Florida Building Code (FBC) for hurricanes?", "a": "Yes. We strictly design and weld all our security grilles, gates and railings complying with the Florida Building Code (FBC) and ASCE 7 wind load requirements for storm and hurricane prone zones, with wind resistance capacities up to 175 mph depending on the sector." },
-      { "q": "What are the differences between traditional blacksmith paint and Powder Coating?", "a": "Conventional paint wears and peels quickly due to the Miami sun. We apply thermoset electrostatic powder paint (Powder Coating) baked at 400°F. This generates a thick, uniform and flexible shield that resists impacts, UV rays and moisture without rusting the base metal." },
-      { "q": "What service areas do you cover in South Florida?", "a": "Our local coverage area for measurement, delivery and installation includes Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, South Miami, Kendall and surrounding areas of Miami-Dade County." },
-      { "q": "What kind of maintenance do your metal gates and grilles require?", "a": "Structures with a galvanized finish and powder coating require minimal maintenance. We recommend washing them every 3 to 6 months with clean water and a mild non-abrasive soap to remove deposits of dust, sea salt and weathering impurities." },
-      { "q": "What is the process to request a technical quote for my residence or business?", "a": "You can contact us via web form or by clicking on the WhatsApp link. Send us preliminary measurements, photos of the installation area or aesthetic references. We will evaluate the information and give you a precise proposal. Subsequently, we make a visit to verify dimensions." }
+  "faq": {
+    "tag": "Frequently Asked Questions",
+    "title": "Technical & Engineering Answers",
+    "desc": "All key information structured about our materials, local regulations in Miami-Dade and delivery processes.",
+    "items": [
+      {
+        "id": "faq-florida-building-code",
+        "q": "Does Dario's comply with the Florida Building Code (FBC) for hurricanes?",
+        "a": "Yes. <strong>Darioscustom strictly complies with the Florida Building Code (FBC)</strong>. We design and weld our security grilles, gates, and railings following ASCE 7 wind load requirements, achieving wind resistance capacities of up to 175 mph for hurricane-prone zones."
+      },
+      {
+        "id": "faq-powder-coating",
+        "q": "What are the differences between traditional blacksmith paint and Powder Coating?",
+        "a": "<strong>Powder Coating is</strong> a dry finishing process thermoset at 400°F that forms a protective shield. Unlike traditional paint that peels under the Miami sun, Powder Coating resists impacts, UV rays, and extreme moisture without rusting the base metal."
+      },
+      {
+        "id": "faq-service-areas",
+        "q": "What service areas do you cover in South Florida?",
+        "a": "<strong>Our service areas in South Florida include</strong> Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, South Miami, and Kendall. We cover the entire Miami-Dade County area for measurement, delivery, and installation of custom architectural ironwork."
+      },
+      {
+        "id": "faq-maintenance",
+        "q": "What kind of maintenance do your metal gates and grilles require?",
+        "a": "<strong>The maintenance of our metal gates and grilles consists of</strong> washing the structures every 3 to 6 months with clean water and mild non-abrasive soap. Thanks to our galvanized finish and powder coating, this simple process easily removes dust and sea salt."
+      },
+      {
+        "id": "faq-quote-process",
+        "q": "What is the process to request a technical quote for my residence or business?",
+        "a": "<strong>The process to request a technical quote consists of</strong> contacting us via web or WhatsApp with preliminary measurements and reference photos. We first provide an accurate economic proposal and then schedule an on-site visit to verify exact dimensions at your property."
+      }
     ]
   },
-  "contact": { "tag": "Location and Details", "title": "Let's Coordinate Your Technical Visit", "desc": "Fill out the smart form below to send us your requirements. Choose immediate delivery via WhatsApp to be assisted in real time by our workshop.", "hq": "Headquarters and Operations", "hqDesc": "Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, FL", "phone": "Office Phone", "email": "Email Address", "copied": "Copied!", "formTitle": "Quote Form", "waQuick": "Quick WhatsApp", "emailTrad": "Traditional Email", "successTitle": "Email Message Received Successfully!", "successDesc": "We will analyze the specifications provided and contact you in less than 24 business hours.", "fName": "Your Full Name", "fNamePl": "E.g. John Doe", "fEmail": "Contact Email", "fEmailPl": "example@email.com", "fPhone": "Contact Phone", "fPhonePl": "+1 (305) 555-0100", "fService": "Project Category", "fServiceOpts": { "Puertas": "Metal or Iron Doors", "Portones": "Aluminum or Entrance Gates", "Barandales": "Railings for Stairs or Balconies", "Arte": "Metallurgical Art or CNC Panels", "Iluminación": "Lamps and Chandeliers", "Miscelaneas": "Other Custom Designs" }, "fMsg": "Message and Dimensions of your Gate", "fMsgPl": "Describe the specifications or desired metal style...", "fPhoto": "Reference Photo (Optional)", "uploadClick": "Click to upload", "uploadDrag": "or drag a photo", "sendWa": "Send to WhatsApp", "sendEmail": "Send Request", "waFormatNew": "*NEW WEB QUOTE DARIO'S CUSTOM IRON ART*", "waFormatName": "*Name:*", "waFormatEmail": "*Email:*", "waFormatPhone": "*Phone:*", "waFormatService": "*Service:*", "waFormatMsg": "*Message:*", "waFormatPhoto": "*Reference photo:*", "waFormatPhotoYes": "Yes (name:", "waFormatPhotoYesSuffix": ") - _Please attach the image in this chat_", "waFormatPhotoNo": "Not specified" },
-  "footer": { "desc": "Precision Workshop and Forging in Miami, Florida. We design iron and aluminum solutions for maximum structural resistance and elegance.", "nav": "Navigation", "links1": [ { "name": "Home", "href": "#inicio" }, { "name": "Services", "href": "#servicios" }, { "name": "Catalog", "href": "#catalogo" }, { "name": "Reviews", "href": "#opiniones" } ], "support": "Customer Support", "links2": [ { "name": "Frequently Asked Questions", "href": "#preguntas" }, { "name": "Quote via WhatsApp", "href": "#contacto" } ], "rights": "Dario's Custom Iron Art Inc. All rights reserved.", "privacy": "Privacy Policy", "terms": "Terms of Service" },
+  "contact": { "tag": "Location and Details", "title": "Let's Coordinate Your Visit", "desc": "Fill out the form to tell us about your metal project. You can send your request directly to our WhatsApp for a fast reply.", "hq": "Headquarters and Operations", "hqDesc": "Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, FL", "phone": "Office Phone", "email": "Email Address", "copied": "Copied!", "formTitle": "Quote Form", "waQuick": "Quick WhatsApp", "emailTrad": "Traditional Email", "successTitle": "Message Received!", "successDesc": "We will review your request. We will contact you in less than 24 business hours.", "fName": "Your Full Name", "fNamePl": "E.g. John Doe", "fEmail": "Contact Email", "fEmailPl": "example@email.com", "fPhone": "Contact Phone", "fPhonePl": "+1 (305) 555-0100", "fService": "Project Category", "fServiceOpts": { "Puertas": "Metal Doors", "Portones": "Aluminum Gates", "Barandales": "Railings and Balconies", "Arte": "CNC Metallurgical Art", "Iluminación": "Lamps and Chandeliers", "Miscelaneas": "Other Custom Designs" }, "fMsg": "Message and Measurements", "fMsgPl": "Describe the style or material you prefer (aluminum, iron)...", "fPhoto": "Reference Photo (Optional)", "uploadClick": "Click to upload", "uploadDrag": "or drag a photo", "sendWa": "Send to WhatsApp", "sendEmail": "Send Request", "waFormatNew": "*NEW WEB QUOTE DARIO'S CUSTOM IRON ART*", "waFormatName": "*Name:*", "waFormatEmail": "*Email:*", "waFormatPhone": "*Phone:*", "waFormatService": "*Service:*", "waFormatMsg": "*Message:*", "waFormatPhoto": "*Reference photo:*", "waFormatPhotoYes": "Yes (name:", "waFormatPhotoYesSuffix": ") - _Please attach the image in this chat_", "waFormatPhotoNo": "Not specified" },
+  "footer": { 
+    "desc": "Precision Workshop and Forging in Miami, Florida. We design iron and aluminum solutions for maximum structural resistance and elegance.", 
+    "nav": "Main Navigation", 
+    "links1": [ 
+      { "name": "Darios Home", "href": "#inicio" }, 
+      { "name": "Ironwork Services", "href": "#servicios" }, 
+      { "name": "Metalwork Catalog", "href": "#catalogo" }, 
+      { "name": "Customer Reviews", "href": "#opiniones" } 
+    ], 
+    "support": "Support & Contact", 
+    "links2": [ 
+      { "name": "About Us", "href": "#whyus" }, 
+      { "name": "Direct Contact", "href": "#contacto" }, 
+      { "name": "Frequently Asked Questions", "href": "#preguntas" }, 
+      { "name": "Quote via WhatsApp", "href": "#contacto" } 
+    ], 
+    "rights": "Dario's Custom Iron Art Inc. All rights reserved.", 
+    "privacy": "Privacy Policy", 
+    "terms": "Terms of Service" 
+  },
   "product": { "home": "Home", "catalog": "Catalog", "features": "Features", "quoteBtn": "Request Quote via WhatsApp", "backBtn": "Back to Catalog", "badges": [ { "label": "Manufacturing", "value": "Custom" }, { "label": "Finish", "value": "Electrostatic" }, { "label": "Warranty", "value": "Included" } ], "relatedTag": "More in", "relatedTitle": "You might also like", "viewProd": "View Product" },
   "whatsappBtn": {
     "hoverMsg1": "Quick advice?",

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Shield, Home, Sparkles, Palette, Award } from "lucide-react";
+import { Shield, Home, Sparkles, Palette, Award, CheckCircle2 } from "lucide-react";
 import { Card } from "../ui/Card";
 import { fadeUp, staggerContainer, staggerItem } from "@/utils/animations";
 import { useDictionary } from "../DictionaryProvider";
@@ -28,13 +28,7 @@ export default function Services() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
-        <motion.div
-          className="text-center max-w-3xl mx-auto mb-16"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          variants={fadeUp}
-        >
+        <motion.div className="text-center max-w-3xl mx-auto mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp}>
           <h2 id="services-title" className="text-2xl sm:text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-4">
             {dict.title}
           </h2>
@@ -44,32 +38,42 @@ export default function Services() {
           </p>
         </motion.div>
 
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          variants={staggerContainer}
-        >
+        <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={staggerContainer}>
           {dict.items.map((service: any, index: number) => (
-            <motion.div key={index} variants={staggerItem}>
-              <Card
-                title={service.title}
-                description={service.desc}
-                icon={icons[index]}
-              />
+            <motion.div key={index} variants={staggerItem} id={`service-item-${index}`}>
+              <Card title={service.title} description={service.desc} icon={icons[index]} />
             </motion.div>
           ))}
         </motion.div>
 
-        <motion.div
-          id="comparativa"
-          className="bg-[#18181B] border border-[#27272A] p-4 sm:p-10 rounded-lg relative machined-corners overflow-hidden"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          variants={fadeUp}
-        >
+        {/* ✅ AEO/GEO: Sección How-To con lista ordenada <ol> */}
+        <motion.div className="mb-24" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp}>
+          <div className="text-center mb-12">
+            <h2 id="how-it-works-title" className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">
+              {dict.howTo.title}
+            </h2>
+          </div>
+          <ol className="grid grid-cols-1 md:grid-cols-4 gap-6 list-none p-0 m-0 relative">
+            {/* Línea conectora decorativa */}
+            <div className="hidden md:block absolute top-8 left-0 right-0 h-[1px] bg-industrial-border-high z-0" />
+            
+            {dict.howTo.steps.map((step: any, idx: number) => (
+              <li key={idx} className="relative z-10 bg-industrial-card border border-industrial-border p-6 rounded-md shadow-lg flex flex-col h-full hover:border-brand-primary/50 transition-colors">
+                <div className="w-10 h-10 rounded-full bg-brand-primary text-white flex items-center justify-center font-black mb-4 mx-auto md:mx-0 shadow-[0_0_15px_rgba(184,82,39,0.4)]">
+                  {idx + 1}
+                </div>
+                <h3 id={`how-to-step-${idx + 1}`} className="text-sm font-bold text-white uppercase tracking-wide mb-3 text-center md:text-left">
+                  {step.title}
+                </h3>
+                <p className="text-zinc-400 text-xs leading-relaxed text-center md:text-left">
+                  {step.desc}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </motion.div>
+
+        <motion.div id="comparativa" className="bg-[#18181B] border border-[#27272A] p-4 sm:p-10 rounded-lg relative machined-corners overflow-hidden" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp}>
           <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-[#B85227]/45 to-transparent" />
 
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8 border-b border-[#27272A] pb-8">
@@ -96,10 +100,7 @@ export default function Services() {
               </thead>
               <tbody className="divide-y divide-[#27272A] text-[#A1A1AA]">
                 {dict.materials.map((mat: any, idx: number) => (
-                  <tr 
-                    key={idx} 
-                    className="hover:bg-[#09090B]/30 transition-colors duration-200"
-                  >
+                  <tr key={idx} className="hover:bg-[#09090B]/30 transition-colors duration-200">
                     <td className="py-4 px-3 sm:px-5">
                       <span className="block font-bold text-white text-[11px] sm:text-xs md:text-sm uppercase tracking-wide break-words">
                         {mat.name}

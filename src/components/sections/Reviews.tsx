@@ -17,6 +17,7 @@ export default function Reviews() {
         <motion.div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp}>
           <div>
             <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">{dict.tag}</span>
+            {/* ✅ ID en el H2 principal */}
             <h2 id="reviews-title" className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-4">{dict.title}</h2>
             <p className="text-zinc-400 text-sm md:text-base max-w-2xl leading-relaxed">{dict.desc}</p>
           </div>
@@ -33,13 +34,15 @@ export default function Reviews() {
             </div>
           </div>
         </motion.div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {dict.list.map((rev: any, index: number) => (
-            <motion.div key={index} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: index * 0.05 }} className="bg-industrial-card border border-industrial-border p-6 rounded-md relative machined-corners overflow-hidden group flex flex-col justify-between min-h-[250px] transition-all hover:border-industrial-border-high">
+            <motion.article key={index} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: index * 0.05 }} className="bg-industrial-card border border-industrial-border p-6 rounded-md relative machined-corners overflow-hidden group flex flex-col justify-between min-h-[250px] transition-all hover:border-industrial-border-high">
               <div>
                 <div className="flex items-start justify-between mb-4">
                   <div className="min-w-0">
-                    <h3 className="font-bold text-white text-sm uppercase tracking-wide truncate">{rev.name}</h3>
+                    {/* ✅ Convertido a H3 con ID único */}
+                    <h3 id={`review-${index}`} className="font-bold text-white text-sm uppercase tracking-wide truncate">{rev.name}</h3>
                     <div className="flex items-center gap-2 mt-0.5">
                       <span className="text-[10px] text-zinc-500 font-mono uppercase">{rev.role}</span>
                       <span className="text-[10px] text-[#71717A]">•</span>
@@ -59,9 +62,10 @@ export default function Reviews() {
                   {dict.viewRev} <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
+        
         <div className="mt-16 text-center">
           <a href={googleProfileUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 bg-industrial-card border border-industrial-border hover:border-industrial-border-high text-white text-xs font-bold tracking-widest uppercase py-4 px-8 rounded-sm transition-all hover:bg-industrial-card/80">
             {dict.btnMaps} <ArrowRight className="w-4 h-4 text-brand-light" />
