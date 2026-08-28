@@ -49,7 +49,7 @@ export default async function RootLayout({ children, params }: { children: React
   const isEs = resolvedParams.lang === 'es';
   
   return (
-    <html lang={resolvedParams.lang} className={cn("dark scroll-smooth", montserrat.variable, "font-sans", geist.variable)}>
+    <html lang={resolvedParams.lang} data-scroll-behavior="smooth" className={cn("dark scroll-smooth", montserrat.variable, "font-sans", geist.variable)}>
       <head>
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
       </head>

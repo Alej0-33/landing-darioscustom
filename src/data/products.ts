@@ -13,8 +13,8 @@ export const allProducts: Product[] = [
   {
     id: 1,
     slug: "1",
-    img: "product1.webp",
-    images: ["product1.webp", "product2.webp"],
+    img: "metal-door.webp",
+    images: ["metal-door.webp"],
     title: "Puerta Metálica",
     category: "Puertas",
     tags: ["Metal Plateado", "Cabezas de León", "Diseño de Rejilla", "Remaches Decorativos", "Estilo Robusto"],
@@ -22,10 +22,13 @@ export const allProducts: Product[] = [
       "Puerta monumental fabricada en metal plateado con relieves artesanales de cabezas de león. Su diseño de rejilla estructural combina funcionalidad y estética, con remaches decorativos que refuerzan la solidez del conjunto. Ideal para entradas principales residenciales o comerciales de alto perfil.",
   },
   {
-    id: 3,
-    slug: "3",
-    img: "product3.webp",
-    images: ["product3.webp"],
+    id: 2,
+    slug: "2",
+    img: "3D-Geometric-Copper-Wall-Sculpture.webp",
+    images: [
+      "3D-Geometric-Copper-Wall-Sculpture.webp", 
+      "3D-Geometric-Copper-Wall-Sculpture2.webp"
+    ],
     title: "Escultura de Pared Geométrica en Metal 3D",
     category: "Arte",
     tags: ["Arte de Pared", "Decoracion de Interiores", "Acabado Cobre"],
@@ -33,10 +36,14 @@ export const allProducts: Product[] = [
       "Pieza escultórica tridimensional de alto impacto visual fabricada en metal con acabado de cobre envejecido. Su geometría proyecta sombras dinámicas según la iluminación ambiente, convirtiéndola en el elemento focal de cualquier espacio interior contemporáneo.",
   },
   {
-    id: 4,
-    slug: "4",
-    img: "product4.webp",
-    images: ["product19.webp", "product4.webp", "product5.webp"],
+    id: 3,
+    slug: "3",
+    img: "Forged-Aluminum-Door-with-Heraldic-Crests.webp",
+    images: [
+      "Forged-Aluminum-Door-with-Heraldic-Crests.webp", 
+      "Forged-Aluminum-Door-with-Heraldic-Crests2.webp",
+      "Heraldic-Crest.webp"
+    ],
     title: "Puerta de Hierro Forjado con Escudos Heráldicos",
     category: "Puertas",
     tags: ["Hierro Forjado", "Estilo Clásico", "Escudos Heráldicos", "Detalles Dorados", "Herrería Artística"],
@@ -44,10 +51,16 @@ export const allProducts: Product[] = [
       "Puerta de hierro forjado a mano con escudos heráldicos integrados y detalles en dorado artesanal. Cada pieza es única gracias a la técnica de forja manual, con acabados que evocan la arquitectura europea clásica y protección anticorrosiva de larga duración.",
   },
   {
-    id: 7,
-    slug: "7",
-    img: "product8.webp",
-    images: ["product8.webp", "product11.webp", "product8.webp"],
+    id: 4,
+    slug: "4",
+    img: "Modern-Black-Stair-Railling.webp",
+    images: [
+      "Modern-Black-Stair-Railling.webp", 
+      "Modern-Black-Stair-Railling2.webp", 
+      "Modern-Black-Stair-Railling3.webp",
+      "Modern-Black-Stair-Railling4.webp",
+      "Modern-Black-Stair-Railling5.webp"
+    ],
     title: "Barandal de Escalera Moderno en Metal Negro",
     category: "Barandales",
     tags: ["Metal Negro", "Diseño Minimalista", "Líneas Horizontales", "Estilo Moderno", "Interiores"],
@@ -55,10 +68,14 @@ export const allProducts: Product[] = [
       "Barandal de diseño contemporáneo con travesaños horizontales en metal negro mate. Su perfil limpio y minimalista se integra perfectamente en arquitecturas modernas e industriales, cumpliendo normativas de seguridad AWS D1.1 para escaleras y balcones interiores.",
   },
   {
-    id: 13,
-    slug: "13",
-    img: "product12.webp",
-    images: ["product13.webp", "product12.webp"],
+    id: 5,
+    slug: "5",
+    img: "Black-chandelier-with-gold-accents.webp",
+    images: [
+      "Black-chandelier-with-gold-accents.webp", 
+      "Black-chandelier-with-gold-accents2.webp",
+      "Black-chandelier-with-gold-accents3.webp"
+    ],
     title: "Candelabros",
     category: "Iluminación",
     tags: ["Hierro Forjado", "Estilo Clásico", "Lámparas Colgantes", "Detalles Dorados", "Herrería Artística"],
@@ -66,10 +83,14 @@ export const allProducts: Product[] = [
       "Conjunto coordinado de candelabros diseñados para instalación en tándem. Perfectos para espacios de doble altura o pasillos amplios, aportan calidez y carácter clásico con detalles dorados trabajados a mano.",
   },
   {
-    id: 14,
-    slug: "14",
-    img: "product14.webp",
-    images: ["product14.webp"],
+    id: 6,
+    slug: "6",
+    img: "Chandelier-with-gold-finishes.webp",
+    images: [
+      "Chandelier-with-gold-finishes.webp",
+      "Chandelier-with-gold-finishes2.webp",
+      "Chandelier-with-gold-finishes3.webp"
+    ],
     title: "Candelabros",
     category: "Iluminación",
     tags: ["Hierro Forjado", "Estilo Medieval", "Lámparas Colgantes", "Detalles Dorados", "Diseño Circular"],
@@ -77,10 +98,13 @@ export const allProducts: Product[] = [
       "Candelabros de forma circular inspirados en la iluminación de castillos y palacios medievales. Fabricados en hierro forjado con aplicaciones doradas, crean ambientes dramáticos y cálidos. Disponibles en múltiples diámetros según el espacio.",
   },
   {
-    id: 17,
-    slug: "17",
-    img: "product17.webp",
-    images: ["product17.webp"],
+    id: 7,
+    slug: "7",
+    img: "Aluminum-gate-with-a-wood-grain-paint-finish.webp",
+    images: [
+      "Aluminum-gate-with-a-wood-grain-paint-finish.webp",
+      "Aluminum-gate-with-a-wood-grain-paint-finish2.webp"
+    ],
     title: "Portón de Aluminio",
     category: "Portones",
     tags: ["Aluminio", "Portón de Entrada", "Diseño de Rejilla", "Exterior", "Terminacion color madera Decorativa"],
@@ -88,10 +112,10 @@ export const allProducts: Product[] = [
       "Portón de entrada exterior fabricado en aluminio de alta resistencia con paneles en diseño de rejilla y terminación decorativa imitación madera. Ofrece privacidad óptima y ventilación cruzada, protegido con un acabado electrostático de alta durabilidad ante el salitre marino y la intemperie de Florida.",
   },
   {
-    id: 20,
-    slug: "20",
-    img: "product20.webp",
-    images: ["product20.webp"],
+    id: 8,
+    slug: "8",
+    img: "matte-black-aluminum-gate.webp",
+    images: ["matte-black-aluminum-gate.webp"],
     title: "Portón de Aluminio Clásico",
     category: "Portones",
     tags: ["Aluminio", "Ligero", "Durable", "Portón de Entrada", "Estilo Clásico", "Diseño con Arco", "Exterior"],
