@@ -5,20 +5,20 @@
     "keywords": ["custom ironwork miami", "iron and aluminum design", "quote ironwork via whatsapp", "artistic forging miami", "iron balconies miami", "aluminum gates miami", "Darioscustom"]
   },
   "header": { "links": { "home": "Home", "services": "Services", "catalog": "Catalog", "materials": "Materials", "reviews": "Reviews", "faq": "FAQ" }, "quote": "Quote Online" },
-  "hero": { 
-    "title1": "Custom ", 
-    "highlight": "Haute Couture", 
-    "title2": " Metal & Ironwork Design in Miami", 
-    "desc": "Custom handcrafted manufacturing: railings, balconies, chandeliers, residential gates with powder coating finish.", 
-    "btnQuote": "Get a Quote", 
-    "btnCatalog": "Explore Catalog", 
-    "cadTag": "Shop Drawing", 
-    "cadTitle": "PRIVATE ARCHITECTURAL GATE", 
-    "cadSpecs": "Specifications:", 
-    "cadForged": "Forged & Solid • Miami, FL", 
-    "cadFinished": "COMPLETED PROJECT", 
-    "cadResult": "On-Site Result", 
-    "cadToggle": "Toggle view (Blueprint / Real)" 
+  "hero": {
+    "title1": "Luxury custom ",
+    "highlight": "metal work & ironwork",
+    "title2": " in miami",
+    "desc": "Custom handcrafted manufacturing: railings, balconies, chandeliers, residential gates with powder coating finish.",
+    "btnQuote": "Get a Quote",
+    "btnCatalog": "Explore Catalog",
+    "cadTag": "Shop Drawing",
+    "cadTitle": "PRIVATE ARCHITECTURAL GATE",
+    "cadSpecs": "Specifications:",
+    "cadForged": "Forged & Solid • Miami, FL",
+    "cadFinished": "COMPLETED PROJECT",
+    "cadResult": "On-Site Result",
+    "cadToggle": "Toggle view (Blueprint / Real)"
   },
   "services": {
     "title": "High Durability Metal Engineering", "desc": "We offer certified metal solutions against Florida's humid climate for top-tier residential and corporate developments.",
