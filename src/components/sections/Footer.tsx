@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start text-center md:text-left md:col-span-6 gap-6">
           <div className="flex items-center gap-3">
             <div className="w-14 h-14 flex items-center justify-center shrink-0">
-              <Image src="/brand/darioscustom_logo2.webp" alt="Darioscustomart Inc Logo" width={56} height={56} className="w-full h-full object-contain" />
+              <Image src="/brand/darioscustom_logo2.webp" alt="Darioscustomart Inc Logo" width={56} height={56} loading="lazy" className="w-full h-full object-contain" />
             </div>
             <span className="font-black text-lg tracking-wider text-white leading-none text-left">
               DARIO'S CUSTOM <span className="text-[#B85227]">IRON ART</span>

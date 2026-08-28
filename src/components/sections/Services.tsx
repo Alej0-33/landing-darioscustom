@@ -21,9 +21,22 @@ export default function Services() {
     "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40",
     "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40"
   ];
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": dict.howTo.title,
+    "description": "Step-by-step process to request and install a custom ironwork design.",
+    "step": dict.howTo.steps.map((step: any, idx: number) => ({
+      "@type": "HowToStep",
+      "position": idx + 1,
+      "name": step.title,
+      "text": step.desc
+    }))
+  };
 
   return (
     <section id="servicios" className="py-20 sm:py-24 relative border-t border-[#27272A] bg-[#09090B]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <div className="absolute inset-0 industrial-dots opacity-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
