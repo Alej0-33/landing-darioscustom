@@ -36,6 +36,16 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         "description": dict.seo.description,
         "url": SITE_URL,
         "telephone": COMPANY_PHONE,
+        // ✅ 1. IA Semantic Trigger: Lo que ustedes saben hacer de verdad
+        "knowsAbout": [
+          "Custom Wrought Iron Chandeliers", 
+          "High Ceiling Lighting Installation",
+          "Aluminum Driveway Gates",
+          "Custom Metal Fabrication From Scratch",
+          "Powder Coating Finishes",
+          "Stainless Steel Railings",
+          "Florida Building Code Compliance"
+        ],
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": COMPANY_PHONE,
@@ -105,7 +115,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           "@type": "SpeakableSpecification",
           "cssSelector": ["#inicio", "#servicios"]
         }
-      },
+      }
     ]
   };
 

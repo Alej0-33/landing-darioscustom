@@ -12,7 +12,7 @@
     "title1": "Diseño de Metal y Herrería de ", 
     "highlight": "Alta Costura", 
     "title2": " en Miami", 
-    "desc": "Fabricamos a medida en hierro, aluminio y acero. Hacemos barandales, balcones y portones. Todos con acabado en pintura electrostática.", 
+    "desc": "Taller de forja artística especializado en piezas únicas y personalizadas al gusto del cliente. Fabricamos a medida desde cero en hierro forjado, aluminio, acero inoxidable y bronce. Desde candelabros para techos altos hasta portones y barandales con pintura electrostática.", 
     "btnQuote": "Obtener Cotización", 
     "btnCatalog": "Explorar Catálogo", 
     "cadTag": "Dibujo de Taller", 
@@ -24,38 +24,38 @@
     "cadToggle": "Alternar vista (Plano / Real)" 
   },
   "services": {
-    "title": "Ingeniería en Metal de Alta Durabilidad", "desc": "Ofrecemos soluciones metálicas certificadas contra el clima húmedo de Florida para desarrollos residenciales y corporativos de primer nivel.",
+    "title": "Ingeniería en Metal de Alta Durabilidad", "desc": "Ofrecemos soluciones metálicas a medida certificadas contra el clima de Florida. Cada proyecto es una pieza única, diseñada exclusivamente para tu propiedad.",
     "items": [
-      { "title": "Portones y Cercas", "desc": "Diseño y fabricación de cierres perimetrales. Cumplen normas de códigos y seguimiento de cálculos de planos." },
-      { "title": "Barandales y Escaleras", "desc": "Sistemas para balcones y escaleras en acero inoxidable, hierro o aluminio. Terminación de pintura al horno." },
-      { "title": "Corte Láser de Precisión CNC", "desc": "Paneles para privacidad y puertas decorativas con acabados personalizables para proyectos comerciales de lujo o el hogar." },
-      { "title": "Esculturas de Arte", "desc": "Diseño de candelabros, muebles industriales y esculturas metálicas abstractas. Pintura al horno con terminaciones de oro a mano." }
+      { "title": "Portones y Cercas", "desc": "Diseño y fabricación de cierres perimetrales únicos en aluminio o hierro. Cumplen normas de códigos de construcción y seguimiento de planos." },
+      { "title": "Barandales y Escaleras", "desc": "Sistemas para balcones y escaleras al gusto del cliente. Trabajamos acero inoxidable, hierro o aluminio con terminación de pintura al horno." },
+      { "title": "Corte Láser CNC", "desc": "Paneles para privacidad y puertas decorativas con acabados personalizables en diferentes materiales para proyectos comerciales de lujo." },
+      { "title": "Candelabros y Arte", "desc": "Fabricamos candelabros de hierro forjado a medida para techos altos. Diseñamos la pieza desde cero, incluyendo cálculo de peso y anclaje seguro." }
     ],
     "matTitle": "Materiales de Alta Gama y Acabado Artístico", "matHeaders": ["Material", "Resistencia", "Uso y Herrería Artística"],
     "materials": [
-      { "name": "Aluminio", "res": "Extrema", "desc": "No se oxida. Excelente opción para zonas costeras y ambientes con salitre." },
-      { "name": "Acero Inoxidable 304 o 316L", "res": "Extrema", "desc": "Altamente resistente a la corrosión. El 316L es especialmente recomendado para ambientes marinos y zonas cercanas al mar." },
-      { "name": "Bronce", "res": "Media / Alta", "desc": "Buena resistencia al ambiente costero. Con el tiempo, desarrolla una pátina natural que cambia su apariencia, pero ayuda a proteger el material." },
-      { "name": "Hierro", "res": "Media / Alta", "desc": "Requiere pintura y tratamiento anticorrosivo para protegerlo del salitre. Necesita más mantenimiento que el aluminio o el acero inoxidable." }
+      { "name": "Aluminio", "res": "Extrema", "desc": "No se oxida. Excelente opción para portones a medida en zonas costeras y ambientes con salitre." },
+      { "name": "Acero Inox 304 o 316L", "res": "Extrema", "desc": "Altamente resistente a la corrosión. El 316L es recomendado para herrería personalizada cerca del mar." },
+      { "name": "Bronce", "res": "Media / Alta", "desc": "Buena resistencia al ambiente costero. Ideal para piezas artísticas únicas que desarrollan una pátina natural." },
+      { "name": "Hierro Forjado", "res": "Media / Alta", "desc": "Clásico para candelabros y barandales. Lo protegemos con pintura termoendurecida para evitar el salitre." }
     ],
     "howTo": {
       "title": "Cómo solicitar tu diseño personalizado",
       "steps": [
-        { "title": "Solicitud Inicial", "desc": "Envíanos medidas y fotos preliminares por WhatsApp o formulario. Así prepararemos tu cotización inicial." },
-        { "title": "Visita y Selección de Material", "desc": "Visitamos tu propiedad para tomar medidas exactas. Elegimos contigo el mejor material según tu zona: aluminio, hierro, bronce o acero inoxidable." },
-        { "title": "Fabricación a Medida", "desc": "Construimos tu diseño en nuestro taller. Aplicamos pintura electrostática (Powder Coating) para garantizar la máxima durabilidad frente al clima." },
-        { "title": "Instalación Segura", "desc": "Instalamos tu proyecto de principio a fin. Cumplimos estrictamente con los códigos de construcción y normas contra huracanes de Florida." }
+        { "title": "Solicitud Inicial", "desc": "Envíanos medidas y fotos por WhatsApp. Hablaremos sobre tus gustos para crear una pieza única desde cero." },
+        { "title": "Visita y Material", "desc": "Visitamos tu propiedad en Miami. Elegimos juntos el material ideal: aluminio, hierro, bronce o acero." },
+        { "title": "Fabricación a Medida", "desc": "Forjamos tu diseño personalizado en nuestro taller y aplicamos pintura en polvo (Powder Coating)." },
+        { "title": "Instalación Segura", "desc": "Instalamos tu proyecto cumpliendo estrictamente con los códigos de construcción de Florida." }
       ]
     }
   },
   "catalog": { "tag": "Catálogo Detallado", "title": "HERRERIA ARTESANAL HECHA A TU MEDIDA", "desc": "Explora nuestra colección con las principales piezas desarrolladas por nuestros herreros en Florida. Filtra por categoría y cotiza directamente tu diseño ideal.", "categories": { "Todos": "Todos", "Iluminación": "Iluminación", "Puertas": "Puertas", "Barandales": "Barandales", "Portones": "Portones", "Arte": "Arte", "Miscelaneas": "Miscelaneas" }, "specId": "SPEC-ID // DC-00", "quoteBtn": "Cotizar vía WhatsApp", "msgPart1": "Hola Dario's custom iron art, estoy interesado en cotizar el producto", "msgPart2": "de su catálogo online." },
   "whyus": {
-    "tag": "Nuestra Diferencia", "title": "Excelencia en Cada Unión de Acero", "desc1": "En Dario's diseñamos piezas a tu gusto personal. Nos adaptamos al estilo de tu hogar o negocio. Trabajamos con hierro, aluminio y bronce.", "desc2": "Atendemos proyectos residenciales y comerciales. Garantizamos acabados perfectos y uniones metálicas muy resistentes.", "quote": "\"La excelencia en la herrería se define por la precisión que no se ve a simple vista.\"",
+    "tag": "Nuestra Diferencia", "title": "Piezas Únicas al Gusto del Cliente", "desc1": "En Dario's Custom Iron Art no vendemos productos en serie. Nos especializamos en fabricar piezas únicas desde cero, diseñadas al gusto personal de cada cliente. Nos adaptamos a la arquitectura de tu espacio trabajando con múltiples materiales.", "desc2": "Atendemos proyectos de alta gama en Miami. Desde candelabros pesados que requieren ingeniería y cálculo, hasta puertas monumentales. Garantizamos perfección en cada soldadura.", "quote": "\"La excelencia en la herrería de autor se define por la precisión que no se ve a simple vista.\"",
     "items": [
-      { "title": "Acabados Exclusivos", "desc": "Usamos pintura en polvo (Powder Coating). Esto asegura una larga vida útil al metal." },
-      { "title": "Alta Resistencia", "desc": "Estructuras creadas para resistir el sol y la humedad del sur de Florida." },
-      { "title": "Forja y Láser", "desc": "Unimos la herrería tradicional a mano con el corte láser moderno." },
-      { "title": "Entregas a Tiempo", "desc": "Cumplimos nuestros plazos. Mantenemos una comunicación clara desde el inicio." }
+      { "title": "Diseños Desde Cero", "desc": "No usamos catálogos prefabricados. Creamos arte en metal exclusivamente para ti." },
+      { "title": "Múltiples Materiales", "desc": "Dominamos la forja en hierro, aluminio ligero, acero inoxidable y elegantes detalles en bronce." },
+      { "title": "Alta Resistencia", "desc": "Aplicamos Powder Coating a nuestras piezas para resistir el sol y humedad del sur de Florida." },
+      { "title": "Seguridad e Ingeniería", "desc": "Calculamos pesos y anclajes estructurales seguros para piezas grandes como candelabros y portones." }
     ]
   },
   "reviews": { "tag": "Opiniones Reales", "title": "Clientes Satisfechos", "desc": "La calidad de nuestros productos y herrería artística respaldada por la experiencia de constructores, arquitectos y propietarios en el sur de Florida.", "verified": "Opiniones Verificadas en Google", "viewRev": "Ver Reseña", "btnMaps": "Ver Ficha en Google Maps", "list": [

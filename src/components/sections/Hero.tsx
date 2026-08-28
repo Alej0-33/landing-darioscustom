@@ -153,10 +153,11 @@ export default function Hero() {
                   </div>
                   <div className="w-10 h-10 sm:w-14 sm:h-14 bg-industrial-card border border-brand-primary/35 p-1 sm:p-2 rounded relative machined-corners flex items-center justify-center shadow-lg">
                     <Image 
-                      src="/brand/darioscustom_logo.webp" 
+                      src="/brand/darioscustom_logo2.png" 
                       alt="Darioscustom"
                       width={60}
-                      height={60} 
+                      height={60}
+                      priority
                       className="w-full h-full object-contain filter brightness-110" 
                     />
                   </div>
@@ -174,7 +175,7 @@ export default function Hero() {
                 alt="Proyecto Terminado Darioscustom"
                 width={450}
                 height={562}
-                priority // Previene el render-blocking
+                priority 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
@@ -201,7 +202,7 @@ export default function Hero() {
                 alt="Proyecto Terminado Visualización"
                 width={450}
                 height={562}
-                priority // Previene el render-blocking
+                priority 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/10 to-transparent" />

@@ -12,7 +12,7 @@
     "title1": "Luxury custom ",
     "highlight": "metal work & ironwork",
     "title2": " in miami",
-    "desc": "We custom fabricate in iron, aluminum, and steel. We make railings, balconies, and gates. All protected with powder coating finish.",
+    "desc": "Artistic forging workshop specializing in unique pieces customized to the client's taste. We fabricate from scratch in wrought iron, aluminum, stainless steel, and bronze. From high-ceiling chandeliers to gates and railings with powder coating.",
     "btnQuote": "Get a Quote",
     "btnCatalog": "Explore Catalog",
     "cadTag": "Shop Drawing",
@@ -24,38 +24,38 @@
     "cadToggle": "Toggle view (Blueprint / Real)"
   },
   "services": {
-    "title": "High Durability Metal Engineering", "desc": "We offer certified metal solutions against Florida's humid climate for top-tier residential and corporate developments.",
+    "title": "High Durability Metal Engineering", "desc": "We offer custom metal solutions certified against Florida's climate. Every project is a unique piece, designed exclusively for your property.",
     "items": [
-      { "title": "Gates & Fences", "desc": "Design and fabrication of perimeter enclosures. Code compliant and blueprint calculations tracked." },
-      { "title": "Railings & Stairs", "desc": "Systems for balconies and stairs in stainless steel, iron or aluminum. Powder coated finish." },
-      { "title": "Precision CNC Laser Cut", "desc": "Privacy panels and decorative doors with customizable finishes for luxury commercial or home projects." },
-      { "title": "Art Sculptures", "desc": "Design of chandeliers, industrial furniture and abstract metal sculptures. Powder coated with hand-painted gold finishes." }
+      { "title": "Gates & Fences", "desc": "Design and fabrication of unique perimeter enclosures in aluminum or iron. Code compliant and structurally sound." },
+      { "title": "Railings & Stairs", "desc": "Balcony and stair systems tailored to your taste. We work with stainless steel, iron, or aluminum with powder-coated finish." },
+      { "title": "Precision CNC Laser", "desc": "Privacy panels and decorative doors with customizable finishes in different materials for luxury projects." },
+      { "title": "Chandeliers & Art", "desc": "We fabricate custom wrought iron chandeliers for high ceilings. We design from scratch, including weight calculation and safe anchoring." }
     ],
     "matTitle": "High-End Materials and Artistic Finish", "matHeaders": ["Material", "Resistance", "Usage & Artistic Ironwork"],
     "materials": [
-      { "name": "Aluminum", "res": "Extreme", "desc": "Does not rust. Excellent choice for coastal areas and environments with saltpeter." },
-      { "name": "Stainless Steel 304 or 316L", "res": "Extreme", "desc": "Highly corrosion resistant. 316L is especially recommended for marine environments and areas close to the sea." },
-      { "name": "Bronze", "res": "Medium / High", "desc": "Good resistance to the coastal environment. Over time, it develops a natural patina that changes its appearance, but helps protect the material." },
-      { "name": "Iron", "res": "Medium / High", "desc": "Requires paint and anti-corrosive treatment to protect it from saltpeter. Needs more maintenance than aluminum or stainless steel." }
+      { "name": "Aluminum", "res": "Extreme", "desc": "Does not rust. Excellent choice for custom gates in coastal areas and environments with saltpeter." },
+      { "name": "Stainless Steel 304 or 316L", "res": "Extreme", "desc": "Highly corrosion resistant. 316L is especially recommended for custom ironwork near the sea." },
+      { "name": "Bronze", "res": "Medium / High", "desc": "Good resistance to coastal environments. Ideal for unique artistic pieces that develop a natural patina." },
+      { "name": "Wrought Iron", "res": "Medium / High", "desc": "Classic for chandeliers and railings. We protect it with thermoset powder coating to prevent rust." }
     ],
     "howTo": {
       "title": "How to request your custom design",
       "steps": [
-        { "title": "Initial Request", "desc": "Send us preliminary measurements and photos via WhatsApp or form. We will prepare your initial quote." },
-        { "title": "Visit & Material Selection", "desc": "We visit your property to take exact dimensions. We choose the best material with you: aluminum, iron, bronze, or stainless steel." },
-        { "title": "Custom Fabrication", "desc": "We build your design in our workshop. We apply electrostatic powder coating to guarantee maximum weather durability." },
-        { "title": "Safe Installation", "desc": "We install your project from start to finish. We strictly comply with Florida building codes and hurricane regulations." }
+        { "title": "Initial Request", "desc": "Send us measurements and photos via WhatsApp. We will discuss your tastes to create a unique piece from scratch." },
+        { "title": "Visit & Material", "desc": "We visit your property in Miami. We choose the ideal material together: aluminum, iron, bronze, or steel." },
+        { "title": "Custom Fabrication", "desc": "We forge your custom design in our workshop and apply electrostatic powder coating." },
+        { "title": "Safe Installation", "desc": "We install your project strictly complying with Florida building codes." }
       ]
     }
   },
   "catalog": { "tag": "Detailed Catalog", "title": "HANDCRAFTED IRONWORK MADE TO MEASURE", "desc": "Explore our collection with the main pieces developed by our blacksmiths in Florida. Filter by category and quote your ideal design directly.", "categories": { "Todos": "All", "Iluminación": "Lighting", "Puertas": "Doors", "Barandales": "Railings", "Portones": "Gates", "Arte": "Art", "Miscelaneas": "Miscellaneous" }, "specId": "SPEC-ID // DC-00", "quoteBtn": "Quote via WhatsApp", "msgPart1": "Hello Dario's custom iron art, I am interested in quoting the product", "msgPart2": "from your online catalog." },
   "whyus": {
-    "tag": "Our Difference", "title": "Technical Excellence in Every Joint", "desc1": "At Dario's, we design pieces to your personal taste. We adapt to your home or business style. We work with iron, aluminum, and bronze.", "desc2": "We serve residential and commercial projects. We guarantee perfect finishes and highly resistant metal joints.", "quote": "\"Excellence in blacksmithing is defined by the precision that is not seen at first glance.\"",
+    "tag": "Our Difference", "title": "Unique Pieces to the Client's Taste", "desc1": "At Dario's Custom Iron Art we don't sell mass-produced items. We specialize in fabricating unique pieces from scratch, designed to each client's personal taste. We adapt to your space's architecture working with multiple materials.", "desc2": "We serve high-end projects in Miami. From heavy chandeliers requiring engineering and weight calculations to monumental doors. We guarantee perfection in every weld.", "quote": "\"Excellence in custom blacksmithing is defined by the precision that is not seen at first glance.\"",
     "items": [
-      { "title": "Exclusive Finishes", "desc": "We use powder coating. This ensures a long lifespan for the metal." },
-      { "title": "High Resistance", "desc": "Structures built to withstand the sun and humidity of South Florida." },
-      { "title": "Forging and Laser", "desc": "We combine handmade traditional blacksmithing with modern laser cutting." },
-      { "title": "On-Time Delivery", "desc": "We meet our deadlines. We maintain clear communication from the start." }
+      { "title": "Designed From Scratch", "desc": "We don't use prefabricated catalogs. We create metal art exclusively for you." },
+      { "title": "Multiple Materials", "desc": "We master forging in iron, lightweight aluminum, stainless steel, and elegant bronze details." },
+      { "title": "High Resistance", "desc": "We apply Powder Coating to our pieces to withstand the South Florida sun and humidity." },
+      { "title": "Safety & Engineering", "desc": "We calculate weights and secure structural anchors for large pieces like chandeliers and gates." }
     ]
   },
   "reviews": { "tag": "Real Reviews", "title": "Satisfied Customers", "desc": "The quality of our products and artistic ironwork backed by the experience of builders, architects and homeowners in South Florida.", "verified": "Verified Google Reviews", "viewRev": "View Review", "btnMaps": "View Google Maps Profile", "list": [
