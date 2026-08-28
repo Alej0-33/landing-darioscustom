@@ -28,6 +28,7 @@ export default function Header() {
     { name: dict.links.reviews, href: `/${lang}/#opiniones` },
     { name: dict.links.faq, href: `/${lang}/#preguntas` },
   ];
+  
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -49,10 +50,6 @@ export default function Header() {
           <li><a href={`/${lang}/`}>{dict.links.home}</a></li>
         </ol>
       </nav>
-      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-[#B85227] focus:text-white z-[60] top-0 left-0 rounded-br-md">
-        Skip to content
-      </a>
-
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${ scrolled ? "bg-industrial-bg/95 backdrop-blur-md border-b border-industrial-border py-3" : "bg-transparent py-5" }`}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <a href={`/${lang}/#inicio`} className="flex items-center gap-2 sm:gap-3 min-w-0" aria-label="Go to homepage">
