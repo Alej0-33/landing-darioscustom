@@ -58,8 +58,8 @@ export default function Reviews() {
               </div>
               <div className="flex items-center justify-between pt-4 border-t border-industrial-border/60">
                 <span className="text-[10px] text-[#71717A] font-mono">{rev.date}</span>
-                <a href={rev.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[10px] font-bold text-zinc-400 hover:text-brand-light transition-colors uppercase tracking-widest">
-                  {dict.viewRev} <ExternalLink className="w-3 h-3" />
+                <a href={rev.link} target="_blank" rel="noopener noreferrer" aria-label={`${dict.viewRev} - ${rev.name}`} className="flex items-center gap-1.5 text-[10px] font-bold text-zinc-400 hover:text-brand-light transition-colors uppercase tracking-widest">
+                  {dict.viewRev} <span className="sr-only"> - {rev.name}</span> <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
             </motion.article>

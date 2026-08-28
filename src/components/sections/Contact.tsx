@@ -47,7 +47,7 @@ export default function Contact() {
 
   const actionSchema = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": "ContactPage",
     "@id": "https://dariosironart.com/#contacto",
     "url": "https://dariosironart.com/#contacto",
     "name": "Contact Dario's Custom Iron Art",

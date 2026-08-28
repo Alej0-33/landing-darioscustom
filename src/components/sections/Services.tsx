@@ -21,11 +21,19 @@ export default function Services() {
     "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40",
     "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40"
   ];
+  // ✅ Schema HowTo Oficial (Para Rich Snippets)
   const howToSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
     "name": dict.howTo.title,
     "description": "Step-by-step process to request and install a custom ironwork design.",
+    "image": "https://dariosironart.com/images/product19.webp", // ✅ Imagen del proceso
+    "totalTime": "P14D", // ✅ Tiempo estimado (14 días en formato ISO 8601)
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": "1500" // ✅ Costo base estimado (Requerido por Google)
+    },
     "step": dict.howTo.steps.map((step: any, idx: number) => ({
       "@type": "HowToStep",
       "position": idx + 1,
