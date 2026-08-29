@@ -74,7 +74,8 @@ export const allProducts: Product[] = [
     images: [
       "Black-chandelier-with-gold-accents.webp",
       "Black-chandelier-with-gold-accents2.webp",
-      "Black-chandelier-with-gold-accents3.webp"
+      "Black-chandelier-with-gold-accents3.webp",
+      "Black-chandelier-with-gold-accents4.webp"
     ],
     title: "Classic Wrought Iron Chandelier",
     category: "Iluminación",
@@ -89,7 +90,9 @@ export const allProducts: Product[] = [
     images: [
       "Chandelier-with-gold-finishes.webp",
       "Chandelier-with-gold-finishes2.webp",
-      "Chandelier-with-gold-finishes3.webp"
+      "Chandelier-with-gold-finishes3.webp",
+      "Chandelier-with-gold-finishes4.webp",
+      "Chandelier-with-gold-finishes5.webp"
     ],
     title: "Medieval Style Wrought Iron Chandelier",
     category: "Iluminación",
