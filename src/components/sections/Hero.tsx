@@ -171,7 +171,7 @@ export default function Hero() {
               className="absolute inset-0 transition-opacity duration-1000 ease-in-out z-10"
             >
               <Image 
-                src="/images/product19.webp"
+                src="/images/Forged-Aluminum-Door-with-Heraldic-Crests.webp"
                 alt="Proyecto Terminado Darioscustom"
                 width={450}
                 height={562}
