@@ -25,7 +25,17 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     keywords: dict.seo.keywords,
     authors: [{ name: "Dario - Master Metal Craftsman", url: SITE_URL }],
     metadataBase: new URL(SITE_URL),
-    
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     icons: {
       icon: '/icon.png',
       apple: '/icon.png',
