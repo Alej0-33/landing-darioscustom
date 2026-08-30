@@ -40,16 +40,18 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       icon: '/icon.png',
       apple: '/icon.png',
     },
-    
     alternates: { 
-      canonical: `${SITE_URL}/${resolvedParams.lang}`,
+      // Fixed: Added trailing slash to match actual route and prevent redirect chain SEO penalty
+      canonical: `${SITE_URL}/${resolvedParams.lang}/`,
       languages: { 
-        "en-US": `${SITE_URL}/en`, 
-        "es-US": `${SITE_URL}/es`,
-        "x-default": `${SITE_URL}/en`
+        "en": `${SITE_URL}/en/`, // Self-referencing hreflang
+        "es": `${SITE_URL}/es/`, // Self-referencing hreflang
+        "en-US": `${SITE_URL}/en/`, 
+        "es-US": `${SITE_URL}/es/`,
+        "x-default": `${SITE_URL}/en/`
       } 
     },
-    openGraph: { title: dict.seo.title, description: dict.seo.description, url: `${SITE_URL}/${resolvedParams.lang}`, siteName: "Darioscustom", images: [{ url: "/brand/darioscustom_logo.webp", width: 800, height: 600 }] },
+    openGraph: { title: dict.seo.title, description: dict.seo.description, url: `${SITE_URL}/${resolvedParams.lang}/`, siteName: "Darioscustom", images: [{ url: "/brand/darioscustom_logo.webp", width: 800, height: 600 }] },
   };
 }
 

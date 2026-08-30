@@ -14,12 +14,12 @@ export default function FAQ() {
     "mainEntity": dict.items.map((item: any) => ({
       "@type": "Question",
       "name": item.q,
-      "text": item.q, // Solicitado por SAGE
+      "text": item.q,
       "dateCreated": "2024-01-01T08:00:00+00:00",
       "upvoteCount":35,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": item.a.replace(/<\/?[^>]+(>|$)/g, ""), // Limpiamos HTML para el JSON-LD
+        "text": item.a.replace(/<\/?[^>]+(>|$)/g, ""),
         "url": `https://dariosironart.com/#${item.id}`,
         "upvoteCount": 28,
         "dateCreated": "2024-01-01T08:00:00+00:00"
@@ -38,6 +38,17 @@ export default function FAQ() {
   return (
     <section id="preguntas" className="py-20 sm:py-24 relative border-t border-[#27272A] bg-[#09090B]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
+      {/* Interfaz WebMCP declarativa para Agentes de IA (Oculta para usuarios) */}
+      <div className="hidden" aria-hidden="true">
+        <form toolname="searchFAQ" tooldescription="Search the frequently asked questions about custom ironwork, Miami building codes, and powder coating.">
+          <input type="text" name="query" toolparamdescription="The user's search query regarding ironwork services" />
+        </form>
+        <form toolname="submitQuestion" tooldescription="Submit a new technical question to the blacksmith workshop if it is not found in the FAQ.">
+          <input type="text" name="question" toolparamdescription="The technical question about ironwork to submit" />
+          <input type="email" name="email" toolparamdescription="Contact email to receive the answer" />
+        </form>
+      </div>
 
       <div className="max-w-4xl mx-auto px-6">
         <motion.div className="text-center mb-16" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>

@@ -2,7 +2,7 @@ export interface Product {
   id: number;
   slug: string;
   img: string;
-  images?: string[]; // Propiedad opcional para soportar múltiples imágenes en el slider
+  images?: string[]; 
   title: string;
   category: string;
   tags: string[];
@@ -18,101 +18,67 @@ export const allProducts: Product[] = [
     title: "Metal Door",
     category: "Puertas",
     tags: ["Silver Metal", "Lion Heads", "Grid Design", "Decorative Rivets", "Robust Style"],
-    description:
-      "Monumental door made of silver metal with handcrafted lion head reliefs. Its structural grid design combines functionality and aesthetics, with decorative rivets that reinforce the solidity of the whole. Ideal for high-profile residential or commercial main entrances.",
+    description: "Monumental door made of silver metal with handcrafted lion head reliefs. Its structural grid design combines functionality and aesthetics, with decorative rivets that reinforce the solidity of the whole. Ideal for high-profile residential or commercial main entrances.",
   },
   {
     id: 2,
     slug: "2",
     img: "3D-Geometric-Copper-Wall-Sculpture.webp",
-    images: [
-      "3D-Geometric-Copper-Wall-Sculpture.webp",
-      "3D-Geometric-Copper-Wall-Sculpture2.webp"
-    ],
+    images: ["3D-Geometric-Copper-Wall-Sculpture.webp", "3D-Geometric-Copper-Wall-Sculpture2.webp"],
     title: "3D Metal Geometric Wall Sculpture",
     category: "Arte",
     tags: ["Wall Art", "Interior Decoration", "Copper Finish"],
-    description:
-      "Three-dimensional sculptural piece of high visual impact made of metal with an aged copper finish. Its geometry projects dynamic shadows according to ambient lighting, making it the focal point of any contemporary interior space.",
+    description: "Three-dimensional sculptural piece of high visual impact made of metal with an aged copper finish. Its geometry projects dynamic shadows according to ambient lighting, making it the focal point of any contemporary interior space.",
   },
   {
     id: 3,
     slug: "3",
     img: "Forged-Aluminum-Door-with-Heraldic-Crests.webp",
-    images: [
-      "Forged-Aluminum-Door-with-Heraldic-Crests.webp",
-      "Forged-Aluminum-Door-with-Heraldic-Crests2.webp",
-      "Heraldic-Crest.webp"
-    ],
+    images: ["Forged-Aluminum-Door-with-Heraldic-Crests.webp", "Forged-Aluminum-Door-with-Heraldic-Crests2.webp", "Forged-Aluminum-Door-with-Heraldic-Crests3.webp", "Forged-Aluminum-Door-with-Heraldic-Crests4.webp", "Heraldic-Crest.webp", "Heraldic-Crest2.webp"],
     title: "Wrought Iron Door with Heraldic Shields",
     category: "Puertas",
     tags: ["Wrought Iron", "Classic Style", "Heraldic Shields", "Gold Details", "Artistic Ironwork"],
-    description:
-      "Hand-wrought iron door with integrated heraldic shields and handcrafted gold details. Each piece is unique thanks to the manual forging technique, with finishes that evoke classic European architecture and long-lasting anti-corrosion protection.",
+    description: "Hand-wrought iron door with integrated heraldic shields and handcrafted gold details. Each piece is unique thanks to the manual forging technique, with finishes that evoke classic European architecture and long-lasting anti-corrosion protection.",
   },
   {
     id: 4,
     slug: "4",
     img: "Modern-Black-Stair-Railling.webp",
-    images: [
-      "Modern-Black-Stair-Railling.webp",
-      "Modern-Black-Stair-Railling2.webp",
-      "Modern-Black-Stair-Railling3.webp",
-      "Modern-Black-Stair-Railling4.webp",
-      "Modern-Black-Stair-Railling5.webp"
-    ],
+    images: ["Modern-Black-Stair-Railling.webp", "Modern-Black-Stair-Railling2.webp", "Modern-Black-Stair-Railling3.webp", "Modern-Black-Stair-Railling4.webp", "Modern-Black-Stair-Railling5.webp"],
     title: "Modern Black Metal Stair Railing",
     category: "Barandales",
     tags: ["Black Metal", "Minimalist Design", "Horizontal Lines", "Modern Style", "Interiors"],
-    description:
-      "Contemporary design railing with horizontal crossbars in matte black metal. Its clean and minimalist profile integrates perfectly into modern and industrial architectures, complying with AWS D1.1 safety regulations for interior stairs and balconies.",
+    description: "Contemporary design railing with horizontal crossbars in matte black metal. Its clean and minimalist profile integrates perfectly into modern and industrial architectures, complying with AWS D1.1 safety regulations for interior stairs and balconies.",
   },
   {
     id: 5,
     slug: "5",
     img: "Black-chandelier-with-gold-accents.webp",
-    images: [
-      "Black-chandelier-with-gold-accents.webp",
-      "Black-chandelier-with-gold-accents2.webp",
-      "Black-chandelier-with-gold-accents3.webp",
-      "Black-chandelier-with-gold-accents4.webp"
-    ],
+    images: ["Black-chandelier-with-gold-accents.webp", "Black-chandelier-with-gold-accents2.webp", "Black-chandelier-with-gold-accents3.webp", "Black-chandelier-with-gold-accents4.webp"],
     title: "Classic Wrought Iron Chandelier",
     category: "Iluminación",
     tags: ["Wrought Iron", "Classic Style", "Pendant Lamps", "Gold Details", "Artistic Ironwork"],
-    description:
-      "Coordinated set of chandeliers designed for tandem installation. Perfect for double-height spaces or wide hallways, they bring warmth and a classic character with hand-worked gold details.",
+    description: "Coordinated set of chandeliers designed for tandem installation. Perfect for double-height spaces or wide hallways, they bring warmth and a classic character with hand-worked gold details.",
   },
   {
     id: 6,
     slug: "6",
     img: "Chandelier-with-gold-finishes.webp",
-    images: [
-      "Chandelier-with-gold-finishes.webp",
-      "Chandelier-with-gold-finishes2.webp",
-      "Chandelier-with-gold-finishes3.webp",
-      "Chandelier-with-gold-finishes4.webp",
-      "Chandelier-with-gold-finishes5.webp"
-    ],
+    images: ["Chandelier-with-gold-finishes.webp", "Chandelier-with-gold-finishes2.webp", "Chandelier-with-gold-finishes3.webp", "Chandelier-with-gold-finishes4.webp", "Chandelier-with-gold-finishes5.webp"],
     title: "Medieval Style Wrought Iron Chandelier",
     category: "Iluminación",
     tags: ["Wrought Iron", "Medieval Style", "Pendant Lamps", "Gold Details", "Circular Design"],
-    description:
-      "Circular chandeliers inspired by the lighting of medieval castles and palaces. Made of wrought iron with gold applications, they create dramatic and warm environments. Available in multiple diameters according to space.",
+    description: "Circular chandeliers inspired by the lighting of medieval castles and palaces. Made of wrought iron with gold applications, they create dramatic and warm environments. Available in multiple diameters according to space.",
   },
   {
     id: 7,
     slug: "7",
     img: "Aluminum-gate-with-a-wood-grain-paint-finish.webp",
-    images: [
-      "Aluminum-gate-with-a-wood-grain-paint-finish.webp",
-      "Aluminum-gate-with-a-wood-grain-paint-finish2.webp"
-    ],
+    images: ["Aluminum-gate-with-a-wood-grain-paint-finish.webp", "Aluminum-gate-with-a-wood-grain-paint-finish2.webp"],
     title: "Aluminum Gate with Wood Grain Finish",
     category: "Portones",
     tags: ["Aluminum", "Entrance Gate", "Grid Design", "Exterior", "Decorative Wood Color Finish"],
-    description:
-      "Exterior entrance gate made of high resistance aluminum with grid design panels and decorative imitation wood finish. Offers optimal privacy and cross ventilation, protected with a highly durable electrostatic finish against sea salt and Florida weathering.",
+    description: "Exterior entrance gate made of high resistance aluminum with grid design panels and decorative imitation wood finish. Offers optimal privacy and cross ventilation, protected with a highly durable electrostatic finish against sea salt and Florida weathering.",
   },
   {
     id: 8,
@@ -122,21 +88,264 @@ export const allProducts: Product[] = [
     title: "Classic Aluminum Gate",
     category: "Portones",
     tags: ["Aluminum", "Lightweight", "Durable", "Entrance Gate", "Classic Style", "Arch Design", "Exterior"],
-    description:
-      "Double leaf exterior entrance gate with an arched design, made entirely of premium aluminum to ensure a lightweight structure, corrosion-free and highly durable. Its manufacture evokes the aesthetic elegance of classic wrought iron without its weight or maintenance. Includes security lock and coordinated hardware.",
+    description: "Double leaf exterior entrance gate with an arched design, made entirely of premium aluminum to ensure a lightweight structure, corrosion-free and highly durable.",
   },
+  {
+    id: 9,
+    slug: "9",
+    img: "ornate-wrought-iron-driveway-gate.webp",
+    images: ["ornate-wrought-iron-driveway-gate.webp"],
+    title: "Ornate Wrought Iron Driveway Gate",
+    category: "Portones",
+    tags: ["Wrought Iron", "High Security", "Ornate Design", "Residential", "Automated"],
+    description: "Spectacular custom driveway gate hand-forged in wrought iron. It features classic ornamental details, decorative finials, and a reinforced structure prepared for automated opening systems. Ideal for luxury estates and residences.",
+  },
+  {
+    id: 10,
+    slug: "10",
+    img: "modern-aluminum-horizontal-slat-railing.webp",
+    images: ["modern-aluminum-horizontal-slat-railing.webp"],
+    title: "Modern Aluminum Horizontal Slat Railing",
+    category: "Barandales",
+    tags: ["Aluminum", "Privacy", "Modern Design", "Weather Resistant", "Balconies"],
+    description: "Contemporary railing system fabricated from premium aluminum with a horizontal slat design providing privacy and optimal airflow. Powder-coated finish ensures extreme resistance against saltpeter and humidity.",
+  },
+  {
+    id: 11,
+    slug: "11",
+    img: "modern-abstract-metal-sculpture.webp",
+    images: ["modern-abstract-metal-sculpture.webp", "modern-abstract-metal-sculpture2.webp", "modern-abstract-metal-sculpture3.webp"],
+    title: "Modern Abstract Metal Sculpture",
+    category: "Arte",
+    tags: ["Sculpture", "Metal Art", "Abstract Design", "Indoor/Outdoor", "Unique Piece"],
+    description: "Exquisite contemporary art piece crafted from solid metal. This abstract sculpture stands out for its fluid lines and ability to interact with natural light, creating dynamic shadows. Treated to withstand the elements.",
+  },
+  {
+    id: 12,
+    slug: "12",
+    img: "outdoor-metal-container-bar.webp.webp",
+    images: ["outdoor-metal-container-bar.webp.webp", "outdoor-metal-container-bar2.webp.webp", "outdoor-metal-container-bar3.webp.webp"],
+    title: "Outdoor Metal Container Bar",
+    category: "Miscelaneas",
+    tags: ["Commercial Bar", "Metal Container", "Industrial Design", "Outdoor", "Heavy Structure"],
+    description: "Innovative outdoor commercial bar constructed from repurposed shipping container panels and integrated with heavy-duty ironwork. Features fold-down windows, sturdy serving counters, and an unmistakable industrial design.",
+  },
+  {
+    id: 13,
+    slug: "13",
+    img: "black-metal-glass-french-doors.webp.webp",
+    images: ["black-metal-glass-french-doors.webp.webp"],
+    title: "Black Metal & Glass French Doors",
+    category: "Puertas",
+    tags: ["Metal & Glass", "Industrial Style", "Modern Interiors", "Natural Light", "Double Doors"],
+    description: "Elegant interior french doors combining slender black metal framing with clear tempered glass. Their design maximizes natural light flow while maintaining acoustic separation. Ideal for home offices or living rooms.",
+  },
+  {
+    id: 14,
+    slug: "14",
+    img: "abstract-blue-green-metal-art.webp",
+    images: ["abstract-blue-green-metal-art.webp"],
+    title: "Abstract Blue & Green Metal Art",
+    category: "Arte",
+    tags: ["Wall Art", "Abstract", "Color Finish", "Interiors"],
+    description: "Abstract metal art featuring vibrant blue and green tones. Modern decor piece ideal for contemporary interiors.",
+  },
+  {
+    id: 15,
+    slug: "15",
+    img: "arched-aluminum-pedestrian-gate.webp",
+    images: ["arched-aluminum-pedestrian-gate.webp", "arched-aluminum-pedestrian-gate2.webp", "arched-aluminum-pedestrian-gate3.webp"],
+    title: "Arched Aluminum Pedestrian Gate",
+    category: "Portones",
+    tags: ["Pedestrian Gate", "Aluminum", "Arched Design", "Exterior"],
+    description: "Elegant pedestrian gate with an arched top design, crafted from lightweight aluminum. Weather resistant.",
+  },
+  {
+    id: 16,
+    slug: "16",
+    img: "arched-metal-driveway-gate.webp",
+    images: ["arched-metal-driveway-gate.webp"],
+    title: "Arched Metal Driveway Gate",
+    category: "Portones",
+    tags: ["Driveway Gate", "Metal", "Arched Design", "Heavy Duty"],
+    description: "Robust vehicular gate featuring a classic arched design. Offers security and style for estates.",
+  },
+  {
+    id: 17,
+    slug: "17",
+    img: "black-aluminum-double-front-door.webp",
+    images: ["black-aluminum-double-front-door.webp", "black-aluminum-double-front-door2.webp"],
+    title: "Black Aluminum Double Front Door",
+    category: "Puertas",
+    tags: ["Entry Door", "Aluminum", "Double Door", "Modern"],
+    description: "Imposing double entry door in matte black aluminum, featuring a modern geometric design and high security.",
+  },
+  {
+    id: 18,
+    slug: "18",
+    img: "corrugated-metal-commercial-bar-counter.webp.webp",
+    images: ["corrugated-metal-commercial-bar-counter.webp.webp", "corrugated-metal-commercial-bar-counter2.webp.webp", "corrugated-metal-commercial-bar-counter3.webp.webp", "corrugated-metal-commercial-bar-counter4.webp.webp", "corrugated-metal-commercial-bar-counter5.webp.webp"],
+    title: "Corrugated Metal Commercial Bar Counter",
+    category: "Miscelaneas",
+    tags: ["Commercial", "Bar Counter", "Corrugated Metal", "Industrial"],
+    description: "Industrial-style bar counter made from corrugated metal panels, ideal for restaurants and breweries.",
+  },
+  {
+    id: 19,
+    slug: "19",
+    img: "custom-aluminum-pool-patio-guardrail.webp",
+    images: ["custom-aluminum-pool-patio-guardrail.webp", "custom-aluminum-pool-patio-guardrail2.webp", "custom-aluminum-pool-patio-guardrail3.webp", "custom-aluminum-pool-patio-guardrail4.webp"],
+    title: "Custom Aluminum Pool Patio Guardrail",
+    category: "Barandales",
+    tags: ["Pool Guardrail", "Aluminum", "Patio", "Weather Resistant"],
+    description: "Aluminum railing system specifically designed for pool areas and patios. Finish resistant to chemicals and moisture.",
+  },
+  {
+    id: 20,
+    slug: "20",
+    img: "large-industrial-metal-cog-art.webp",
+    images: ["large-industrial-metal-cog-art.webp"],
+    title: "Large Industrial Metal Cog Art",
+    category: "Arte",
+    tags: ["Wall Art", "Industrial", "Metal Cogs", "Large Scale"],
+    description: "Large-scale wall art piece featuring heavy industrial-style metal cogs.",
+  },
+  {
+    id: 21,
+    slug: "21",
+    img: "laser-cut-metal-balcony-railing.webp",
+    images: ["laser-cut-metal-balcony-railing.webp", "laser-cut-metal-balcony-railing2.webp.webp", "laser-cut-metal-balcony-railing3.webp.webp", "laser-cut-metal-balcony-railing4.webp.webp"],
+    title: "Laser Cut Metal Balcony Railing",
+    category: "Barandales",
+    tags: ["Balcony Railing", "Laser Cut", "CNC", "Privacy"],
+    description: "Balcony railing with intricate CNC laser-cut patterns. Combines partial privacy with a luxury design.",
+  },
+  {
+    id: 22,
+    slug: "22",
+    img: "modern-aluminum-outdoor-kitchen-cabinets.webp.webp",
+    images: ["modern-aluminum-outdoor-kitchen-cabinets.webp.webp"],
+    title: "Modern Aluminum Outdoor Kitchen Cabinets",
+    category: "Miscelaneas",
+    tags: ["Outdoor Kitchen", "Cabinets", "Aluminum", "Weather Resistant"],
+    description: "Outdoor kitchen cabinetry system crafted from aluminum, guaranteed against rust in saline environments.",
+  },
+  {
+    id: 23,
+    slug: "23",
+    img: "modern-geometric-aluminum-double-door.webp",
+    images: ["modern-geometric-aluminum-double-door.webp", "modern-geometric-aluminum-double-door2.webp"],
+    title: "Modern Geometric Aluminum Double Door",
+    category: "Puertas",
+    tags: ["Double Door", "Geometric", "Aluminum", "Modern Design"],
+    description: "Double entry door highlighting an asymmetrical geometric pattern, integrating solid aluminum panels and glass.",
+  },
+  {
+    id: 24,
+    slug: "24",
+    img: "modern-horizontal-slat-driveway-gate.webp",
+    images: ["modern-horizontal-slat-driveway-gate.webp"],
+    title: "Modern Horizontal Slat Driveway Gate",
+    category: "Portones",
+    tags: ["Driveway Gate", "Horizontal Slats", "Modern", "Privacy"],
+    description: "Sliding gate with a clean horizontal slat design, perfect for minimalist residences.",
+  },
+  {
+    id: 25,
+    slug: "25",
+    img: "modern-metal-base-glass-coffee-table.webp",
+    images: ["modern-metal-base-glass-coffee-table.webp", "modern-metal-base-glass-coffee-table2.webp", "modern-metal-base-glass-coffee-table3.webp"],
+    title: "Modern Metal Base Glass Coffee Table",
+    category: "Miscelaneas",
+    tags: ["Coffee Table", "Glass Top", "Metal Base", "Interior Furniture"],
+    description: "Designer coffee table with an intricate sculpted metal base and a clear tempered glass top.",
+  },
+  {
+    id: 26,
+    slug: "26",
+    img: "ornate-aluminum-french-doors-with-sidelights.webp.webp",
+    images: ["ornate-aluminum-french-doors-with-sidelights.webp.webp", "ornate-aluminum-french-doors-with-sidelights2.webp.webp", "ornate-aluminum-french-doors-with-sidelights3.webp.webp"],
+    title: "Ornate Aluminum French Doors",
+    category: "Puertas",
+    tags: ["French Doors", "Aluminum", "Ornate", "Sidelights"],
+    description: "French door set with sidelights, featuring intricate ornamental cast details.",
+  },
+  {
+    id: 27,
+    slug: "27",
+    img: "ornate-metal-outdoor-wall-lantern.webp",
+    images: ["ornate-metal-outdoor-wall-lantern.webp", "ornate-metal-outdoor-wall-lantern2.webp", "ornate-metal-outdoor-wall-lantern3.webp", "ornate-metal-outdoor-wall-lantern4.webp"],
+    title: "Ornate Metal Outdoor Wall Lantern",
+    category: "Iluminación",
+    tags: ["Wall Lantern", "Outdoor Lighting", "Ornate", "Metal"],
+    description: "Classic style outdoor wall lantern, forged with traditional details and seeded glass.",
+  },
+  {
+    id: 28,
+    slug: "28",
+    img: "ornate-wrought-iron-railing.webp",
+    images: ["ornate-wrought-iron-railing.webp", "ornate-wrought-iron-railing2.webp", "ornate-wrought-iron-railing3.webp", "ornate-wrought-iron-railing4.webp", "ornate-wrought-iron-railing5.webp", "ornate-wrought-iron-railing6.webp", "ornate-wrought-iron-railing7.webp", "ornate-wrought-iron-railing8.webp"],
+    title: "Ornate Wrought Iron Railing",
+    category: "Barandales",
+    tags: ["Wrought Iron", "Railing", "Ornate", "Classic"],
+    description: "Classic railing with elaborate scrolls and floral details in wrought iron, ideal for majestic balconies.",
+  },
+  {
+    id: 29,
+    slug: "29",
+    img: "ornate-wrought-iron-stair-railing.webp",
+    images: ["ornate-wrought-iron-stair-railing.webp"],
+    title: "Ornate Wrought Iron Stair Railing",
+    category: "Barandales",
+    tags: ["Stair Railing", "Wrought Iron", "Ornate", "Interiors"],
+    description: "Elegant hand-forged iron handrail, designed for traditional style curved interior staircases.",
+  },
+  {
+    id: 30,
+    slug: "30",
+    img: "steampunk-gear-metal-wall-art.webp",
+    images: ["steampunk-gear-metal-wall-art.webp"],
+    title: "Steampunk Gear Metal Wall Art",
+    category: "Arte",
+    tags: ["Wall Art", "Steampunk", "Gears", "Interiors"],
+    description: "Wall art composition inspired by the steampunk movement, combining pipes and gears.",
+  },
+  {
+    id: 31,
+    slug: "31",
+    img: "wood-look-aluminum-privacy-fence.webp.webp",
+    images: ["wood-look-aluminum-privacy-fence.webp.webp", "wood-look-aluminum-privacy-fence2.webp.webp", "wood-look-aluminum-privacy-fence3.webp.webp", "wood-look-aluminum-privacy-fence4.webp.webp", "wood-look-aluminum-privacy-fence5.webp.webp"],
+    title: "Wood Look Aluminum Privacy Fence",
+    category: "Portones",
+    tags: ["Privacy Fence", "Wood Look", "Aluminum", "Exterior"],
+    description: "Perimeter fencing system offering the visual beauty of wood with the eternal durability of aluminum.",
+  },
+  {
+    id: 32,
+    slug: "32",
+    img: "wrought-iron-chandelier.webp",
+    images: ["wrought-iron-chandelier.webp", "wrought-iron-chandelier2.webp", "wrought-iron-chandelier3.webp"],
+    title: "Wrought Iron Chandelier",
+    category: "Iluminación",
+    tags: ["Chandelier", "Wrought Iron", "Classic", "High Ceiling"],
+    description: "Stunning hand-forged chandelier, ideal for high-ceiling foyers and formal dining rooms.",
+  },
+  {
+    id: 33,
+    slug: "33",
+    img: "wrought-iron-style-aluminum-entry-door.webp",
+    images: ["wrought-iron-style-aluminum-entry-door.webp"],
+    title: "Wrought Iron Style Aluminum Entry Door",
+    category: "Puertas",
+    tags: ["Entry Door", "Aluminum", "Wrought Iron Style", "Lightweight"],
+    description: "Lightweight aluminum security door designed to perfectly mimic the heavy aesthetic of antique wrought iron.",
+  }
 ];
 
 export function getProductBySlug(slug: string): Product | undefined {
   return allProducts.find((p) => p.slug === slug);
 }
 
-export function getRelatedProducts(
-  currentId: number,
-  category: string,
-  limit = 3
-): Product[] {
-  return allProducts
-    .filter((p) => p.id !== currentId && p.category === category)
-    .slice(0, limit);
+export function getRelatedProducts(currentId: number, category: string, limit = 4): Product[] {
+  return allProducts.filter((p) => p.id !== currentId && p.category === category).slice(0, limit);
 }

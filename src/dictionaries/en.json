@@ -1,21 +1,21 @@
 {
   "seo": {
     "title": "Custom Ironwork & Design in Miami | Quote via WhatsApp",
-    "description": "Blacksmith and artistic forging workshop in Miami. Exclusive iron and aluminum design: balconies, doors, and gates. Quote today with Darioscustom.",
-    "keywords": ["custom ironwork miami", "iron and aluminum design", "quote ironwork via whatsapp", "artistic forging miami", "iron balconies miami", "aluminum gates miami", "Darioscustom"]
+    "description": "Custom ironwork workshop in Miami. Exclusive custom design in iron and aluminum: balconies, iron doors, and privacy fences. Quote today.",
+    "keywords": ["custom ironwork miami", "custom design", "iron doors", "privacy fences", "iron balconies miami", "aluminum gates miami", "Darioscustom"]
   },
   "header": { 
-    "links": { "home": "Home", "services": "Services", "catalog": "Catalog", "materials": "Materials", "reviews": "Reviews", "faq": "FAQ" }, 
-    "quote": "Quote Project" 
+    "links": { "home": "Home", "about": "About Us", "services": "Services", "catalog": "Catalog", "materials": "Materials", "reviews": "Reviews", "faq": "FAQ" }, 
+    "quote": "Quote Ironwork Project" 
   },
   "hero": {
     "title1": "Luxury custom ",
     "highlight": "metal work & ironwork",
     "title2": " in miami",
-    "desc": "Artistic forging workshop specializing in unique pieces customized to the client's taste. We fabricate from scratch in wrought iron, aluminum, stainless steel, and bronze. From high-ceiling chandeliers to gates and railings with powder coating.",
-    "btnQuote": "Get a Quote",
-    "btnCatalog": "Explore Catalog",
-    "cadTag": "Shop Drawing",
+    "desc": "We are a custom ironwork workshop in Miami. We specialize in custom design and artistic forging. We create unique pieces to the client's taste. We fabricate iron doors, balconies, railings, and privacy fences. We use premium materials like aluminum, stainless steel 304/316L, bronze, and wrought iron. Every chandelier or gate gets a flawless powder-coated finish.",
+    "btnQuote": "Request Technical Quote",
+    "btnCatalog": "View Ironwork Catalog",
+    "cadTag": "Custom Design",
     "cadTitle": "PRIVATE ARCHITECTURAL GATE",
     "cadSpecs": "Specifications:",
     "cadForged": "Forged & Solid • Miami, FL",
@@ -23,108 +23,120 @@
     "cadResult": "On-Site Result",
     "cadToggle": "Toggle view (Blueprint / Real)"
   },
+  "about": {
+    "tag": "The Master Blacksmith",
+    "title": "Meet Dario",
+    "desc1": "Dario has over 20 years of experience. He is an expert in custom ironwork in Miami. Our workshop creates custom design pieces for exclusive residences. Every iron door, balcony, or sculpture project is true architectural art. We have transformed traditional forging into unique pieces tailored to our clients' tastes.",
+    "desc2": "Metal is a canvas for us. We forge doors, railings, and chandeliers from scratch. Dario personally oversees every detail in the workshop. We guarantee durable artistic forging using aluminum or stainless steel. Your custom ironwork will be a lasting legacy for your property.",
+    "stats": [
+      { "value": "20+", "label": "Years Experience" },
+      { "value": "100%", "label": "Hand-Forged" },
+      { "value": "Miami", "label": "Local Workshop" }
+    ]
+  },
   "services": {
-    "title": "High Durability Metal Engineering", "desc": "We offer custom metal solutions certified against Florida's climate. Every project is a unique piece, designed exclusively for your property.",
+    "title": "High Durability Custom Ironwork in Miami", 
+    "desc": "We offer highly durable custom ironwork in Miami. We create custom design solutions certified for the Florida climate. Every iron door, balcony, or privacy fence is a unique piece.",
     "items": [
-      { "title": "Gates & Fences", "desc": "Design and fabrication of unique perimeter enclosures in aluminum or iron. Code compliant and structurally sound." },
-      { "title": "Railings & Stairs", "desc": "Balcony and stair systems tailored to your taste. We work with stainless steel, iron, or aluminum with powder-coated finish." },
-      { "title": "Precision CNC Laser", "desc": "Privacy panels and decorative doors with customizable finishes in different materials for luxury projects." },
-      { "title": "Chandeliers & Art", "desc": "We fabricate custom wrought iron chandeliers for high ceilings. We design from scratch, including weight calculation and safe anchoring." }
+      { "title": "Gates & Privacy Fences", "desc": "We fabricate custom privacy fences and gates. We use aluminum or iron doors. We strictly comply with Miami building codes." },
+      { "title": "Railings & Balconies", "desc": "Balcony and stair systems with custom design. We work with stainless steel, bronze, or aluminum with a powder-coated finish." },
+      { "title": "Precision CNC Laser & Sculptures", "desc": "We create privacy panels, decorative doors, and sculptures. We offer customizable finishes in various materials for luxury projects." },
+      { "title": "Chandeliers & Lamps", "desc": "We fabricate custom wrought iron chandeliers and lamps for high ceilings. We design from scratch including safe weight calculation." }
     ],
     "matTitle": "High-End Materials and Artistic Finish", "matHeaders": ["Material", "Resistance", "Usage & Artistic Ironwork"],
     "materials": [
-      { "name": "Aluminum", "res": "Extreme", "desc": "Does not rust. Excellent choice for custom gates in coastal areas and environments with saltpeter." },
-      { "name": "Stainless Steel 304 or 316L", "res": "Extreme", "desc": "Highly corrosion resistant. 316L is especially recommended for custom ironwork near the sea." },
-      { "name": "Bronze", "res": "Medium / High", "desc": "Good resistance to coastal environments. Ideal for unique artistic pieces that develop a natural patina." },
-      { "name": "Wrought Iron", "res": "Medium / High", "desc": "Classic for chandeliers and railings. We protect it with thermoset powder coating to prevent rust." }
+      { "name": "Aluminum", "res": "Extreme", "desc": "Does not rust. Excellent choice for privacy fences and custom gates in Miami's coastal areas." },
+      { "name": "Stainless Steel 304 or 316L", "res": "Extreme", "desc": "Highly corrosion resistant. 316L is recommended for custom design balconies near the sea." },
+      { "name": "Bronze", "res": "Medium / High", "desc": "Good resistance to coastal environments. Ideal for unique sculptures and artistic pieces customized to taste." },
+      { "name": "Wrought Iron / Steel", "res": "Medium / High", "desc": "Classic for chandeliers, lamps, and iron doors. We protect it with thermoset powder coating to prevent rust." }
     ],
     "howTo": {
       "title": "How to request your custom design",
       "steps": [
-        { "title": "Initial Request", "desc": "Send us measurements and photos via WhatsApp. We will discuss your tastes to create a unique piece from scratch." },
-        { "title": "Visit & Material", "desc": "We visit your property in Miami. We choose the ideal material together: aluminum, iron, bronze, or steel." },
-        { "title": "Custom Fabrication", "desc": "We forge your custom design in our workshop and apply electrostatic powder coating." },
-        { "title": "Safe Installation", "desc": "We install your project strictly complying with Florida building codes." }
+        { "title": "Initial Request", "desc": "Send us measurements and photos via WhatsApp. We will discuss your tastes to create a unique custom ironwork piece." },
+        { "title": "Technical Visit", "desc": "We visit your property in Miami. We choose the ideal material: aluminum, stainless steel, bronze, or wrought iron." },
+        { "title": "Custom Fabrication", "desc": "We forge your custom design. We apply electrostatic powder coating to your iron doors or balconies." },
+        { "title": "Safe Installation", "desc": "We install your custom ironwork strictly complying with Florida building codes." }
       ]
     }
   },
-  "catalog": { "tag": "Detailed Catalog", "title": "HANDCRAFTED IRONWORK MADE TO MEASURE", "desc": "Explore our collection with the main pieces developed by our blacksmiths in Florida. Filter by category and quote your ideal design directly.", "categories": { "Todos": "All", "Iluminación": "Lighting", "Puertas": "Doors", "Barandales": "Railings", "Portones": "Gates", "Arte": "Art", "Miscelaneas": "Miscellaneous" }, "specId": "SPEC-ID // DC-00", "quoteBtn": "Quote via WhatsApp", "msgPart1": "Hello Dario's custom iron art, I am interested in quoting the product", "msgPart2": "from your online catalog." },
+  "catalog": { "tag": "Detailed Catalog", "title": "HANDCRAFTED IRONWORK MADE TO MEASURE", "desc": "Explore our custom ironwork collection in Miami. Filter by category and request a technical quote for your custom design.", "categories": { "Todos": "All", "Iluminación": "Lighting", "Puertas": "Doors", "Barandales": "Railings", "Portones": "Gates", "Arte": "Art", "Miscelaneas": "Miscellaneous" }, "specId": "SPEC-ID // DC-00", "quoteBtn": "Quote design via WhatsApp", "msgPart1": "Hello Dario's custom iron art, I am interested in quoting the product", "msgPart2": "from your online ironwork catalog." },
   "whyus": {
-    "tag": "Our Difference", "title": "Unique Pieces to the Client's Taste", "desc1": "At Dario's Custom Iron Art we don't sell mass-produced items. We specialize in fabricating unique pieces from scratch, designed to each client's personal taste. We adapt to your space's architecture working with multiple materials.", "desc2": "We serve high-end projects in Miami. From heavy chandeliers requiring engineering and weight calculations to monumental doors. We guarantee perfection in every weld.", "quote": "\"Excellence in custom blacksmithing is defined by the precision that is not seen at first glance.\"",
+    "tag": "Our Difference", "title": "Unique Pieces to the Client's Taste", "desc1": "At Dario's Custom Iron Art, we don't sell mass-produced items. We specialize in custom ironwork in Miami with custom design. We adapt to your space's architecture working with multiple materials like stainless steel and bronze.", "desc2": "We serve residential projects with iron doors, balconies, and privacy fences. From heavy chandeliers to monumental doors. We guarantee top-tier artistic forging.", "quote": "\"Excellence in custom design is defined by the precision in every metal detail.\"",
     "items": [
-      { "title": "Designed From Scratch", "desc": "We don't use prefabricated catalogs. We create metal art exclusively for you." },
-      { "title": "Multiple Materials", "desc": "We master forging in iron, lightweight aluminum, stainless steel, and elegant bronze details." },
-      { "title": "High Resistance", "desc": "We apply Powder Coating to our pieces to withstand the South Florida sun and humidity." },
-      { "title": "Safety & Engineering", "desc": "We calculate weights and secure structural anchors for large pieces like chandeliers and gates." }
+      { "title": "Custom Design", "desc": "We don't use prefabricated catalogs. We create custom ironwork exclusively for you." },
+      { "title": "Multiple Materials", "desc": "We forge iron doors, aluminum, stainless steel 304/316L, and elegant bronze." },
+      { "title": "High Resistance", "desc": "We apply Powder Coating to our balconies and gates to withstand the Miami climate." },
+      { "title": "Safety & Engineering", "desc": "We calculate weights and safe anchors for chandeliers, lamps, and privacy fences." }
     ]
   },
-  "reviews": { "tag": "Real Reviews", "title": "Satisfied Customers", "desc": "The quality of our products and artistic ironwork backed by the experience of builders, architects and homeowners in South Florida.", "verified": "Verified Google Reviews", "viewRev": "View Review", "btnMaps": "View Google Maps Profile", "list": [
+  "reviews": { "tag": "Real Reviews", "title": "Satisfied Customers", "desc": "The quality of our products and artistic ironwork backed by the experience of builders, architects and homeowners in South Florida.", "verified": "Verified Google Reviews", "viewRev": "Read Customer Review", "btnMaps": "View Google Maps Profile", "list": [
       { "name": "Dayana Gonzalez", "role": "Local Guide · 19 reviews", "location": "Miami, FL", "stars": 5, "text": "Dario’s Custom Iron Art is the perfect team if you want to bring art and a unique touch to your home. Emily helped us a lot to find the perfect design for our railings and the whole project was forged directly by Dario's hand. I highly recommend them!", "date": "2 months ago", "link": "https://maps.app.goo.gl/t9BhjrzgstiSSfFe8" },
       { "name": "Ariel Cue Fuentes", "role": "2 reviews", "location": "Miami, FL", "stars": 5, "text": "We have a partnership with Dario’s Custom Iron Art and we can only say positive things about this company, they have many years of experience, their projects are unique and artistic. Railings, doors, beds, tables, grills, wall art, sculptures, lamps, any idea you have, they make it a reality. Their projects are handcrafted art. You know, here you have a trusted company", "date": "2 months ago", "link": "https://maps.app.goo.gl/fiSiUTJWYBw2ofUb8" },
       { "name": "Daniel Otero", "role": "1 review", "location": "Miami, FL", "stars": 5, "text": "Excellent workmanship and professionalism from start to finish. The welding work was impeccable and of great quality. He is trustworthy, offers fair prices and pays attention to details. I am very happy with the results and highly recommend him for any home welding project.", "date": "2 months ago", "link": "https://maps.app.goo.gl/hvtCFTyMeiC6S4QX8" },
       { "name": "Fran Miles", "role": "Local Guide · 71 reviews", "location": "Miami, FL", "stars": 5, "text": "Several years ago we ordered custom designed iron and glass entrance doors. They are fabulous and I have received a ton of compliments. They are perfectly crafted, fit the budget and delivered on time. This year we decided to redecorate our living room. We found some sofas we loved, but couldn't find coffee or living room tables at any price. So we contacted Dario. He made us some fabulous custom tables at a very reasonable price.", "date": "4 years ago", "link": "https://maps.app.goo.gl/om7fvjzXJrfEwFVG6" }
     ]
   },
-  "location": { "tag": "How to Get Here", "title": "Visit Our Workshop", "desc": "We invite you to learn about the forging process of our artisans. Schedule your appointment and come discuss your project in person.", "addressName": "Dario's Custom Iron Art, Inc", "addressLoc": "Miami, Florida", "btnGoogle": "START GOOGLE MAPS", "btnWaze": "START WAZE" },
+  "location": { "tag": "How to Get Here", "title": "Visit Our Workshop", "desc": "We invite you to learn about our custom ironwork workshop in Miami. Schedule your appointment and come discuss your custom design in person.", "addressName": "Dario's Custom Iron Art, Inc", "addressLoc": "Miami, Florida", "btnGoogle": "OPEN GOOGLE MAPS ROUTE", "btnWaze": "OPEN WAZE ROUTE" },
   "faq": {
     "tag": "Frequently Asked Questions",
-    "title": "Technical & Engineering Answers",
+    "title": "Technical Ironwork Answers",
     "desc": "All key information structured about our materials, local regulations in Miami-Dade and delivery processes.",
     "items": [
       {
         "id": "faq-florida-building-code",
         "q": "Does Dario's comply with the Florida Building Code (FBC) for hurricanes?",
-        "a": "Yes. <strong>Darioscustom strictly complies with the Florida Building Code (FBC)</strong>. We design and weld our security grilles, gates, and railings following ASCE 7 wind load requirements, achieving wind resistance capacities of up to 175 mph for hurricane-prone zones."
+        "a": "Yes, Darioscustom complies strictly with the Florida Building Code (FBC). Our iron doors, gates, and balconies resist hurricane winds up to 175 mph. We use precise engineering and custom design to secure your property. This safety level is essential for custom ironwork in Miami."
       },
       {
         "id": "faq-powder-coating",
         "q": "What are the differences between traditional blacksmith paint and Powder Coating?",
-        "a": "<strong>Powder Coating is</strong> a dry finishing process thermoset at 400°F that forms a protective shield. Unlike traditional paint that peels under the Miami sun, Powder Coating resists impacts, UV rays, and extreme moisture without rusting the base metal."
+        "a": "Powder Coating is a protective finish baked at 400°F. It is heavily superior to traditional paint. This process protects your iron doors and balconies against the Miami sun and sea salt. It guarantees your custom design will not rust easily."
       },
       {
         "id": "faq-service-areas",
         "q": "What service areas do you cover in South Florida?",
-        "a": "<strong>Our service areas in South Florida include</strong> Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, South Miami, and Kendall. We cover the entire Miami-Dade County area for measurement, delivery, and installation of custom architectural ironwork."
+        "a": "Our service areas in South Florida cover all of Miami-Dade county. We install custom ironwork in Miami, Coral Gables, Doral, Brickell, Pinecrest, and Key Biscayne. We bring our custom design, privacy fences, and iron doors directly to your residence."
       },
       {
         "id": "faq-maintenance",
         "q": "What kind of maintenance do your metal gates and grilles require?",
-        "a": "<strong>The maintenance of our metal gates and grilles consists of</strong> washing the structures every 3 to 6 months with clean water and mild non-abrasive soap. Thanks to our galvanized finish and powder coating, this simple process easily removes dust and sea salt."
+        "a": "The maintenance of our metal gates and railings is very simple. You only need to wash the structure every 3 to 6 months with mild soap and water. Our electrostatic finish protects your custom ironwork in Miami, keeping your iron doors looking brand new."
       },
       {
         "id": "faq-quote-process",
         "q": "What is the process to request a technical quote for my residence or business?",
-        "a": "<strong>The process to request a technical quote consists of</strong> contacting us via web or WhatsApp with preliminary measurements and reference photos. We first provide an accurate economic proposal and then schedule an on-site visit to verify exact dimensions at your property."
+        "a": "The process to request a technical quote starts by contacting us via WhatsApp. Send us measurements and photos of your space. First, we provide a price estimate for your custom design. Then, we visit your Miami home to measure and forge your iron doors or chandeliers."
       }
     ]
   },
-  "contact": { "tag": "Location and Details", "title": "Let's Coordinate Your Visit", "desc": "Fill out the form to tell us about your metal project. You can send your request directly to our WhatsApp for a fast reply.", "hq": "Headquarters and Operations", "hqDesc": "Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, FL", "phone": "Office Phone", "email": "Email Address", "copied": "Copied!", "formTitle": "Quote Form", "waQuick": "Quick WhatsApp", "emailTrad": "Traditional Email", "successTitle": "Message Received!", "successDesc": "We will review your request. We will contact you in less than 24 business hours.", "fName": "Your Full Name", "fNamePl": "E.g. John Doe", "fEmail": "Contact Email", "fEmailPl": "example@email.com", "fPhone": "Contact Phone", "fPhonePl": "+1 (305) 555-0100", "fService": "Project Category", "fServiceOpts": { "Puertas": "Metal Doors", "Portones": "Aluminum Gates", "Barandales": "Railings and Balconies", "Arte": "CNC Metallurgical Art", "Iluminación": "Lamps and Chandeliers", "Miscelaneas": "Other Custom Designs" }, "fMsg": "Message and Measurements", "fMsgPl": "Describe the style or material you prefer (aluminum, iron)...", "fPhoto": "Reference Photo (Optional)", "uploadClick": "Click to upload", "uploadDrag": "or drag a photo", "sendWa": "Send to WhatsApp", "sendEmail": "Send Request", "waFormatNew": "*NEW WEB QUOTE DARIO'S CUSTOM IRON ART*", "waFormatName": "*Name:*", "waFormatEmail": "*Email:*", "waFormatPhone": "*Phone:*", "waFormatService": "*Service:*", "waFormatMsg": "*Message:*", "waFormatPhoto": "*Reference photo:*", "waFormatPhotoYes": "Yes (name:", "waFormatPhotoYesSuffix": ") - _Please attach the image in this chat_", "waFormatPhotoNo": "Not specified" },
+  "contact": { "tag": "Location and Details", "title": "Let's Coordinate Your Technical Visit", "desc": "Fill out the form for your custom design. You can send your request directly to WhatsApp to quickly quote your custom ironwork in Miami.", "hq": "Main Ironwork Workshop", "hqDesc": "Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, FL", "phone": "Workshop Phone", "email": "Email Address", "copied": "Copied!", "formTitle": "Custom Design Form", "waQuick": "Quick WhatsApp", "emailTrad": "Traditional Email", "successTitle": "Request Received!", "successDesc": "We will review the details of your ironwork project in Miami. We will contact you in less than 24 hours.", "fName": "Your Full Name", "fNamePl": "E.g. John Doe", "fEmail": "Contact Email", "fEmailPl": "example@email.com", "fPhone": "Contact Phone", "fPhonePl": "+1 (305) 555-0100", "fService": "Ironwork Category", "fServiceOpts": { "Puertas": "Iron Doors", "Portones": "Privacy Fences and Gates", "Barandales": "Railings and Balconies", "Arte": "Sculptures and Art", "Iluminación": "Lamps and Chandeliers", "Miscelaneas": "Other Custom Design" }, "fMsg": "Custom Design Details", "fMsgPl": "Describe the style or material (aluminum, stainless steel, bronze)...", "fPhoto": "Reference Photo (Optional)", "uploadClick": "Click to upload", "uploadDrag": "or drag a photo", "sendWa": "Quote via WhatsApp", "sendEmail": "Send Technical Request", "waFormatNew": "*NEW WEB QUOTE DARIO'S CUSTOM IRON ART*", "waFormatName": "*Name:*", "waFormatEmail": "*Email:*", "waFormatPhone": "*Phone:*", "waFormatService": "*Service:*", "waFormatMsg": "*Message:*", "waFormatPhoto": "*Reference photo:*", "waFormatPhotoYes": "Yes (name:", "waFormatPhotoYesSuffix": ") - _Please attach the image in this chat_", "waFormatPhotoNo": "Not specified" },
   "footer": { 
-    "desc": "Precision Workshop and Forging in Miami, Florida. We design iron and aluminum solutions for maximum structural resistance and elegance.", 
+    "desc": "Custom Ironwork Workshop in Miami, Florida. We create custom design using iron doors, aluminum, bronze, and stainless steel for maximum strength.", 
     "nav": "Main Navigation", 
     "links1": [ 
       { "name": "Darios Home", "href": "#inicio" }, 
       { "name": "Ironwork Services", "href": "#servicios" }, 
-      { "name": "Metalwork Catalog", "href": "#catalogo" }, 
+      { "name": "Custom Design Catalog", "href": "#catalogo" }, 
       { "name": "Customer Reviews", "href": "#opiniones" } 
     ], 
     "support": "Support & Contact", 
     "links2": [ 
-      { "name": "About Us", "href": "#whyus" }, 
-      { "name": "Direct Contact", "href": "#contacto" }, 
-      { "name": "Frequently Asked Questions", "href": "#preguntas" }, 
-      { "name": "Quote via WhatsApp", "href": "#contacto" } 
+      { "name": "About Our Workshop", "href": "#sobre-nosotros" }, 
+      { "name": "Ironwork Contact", "href": "#contacto" }, 
+      { "name": "Technical Answers", "href": "#preguntas" }, 
+      { "name": "Quote design via WhatsApp", "href": "#contacto" } 
     ], 
     "rights": "Dario's Custom Iron Art Inc. All rights reserved.", 
     "privacy": "Privacy Policy", 
     "terms": "Terms of Service" 
   },
-  "product": { "home": "Home", "catalog": "Catalog", "features": "Features", "quoteBtn": "Request Quote via WhatsApp", "backBtn": "Back to Catalog", "badges": [ { "label": "Manufacturing", "value": "Custom" }, { "label": "Finish", "value": "Electrostatic" }, { "label": "Warranty", "value": "Included" } ], "relatedTag": "More in", "relatedTitle": "You might also like", "viewProd": "View Product" },
+  "product": { "home": "Home", "catalog": "Ironwork Catalog", "features": "Technical Features", "quoteBtn": "Request technical quote via WhatsApp", "backBtn": "Back to ironwork catalog", "badges": [ { "label": "Manufacturing", "value": "Custom Design" }, { "label": "Material", "value": "Premium" }, { "label": "Finish", "value": "Electrostatic" } ], "relatedTag": "More options", "relatedTitle": "Other custom design", "viewProd": "View Design Details" },
   "whatsappBtn": {
-    "hoverMsg1": "Quick advice?",
-    "hoverMsg2": "Message us",
-    "defaultMessage": "Hello Dario's custom iron art, I would like to request a quote for a custom ironwork project in Miami.",
-    "ariaLabel": "Contact via WhatsApp"
+    "hoverMsg1": "Ironwork advice?",
+    "hoverMsg2": "Quote your design",
+    "defaultMessage": "Hello Dario's custom iron art, I would like to request a technical quote for a custom design in Miami.",
+    "ariaLabel": "Contact workshop via WhatsApp"
   },
   "productsData": {
     "1": { "title": "Metal Door", "tags": ["Silver Metal", "Lion Heads", "Grid Design", "Decorative Rivets", "Robust Style"], "description": "Monumental door made of silver metal with handcrafted lion head reliefs. Its structural grid design combines functionality and aesthetics, with decorative rivets that reinforce the solidity of the whole. Ideal for high-profile residential or commercial main entrances." },
@@ -134,6 +146,131 @@
     "5": { "title": "Chandeliers", "tags": ["Wrought Iron", "Classic Style", "Pendant Lamps", "Gold Details", "Artistic Ironwork"], "description": "Coordinated set of chandeliers designed for tandem installation. Perfect for double-height spaces or wide hallways, they bring warmth and a classic character with hand-worked gold details." },
     "6": { "title": "Chandeliers", "tags": ["Wrought Iron", "Medieval Style", "Pendant Lamps", "Gold Details", "Circular Design"], "description": "Circular chandeliers inspired by the lighting of medieval castles and palaces. Made of wrought iron with gold applications, they create dramatic and warm environments. Available in multiple diameters according to space." },
     "7": { "title": "Aluminum Gate", "tags": ["Aluminum", "Entrance Gate", "Grid Design", "Exterior", "Decorative Wood Color Finish"], "description": "Exterior entrance gate made of high resistance aluminum with grid design panels and decorative imitation wood finish. Offers optimal privacy and cross ventilation, protected with a highly durable electrostatic finish against sea salt and Florida weathering." },
-    "8": { "title": "Classic Aluminum Gate", "tags": ["Aluminum", "Lightweight", "Durable", "Entrance Gate", "Classic Style", "Arch Design", "Exterior"], "description": "Double leaf exterior entrance gate with an arched design, made entirely of premium aluminum to ensure a lightweight structure, corrosion-free and highly durable. Its manufacture evokes the aesthetic elegance of classic wrought iron without its weight or maintenance. Includes security lock and coordinated hardware." }
+    "8": { "title": "Classic Aluminum Gate", "tags": ["Aluminum", "Lightweight", "Durable", "Entrance Gate", "Classic Style", "Arch Design", "Exterior"], "description": "Double leaf exterior entrance gate with an arched design, made entirely of premium aluminum to ensure a lightweight structure, corrosion-free and highly durable. Its manufacture evokes the aesthetic elegance of classic wrought iron without its weight or maintenance. Includes security lock and coordinated hardware." },
+    "9": {
+      "title": "Ornate Wrought Iron Driveway Gate",
+      "tags": ["Wrought Iron", "High Security", "Ornate Design", "Residential", "Automated"],
+      "description": "Spectacular custom driveway gate hand-forged in wrought iron, designed to offer maximum security without sacrificing elegance. It features classic ornamental details, decorative finials, and a reinforced structure prepared for automated opening systems. Ideal for luxury estates and residences in Miami."
+    },
+    "10": {
+      "title": "Modern Aluminum Horizontal Slat Railing",
+      "tags": ["Aluminum", "Privacy", "Modern Design", "Weather Resistant", "Balconies"],
+      "description": "Contemporary railing system fabricated from premium aluminum with a horizontal slat design providing privacy and optimal airflow. Its powder-coated electrostatic finish ensures extreme resistance against saltpeter and humidity, perfect for balconies and terraces in coastal areas."
+    },
+    "11": {
+      "title": "Modern Abstract Metal Sculpture",
+      "tags": ["Sculpture", "Metal Art", "Abstract Design", "Indoor/Outdoor", "Unique Piece"],
+      "description": "Exquisite contemporary art piece created from solid metal. This abstract sculpture stands out for its fluid lines and ability to interact with natural light, creating dynamic shadows. Treated to withstand the elements, it is the perfect focal point for gardens, lobbies, or minimalist architectural spaces."
+    },
+    "12": {
+      "title": "Outdoor Metal Container Bar",
+      "tags": ["Commercial Bar", "Metal Container", "Industrial Design", "Outdoor", "Heavy Structure"],
+      "description": "Innovative outdoor commercial bar built from recycled shipping container panels and integrated with high-strength ironwork. Features fold-down windows, sturdy serving counters, and an unmistakable industrial design. Ideal for restaurant patios, outdoor events, or residential entertainment areas."
+    },
+    "13": {
+      "title": "Black Metal & Glass French Doors",
+      "tags": ["Metal & Glass", "Industrial Style", "Modern Interiors", "Natural Light", "Double Doors"],
+      "description": "Elegant interior french doors combining slender black metal framing with high-clarity tempered glass. Their design maximizes natural light flow while maintaining acoustic and spatial separation. They bring a touch of industrial sophistication, ideal for dividing dining rooms, home offices, or living rooms."
+    },
+    "14": {
+      "title": "Abstract Blue & Green Metal Art",
+      "tags": ["Wall Art", "Abstract", "Color Finish", "Interiors"],
+      "description": "Abstract metal art featuring vibrant blue and green tones. A modern decor piece ideal for adding character to contemporary interior spaces."
+    },
+    "15": {
+      "title": "Arched Aluminum Pedestrian Gate",
+      "tags": ["Pedestrian Gate", "Aluminum", "Arched Design", "Exterior"],
+      "description": "Elegant pedestrian gate with a classic arched top design, crafted entirely from lightweight aluminum to guarantee high durability and weather resistance."
+    },
+    "16": {
+      "title": "Arched Metal Driveway Gate",
+      "tags": ["Driveway Gate", "Metal", "Arched Design", "Heavy Duty"],
+      "description": "Robust vehicular gate featuring a classic, clean-lined arched design. Offers high security and a luxurious entryway for private estates or residences."
+    },
+    "17": {
+      "title": "Black Aluminum Double Front Door",
+      "tags": ["Entry Door", "Aluminum", "Double Door", "Modern"],
+      "description": "Imposing double entry door in matte black aluminum, highlighting a modern asymmetrical geometric design that elevates both home aesthetics and security."
+    },
+    "18": {
+      "title": "Corrugated Metal Commercial Bar Counter",
+      "tags": ["Commercial", "Bar Counter", "Corrugated Metal", "Industrial"],
+      "description": "Rustic industrial-style bar counter made from heavy-duty corrugated metal panels, ideal for restaurants, breweries, or outdoor commercial spaces."
+    },
+    "19": {
+      "title": "Custom Aluminum Pool Patio Guardrail",
+      "tags": ["Pool Guardrail", "Aluminum", "Patio", "Weather Resistant"],
+      "description": "Aluminum railing system specifically designed for the perimeter of pool areas and patios. Its premium finish is highly resistant to pool chemicals and moisture."
+    },
+    "20": {
+      "title": "Large Industrial Metal Cog Art",
+      "tags": ["Wall Art", "Industrial", "Metal Cogs", "Large Scale"],
+      "description": "Large-scale wall art piece featuring heavy metal cogs, paying homage to raw industrial style and precision engineering."
+    },
+    "21": {
+      "title": "Laser Cut Metal Balcony Railing",
+      "tags": ["Balcony Railing", "Laser Cut", "CNC", "Privacy"],
+      "description": "Exclusive balcony railing with intricate patterns perforated using CNC laser cutting. It combines partial privacy with a high-end design that highlights any facade."
+    },
+    "22": {
+      "title": "Modern Aluminum Outdoor Kitchen Cabinets",
+      "tags": ["Outdoor Kitchen", "Cabinets", "Aluminum", "Weather Resistant"],
+      "description": "Outdoor kitchen cabinetry system forged entirely from aluminum, guaranteed to prevent rust even in intense coastal and saline environments."
+    },
+    "23": {
+      "title": "Modern Geometric Aluminum Double Door",
+      "tags": ["Double Door", "Geometric", "Aluminum", "Modern Design"],
+      "description": "Double entry door showcasing an exceptional asymmetrical geometric pattern, integrating solid aluminum panels with undeniable visual impact."
+    },
+    "24": {
+      "title": "Modern Horizontal Slat Driveway Gate",
+      "tags": ["Driveway Gate", "Horizontal Slats", "Modern", "Privacy"],
+      "description": "Sliding or swing gate with a very clean horizontal slat design providing total privacy, perfect for minimalist architectural projects."
+    },
+    "25": {
+      "title": "Modern Metal Base Glass Coffee Table",
+      "tags": ["Coffee Table", "Glass Top", "Metal Base", "Interior Furniture"],
+      "description": "Designer coffee table featuring an intricate and sculptural hand-forged metal base, topped with a thick, clear tempered glass surface."
+    },
+    "26": {
+      "title": "Ornate Aluminum French Doors",
+      "tags": ["French Doors", "Aluminum", "Ornate", "Sidelights"],
+      "description": "Luxury French door set accompanied by fixed sidelights, featuring intricate ornamental cast details that provide a majestic feel to any entrance."
+    },
+    "27": {
+      "title": "Ornate Metal Outdoor Wall Lantern",
+      "tags": ["Wall Lantern", "Outdoor Lighting", "Ornate", "Metal"],
+      "description": "Classic style outdoor wall lantern, meticulously forged with traditional details to elegantly illuminate walkways and entryways."
+    },
+    "28": {
+      "title": "Ornate Wrought Iron Railing",
+      "tags": ["Wrought Iron", "Railing", "Ornate", "Classic"],
+      "description": "Premium classic railing featuring elaborate hand-forged scrolls and floral details in massive iron, ideal for majestic balconies and residential fronts."
+    },
+    "29": {
+      "title": "Ornate Wrought Iron Stair Railing",
+      "tags": ["Stair Railing", "Wrought Iron", "Ornate", "Interiors"],
+      "description": "Elegant hand-forged iron handrail, specifically designed to adapt to the curvature of classic or Renaissance-style interior staircases."
+    },
+    "30": {
+      "title": "Steampunk Gear Metal Wall Art",
+      "tags": ["Wall Art", "Steampunk", "Gears", "Interiors"],
+      "description": "Striking wall composition inspired by the retro-futuristic Steampunk movement, intertwining aged metal gears and pipe details."
+    },
+    "31": {
+      "title": "Wood Look Aluminum Privacy Fence",
+      "tags": ["Privacy Fence", "Wood Look", "Aluminum", "Exterior"],
+      "description": "Innovative perimeter fencing system offering the visual beauty and warmth of wood, but with the maintenance-free durability, lightness, and strength of aluminum."
+    },
+    "32": {
+      "title": "Wrought Iron Chandelier",
+      "tags": ["Chandelier", "Wrought Iron", "Classic", "High Ceiling"],
+      "description": "Stunning hand-forged chandelier featuring multiple tiers of lights, ideal for high-ceiling foyers, vaults, and luxury formal dining rooms."
+    },
+    "33": {
+      "title": "Wrought Iron Style Aluminum Entry Door",
+      "tags": ["Entry Door", "Aluminum", "Wrought Iron Style", "Lightweight"],
+      "description": "Lightweight exterior security door crafted from aluminum but meticulously designed to perfectly mimic the historic, heavy aesthetic of antique wrought iron."
+    }
   }
 }

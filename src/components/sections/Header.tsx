@@ -20,13 +20,15 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // ✅ AQUÍ AGREGAMOS EL ENLACE AL "ABOUT US"
   const links = [
     { name: dict.links.home, href: `/${lang}/#inicio` },
+    { name: dict.links.about, href: `/${lang}/#sobre-nosotros` }, // <-- NUEVO ENLACE
     { name: dict.links.services, href: `/${lang}/#servicios` },
     { name: dict.links.catalog, href: `/${lang}/#catalogo` },
-    { name: dict.links.materials, href: `/${lang}/#comparativa` },
     { name: dict.links.reviews, href: `/${lang}/#opiniones` },
     { name: dict.links.faq, href: `/${lang}/#preguntas` },
+    { name: lang === 'es' ? "Contacto" : "Contact", href: `/${lang}/#contacto` },
   ];
   
   const breadcrumbSchema = {

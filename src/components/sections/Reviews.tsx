@@ -17,7 +17,6 @@ export default function Reviews() {
         <motion.div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp}>
           <div>
             <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">{dict.tag}</span>
-            {/* ✅ ID en el H2 principal */}
             <h2 id="reviews-title" className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-4">{dict.title}</h2>
             <p className="text-zinc-400 text-sm md:text-base max-w-2xl leading-relaxed">{dict.desc}</p>
           </div>
@@ -41,7 +40,6 @@ export default function Reviews() {
               <div>
                 <div className="flex items-start justify-between mb-4">
                   <div className="min-w-0">
-                    {/* ✅ Convertido a H3 con ID único */}
                     <h3 id={`review-${index}`} className="font-bold text-white text-sm uppercase tracking-wide truncate">{rev.name}</h3>
                     <div className="flex items-center gap-2 mt-0.5">
                       <span className="text-[10px] text-zinc-500 font-mono uppercase">{rev.role}</span>
@@ -58,8 +56,9 @@ export default function Reviews() {
               </div>
               <div className="flex items-center justify-between pt-4 border-t border-industrial-border/60">
                 <span className="text-[10px] text-[#71717A] font-mono">{rev.date}</span>
-                <a href={rev.link} target="_blank" rel="noopener noreferrer" aria-label={`${dict.viewRev} - ${rev.name}`} className="flex items-center gap-1.5 text-[10px] font-bold text-zinc-400 hover:text-brand-light transition-colors uppercase tracking-widest">
-                  {dict.viewRev} <span className="sr-only"> - {rev.name}</span> <ExternalLink className="w-3 h-3" />
+                {/* Fixed SEO generic link text: Replaced hidden tag dependency with clear, readable anchor */}
+                <a href={rev.link} target="_blank" rel="noopener noreferrer" aria-label={`Read Google Review by ${rev.name}`} className="flex items-center gap-1.5 text-[10px] font-bold text-zinc-400 hover:text-brand-light transition-colors uppercase tracking-widest">
+                  Read Review <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
             </motion.article>

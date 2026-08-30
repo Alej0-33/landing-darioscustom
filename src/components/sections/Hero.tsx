@@ -38,7 +38,6 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center py-12 w-full">
         
-        {/* Lado Izquierdo: Textos responsivos */}
         <div className="lg:col-span-7 flex flex-col items-start text-left">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -68,6 +67,7 @@ export default function Hero() {
               variant="primary"
               className="w-full sm:w-auto"
               onClick={() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })}
+              aria-label="Request a custom ironwork quote"
             >
               {dict.btnQuote} <ArrowRight className="w-4 h-4" />
             </Button>
@@ -75,13 +75,13 @@ export default function Hero() {
               variant="secondary"
               className="w-full sm:w-auto"
               onClick={() => document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth" })}
+              aria-label="Explore our custom metalwork catalog"
             >
               {dict.btnCatalog}
             </Button>
           </motion.div>
         </div>
 
-        {/* Lado Derecho: Contenedor Plano CAD / PRODUCTO FINAL responsivo */}
         <div className="lg:col-span-5 relative flex flex-col justify-center items-center w-full">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -89,7 +89,6 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="relative w-full aspect-[4/5] xs:aspect-square sm:aspect-[4/5] max-w-[450px] border border-industrial-border-high bg-[#0d0d10] rounded-lg shadow-2xl machined-corners overflow-hidden group"
           >
-            {/* CAPA 1: El Plano Técnico (CAD Blueprint) */}
             <motion.div 
               style={{ opacity: showProduct ? 0 : 1 }}
               className="absolute inset-0 p-4 sm:p-6 flex flex-col justify-between transition-opacity duration-1000 ease-in-out z-20"
@@ -97,7 +96,6 @@ export default function Hero() {
               <div className="absolute inset-0 industrial-dots opacity-45 pointer-events-none" />
               <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-brand-primary/30 to-transparent" />
               
-              {/* Marco técnico adaptado */}
               <div className="absolute inset-2 sm:inset-3 border border-industrial-border/40 pointer-events-none flex flex-col justify-between p-2">
                 <div className="flex justify-between text-[6px] sm:text-[8px] text-zinc-600 font-mono">
                   <span>LAT: 25.7617° N | LON: 80.1918° W</span>
@@ -109,14 +107,12 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Contenido del Esquema */}
               <div className="relative h-full w-full flex flex-col justify-between py-4 px-2 sm:px-4 z-10">
                 <div className="border-b border-industrial-border pb-3">
                   <div className="flex justify-between items-center mb-1">
                     <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] text-brand-light font-bold">{dict.cadTag}</span>
                     <span className="text-[8px] sm:text-[9px] font-mono text-zinc-500">DWG #409-MIAMI</span>
                   </div>
-                  {/* CORRECCIÓN SEO: Cambiado de h3 a h2 */}
                   <h2 className="text-sm sm:text-md font-bold uppercase text-white tracking-wider truncate">{dict.cadTitle}</h2>
                 </div>
 
@@ -165,7 +161,6 @@ export default function Hero() {
               </div>
             </motion.div>
 
-            {/* CAPA 2: El Producto Terminado Real */}
             <motion.div 
               style={{ opacity: showProduct ? 1 : 0 }}
               className="absolute inset-0 transition-opacity duration-1000 ease-in-out z-10"
@@ -183,7 +178,6 @@ export default function Hero() {
               <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between z-10">
                 <div>
                   <span className="text-[9px] font-bold text-brand-light tracking-widest uppercase">{dict.cadFinished}</span>
-                  {/* CORRECCIÓN SEO: Cambiado de h4 a h3 */}
                   <h3 className="text-white text-xs sm:text-sm font-bold uppercase">{dict.cadResult}</h3>
                 </div>
                 <div className="bg-brand-primary text-white text-[9px] font-bold py-1 px-3 rounded uppercase tracking-wider">
@@ -192,7 +186,6 @@ export default function Hero() {
               </div>
             </motion.div>
 
-            {/* CAPA DE CONTROL DE SCROLL EXCLUSIVA */}
             <motion.div 
               style={{ opacity: productOpacity }} 
               className="absolute inset-0 z-30 pointer-events-none"
@@ -211,10 +204,12 @@ export default function Hero() {
 
           <button 
             onClick={() => setShowProduct(!showProduct)}
-            className="mt-4 flex items-center gap-2 text-zinc-500 hover:text-brand-light text-[10px] font-mono tracking-widest uppercase transition-colors p-2"
+            aria-label="Toggle Custom Ironwork View"
+            className="mt-4 flex items-center gap-2 text-zinc-500 hover:text-brand-light text-[10px] font-mono tracking-widest uppercase transition-colors p-2 cursor-pointer"
           >
             <RefreshCw className="w-3.5 h-3.5 animate-spin-slow" />
-            <span>{dict.cadToggle}</span>
+            {/* Fixed generic anchor/button text warning */}
+            <span>Toggle Ironwork View</span>
           </button>
         </div>
 

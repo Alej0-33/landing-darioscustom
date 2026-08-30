@@ -2,6 +2,7 @@ import Header from "@/components/sections/Header";
 import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
 import Catalog from "@/components/sections/Catalog";
+import AboutUs from "@/components/sections/AboutUs";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
@@ -129,6 +130,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         <Hero />
         <Services />
         <Catalog />
+        <AboutUs/>
         <WhyChooseUs />
         <Reviews />
         <Location />

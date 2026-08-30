@@ -21,18 +21,18 @@ export default function Services() {
     "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40",
     "bg-[#18181B] text-[#71717A] border-[#3F3F46]/40"
   ];
-  // ✅ Schema HowTo Oficial (Para Rich Snippets)
+  
   const howToSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
     "name": dict.howTo.title,
     "description": "Step-by-step process to request and install a custom ironwork design.",
-    "image": "https://dariosironart.com/images/product19.webp", // ✅ Imagen del proceso
-    "totalTime": "P14D", // ✅ Tiempo estimado (14 días en formato ISO 8601)
+    "image": "https://dariosironart.com/images/black-aluminum-double-front-door2.webp", 
+    "totalTime": "P14D", 
     "estimatedCost": {
       "@type": "MonetaryAmount",
       "currency": "USD",
-      "value": "1500" // ✅ Costo base estimado (Requerido por Google)
+      "value": "1500" 
     },
     "step": dict.howTo.steps.map((step: any, idx: number) => ({
       "@type": "HowToStep",
@@ -67,15 +67,17 @@ export default function Services() {
           ))}
         </motion.div>
 
-        {/* ✅ AEO/GEO: Sección How-To con lista ordenada <ol> */}
+        {/* ✅ AEO/GEO: Added direct definition and answer paragraph before Ordered List */}
         <motion.div className="mb-24" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp}>
           <div className="text-center mb-12">
-            <h2 id="how-it-works-title" className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">
+            <h2 id="how-it-works-title" className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white mb-6">
               {dict.howTo.title}
             </h2>
+            <p className="text-zinc-400 max-w-3xl mx-auto text-sm leading-relaxed">
+              <strong>Custom ironwork is</strong> the specialized craft of designing, heating, and shaping metals to create personalized architectural structures. If you are looking to install custom metalwork in Miami, our 4-step process ensures a perfect fit, starting from a digital layout to final structural installation complying with Florida codes.
+            </p>
           </div>
           <ol className="grid grid-cols-1 md:grid-cols-4 gap-6 list-none p-0 m-0 relative">
-            {/* Línea conectora decorativa */}
             <div className="hidden md:block absolute top-8 left-0 right-0 h-[1px] bg-industrial-border-high z-0" />
             
             {dict.howTo.steps.map((step: any, idx: number) => (

@@ -1,21 +1,21 @@
 {
   "seo": {
     "title": "Herrería y Diseño a Medida en Miami | Cotizar por WhatsApp",
-    "description": "Taller de herrería y forja artística en Miami. Diseño exclusivo en hierro y aluminio: balcones, puertas y portones. Cotizar hoy con Darioscustom.",
-    "keywords": ["herrería a medida miami", "diseño de hierro y aluminio", "cotizar herrería por whatsapp", "forja artistica miami", "balcones de hierro miami", "portones de aluminio miami", "Darioscustom"]
+    "description": "Taller de herrería en Miami y forja artística. Diseño a medida en hierro y aluminio: balcones, puertas de hierro, cercas de privacidad. Cotizar hoy.",
+    "keywords": ["herrería a medida miami", "diseño a medida", "puertas de hierro", "forja artistica miami", "balcones de hierro miami", "cercas de privacidad", "Darioscustom"]
   },
   "header": { 
-    "links": { "home": "Inicio", "services": "Servicios", "catalog": "Catálogo", "materials": "Materiales", "reviews": "Reseñas", "faq": "Preguntas" }, 
-    "quote": "Cotizar Proyecto" 
-  }, 
+    "links": { "home": "Inicio", "about": "Nosotros", "services": "Servicios", "catalog": "Catálogo", "materials": "Materiales", "reviews": "Reseñas", "faq": "Preguntas" }, 
+    "quote": "Cotizar Proyecto de Herrería" 
+  },
   "hero": { 
     "title1": "Diseño de Metal y Herrería de ", 
     "highlight": "Alta Costura", 
     "title2": " en Miami", 
-    "desc": "Taller de forja artística especializado en piezas únicas y personalizadas al gusto del cliente. Fabricamos a medida desde cero en hierro forjado, aluminio, acero inoxidable y bronce. Desde candelabros para techos altos hasta portones y barandales con pintura electrostática.", 
-    "btnQuote": "Obtener Cotización", 
-    "btnCatalog": "Explorar Catálogo", 
-    "cadTag": "Dibujo de Taller", 
+    "desc": "Somos un taller de herrería en Miami. Hacemos diseño a medida y forja artística. Creamos piezas únicas al gusto del cliente. Fabricamos puertas de hierro, balcones, barandales y cercas de privacidad. Usamos materiales premium como aluminio, acero inoxidable 304/316L, bronce y acero forjado. Cada candelabro o portón tiene un acabado impecable con pintura electrostática.", 
+    "btnQuote": "Solicitar Cotización Técnica", 
+    "btnCatalog": "Ver Catálogo de Herrería", 
+    "cadTag": "Diseño a Medida", 
     "cadTitle": "REJA ARQUITECTÓNICA PRIVADA", 
     "cadSpecs": "Especificaciones:", 
     "cadForged": "Forjado & Solidez • Miami, FL", 
@@ -23,108 +23,120 @@
     "cadResult": "Resultado en Obra", 
     "cadToggle": "Alternar vista (Plano / Real)" 
   },
+  "about": {
+    "tag": "El Maestro Herrero",
+    "title": "Conoce a Darío",
+    "desc1": "Darío tiene más de 20 años de experiencia. Él es un experto en herrería en Miami. Su taller crea diseño a medida para residencias exclusivas. Cada proyecto de puertas de hierro, barandales o esculturas es verdadero arte arquitectónico. Hemos transformado la forja tradicional en piezas únicas al gusto del cliente.",
+    "desc2": "El metal es un lienzo para nosotros. Trabajamos puertas, barandales y candelabros desde cero. Darío supervisa cada detalle en el taller. Garantizamos un trabajo de forja artística duradero usando aluminio o acero inoxidable. Tu herrería a medida será un legado para tu propiedad.",
+    "stats": [
+      { "value": "20+", "label": "Años de Experiencia" },
+      { "value": "100%", "label": "Forjado a Mano" },
+      { "value": "Miami", "label": "Taller Local" }
+    ]
+  },
   "services": {
-    "title": "Ingeniería en Metal de Alta Durabilidad", "desc": "Ofrecemos soluciones metálicas a medida certificadas contra el clima de Florida. Cada proyecto es una pieza única, diseñada exclusivamente para tu propiedad.",
+    "title": "Herrería en Miami de Alta Durabilidad", 
+    "desc": "Ofrecemos soluciones de herrería en Miami de alta resistencia. Creamos diseño a medida certificado para el clima de Florida. Cada puerta de hierro, balcón o cerca de privacidad es una obra única.",
     "items": [
-      { "title": "Portones y Cercas", "desc": "Diseño y fabricación de cierres perimetrales únicos en aluminio o hierro. Cumplen normas de códigos de construcción y seguimiento de planos." },
-      { "title": "Barandales y Escaleras", "desc": "Sistemas para balcones y escaleras al gusto del cliente. Trabajamos acero inoxidable, hierro o aluminio con terminación de pintura al horno." },
-      { "title": "Corte Láser CNC", "desc": "Paneles para privacidad y puertas decorativas con acabados personalizables en diferentes materiales para proyectos comerciales de lujo." },
-      { "title": "Candelabros y Arte", "desc": "Fabricamos candelabros de hierro forjado a medida para techos altos. Diseñamos la pieza desde cero, incluyendo cálculo de peso y anclaje seguro." }
+      { "title": "Portones y Cercas de Privacidad", "desc": "Fabricamos cercas de privacidad y portones al gusto del cliente. Usamos aluminio o puertas de hierro. Cumplimos los códigos de construcción de Miami." },
+      { "title": "Barandales y Balcones", "desc": "Sistemas para balcones y escaleras con diseño a medida. Trabajamos acero inoxidable, bronce o aluminio con terminación de pintura al horno." },
+      { "title": "Corte Láser CNC y Esculturas", "desc": "Creamos paneles para cercas de privacidad, puertas decorativas y esculturas. Usamos acabados personalizables en diferentes materiales para proyectos de lujo." },
+      { "title": "Candelabros y Lámparas", "desc": "Fabricamos candelabros de hierro forjado a medida y lámparas para techos altos. Diseñamos desde cero incluyendo cálculo de peso seguro." }
     ],
     "matTitle": "Materiales de Alta Gama y Acabado Artístico", "matHeaders": ["Material", "Resistencia", "Uso y Herrería Artística"],
     "materials": [
-      { "name": "Aluminio", "res": "Extrema", "desc": "No se oxida. Excelente opción para portones a medida en zonas costeras y ambientes con salitre." },
-      { "name": "Acero Inox 304 o 316L", "res": "Extrema", "desc": "Altamente resistente a la corrosión. El 316L es recomendado para herrería personalizada cerca del mar." },
-      { "name": "Bronce", "res": "Media / Alta", "desc": "Buena resistencia al ambiente costero. Ideal para piezas artísticas únicas que desarrollan una pátina natural." },
-      { "name": "Hierro Forjado", "res": "Media / Alta", "desc": "Clásico para candelabros y barandales. Lo protegemos con pintura termoendurecida para evitar el salitre." }
+      { "name": "Aluminio", "res": "Extrema", "desc": "No se oxida. Excelente opción para cercas de privacidad y portones a medida en zonas costeras de Miami." },
+      { "name": "Acero Inox 304 o 316L", "res": "Extrema", "desc": "Altamente resistente a la corrosión. El 316L es recomendado para diseño a medida de balcones cerca del mar." },
+      { "name": "Bronce", "res": "Media / Alta", "desc": "Buena resistencia al ambiente costero. Ideal para esculturas y piezas artísticas únicas al gusto del cliente." },
+      { "name": "Acero / Hierro Forjado", "res": "Media / Alta", "desc": "Clásico para candelabros, lámparas y puertas de hierro. Lo protegemos con pintura termoendurecida para evitar el salitre." }
     ],
     "howTo": {
-      "title": "Cómo solicitar tu diseño personalizado",
+      "title": "Cómo solicitar tu diseño a medida",
       "steps": [
-        { "title": "Solicitud Inicial", "desc": "Envíanos medidas y fotos por WhatsApp. Hablaremos sobre tus gustos para crear una pieza única desde cero." },
-        { "title": "Visita y Material", "desc": "Visitamos tu propiedad en Miami. Elegimos juntos el material ideal: aluminio, hierro, bronce o acero." },
-        { "title": "Fabricación a Medida", "desc": "Forjamos tu diseño personalizado en nuestro taller y aplicamos pintura en polvo (Powder Coating)." },
-        { "title": "Instalación Segura", "desc": "Instalamos tu proyecto cumpliendo estrictamente con los códigos de construcción de Florida." }
+        { "title": "Solicitud Inicial", "desc": "Envíanos medidas y fotos por WhatsApp. Hablaremos sobre tus gustos para crear una pieza de herrería en Miami única." },
+        { "title": "Visita Técnica", "desc": "Visitamos tu propiedad en Miami. Elegimos el material ideal: aluminio, acero inoxidable, bronce o hierro forjado." },
+        { "title": "Fabricación a Medida", "desc": "Forjamos tu diseño personalizado. Aplicamos pintura en polvo (Powder Coating) a tus puertas de hierro o balcones." },
+        { "title": "Instalación Segura", "desc": "Instalamos tu herrería a medida cumpliendo estrictamente con los códigos de construcción de Florida." }
       ]
     }
   },
-  "catalog": { "tag": "Catálogo Detallado", "title": "HERRERIA ARTESANAL HECHA A TU MEDIDA", "desc": "Explora nuestra colección con las principales piezas desarrolladas por nuestros herreros en Florida. Filtra por categoría y cotiza directamente tu diseño ideal.", "categories": { "Todos": "Todos", "Iluminación": "Iluminación", "Puertas": "Puertas", "Barandales": "Barandales", "Portones": "Portones", "Arte": "Arte", "Miscelaneas": "Miscelaneas" }, "specId": "SPEC-ID // DC-00", "quoteBtn": "Cotizar vía WhatsApp", "msgPart1": "Hola Dario's custom iron art, estoy interesado en cotizar el producto", "msgPart2": "de su catálogo online." },
+  "catalog": { "tag": "Catálogo Detallado", "title": "HERRERIA ARTESANAL HECHA A TU MEDIDA", "desc": "Explora nuestra colección de herrería en Miami. Filtra por categoría y solicita una cotización técnica para tu diseño a medida.", "categories": { "Todos": "Todos", "Iluminación": "Iluminación", "Puertas": "Puertas", "Barandales": "Barandales", "Portones": "Portones", "Arte": "Arte", "Miscelaneas": "Miscelaneas" }, "specId": "SPEC-ID // DC-00", "quoteBtn": "Cotizar diseño por WhatsApp", "msgPart1": "Hola Dario's custom iron art, estoy interesado en cotizar el producto", "msgPart2": "de su catálogo de herrería online." },
   "whyus": {
-    "tag": "Nuestra Diferencia", "title": "Piezas Únicas al Gusto del Cliente", "desc1": "En Dario's Custom Iron Art no vendemos productos en serie. Nos especializamos en fabricar piezas únicas desde cero, diseñadas al gusto personal de cada cliente. Nos adaptamos a la arquitectura de tu espacio trabajando con múltiples materiales.", "desc2": "Atendemos proyectos de alta gama en Miami. Desde candelabros pesados que requieren ingeniería y cálculo, hasta puertas monumentales. Garantizamos perfección en cada soldadura.", "quote": "\"La excelencia en la herrería de autor se define por la precisión que no se ve a simple vista.\"",
+    "tag": "Nuestra Diferencia", "title": "Piezas Únicas al Gusto del Cliente", "desc1": "En Dario's Custom Iron Art no vendemos productos en serie. Nos especializamos en herrería en Miami con diseño a medida. Nos adaptamos a la arquitectura de tu espacio trabajando con múltiples materiales como acero inoxidable y bronce.", "desc2": "Atendemos proyectos residenciales con puertas de hierro, balcones y cercas de privacidad. Desde pesados candelabros hasta puertas monumentales. Garantizamos forja artística de primer nivel.", "quote": "\"La excelencia en el diseño a medida se define por la precisión en cada detalle metálico.\"",
     "items": [
-      { "title": "Diseños Desde Cero", "desc": "No usamos catálogos prefabricados. Creamos arte en metal exclusivamente para ti." },
-      { "title": "Múltiples Materiales", "desc": "Dominamos la forja en hierro, aluminio ligero, acero inoxidable y elegantes detalles en bronce." },
-      { "title": "Alta Resistencia", "desc": "Aplicamos Powder Coating a nuestras piezas para resistir el sol y humedad del sur de Florida." },
-      { "title": "Seguridad e Ingeniería", "desc": "Calculamos pesos y anclajes estructurales seguros para piezas grandes como candelabros y portones." }
+      { "title": "Diseño a Medida", "desc": "No usamos catálogos prefabricados. Creamos herrería en Miami exclusivamente para ti." },
+      { "title": "Múltiples Materiales", "desc": "Forjamos puertas de hierro, aluminio, acero inoxidable 304/316L y bronce." },
+      { "title": "Alta Resistencia", "desc": "Aplicamos Powder Coating a los balcones y portones para resistir el clima de Miami." },
+      { "title": "Seguridad e Ingeniería", "desc": "Calculamos pesos y anclajes para candelabros, lámparas y cercas de privacidad." }
     ]
   },
-  "reviews": { "tag": "Opiniones Reales", "title": "Clientes Satisfechos", "desc": "La calidad de nuestros productos y herrería artística respaldada por la experiencia de constructores, arquitectos y propietarios en el sur de Florida.", "verified": "Opiniones Verificadas en Google", "viewRev": "Ver Reseña", "btnMaps": "Ver Ficha en Google Maps", "list": [
+  "reviews": { "tag": "Opiniones Reales", "title": "Clientes Satisfechos", "desc": "La calidad de nuestros productos y herrería artística respaldada por la experiencia de constructores, arquitectos y propietarios en el sur de Florida.", "verified": "Opiniones Verificadas en Google", "viewRev": "Leer Reseña de Cliente", "btnMaps": "Ver Perfil de Google Maps", "list": [
       { "name": "Dayana Gonzalez", "role": "Local Guide · 19 reseñas", "location": "Miami, FL", "stars": 5, "text": "Dario’s Custom Iron Art es el equipo perfecto si quieres traer arte y un toque único a tu hogar. Emily nos ayudó mucho a encontrar el diseño perfecto para nuestras barandas y todo el proyecto fue forjado directamente de la mano de Darío. Los recomiendo mucho !", "date": "Hace 2 meses", "link": "https://maps.app.goo.gl/t9BhjrzgstiSSfFe8" },
       { "name": "Ariel Cue Fuentes", "role": "2 reseñas", "location": "Miami, FL", "stars": 5, "text": "Tenemos un partnership con Dario’s Custom Iron Art y solo podemos decir cosas positivas acerca de esta compañía, tienen muchos años de experiencia, sus proyectos son únicos y artísticos. Barandas, puertas, camas, mesas, grills, arte para las paredes, esculturas, lámparas, cualquier idea que tengas, ellos la hacen realidad. Sus proyectos son arte fabricado a mano. Ya saben, acá tienen una compañía de confianza", "date": "Hace 2 meses", "link": "https://maps.app.goo.gl/fiSiUTJWYBw2ofUb8" },
       { "name": "Daniel Otero", "role": "1 reseña", "location": "Miami, FL", "stars": 5, "text": "Excelente mano de obra y profesionalidad de principio a fin. El trabajo de soldadura quedó impecable y de gran calidad. Es de confianza, ofrece precios justos y presta atención a los detalles. Estoy muy contento con los resultados y lo recomiendo encarecidamente para cualquier proyecto de soldadura en el hogar.", "date": "Hace 2 meses", "link": "https://maps.app.goo.gl/hvtCFTyMeiC6S4QX8" },
       { "name": "Fran Miles", "role": "Local Guide · 71 reseñas", "location": "Miami, FL", "stars": 5, "text": "Hace varios años encargamos unas puertas de entrada de hierro y cristal diseñadas a medida. Son fabulosas y he recibido un montón de elogios. Están perfectamente fabricadas, se ajustaron al presupuesto y se entregaron a tiempo. Este año decidimos redecorar nuestro salón. Encontramos unos sofás que nos encantaron, pero no conseguíamos encontrar mesitas de centro ni de salón a ningún precio. Así que nos pusimos en contacto con Darío. Nos hizo unas mesas a medida fabulosas a un precio muy razonable.", "date": "Hace 4 años", "link": "https://maps.app.goo.gl/om7fvjzXJrfEwFVG6" }
     ]
   },
-  "location": { "tag": "Cómo Llegar", "title": "Visita Nuestro Taller", "desc": "Te invitamos a conocer el proceso de forjado de nuestros artesanos. Agenda tu cita y ven a discutir tu proyecto en persona.", "addressName": "Dario's Custom Iron Art, Inc", "addressLoc": "Miami, Florida", "btnGoogle": "INICIAR GOOGLE MAPS", "btnWaze": "INICIAR WAZE" },
+  "location": { "tag": "Cómo Llegar", "title": "Visita Nuestro Taller", "desc": "Te invitamos a conocer el taller de herrería en Miami. Agenda tu cita y ven a discutir tu diseño a medida en persona.", "addressName": "Dario's Custom Iron Art, Inc", "addressLoc": "Miami, Florida", "btnGoogle": "ABRIR RUTA EN GOOGLE MAPS", "btnWaze": "ABRIR RUTA EN WAZE" },
   "faq": {
     "tag": "Preguntas Frecuentes",
-    "title": "Respuestas Técnicas e Ingeniería",
+    "title": "Respuestas Técnicas sobre Herrería",
     "desc": "Toda la información clave estructurada sobre nuestros materiales, regulaciones locales en Miami-Dade y procesos de entrega.",
     "items": [
       {
         "id": "faq-florida-building-code",
         "q": "¿Darioscustom cumple con el Código de Edificación de Florida (FBC) para huracanes?",
-        "a": "Sí. <strong>Darioscustom cumple estrictamente con el Código de Edificación de Florida (FBC)</strong>. Diseñamos y soldamos nuestras rejas de seguridad, portones y barandales siguiendo los requisitos de carga de viento ASCE 7, alcanzando resistencias de hasta 175 mph para zonas de huracanes."
+        "a": "Sí, Darioscustom cumple estrictamente con el Código de Edificación de Florida (FBC). Nuestras puertas de hierro, portones y balcones resisten vientos de huracanes hasta 175 mph. Usamos ingeniería precisa y diseño a medida para asegurar tu propiedad. Este nivel de seguridad es ideal para herrería en Miami."
       },
       {
         "id": "faq-powder-coating",
         "q": "¿Cuáles son las diferencias entre la pintura tradicional de herrería y el recubrimiento en polvo (Powder Coating)?",
-        "a": "<strong>El recubrimiento en polvo (Powder Coating) es</strong> un proceso de acabado en seco termoendurecido a 400°F que forma un blindaje protector. A diferencia de la pintura tradicional que se descascara con el sol de Miami, el Powder Coating resiste golpes, rayos UV y humedad extrema sin oxidarse."
+        "a": "El recubrimiento en polvo (Powder Coating) es un acabado protector horneado a 400°F. Es muy superior a la pintura tradicional. Este proceso protege tus puertas de hierro y balcones contra el sol y salitre. Garantiza que tu diseño a medida en Miami no se oxide fácilmente."
       },
       {
         "id": "faq-service-areas",
         "q": "¿Qué áreas de servicio cubren en el Sur de Florida?",
-        "a": "<strong>Nuestras áreas de servicio en el Sur de Florida incluyen</strong> principalmente Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, South Miami y Kendall. Cubrimos toda el área del condado de Miami-Dade para medición, entrega e instalación de herrería personalizada."
+        "a": "Nuestras áreas de servicio en el Sur de Florida cubren todo el condado de Miami-Dade. Instalamos herrería en Miami, Coral Gables, Doral, Brickell, Pinecrest y Key Biscayne. Llevamos nuestro diseño a medida, cercas de privacidad y puertas de hierro directamente a tu residencia."
       },
       {
         "id": "faq-maintenance",
         "q": "¿Qué tipo de mantenimiento requieren sus portones y rejas metálicas?",
-        "a": "<strong>El mantenimiento de nuestros portones y rejas metálicas consiste en</strong> lavar las estructuras cada 3 a 6 meses con agua limpia y jabón suave no abrasivo. Gracias a nuestro acabado galvanizado y pintura en polvo, este sencillo proceso basta para retirar polvo y salitre marino."
+        "a": "El mantenimiento de nuestros portones y barandales es muy sencillo. Solo necesitas lavar la estructura cada 3 a 6 meses con agua y jabón suave. Nuestro acabado electrostático protege tu herrería en Miami. Así mantienes tus puertas de hierro y balcones como nuevos."
       },
       {
         "id": "faq-quote-process",
         "q": "¿Cuál es el proceso para solicitar una cotización técnica para mi residencia o negocio?",
-        "a": "<strong>El proceso para solicitar una cotización técnica consta de</strong> contactarnos por web o WhatsApp enviando medidas preliminares y fotos de referencia. Primero entregamos una propuesta económica precisa y, posteriormente, programamos una visita presencial para rectificar dimensiones exactas en su propiedad."
+        "a": "El proceso para solicitar una cotización técnica comienza contactándonos por WhatsApp. Envía las medidas y fotos de tu espacio. Primero hacemos una propuesta económica para tu diseño a medida. Luego visitamos tu casa en Miami para medir y fabricar tus puertas de hierro o candelabros."
       }
     ]
   },
-  "contact": { "tag": "Ubicación y Datos", "title": "Coordinemos tu Visita Técnica", "desc": "Llena el formulario para contarnos sobre tu proyecto de metal. Puedes enviar tu solicitud directo a nuestro WhatsApp para una respuesta rápida.", "hq": "Sede y Operación", "hqDesc": "Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, FL", "phone": "Teléfono Oficina", "email": "Correo Electrónico", "copied": "¡Copiado!", "formTitle": "Formulario de Cotización", "waQuick": "WhatsApp Rápido", "emailTrad": "Correo Tradicional", "successTitle": "¡Mensaje Recibido!", "successDesc": "Revisaremos tu solicitud. Te contactaremos en menos de 24 horas laborables.", "fName": "Tu Nombre Completo", "fNamePl": "Ej. Juan Pérez", "fEmail": "Correo de Contacto", "fEmailPl": "ejemplo@correo.com", "fPhone": "Teléfono de Contacto", "fPhonePl": "+1 (305) 555-0100", "fService": "Categoría del Proyecto", "fServiceOpts": { "Puertas": "Puertas Metálicas", "Portones": "Portones de Aluminio", "Barandales": "Barandales y Balcones", "Arte": "Arte Metalúrgico CNC", "Iluminación": "Lámparas y Candelabros", "Miscelaneas": "Otros Diseños a Medida" }, "fMsg": "Mensaje y Medidas", "fMsgPl": "Describe el estilo o el material que prefieres (aluminio, hierro)...", "fPhoto": "Foto de Referencia (Opcional)", "uploadClick": "Haz clic para subir", "uploadDrag": "o arrastra una foto", "sendWa": "Enviar a WhatsApp", "sendEmail": "Enviar Solicitud", "waFormatNew": "*NUEVA COTIZACIÓN WEB DARIO'S CUSTOM IRON ART*", "waFormatName": "*Nombre:*", "waFormatEmail": "*Correo:*", "waFormatPhone": "*Teléfono:*", "waFormatService": "*Servicio:*", "waFormatMsg": "*Mensaje:*", "waFormatPhoto": "*Foto de referencia:*", "waFormatPhotoYes": "Sí (nombre:", "waFormatPhotoYesSuffix": ") - _Favor de adjuntar la imagen en este chat_", "waFormatPhotoNo": "No especificada" },
+  "contact": { "tag": "Ubicación y Datos", "title": "Coordinemos tu Visita Técnica", "desc": "Llena el formulario para tu diseño a medida. Puedes enviar tu solicitud directo a WhatsApp para cotizar tu herrería en Miami rápidamente.", "hq": "Taller de Herrería Principal", "hqDesc": "Miami, Coral Gables, Doral, Brickell, Pinecrest, Key Biscayne, FL", "phone": "Teléfono del Taller", "email": "Correo Electrónico", "copied": "¡Copiado!", "formTitle": "Formulario de Diseño a Medida", "waQuick": "WhatsApp Rápido", "emailTrad": "Correo Tradicional", "successTitle": "¡Solicitud Recibida!", "successDesc": "Revisaremos los detalles de tu herrería en Miami. Te contactaremos en menos de 24 horas.", "fName": "Tu Nombre Completo", "fNamePl": "Ej. Juan Pérez", "fEmail": "Correo de Contacto", "fEmailPl": "ejemplo@correo.com", "fPhone": "Teléfono de Contacto", "fPhonePl": "+1 (305) 555-0100", "fService": "Categoría de Herrería", "fServiceOpts": { "Puertas": "Puertas de Hierro", "Portones": "Cercas de Privacidad y Portones", "Barandales": "Barandales y Balcones", "Arte": "Esculturas y Arte", "Iluminación": "Lámparas y Candelabros", "Miscelaneas": "Otro Diseño a Medida" }, "fMsg": "Detalles de tu Diseño a Medida", "fMsgPl": "Describe el estilo o material (aluminio, acero inoxidable, bronce)...", "fPhoto": "Foto de Referencia (Opcional)", "uploadClick": "Haz clic para subir", "uploadDrag": "o arrastra una foto", "sendWa": "Cotizar por WhatsApp", "sendEmail": "Enviar Solicitud Técnica", "waFormatNew": "*NUEVA COTIZACIÓN WEB DARIO'S CUSTOM IRON ART*", "waFormatName": "*Nombre:*", "waFormatEmail": "*Correo:*", "waFormatPhone": "*Teléfono:*", "waFormatService": "*Servicio:*", "waFormatMsg": "*Mensaje:*", "waFormatPhoto": "*Foto de referencia:*", "waFormatPhotoYes": "Sí (nombre:", "waFormatPhotoYesSuffix": ") - _Favor de adjuntar la imagen en este chat_", "waFormatPhotoNo": "No especificada" },
   "footer": { 
-    "desc": "Taller y Forjado de Precisión en Miami, Florida. Diseñamos soluciones en hierro y aluminio para máxima resistencia estructural y elegancia.", 
+    "desc": "Taller de Herrería en Miami, Florida. Creamos diseño a medida usando puertas de hierro, aluminio, bronce y acero inoxidable para máxima resistencia.", 
     "nav": "Navegación Principal", 
     "links1": [ 
       { "name": "Inicio de Darios", "href": "#inicio" }, 
       { "name": "Servicios de Herrería", "href": "#servicios" }, 
-      { "name": "Catálogo de Metal", "href": "#catalogo" }, 
+      { "name": "Catálogo de Diseño a Medida", "href": "#catalogo" }, 
       { "name": "Reseñas de Clientes", "href": "#opiniones" } 
     ], 
     "support": "Soporte y Contacto", 
     "links2": [ 
-      { "name": "Sobre Nosotros", "href": "#whyus" }, 
-      { "name": "Contacto Directo", "href": "#contacto" }, 
-      { "name": "Preguntas Frecuentes", "href": "#preguntas" }, 
-      { "name": "Cotizar por WhatsApp", "href": "#contacto" } 
-    ], 
+      { "name": "Sobre Nuestro Taller", "href": "#sobre-nosotros" }, 
+      { "name": "Contacto de Herrería", "href": "#contacto" }, 
+      { "name": "Respuestas Técnicas", "href": "#preguntas" }, 
+      { "name": "Cotizar diseño por WhatsApp", "href": "#contacto" } 
+    ],
     "rights": "Dario's Custom Iron Art Inc. Todos los derechos reservados.", 
     "privacy": "Política de Privacidad", 
     "terms": "Términos de Servicio" 
   },
-  "product": { "home": "Inicio", "catalog": "Catálogo", "features": "Características", "quoteBtn": "Solicitar Cotización por WhatsApp", "backBtn": "Volver al Catálogo", "badges": [ { "label": "Fabricación", "value": "A Medida" }, { "label": "Acabado", "value": "Electrostático" }, { "label": "Garantía", "value": "Incluida" } ], "relatedTag": "Más en", "relatedTitle": "También te puede interesar", "viewProd": "Ver Producto" },
+  "product": { "home": "Inicio", "catalog": "Catálogo de Herrería", "features": "Características Técnicas", "quoteBtn": "Solicitar cotización técnica por WhatsApp", "backBtn": "Volver al catálogo de herrería", "badges": [ { "label": "Fabricación", "value": "A Medida" }, { "label": "Material", "value": "Premium" }, { "label": "Acabado", "value": "Electrostático" } ], "relatedTag": "Más opciones", "relatedTitle": "Otro diseño a medida", "viewProd": "Ver Detalles del Diseño" },
   "whatsappBtn": {
-    "hoverMsg1": "¿Asesoría rápida?",
-    "hoverMsg2": "Escríbenos",
-    "defaultMessage": "Hola Dario's custom iron art, me gustaría solicitar una cotización para un proyecto de herrería personalizada en Miami.",
-    "ariaLabel": "Contactar por WhatsApp"
+    "hoverMsg1": "¿Asesoría de herrería?",
+    "hoverMsg2": "Cotiza tu diseño",
+    "defaultMessage": "Hola Dario's custom iron art, me gustaría solicitar una cotización técnica para un diseño a medida en Miami.",
+    "ariaLabel": "Contactar al taller por WhatsApp"
   },
   "productsData": {
     "1": { "title": "Puerta Metálica", "tags": ["Metal Plateado", "Cabezas de León", "Diseño de Rejilla", "Remaches Decorativos", "Estilo Robusto"], "description": "Puerta monumental fabricada en metal plateado con relieves artesanales de cabezas de león. Su diseño de rejilla estructural combina funcionalidad y estética, con remaches decorativos que refuerzan la solidez del conjunto. Ideal para entradas principales residenciales o comerciales de alto perfil." },
@@ -134,6 +146,131 @@
     "5": { "title": "Candelabros", "tags": ["Hierro Forjado", "Estilo Clásico", "Lámparas Colgantes", "Detalles Dorados", "Herrería Artística"], "description": "Conjunto coordinado de candelabros diseñados para instalación en tándem. Perfectos para espacios de doble altura o pasillos amplios, aportan calidez y carácter clásico con detalles dorados trabajados a mano." },
     "6": { "title": "Candelabros", "tags": ["Hierro Forjado", "Estilo Medieval", "Lámparas Colgantes", "Detalles Dorados", "Diseño Circular"], "description": "Candelabros de forma circular inspirados en la iluminación de castillos y palacios medievales. Fabricados en hierro forjado con aplicaciones doradas, crean ambientes dramáticos y cálidos. Disponibles en múltiples diámetros según el espacio." },
     "7": { "title": "Portón de Aluminio", "tags": ["Aluminio", "Portón de Entrada", "Diseño de Rejilla", "Exterior", "Terminacion color madera Decorativa"], "description": "Portón de entrada exterior fabricado en aluminio de alta resistencia con paneles en diseño de rejilla y terminación decorativa imitación madera. Ofrece privacidad óptima y ventilación cruzada, protegido con un acabado electrostático de alta durabilidad ante el salitre marino y la intemperie de Florida." },
-    "8": { "title": "Portón de Aluminio Clásico", "tags": ["Aluminio", "Ligero", "Durable", "Portón de Entrada", "Estilo Clásico", "Diseño con Arco", "Exterior"], "description": "Portón de entrada exterior de dos hojas con diseño arqueado, fabricado íntegramente en aluminio premium para asegurar una estructura ligera, libre de corrosión y sumamente durable. Su manufactura evoca la elegancia estética del hierro forjado clásico sin su peso ni mantenimiento. Incluye cerradura de seguridad y herrajes coordinados." }
+    "8": { "title": "Portón de Aluminio Clásico", "tags": ["Aluminio", "Ligero", "Durable", "Portón de Entrada", "Estilo Clásico", "Diseño con Arco", "Exterior"], "description": "Portón de entrada exterior de dos hojas con diseño arqueado, fabricado íntegramente en aluminio premium para asegurar una estructura ligera, libre de corrosión y sumamente durable. Su manufactura evoca la elegancia estética del hierro forjado clásico sin su peso ni mantenimiento. Incluye cerradura de seguridad y herrajes coordinados." },
+    "9": {
+      "title": "Portón de Entrada de Hierro Forjado Ornamentado",
+      "tags": ["Hierro Forjado", "Alta Seguridad", "Diseño Ornamentado", "Residencial", "Automatizable"],
+      "description": "Espectacular portón de entrada fabricado a mano en hierro forjado, diseñado para ofrecer la máxima seguridad sin sacrificar la elegancia. Cuenta con detalles ornamentales clásicos, remates decorativos y una estructura reforzada preparada para sistemas de apertura automatizada. Ideal para fincas y residencias de lujo en Miami."
+    },
+    "10": {
+      "title": "Barandal Moderno de Aluminio con Lamas Horizontales",
+      "tags": ["Aluminio", "Privacidad", "Diseño Moderno", "Resistente al Clima", "Balcones"],
+      "description": "Sistema de barandales contemporáneo fabricado en aluminio premium con un diseño de lamas horizontales que proporciona privacidad y un flujo de aire óptimo. Su acabado con pintura electrostática (powder coating) asegura una resistencia extrema contra el salitre y la humedad, perfecto para balcones y terrazas en zonas costeras."
+    },
+    "11": {
+      "title": "Escultura Abstracta Moderna en Metal",
+      "tags": ["Escultura", "Arte en Metal", "Diseño Abstracto", "Exteriores e Interiores", "Pieza Única"],
+      "description": "Exquisita pieza de arte contemporáneo creada a partir de metal sólido. Esta escultura abstracta destaca por sus líneas fluidas y su capacidad de interactuar con la luz natural, creando sombras dinámicas. Tratada para resistir la intemperie, es el punto focal perfecto para jardines, vestíbulos o espacios arquitectónicos minimalistas."
+    },
+    "12": {
+      "title": "Bar Contenedor Metálico para Exteriores",
+      "tags": ["Bar Comercial", "Contenedor Metálico", "Diseño Industrial", "Exteriores", "Estructura Pesada"],
+      "description": "Innovador bar comercial para exteriores construido a partir de paneles de contenedores marítimos reciclados e integrados con herrería de alta resistencia. Cuenta con ventanas abatibles, barras de servicio resistentes y un diseño industrial inconfundible. Ideal para patios de restaurantes, eventos al aire libre o zonas de entretenimiento residencial."
+    },
+    "13": {
+      "title": "Puertas Francesas de Metal Negro y Cristal",
+      "tags": ["Metal y Cristal", "Estilo Industrial", "Interiores Modernos", "Iluminación Natural", "Puertas Dobles"],
+      "description": "Elegantes puertas francesas de interior que combinan perfiles esbeltos de metal negro con cristal templado de alta claridad. Su diseño maximiza el paso de la luz natural manteniendo una separación acústica y espacial. Aportan un toque de sofisticación industrial, ideales para separar comedores, oficinas en casa o salas de estar."
+    },
+    "14": {
+      "title": "Arte Metálico Abstracto Azul y Verde",
+      "tags": ["Arte de Pared", "Abstracto", "Acabado a Color", "Interiores"],
+      "description": "Arte abstracto en metal con vibrantes tonos azules y verdes. Una pieza de decoración moderna ideal para aportar carácter a espacios e interiores contemporáneos."
+    },
+    "15": {
+      "title": "Puerta Peatonal Arqueada de Aluminio",
+      "tags": ["Puerta Peatonal", "Aluminio", "Diseño Arqueado", "Exterior"],
+      "description": "Elegante puerta peatonal con un diseño superior en arco clásico, fabricada completamente en aluminio ligero para garantizar una alta durabilidad y resistencia al clima."
+    },
+    "16": {
+      "title": "Portón Metálico Arqueado para Entrada",
+      "tags": ["Portón Vehicular", "Metal", "Diseño Arqueado", "Alta Resistencia"],
+      "description": "Portón vehicular robusto con un diseño clásico arqueado de líneas limpias. Ofrece alta seguridad y una entrada de lujo para fincas o residencias."
+    },
+    "17": {
+      "title": "Puerta Principal Doble de Aluminio Negro",
+      "tags": ["Puerta de Entrada", "Aluminio", "Puerta Doble", "Moderno"],
+      "description": "Imponente puerta de entrada doble en aluminio negro mate, destacando un diseño geométrico asimétrico muy moderno que eleva la estética y la seguridad del hogar."
+    },
+    "18": {
+      "title": "Barra Comercial de Metal Corrugado",
+      "tags": ["Comercial", "Barra de Bar", "Metal Corrugado", "Industrial"],
+      "description": "Mostrador de bar de estilo rústico e industrial fabricado con paneles resistentes de metal corrugado, ideal para restaurantes, cervecerías o espacios comerciales al aire libre."
+    },
+    "19": {
+      "title": "Barandal Personalizado de Aluminio para Piscina",
+      "tags": ["Barandal de Piscina", "Aluminio", "Patio", "Resistente al Clima"],
+      "description": "Sistema de barandillas de aluminio diseñado específicamente para el perímetro de áreas de piscina y patios. Su acabado premium es altamente resistente a químicos y humedad."
+    },
+    "20": {
+      "title": "Escultura Industrial de Engranajes Metálicos",
+      "tags": ["Arte de Pared", "Industrial", "Engranajes de Metal", "Gran Escala"],
+      "description": "Pieza de arte de pared a gran escala que presenta engranajes metálicos pesados, rindiendo homenaje al estilo industrial y a la ingeniería de precisión."
+    },
+    "21": {
+      "title": "Barandal de Balcón de Metal Cortado con Láser",
+      "tags": ["Barandal de Balcón", "Corte Láser", "CNC", "Privacidad"],
+      "description": "Exclusiva barandilla de balcón con intrincados patrones perforados mediante corte láser CNC. Combina privacidad parcial con un diseño de alta gama que resalta cualquier fachada."
+    },
+    "22": {
+      "title": "Gabinetes Modernos de Aluminio para Cocina Exterior",
+      "tags": ["Cocina Exterior", "Gabinetes", "Aluminio", "Resistente al Clima"],
+      "description": "Sistema de gabinetes de cocina para exteriores forjados íntegramente en aluminio, garantizados contra el óxido incluso en ambientes salinos intensos."
+    },
+    "23": {
+      "title": "Puerta Doble Geométrica de Aluminio Moderno",
+      "tags": ["Puerta Doble", "Geométrico", "Aluminio", "Diseño Moderno"],
+      "description": "Puerta doble de entrada que destaca por su patrón geométrico asimétrico excepcional, integrando paneles de aluminio sólido con un impacto visual innegable."
+    },
+    "24": {
+      "title": "Portón Vehicular Moderno de Lamas Horizontales",
+      "tags": ["Portón Vehicular", "Lamas Horizontales", "Moderno", "Privacidad"],
+      "description": "Portón corredizo o batiente con un diseño muy limpio de lamas horizontales que proporcionan total privacidad, perfecto para proyectos de arquitectura minimalista."
+    },
+    "25": {
+      "title": "Mesa de Centro Moderna con Base de Metal y Cristal",
+      "tags": ["Mesa de Centro", "Superficie de Cristal", "Base Metálica", "Mobiliario Interior"],
+      "description": "Mesa de centro de diseño con una intrincada y escultórica base de metal forjado a mano, rematada con una gruesa superficie de cristal templado transparente."
+    },
+    "26": {
+      "title": "Puertas Francesas Ornamentadas de Aluminio",
+      "tags": ["Puertas Francesas", "Aluminio", "Ornamentado", "Paneles Laterales"],
+      "description": "Conjunto de puertas francesas de lujo acompañadas de paneles fijos laterales (sidelights), presentando detalles ornamentales de fundición que brindan un aire majestuoso."
+    },
+    "27": {
+      "title": "Farol de Pared Exterior Metálico Ornamentado",
+      "tags": ["Farol de Pared", "Iluminación Exterior", "Ornamentado", "Metal"],
+      "description": "Lámpara o farol de pared exterior de estilo clásico, forjada minuciosamente con detalles tradicionales para iluminar pasillos y entradas con gran elegancia."
+    },
+    "28": {
+      "title": "Barandal de Hierro Forjado Ornamentado",
+      "tags": ["Hierro Forjado", "Barandal", "Ornamentado", "Clásico"],
+      "description": "Barandilla clásica superior con elaborados pergaminos, volutas y detalles florales forjados a mano en hierro masivo, ideal para balcones majestuosos y frentes residenciales."
+    },
+    "29": {
+      "title": "Pasamanos de Escalera en Hierro Forjado",
+      "tags": ["Barandal de Escalera", "Hierro Forjado", "Ornamentado", "Interiores"],
+      "description": "Elegante pasamanos de hierro forjado a mano, diseñado específicamente para adaptarse a la curvatura de escaleras interiores de estilo clásico o renacentista."
+    },
+    "30": {
+      "title": "Arte Metálico de Pared Estilo Steampunk",
+      "tags": ["Arte de Pared", "Steampunk", "Engranajes", "Interiores"],
+      "description": "Impactante composición de pared inspirada en el movimiento retro-futurista Steampunk, entrelazando detalles de engranajes metálicos envejecidos y tuberías."
+    },
+    "31": {
+      "title": "Cerca de Privacidad de Aluminio Imitación Madera",
+      "tags": ["Cerca de Privacidad", "Imitación Madera", "Aluminio", "Exterior"],
+      "description": "Innovador sistema de cercado perimetral que ofrece la belleza visual y la calidez de la madera, pero con la durabilidad, ligereza y resistencia libre de mantenimiento del aluminio."
+    },
+    "32": {
+      "title": "Candelabro Clásico de Hierro Forjado",
+      "tags": ["Candelabro", "Hierro Forjado", "Clásico", "Techos Altos"],
+      "description": "Impresionante lámpara de araña forjada a mano con múltiples niveles de luces, ideal para vestíbulos de gran altura, bóvedas y comedores formales de lujo."
+    },
+    "33": {
+      "title": "Puerta de Aluminio Estilo Hierro Forjado",
+      "tags": ["Puerta de Entrada", "Aluminio", "Estilo Forja", "Ligera"],
+      "description": "Puerta de seguridad exterior fabricada en aluminio ligero pero elaborada meticulosamente para imitar a la perfección la estética pesada e histórica del hierro forjado antiguo."
+    }
   }
 }
