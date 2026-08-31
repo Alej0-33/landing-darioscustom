@@ -116,6 +116,24 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           "@type": "SpeakableSpecification",
           "cssSelector": ["#inicio", "#servicios"]
         }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${SITE_URL}/${resolvedParams.lang}/#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": dict.header.links.home,
+            "item": `${SITE_URL}/${resolvedParams.lang}/`
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Custom Ironwork Miami",
+            "item": `${SITE_URL}/${resolvedParams.lang}/#servicios`
+          }
+        ]
       }
     ]
   };
@@ -127,6 +145,15 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <main id="main-content" className="min-h-screen overflow-x-hidden">
         <div id="inicio" aria-hidden="true" className="absolute -top-20"></div>
         
+        {/* Breadcrumb Navigation for AEO & SEO */}
+        <nav aria-label="breadcrumb" className="absolute w-full z-10 pt-24 px-4 sm:px-8 lg:px-16 pointer-events-none opacity-0 md:opacity-50 md:pointer-events-auto flex text-xs text-zinc-400 max-w-7xl mx-auto">
+          <ol className="flex space-x-2 items-center">
+            <li><a href={`/${resolvedParams.lang}/`} className="hover:text-white transition-colors">{dict.header.links.home}</a></li>
+            <li><span aria-hidden="true">/</span></li>
+            <li aria-current="page" className="text-[#B85227] font-medium">{resolvedParams.lang === 'es' ? 'Herrería a Medida Miami' : 'Custom Ironwork Miami'}</li>
+          </ol>
+        </nav>
+
         <Hero />
         <Services />
         <Catalog />

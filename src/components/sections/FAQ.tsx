@@ -67,13 +67,19 @@ export default function FAQ() {
         <motion.div className="space-y-4" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
           {dict.items.map((item: any, idx: number) => (
             <motion.div key={idx} variants={staggerItem}>
-              <details className="bg-[#18181B] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-4 group cursor-pointer">
-                <summary className="font-bold text-white text-sm md:text-base uppercase list-none flex justify-between">
-                  {/* Se mantiene el h3 dentro del summary para Featured Snippets */}
-                  <h3 id={item.id} className="flex-grow">{item.q}</h3>
-                  <span className="text-[#B85227]">+</span>
+              {/* Microdatos añadidos para garantizar la extracción PAA (People Also Ask) en IAs y Google */}
+              <details className="bg-[#18181B] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-4 group cursor-pointer" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                {/* Ocultamos los estilos flex del summary y los pasamos al H3 para que el bot solo lea H3 y luego P */}
+                <summary className="font-bold text-white text-sm md:text-base uppercase list-none outline-none block w-full">
+                  <h3 id={item.id} className="flex justify-between items-center m-0 w-full" itemProp="name">
+                    <span>{item.q}</span>
+                    <span className="text-[#B85227] ml-4">+</span>
+                  </h3>
                 </summary>
-                <p className="text-[#A1A1AA] text-xs md:text-sm mt-4 pt-4 border-t border-[#27272A]" dangerouslySetInnerHTML={{ __html: item.a }}></p>
+                {/* El Párrafo ahora va inmediatamente después del H3 (saltando el cierre de summary), pasando la auditoría AEO */}
+                <p className="text-[#A1A1AA] text-xs md:text-sm mt-4 pt-4 border-t border-[#27272A]" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                  <span itemProp="text" dangerouslySetInnerHTML={{ __html: item.a }}></span>
+                </p>
               </details>
             </motion.div>
           ))}

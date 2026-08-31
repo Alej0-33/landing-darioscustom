@@ -86,10 +86,11 @@ export default function Services() {
                 <div className="w-10 h-10 rounded-full bg-brand-primary text-white flex items-center justify-center font-black mb-4 mx-auto md:mx-0 shadow-[0_0_15px_rgba(184,82,39,0.4)]">
                   {idx + 1}
                 </div>
-                <h3 id={`how-to-step-${idx + 1}`} className="text-sm font-bold text-white uppercase tracking-wide mb-3 text-center md:text-left">
-                  {step.title}
-                </h3>
                 <p className="text-zinc-400 text-xs leading-relaxed text-center md:text-left">
+                  {/* Se cambia H3 por Strong para que Google lea el <li> como un bloque de texto continuo para Snippets */}
+                  <strong id={`how-to-step-${idx + 1}`} className="block text-sm font-bold text-white uppercase tracking-wide mb-2">
+                    {step.title}
+                  </strong>
                   {step.desc}
                 </p>
               </li>

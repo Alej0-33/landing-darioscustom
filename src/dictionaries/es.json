@@ -9,9 +9,9 @@
     "quote": "Cotizar Proyecto de Herrería" 
   },
   "hero": { 
-    "title1": "Herrería a medida y ", 
-    "highlight": "diseño exclusivo", 
-    "title2": " en Miami", 
+    "title1": "Expertos en ", 
+    "highlight": "herrería a medida Miami", 
+    "title2": " y diseño exclusivo", 
     "desc": "Somos expertos en herrería a medida en Miami. Fabricamos puertas de hierro, balcones y cercas de privacidad con diseño exclusivo. Usamos aluminio, acero inoxidable y hierro forjado con acabados premium. Transforma tu propiedad con nuestra forja artística de alta resistencia.", 
     "btnQuote": "Solicitar Cotización Técnica", 
     "btnCatalog": "Ver Catálogo de Herrería", 
@@ -53,10 +53,10 @@
     "howTo": {
       "title": "Cómo solicitar tu diseño a medida",
       "steps": [
-        { "title": "Solicitud Inicial", "desc": "Envíanos medidas y fotos por WhatsApp. Hablaremos sobre tus gustos para crear una pieza de herrería en Miami única." },
-        { "title": "Visita Técnica", "desc": "Visitamos tu propiedad en Miami. Elegimos el material ideal: aluminio, acero inoxidable, bronce o hierro forjado." },
-        { "title": "Fabricación a Medida", "desc": "Forjamos tu diseño personalizado. Aplicamos pintura en polvo (Powder Coating) a tus puertas de hierro o balcones." },
-        { "title": "Instalación Segura", "desc": "Instalamos tu herrería a medida cumpliendo estrictamente con los códigos de construcción de Florida." }
+        { "title": "Solicitud Inicial", "desc": "Envíenos sus medidas iniciales y fotos de referencia a través de WhatsApp o nuestro formulario. Discutiremos sus gustos y requisitos específicos para crear una pieza de herrería a medida única. Esta consulta inicial nos ayuda a entender perfectamente su visión." },
+        { "title": "Visita Técnica", "desc": "Realizaremos una visita técnica exhaustiva en su propiedad en Miami para tomar las medidas exactas. Durante esta visita, le ayudaremos a elegir el material premium ideal para su proyecto, ya sea aluminio ligero, acero inoxidable, bronce elegante o hierro forjado clásico." },
+        { "title": "Fabricación a Medida", "desc": "Nuestros maestros herreros forjarán su diseño exclusivo de metal en nuestro taller local de Miami. Aplicamos un recubrimiento electrostático en polvo de alta durabilidad a sus puertas o balcones. Este acabado horneado asegura una resistencia extrema contra el óxido y el clima costero." },
+        { "title": "Instalación Segura", "desc": "Nuestro equipo profesional entregará e instalará su herrería a medida directamente en su hogar. Realizamos una instalación segura y limpia, cumpliendo estrictamente con el Código de Construcción de Florida. Aseguramos que sus nuevas puertas de hierro o cercas queden perfectamente fijadas." }
       ]
     }
   },
@@ -86,32 +86,32 @@
       {
         "id": "faq-definition-custom-ironwork",
         "q": "¿Qué es la herrería a medida y qué incluye el servicio?",
-        "a": "La herrería a medida es un proceso de forja artística y fabricación personalizada de estructuras metálicas. Este servicio exclusivo en Miami incluye el diseño, construcción e instalación de puertas de hierro, balcones, portones y cercas de privacidad adaptadas exactamente a la arquitectura de su propiedad."
+        "a": "La herrería a medida es un proceso especializado de forja artística y fabricación de metal. Nuestro servicio exclusivo en Miami incluye diseñar, construir e instalar puertas de hierro, balcones duraderos, portones metálicos y cercas de privacidad. Cada pieza se adapta específicamente a la arquitectura única de su propiedad."
       },
       {
         "id": "faq-florida-building-code",
         "q": "¿Darioscustom cumple con el Código de Edificación de Florida (FBC) para huracanes?",
-        "a": "Sí, Darioscustom cumple estrictamente con el Código de Edificación de Florida (FBC). Nuestras puertas de hierro, portones y balcones resisten vientos de huracanes hasta 175 mph. Usamos ingeniería precisa y diseño a medida para asegurar tu propiedad. Este nivel de seguridad es ideal para herrería en Miami."
+        "a": "Sí, nuestra herrería a medida cumple estrictamente con el Código de Edificación de Florida (FBC) para protección contra huracanes. Nuestras puertas de hierro, portones y balcones están diseñados para resistir vientos extremos de hasta 175 mph. Usamos ingeniería precisa y diseño exclusivo para garantizar la máxima seguridad en su propiedad."
       },
       {
         "id": "faq-powder-coating",
         "q": "¿Cuáles son las diferencias entre la pintura tradicional de herrería y el recubrimiento en polvo (Powder Coating)?",
-        "a": "El recubrimiento en polvo (Powder Coating) es un acabado protector horneado a 400°F. Es muy superior a la pintura tradicional. Este proceso protege tus puertas de hierro y balcones contra el sol y salitre. Garantiza que tu diseño a medida en Miami no se oxide fácilmente."
+        "a": "El recubrimiento en polvo o Powder Coating es un acabado protector horneado a 400 grados Fahrenheit, muy superior a la pintura tradicional. Este avanzado proceso protege sus puertas de hierro y balcones contra el intenso sol y el salitre de Miami. Garantiza que su diseño exclusivo de metal no se oxidará."
       },
       {
         "id": "faq-service-areas",
         "q": "¿Qué áreas de servicio cubren en el Sur de Florida?",
-        "a": "Nuestras áreas de servicio en el Sur de Florida cubren todo el condado de Miami-Dade. Instalamos herrería en Miami, Coral Gables, Doral, Brickell, Pinecrest y Key Biscayne. Llevamos nuestro diseño a medida, cercas de privacidad y puertas de hierro directamente a tu residencia."
+        "a": "Nuestras áreas de servicio de herrería a medida cubren todo el condado de Miami-Dade y el sur de Florida. Fabricamos e instalamos proyectos de metal en Miami, Coral Gables, Doral, Brickell, Pinecrest y Key Biscayne. Llevamos nuestras cercas de privacidad, balcones y puertas de hierro directamente a su residencia de lujo."
       },
       {
         "id": "faq-maintenance",
         "q": "¿Qué tipo de mantenimiento requieren sus portones y rejas metálicas?",
-        "a": "El mantenimiento de nuestros portones y barandales es muy sencillo. Solo necesitas lavar la estructura cada 3 a 6 meses con agua y jabón suave. Nuestro acabado electrostático protege tu herrería en Miami. Así mantienes tus puertas de hierro y balcones como nuevos."
+        "a": "El mantenimiento de nuestros portones metálicos y barandales es increíblemente sencillo. Solo necesita lavar la estructura cada tres a seis meses usando agua y jabón suave. Nuestro acabado de pintura electrostática premium protege activamente su herrería a medida en Miami, manteniendo sus puertas de hierro como nuevas durante muchísimos años."
       },
       {
         "id": "faq-quote-process",
         "q": "¿Cuál es el proceso para solicitar una cotización técnica para mi residencia o negocio?",
-        "a": "El proceso para solicitar una cotización técnica comienza contactándonos por WhatsApp. Envía las medidas y fotos de tu espacio. Primero hacemos una propuesta económica para tu diseño a medida. Luego visitamos tu casa en Miami para medir y fabricar tus puertas de hierro o candelabros."
+        "a": "El proceso para solicitar una cotización técnica comienza contactándonos por WhatsApp o nuestro formulario. Simplemente envíe medidas aproximadas y fotos de su espacio. Primero, proporcionamos un precio estimado para su diseño exclusivo. Luego, visitamos su casa en Miami para tomar medidas exactas y comenzar a forjar su proyecto de herrería."
       }
     ]
   },

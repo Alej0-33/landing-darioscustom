@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Custom Ironwork Miami: Iron Doors & Bespoke Metal Design",
-    "description": "Premier custom ironwork workshop in Miami. We fabricate custom iron doors, metal balconies, and privacy fences with bespoke design and artistic forging.",
+    "description": "Looking for premium custom ironwork in Miami? We fabricate custom iron doors, metal balconies, and privacy fences. Our bespoke metal design ensures high durability and artistic forging for your property.",
     "keywords": ["custom ironwork miami", "bespoke metal design", "iron doors", "artistic forging miami", "metal balconies", "privacy fences", "metal fabrication", "Darioscustom"]
   },
   "header": { 
@@ -9,9 +9,9 @@
     "quote": "Quote Ironwork Project" 
   },
   "hero": {
-    "title1": "Premium custom ironwork & ",
-    "highlight": "bespoke metal design",
-    "title2": " in miami",
+    "title1": "Premium ",
+    "highlight": "custom ironwork Miami",
+    "title2": " & bespoke metal design",
     "desc": "We are a premier custom ironwork workshop in Miami. We fabricate custom iron doors, metal balconies, and privacy fences with bespoke design. Utilizing premium aluminum, stainless steel, and iron, we guarantee highly durable and artistic metal fabrication for luxury properties.",
     "btnQuote": "Request Technical Quote",
     "btnCatalog": "View Ironwork Catalog",
@@ -53,10 +53,10 @@
     "howTo": {
       "title": "How to request your custom design",
       "steps": [
-        { "title": "Initial Request", "desc": "Send us measurements and photos via WhatsApp. We will discuss your tastes to create a unique custom ironwork piece." },
-        { "title": "Technical Visit", "desc": "We visit your property in Miami. We choose the ideal material: aluminum, stainless steel, bronze, or wrought iron." },
-        { "title": "Custom Fabrication", "desc": "We forge your custom design. We apply electrostatic powder coating to your iron doors or balconies." },
-        { "title": "Safe Installation", "desc": "We install your custom ironwork strictly complying with Florida building codes." }
+        { "title": "Initial Request", "desc": "Send us your initial measurements and reference photos via WhatsApp or our contact form. We will discuss your specific tastes and requirements to create a unique custom ironwork piece. This initial consultation helps us understand your vision for your Miami property." },
+        { "title": "Technical Visit", "desc": "We will conduct a thorough technical visit at your property in Miami to take exact measurements. During this visit, we help you choose the ideal premium material for your project, whether it is lightweight aluminum, stainless steel, elegant bronze, or classic wrought iron." },
+        { "title": "Custom Fabrication", "desc": "Our master craftsmen will forge your bespoke metal design in our local Miami workshop. We apply a highly durable electrostatic powder coating to your custom iron doors, gates, or balconies. This baked finish ensures extreme resistance against rust and harsh coastal weather." },
+        { "title": "Safe Installation", "desc": "Our professional team will deliver and install your custom ironwork directly at your home. We perform a safe, clean installation strictly complying with the Florida Building Code. We ensure your new iron doors or fences are perfectly secured and visually stunning." }
       ]
     }
   },
@@ -86,32 +86,32 @@
       {
         "id": "faq-definition-custom-ironwork",
         "q": "What is custom ironwork and what does the service include?",
-        "a": "Custom ironwork refers to the artistic forging and personalized metal fabrication process. This exclusive service in Miami includes designing, building, and installing custom iron doors, balconies, metal gates, and privacy fences tailored specifically to your property's architecture."
+        "a": "Custom ironwork is a specialized metal fabrication process focused on artistic forging and bespoke metal design. Our exclusive service in Miami includes designing, building, and installing custom iron doors, durable balconies, metal gates, and privacy fences. Every piece is specifically tailored to match your property's unique architecture."
       },
       {
         "id": "faq-florida-building-code",
         "q": "Does Dario's comply with the Florida Building Code (FBC) for hurricanes?",
-        "a": "Yes, Darioscustom complies strictly with the Florida Building Code (FBC). Our iron doors, gates, and balconies resist hurricane winds up to 175 mph. We use precise engineering and custom design to secure your property. This safety level is essential for custom ironwork in Miami."
+        "a": "Yes, our custom ironwork strictly complies with the Florida Building Code (FBC) for hurricane protection. Our heavy-duty iron doors, gates, and metal balconies are engineered to resist extreme hurricane winds up to 175 mph. We use precise engineering and bespoke metal design to guarantee maximum safety."
       },
       {
         "id": "faq-powder-coating",
         "q": "What are the differences between traditional blacksmith paint and Powder Coating?",
-        "a": "Powder Coating is a protective finish baked at 400°F. It is heavily superior to traditional paint. This process protects your iron doors and balconies against the Miami sun and sea salt. It guarantees your custom design will not rust easily."
+        "a": "Powder coating is a highly durable protective finish baked at 400 degrees Fahrenheit, making it heavily superior to traditional blacksmith paint. This advanced process protects your custom iron doors and metal balconies against the intense Miami sun and corrosive sea salt. It guarantees your metal design will not rust."
       },
       {
         "id": "faq-service-areas",
         "q": "What service areas do you cover in South Florida?",
-        "a": "Our service areas in South Florida cover all of Miami-Dade county. We install custom ironwork in Miami, Coral Gables, Doral, Brickell, Pinecrest, and Key Biscayne. We bring our custom design, privacy fences, and iron doors directly to your residence."
+        "a": "Our custom ironwork service areas cover all of Miami-Dade County and surrounding regions in South Florida. We design, fabricate, and install bespoke metal projects in Miami, Coral Gables, Doral, Brickell, Pinecrest, and Key Biscayne. We bring our premium privacy fences, balconies, and custom iron doors directly to you."
       },
       {
         "id": "faq-maintenance",
         "q": "What kind of maintenance do your metal gates and grilles require?",
-        "a": "The maintenance of our metal gates and railings is very simple. You only need to wash the structure every 3 to 6 months with mild soap and water. Our electrostatic finish protects your custom ironwork in Miami, keeping your iron doors looking brand new."
+        "a": "The maintenance for our custom metal gates and iron railings is incredibly simple. You only need to wash the structure every three to six months using mild soap and water. Our premium electrostatic powder coating finish actively protects your custom ironwork, keeping your iron doors looking brand new forever."
       },
       {
         "id": "faq-quote-process",
         "q": "What is the process to request a technical quote for my residence or business?",
-        "a": "The process to request a technical quote starts by contacting us via WhatsApp. Send us measurements and photos of your space. First, we provide a price estimate for your custom design. Then, we visit your Miami home to measure and forge your iron doors or chandeliers."
+        "a": "The process to request a technical quote starts by contacting us via WhatsApp or our online form. Simply send us rough measurements and photos of your space. First, we provide an estimated price for your custom design. Then, we visit your Miami home to accurately measure and forge your ironwork."
       }
     ]
   },
