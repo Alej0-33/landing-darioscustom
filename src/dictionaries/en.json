@@ -1,11 +1,11 @@
 {
   "seo": {
     "title": "Custom Ironwork Miami: Iron Doors & Bespoke Metal Design",
-    "description": "Looking for premium custom ironwork in Miami? We fabricate custom iron doors, metal balconies, and privacy fences. Our bespoke metal design ensures high durability and artistic forging for your property.",
+    "description": "Premium custom ironwork in Miami. We fabricate custom iron doors, metal balconies, and privacy fences. High durability and bespoke metal design for your home.",
     "keywords": ["custom ironwork miami", "bespoke metal design", "iron doors", "artistic forging miami", "metal balconies", "privacy fences", "metal fabrication", "Darioscustom"]
   },
   "header": { 
-    "links": { "home": "Home", "about": "About Us", "services": "Services", "catalog": "Catalog", "materials": "Materials", "reviews": "Reviews", "faq": "FAQ" }, 
+    "links": { "home": "Home", "about": "About Us", "services": "Services", "catalog": "Catalog", "materials": "Materials", "reviews": "Reviews", "faq": "FAQ", "contact": "Contact" }, 
     "quote": "Quote Ironwork Project" 
   },
   "hero": {
@@ -336,6 +336,96 @@
       "title": "Wrought Iron Gazebo Dome",
       "tags": ["Wrought Iron", "Gazebo", "Dome", "Outdoor Structure", "Classic Design"],
       "description": "Magnificent hand-forged wrought iron gazebo dome. Designed to be the ultimate focal point for luxury gardens and estates, featuring intricate classic detailing and a durable weather-resistant finish."
+    },
+    "46": {
+      "title": "Custom Stainless Steel Outdoor BBQ Hood",
+      "tags": ["Stainless Steel", "BBQ Hood", "Outdoor Kitchen", "Miami FL", "Custom Metal Fabrication"],
+      "description": "Bespoke stainless steel outdoor BBQ exhaust hood, engineered for coastal Miami kitchens. Maximum corrosion resistance against salt air and heavy-duty smoke extraction."
+    },
+    "47": {
+      "title": "Custom Wrought Aluminum Waterfront Gate",
+      "tags": ["Aluminum Gate", "Waterfront Property", "Rust Proof", "Miami FL", "High Security"],
+      "description": "Premium wrought aluminum waterfront security gate. Specially powder-coated for South Florida properties to prevent rust while maintaining a luxurious aesthetic."
+    },
+    "48": {
+      "title": "Custom Wrought Iron Chandelier",
+      "tags": ["Wrought Iron", "Chandelier", "Luxury Lighting", "Hand Forged", "Coral Gables"],
+      "description": "Hand-forged custom wrought iron chandelier designed for luxury high-ceiling homes in Coral Gables and Pinecrest. A true piece of bespoke metal art."
+    },
+    "49": {
+      "title": "Custom Wrought Iron Double Entry Doors",
+      "tags": ["Iron Doors", "Double Entry", "Estate Security", "Custom Ironwork", "Miami-Dade"],
+      "description": "Monumental custom wrought iron double entry doors, crafted to elevate the curb appeal and security of exclusive estates across Miami-Dade."
+    },
+    "50": {
+      "title": "Decorative Scrollwork Iron Entry Gate",
+      "tags": ["Iron Gate", "Scrollwork", "Automated Gate", "Driveway Security", "Custom Design"],
+      "description": "Driveway entry gate featuring elaborate decorative scrollwork. Custom metal design combining classic elegance with heavy-duty automated security for Florida homes."
+    },
+    "51": {
+      "title": "Faux Wood Aluminum Sliding Driveway Gate",
+      "tags": ["Aluminum Gate", "Sliding Gate", "Faux Wood", "Privacy Fence", "Miami Climate"],
+      "description": "Modern sliding driveway gate made of lightweight aluminum with a highly durable faux wood finish. The perfect zero-maintenance privacy solution for Miami's humid climate."
+    },
+    "52": {
+      "title": "Geometric Frosted Glass Double Doors",
+      "tags": ["Metal & Glass", "Frosted Glass", "Double Doors", "Modern Architecture", "Privacy"],
+      "description": "Contemporary double entry doors integrating a sleek metal geometric frame with frosted glass. Offers privacy and abundant natural light for modern South Florida architecture."
+    },
+    "53": {
+      "title": "Industrial Wire Mesh Stair Railing",
+      "tags": ["Wire Mesh", "Stair Railing", "Industrial Style", "Custom Welded", "Loft Design"],
+      "description": "Industrial style stair railing featuring welded wire mesh panels and a heavy-duty steel frame. Custom fabricated for lofts, commercial spaces, and modern industrial homes."
+    },
+    "54": {
+      "title": "Modern Abstract Metal Staircase Railing",
+      "tags": ["Staircase Railing", "Abstract Design", "Metal Art", "Interior Design", "Handcrafted"],
+      "description": "Unique staircase railing featuring a modern abstract metal design. Handcrafted by Dario's Custom Iron Art to serve as a stunning architectural focal point in any interior."
+    },
+    "55": {
+      "title": "Modern Black Metal Sliding Driveway Gate",
+      "tags": ["Sliding Gate", "Black Metal", "Driveway Gate", "Privacy Gate", "South Florida"],
+      "description": "Sleek, modern black metal sliding driveway gate providing maximum security and privacy. Custom-built and powder-coated to withstand extreme weather in South Florida."
+    },
+    "56": {
+      "title": "Modern Black Steel Double Entry Doors",
+      "tags": ["Steel Doors", "Double Entry", "Black Steel", "Minimalist", "Luxury Entrance"],
+      "description": "Ultra-modern black steel double entry doors featuring minimalist lines and robust security. A high-end bespoke metal design for luxury residential entrances."
+    },
+    "57": {
+      "title": "Modern Geometric Iron Double Entry Doors",
+      "tags": ["Iron Doors", "Geometric Pattern", "Modern Design", "Artistic Forging", "Miami Fabrication"],
+      "description": "Custom iron double entry doors with a striking modern geometric pattern. Combines artistic forging with heavy-duty structural integrity for Miami properties."
+    },
+    "58": {
+      "title": "Modern Horizontal Metal Stair Railing",
+      "tags": ["Metal Railing", "Horizontal Lines", "Modern Aesthetic", "Certified Welding", "Interior Railing"],
+      "description": "Contemporary stair railing with clean horizontal metal lines. AWS D1.1 certified welding ensures safety while maintaining a sleek, modern aesthetic for interior spaces."
+    },
+    "59": {
+      "title": "Modern Stainless Steel Horizontal Stair Railing",
+      "tags": ["Stainless Steel", "316L", "Stair Railing", "Coastal Properties", "Rust Resistant"],
+      "description": "Premium 316L stainless steel horizontal stair railing. Exceptionally durable and rust-resistant, making it the top choice for modern coastal properties in Miami."
+    },
+    "60": {
+      "title": "Modern Wall-Mounted Metal Handrail",
+      "tags": ["Wall Mounted", "Handrail", "Minimalist", "Powder Coated", "Safety"],
+      "description": "Minimalist wall-mounted metal handrail designed for both safety and style. Custom fabricated and powder-coated for long-lasting durability in residential or commercial settings."
+    },
+    "61": {
+      "title": "Ornamental Aluminum Sliding Driveway Gate",
+      "tags": ["Aluminum Gate", "Sliding Gate", "Ornamental", "Rust Proof", "Florida Homes"],
+      "description": "Elegant sliding driveway gate crafted from lightweight, rust-proof aluminum with intricate ornamental details. A perfect blend of classic style and modern engineering for Florida homes."
+    },
+    "62": {
+      "title": "Vertical Metal Slat Room Divider",
+      "tags": ["Room Divider", "Metal Slats", "Interior Design", "Architectural Metal", "Custom Fabrication"],
+      "description": "Bespoke vertical metal slat room divider. An architectural metal fabrication piece that defines interior spaces while allowing natural light and airflow."
+    },
+    "63": {
+      "title": "Wrought Iron Style Aluminum Front Doors",
+      "tags": ["Aluminum Doors", "Wrought Iron Style", "Front Doors", "Weather Resistant", "Coastal Climate"],
+      "description": "Custom double front doors made of weather-resistant aluminum but forged to replicate the heavy, historic look of traditional wrought iron. Perfect for humid coastal climates."
     }
   }
 }

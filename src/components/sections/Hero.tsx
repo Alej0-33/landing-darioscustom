@@ -1,66 +1,51 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, RefreshCw } from "lucide-react";
+import { useRef } from "react";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/Button";
 import { useDictionary } from "../DictionaryProvider";
+import { slideFromLeft, slideFromRight, fadeUp, staggerContainer } from "../../utils/animations";
 
 export default function Hero() {
-  const containerRef = useRef(null);
-  const [showProduct, setShowProduct] = useState(false);
+  const containerRef = useRef<HTMLElement>(null);
   const dict = useDictionary().hero;
 
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"],
-  });
-
-  const productOpacity = useTransform(scrollYProgress, [0, 0.4], [0, 1]);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowProduct(true);
-    }, 3500);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <section
-      id="inicio"
-      ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center pt-24 sm:pt-28 overflow-hidden bg-industrial-bg"
-    >
+    <section ref={containerRef} className="relative w-full overflow-hidden min-h-screen flex items-center pt-24 pb-12">
+      
+      {/* Patrón de fondo opcional sutil */}
       <div className="absolute inset-0 industrial-grid opacity-20 pointer-events-none" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(184,82,39,0.08),transparent_70%)] pointer-events-none" />
-      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-industrial-border-high to-transparent" />
+      
+      {/* Resplandor ambiental de fondo en toda la sección superior */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[400px] bg-brand-primary/10 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center py-12 w-full">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-50px" }}
+        className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center w-full"
+      >
         
-        <div className="lg:col-span-7 flex flex-col items-start text-left">
+        {/* Columna Izquierda (Textos y Botones) - Ocupa 5 columnas */}
+        <motion.div variants={slideFromLeft} className="lg:col-span-5 flex flex-col items-start text-left z-20">
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight leading-[1.1] mb-6 uppercase text-white font-sans"
+            variants={fadeUp}
+            className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] mb-6 uppercase text-white font-sans"
           >
             {dict.title1} <span className="text-brand-primary">{dict.highlight}</span> {dict.title2}
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-zinc-400 text-sm sm:text-base md:text-lg mb-8 max-w-xl font-normal leading-relaxed"
+            variants={fadeUp}
+            className="text-zinc-400 text-base lg:text-lg mb-8 max-w-lg font-normal leading-relaxed"
           >
             {dict.desc}
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            variants={fadeUp}
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
             <Button
@@ -80,140 +65,33 @@ export default function Hero() {
               {dict.btnCatalog}
             </Button>
           </motion.div>
-        </div>
+        </motion.div>
 
-        <div className="lg:col-span-5 relative flex flex-col justify-center items-center w-full">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            className="relative w-full aspect-[4/5] xs:aspect-square sm:aspect-[4/5] max-w-[450px] border border-industrial-border-high bg-[#0d0d10] rounded-lg shadow-2xl machined-corners overflow-hidden group"
-          >
-            <motion.div 
-              style={{ opacity: showProduct ? 0 : 1 }}
-              className="absolute inset-0 p-4 sm:p-6 flex flex-col justify-between transition-opacity duration-1000 ease-in-out z-20"
-            >
-              <div className="absolute inset-0 industrial-dots opacity-45 pointer-events-none" />
-              <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-brand-primary/30 to-transparent" />
-              
-              <div className="absolute inset-2 sm:inset-3 border border-industrial-border/40 pointer-events-none flex flex-col justify-between p-2">
-                <div className="flex justify-between text-[6px] sm:text-[8px] text-zinc-600 font-mono">
-                  <span>LAT: 25.7617° N | LON: 80.1918° W</span>
-                  <span className="hidden xs:inline">SYS_SPEC_V5</span>
-                </div>
-                <div className="flex justify-between text-[6px] sm:text-[8px] text-zinc-600 font-mono">
-                  <span>SCALE: NTS</span>
-                  <span>AWS D1.1 STANDARD</span>
-                </div>
-              </div>
+        {/* Columna Derecha (Video Gigante y Horizontal) - Ocupa 7 columnas */}
+        <motion.div variants={slideFromRight} className="lg:col-span-7 relative flex flex-col justify-center items-center w-full mt-10 lg:mt-0">
+          
+          {/* Glow específico detrás del video */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-4/5 bg-brand-primary/20 blur-[100px] -z-10 rounded-full pointer-events-none" />
 
-              <div className="relative h-full w-full flex flex-col justify-between py-4 px-2 sm:px-4 z-10">
-                <div className="border-b border-industrial-border pb-3">
-                  <div className="flex justify-between items-center mb-1">
-                    <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] text-brand-light font-bold">{dict.cadTag}</span>
-                    <span className="text-[8px] sm:text-[9px] font-mono text-zinc-500">DWG #409-MIAMI</span>
-                  </div>
-                  <h2 className="text-sm sm:text-md font-bold uppercase text-white tracking-wider truncate">{dict.cadTitle}</h2>
-                </div>
+          {/* Contenedor del video: sin límite de ancho (w-full), adaptándose a la proporción de 16:9 */}
+          <div className="relative w-full overflow-hidden rounded-xl sm:rounded-2xl shadow-2xl ring-1 ring-white/10 bg-industrial-bg/50 backdrop-blur-sm group">
+            <video 
+              src="/videos/cnc-laser-cutting-stainless-steel-business-awning.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-[1.02]"
+            />
+            {/* Efecto de marco interno muy sutil para darle profundidad a la pantalla */}
+            <div className="absolute inset-0 rounded-xl sm:rounded-2xl shadow-[inset_0_0_40px_rgba(0,0,0,0.6)] pointer-events-none" />
+            
+            
+          </div>
+          
+        </motion.div>
 
-                <div className="flex-grow flex items-center justify-center py-4">
-                  <div className="w-11/12 h-20 sm:h-24 border-2 border-dashed border-brand-primary/20 relative flex items-center justify-around">
-                    <div className="absolute top-0 bottom-0 left-1/4 w-[1px] bg-brand-primary/30" />
-                    <div className="absolute top-0 bottom-0 left-2/4 w-[1px] bg-brand-primary/30" />
-                    <div className="absolute top-0 bottom-0 left-3/4 w-[1px] bg-brand-primary/30" />
-                    <div className="absolute top-0 left-0 w-8 h-[1px] bg-brand-primary/40 rotate-45 origin-top-left" />
-                    <div className="absolute bottom-0 right-0 w-8 h-[1px] bg-brand-primary/40 rotate-45 origin-bottom-right" />
-                    
-                    <div className="absolute -top-5 inset-x-0 flex justify-between items-center text-[7px] sm:text-[8px] font-mono text-brand-light">
-                      <span>|</span>
-                      <span className="border-b border-brand-light/40 flex-grow mx-1 text-center">W: 14.50 FT</span>
-                      <span>|</span>
-                    </div>
-                    <div className="absolute -left-5 inset-y-0 flex flex-col justify-between items-center text-[7px] sm:text-[8px] font-mono text-brand-light">
-                      <span>-</span>
-                      <span className="rotate-90">H: 8.00 FT</span>
-                      <span>-</span>
-                    </div>
-                    
-                    <span className="text-[8px] sm:text-[9px] font-mono text-zinc-500 bg-[#0d0d10] px-1 sm:px-2 z-10 border border-industrial-border">
-                      MODEL: DC-PRIVACY-04
-                    </span>
-                  </div>
-                </div>
-
-                <div className="border-t border-industrial-border pt-3 flex items-center justify-between">
-                  <div className="space-y-0.5">
-                    <span className="block text-[7px] sm:text-[8px] uppercase tracking-wider text-zinc-500 font-bold">{dict.cadSpecs}</span>
-                    <span className="block text-[10px] sm:text-[11px] font-bold text-white uppercase tracking-wider">Darioscustom Corp.</span>
-                    <span className="block text-[7px] sm:text-[8px] text-zinc-500">{dict.cadForged}</span>
-                  </div>
-                  <div className="w-10 h-10 sm:w-14 sm:h-14 bg-industrial-card border border-brand-primary/35 p-1 sm:p-2 rounded relative machined-corners flex items-center justify-center shadow-lg">
-                    <Image 
-                      src="/brand/darioscustom_logo2.png" 
-                      alt="Darioscustom"
-                      width={60}
-                      height={60}
-                      priority
-                      className="w-full h-full object-contain filter brightness-110" 
-                    />
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              style={{ opacity: showProduct ? 1 : 0 }}
-              className="absolute inset-0 transition-opacity duration-1000 ease-in-out z-10"
-            >
-              <Image 
-                src="/images/Forged-Aluminum-Door-with-Heraldic-Crests.webp"
-                alt="Proyecto Terminado Darioscustom"
-                width={450}
-                height={562}
-                priority 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-              
-              <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between z-10">
-                <div>
-                  <span className="text-[9px] font-bold text-brand-light tracking-widest uppercase">{dict.cadFinished}</span>
-                  <h3 className="text-white text-xs sm:text-sm font-bold uppercase">{dict.cadResult}</h3>
-                </div>
-                <div className="bg-brand-primary text-white text-[9px] font-bold py-1 px-3 rounded uppercase tracking-wider">
-                  100% Aluminio
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              style={{ opacity: productOpacity }} 
-              className="absolute inset-0 z-30 pointer-events-none"
-            >
-              <Image 
-                src="/images/product19.webp" 
-                alt="Proyecto Terminado Visualización"
-                width={450}
-                height={562}
-                priority 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/10 to-transparent" />
-            </motion.div>
-          </motion.div>
-
-          <button 
-            onClick={() => setShowProduct(!showProduct)}
-            aria-label="Toggle Custom Ironwork View"
-            className="mt-4 flex items-center gap-2 text-zinc-500 hover:text-brand-light text-[10px] font-mono tracking-widest uppercase transition-colors p-2 cursor-pointer"
-          >
-            <RefreshCw className="w-3.5 h-3.5 animate-spin-slow" />
-            {/* Fixed generic anchor/button text warning */}
-            <span>Toggle Ironwork View</span>
-          </button>
-        </div>
-
-      </div>
+      </motion.div>
     </section>
   );
 }

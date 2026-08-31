@@ -30,15 +30,34 @@ export default function Footer() {
           <p className="text-xs font-bold text-white uppercase tracking-widest mb-1">{dict.nav}</p>
           <ul className="flex flex-col gap-3 text-center md:text-left">
             {dict.links1.map((link: any) => (
-              <li key={link.name}><a href={`/${lang}/${link.href}`} className="text-sm text-zinc-400 hover:text-[#B85227] transition-colors">{link.name}</a></li>
+              <li key={link.name}>
+                <a 
+                  href={`/${lang}/${link.href}`} 
+                  className="text-sm text-zinc-400 hover:text-[#B85227] transition-colors"
+                  title={link.name}
+                  aria-label={`Ir a la sección: ${link.name}`}
+                >
+                  {link.name}
+                </a>
+              </li>
             ))}
           </ul>
         </nav>
+        
         <nav className="flex flex-col items-center md:items-start md:col-span-3 gap-4" aria-label="Soporte y Contacto">
           <p className="text-xs font-bold text-white uppercase tracking-widest mb-1">{dict.support}</p>
           <ul className="flex flex-col gap-3 text-center md:text-left">
             {dict.links2.map((link: any) => (
-              <li key={link.name}><a href={`/${lang}/${link.href}`} className="text-sm text-zinc-400 hover:text-[#B85227] transition-colors">{link.name}</a></li>
+              <li key={link.name}>
+                <a 
+                  href={`/${lang}/${link.href}`} 
+                  className="text-sm text-zinc-400 hover:text-[#B85227] transition-colors"
+                  title={link.name}
+                  aria-label={`Soporte e información: ${link.name}`}
+                >
+                  {link.name}
+                </a>
+              </li>
             ))}
           </ul>
         </nav>

@@ -1,11 +1,11 @@
 {
   "seo": {
-    "title": "Herrería a Medida en Miami: Puertas de Hierro y Diseño Exclusivo",
-    "description": "Taller experto en herrería a medida en Miami. Fabricamos puertas de hierro, balcones y cercas de privacidad con forja artística y diseño exclusivo.",
+    "title": "Herrería a Medida en Miami: Puertas de Hierro y Diseño",
+    "description": "Taller de herrería a medida en Miami. Fabricamos puertas de hierro, balcones y cercas de privacidad con forja artística, alta durabilidad y diseño exclusivo.",
     "keywords": ["herrería a medida miami", "diseño exclusivo", "puertas de hierro", "forja artistica miami", "balcones de metal", "cercas de privacidad", "fabricación de metal", "Darioscustom"]
   },
   "header": { 
-    "links": { "home": "Inicio", "about": "Nosotros", "services": "Servicios", "catalog": "Catálogo", "materials": "Materiales", "reviews": "Reseñas", "faq": "Preguntas" }, 
+    "links": { "home": "Inicio", "about": "Nosotros", "services": "Servicios", "catalog": "Catálogo", "materials": "Materiales", "reviews": "Reseñas", "faq": "Preguntas", "contact": "Contacto" },
     "quote": "Cotizar Proyecto de Herrería" 
   },
   "hero": { 
@@ -336,6 +336,96 @@
       "title": "Cúpula de Gazebo de Hierro Forjado",
       "tags": ["Hierro Forjado", "Gazebo", "Cúpula", "Estructura Exterior", "Diseño Clásico"],
       "description": "Magnífica cúpula de gazebo forjada a mano en hierro. Diseñada para ser el punto focal definitivo en jardines de lujo y fincas, destacando por sus intrincados detalles clásicos y su acabado resistente a la intemperie."
+    },
+    "46": {
+      "title": "Campana Extractora de BBQ Exterior en Acero Inoxidable",
+      "tags": ["Acero Inoxidable", "Campana BBQ", "Cocina Exterior", "Fabricación a Medida", "Miami FL"],
+      "description": "Campana extractora de BBQ para exteriores en acero inoxidable a medida, diseñada para cocinas costeras en Miami. Máxima resistencia a la corrosión salina y extracción de humo de alta capacidad."
+    },
+    "47": {
+      "title": "Portón de Acceso al Agua de Aluminio Forjado",
+      "tags": ["Portón de Aluminio", "Propiedad Costera", "Libre de Óxido", "Alta Seguridad", "Miami FL"],
+      "description": "Portón de seguridad para acceso al agua en aluminio forjado premium. Recubrimiento en polvo especial para propiedades en el sur de Florida que previene el óxido."
+    },
+    "48": {
+      "title": "Candelabro de Hierro Forjado a Medida",
+      "tags": ["Hierro Forjado", "Candelabro", "Iluminación de Lujo", "Forjado a Mano", "Coral Gables"],
+      "description": "Candelabro de hierro forjado a mano diseñado para residencias de lujo con techos altos en Coral Gables y Pinecrest. Una verdadera pieza de arte metálico."
+    },
+    "49": {
+      "title": "Puertas de Entrada Dobles de Hierro Forjado",
+      "tags": ["Puertas de Hierro", "Entrada Doble", "Seguridad Premium", "Herrería a Medida", "Miami-Dade"],
+      "description": "Puertas dobles de entrada monumentales de hierro forjado a medida, creadas para elevar el atractivo y la seguridad de propiedades exclusivas en Miami-Dade."
+    },
+    "50": {
+      "title": "Portón de Entrada con Volutas Decorativas",
+      "tags": ["Portón de Hierro", "Volutas", "Portón Automatizado", "Diseño a Medida", "Florida"],
+      "description": "Portón vehicular de entrada con elaboradas volutas decorativas. Diseño de metal a medida que combina la elegancia clásica con seguridad automatizada para hogares en Florida."
+    },
+    "51": {
+      "title": "Portón Corredizo Vehicular de Aluminio Imitación Madera",
+      "tags": ["Portón de Aluminio", "Portón Corredizo", "Imitación Madera", "Privacidad", "Clima de Miami"],
+      "description": "Moderno portón corredizo vehicular hecho de aluminio ligero con un acabado imitación madera altamente duradero. La solución de privacidad perfecta y sin mantenimiento para el clima de Miami."
+    },
+    "52": {
+      "title": "Puertas Dobles Geométricas con Cristal Esmerilado",
+      "tags": ["Metal y Cristal", "Cristal Esmerilado", "Puertas Dobles", "Arquitectura Moderna", "Privacidad"],
+      "description": "Puertas dobles de entrada contemporáneas que integran un elegante marco metálico geométrico con cristal esmerilado. Ofrece privacidad y abundante luz natural para la arquitectura del sur de Florida."
+    },
+    "53": {
+      "title": "Barandal de Escalera con Malla de Alambre Industrial",
+      "tags": ["Malla de Alambre", "Barandal", "Estilo Industrial", "Soldado a Medida", "Diseño Loft"],
+      "description": "Barandal de escalera de estilo industrial con paneles de malla de alambre soldada y un marco de acero resistente. Fabricado a medida para lofts, espacios comerciales y hogares modernos."
+    },
+    "54": {
+      "title": "Barandal de Escalera de Metal Abstracto Moderno",
+      "tags": ["Barandal", "Diseño Abstracto", "Arte en Metal", "Diseño de Interiores", "Hecho a Mano"],
+      "description": "Barandal de escalera único con un diseño de metal abstracto moderno. Fabricado a mano por Dario's Custom Iron Art para servir como un impresionante punto focal arquitectónico."
+    },
+    "55": {
+      "title": "Portón Vehicular Corredizo de Metal Negro Moderno",
+      "tags": ["Portón Corredizo", "Metal Negro", "Portón Vehicular", "Privacidad", "Sur de Florida"],
+      "description": "Elegante y moderno portón corredizo de metal negro que brinda máxima seguridad y privacidad. Construido a medida y recubierto con pintura en polvo para resistir el clima del sur de Florida."
+    },
+    "56": {
+      "title": "Puertas de Entrada Dobles de Acero Negro Modernas",
+      "tags": ["Puertas de Acero", "Entrada Doble", "Acero Negro", "Minimalista", "Entrada de Lujo"],
+      "description": "Puertas dobles de entrada de acero negro ultramodernas con líneas minimalistas y seguridad robusta. Un diseño de metal a medida de alta gama para entradas residenciales de lujo."
+    },
+    "57": {
+      "title": "Puertas de Entrada Dobles de Hierro Geométrico Moderno",
+      "tags": ["Puertas de Hierro", "Patrón Geométrico", "Diseño Moderno", "Forja Artística", "Fabricación en Miami"],
+      "description": "Puertas dobles de entrada de hierro a medida con un llamativo patrón geométrico moderno. Combina forja artística con alta integridad estructural para propiedades en Miami."
+    },
+    "58": {
+      "title": "Barandal de Escalera de Metal Horizontal Moderno",
+      "tags": ["Barandal de Metal", "Líneas Horizontales", "Estética Moderna", "Soldadura Certificada", "Interiores"],
+      "description": "Barandal de escalera contemporáneo con líneas metálicas horizontales limpias. La soldadura certificada AWS D1.1 garantiza la seguridad mientras mantiene una estética moderna."
+    },
+    "59": {
+      "title": "Barandal de Escalera Horizontal de Acero Inoxidable",
+      "tags": ["Acero Inoxidable", "316L", "Barandal", "Propiedades Costeras", "Resistente al Óxido"],
+      "description": "Barandal de escalera horizontal en acero inoxidable 316L premium. Excepcionalmente duradero y resistente al óxido, ideal para propiedades costeras modernas en Miami."
+    },
+    "60": {
+      "title": "Pasamanos de Metal Moderno Montado en la Pared",
+      "tags": ["Montaje en Pared", "Pasamanos", "Minimalista", "Pintura al Horno", "Seguridad"],
+      "description": "Pasamanos de metal minimalista montado en la pared, diseñado tanto para la seguridad como para el estilo. Fabricado a medida y con recubrimiento en polvo para una larga durabilidad."
+    },
+    "61": {
+      "title": "Portón Vehicular Corredizo de Aluminio Ornamental",
+      "tags": ["Portón de Aluminio", "Portón Corredizo", "Ornamental", "Libre de Óxido", "Florida"],
+      "description": "Elegante portón corredizo vehicular fabricado en aluminio ligero y libre de óxido con intrincados detalles ornamentales. Una mezcla perfecta de estilo clásico e ingeniería moderna para hogares en Florida."
+    },
+    "62": {
+      "title": "Divisor de Habitaciones de Lamas Metálicas Verticales",
+      "tags": ["Divisor de Espacios", "Lamas Metálicas", "Diseño Interior", "Metal Arquitectónico", "Fabricación a Medida"],
+      "description": "Divisor de habitaciones de lamas metálicas verticales a medida. Una pieza de fabricación de metal arquitectónico que define espacios interiores permitiendo el paso de luz."
+    },
+    "63": {
+      "title": "Puertas de Entrada de Aluminio Estilo Hierro Forjado",
+      "tags": ["Puertas de Aluminio", "Estilo Hierro Forjado", "Puertas de Entrada", "Clima Costero", "Resistencia"],
+      "description": "Puertas dobles de entrada fabricadas en aluminio resistente a la intemperie pero forjadas para replicar el aspecto pesado y clásico del hierro forjado. Perfectas para climas costeros."
     }
   }
 }

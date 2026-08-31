@@ -27,6 +27,7 @@ export default function Header() {
     { name: dict.links.catalog, href: `/${lang}/#catalog` }, // ID actualizado a #catalog
     { name: dict.links.reviews, href: `/${lang}/#opiniones` },
     { name: dict.links.faq, href: `/${lang}/#preguntas` },
+    { name: dict.links.contact, href: `/${lang}/#contacto` },
   ];
   
   const breadcrumbSchema = {
@@ -89,8 +90,11 @@ export default function Header() {
           </nav>
 
           {/* BOTÓN MENÚ MÓVIL Y SELECTOR DE IDIOMA MÓVIL */}
-          <div className="flex items-center gap-3 lg:hidden shrink-0">
-            <LanguageSwitcher />
+          <div className="flex items-center gap-1.5 lg:hidden shrink-0">
+            {/* Contenedor que reduce el tamaño del selector de idiomas al 80% en móviles */}
+            <div className="scale-[0.80] sm:scale-100 origin-right">
+              <LanguageSwitcher />
+            </div>
             <button className="text-zinc-300 hover:text-white cursor-pointer p-1" onClick={() => setIsOpen(!isOpen)} aria-expanded={isOpen} aria-label="Toggle Menu">
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
