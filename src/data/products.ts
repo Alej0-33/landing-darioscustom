@@ -439,6 +439,26 @@ export const allProducts: Product[] = [
     category: "Barandales",
     tags: ["Spiral Staircase", "Black Metal", "Outdoor", "Space Saving", "Durable Finish"],
     description: "Heavy-duty outdoor spiral staircase crafted from black metal. Designed to provide safe, space-saving access to upper decks or balconies, finished with weather-resistant powder coating."
+  },
+  {
+    id: 44,
+    slug: "modern-abstract-aluminum-double-doors",
+    img: "modern-abstract-aluminum-double-doors.webp",
+    images: ["modern-abstract-aluminum-double-doors.webp", "modern-abstract-aluminum-double-doors2.webp", "modern-abstract-aluminum-double-doors3.webp"],
+    title: "Modern Abstract Aluminum Double Doors",
+    category: "Puertas",
+    tags: ["Aluminum", "Double Doors", "Abstract Design", "Modern", "Entrance"],
+    description: "Stunning modern double doors crafted from premium aluminum, featuring an abstract geometric design. This entryway masterpiece combines robust security with a highly contemporary aesthetic."
+  },
+  {
+    id: 45,
+    slug: "wrought-iron-gazebo-dome",
+    img: "wrought-iron-gazebo-dome.webp",
+    images: ["wrought-iron-gazebo-dome.webp", "wrought-iron-gazebo-dome2.webp", "wrought-iron-gazebo-dome3.webp", "wrought-iron-gazebo-dome4.webp"],
+    title: "Wrought Iron Gazebo Dome",
+    category: "Miscelaneas",
+    tags: ["Wrought Iron", "Gazebo", "Dome", "Outdoor Structure", "Classic Design"],
+    description: "Magnificent hand-forged wrought iron gazebo dome. Designed to be the ultimate focal point for luxury gardens and estates, featuring intricate classic detailing and a durable weather-resistant finish."
   }
 ];
 
