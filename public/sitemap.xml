@@ -1,59 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Página de Inicio -->
+  
+  <!-- Páginas de Inicio -->
   <url>
-    <loc>https://dariosironart.com/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://dariosironart.com/en/</loc>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Catálogo de Productos Individuales (con Trailing Slash) -->
   <url>
-    <loc>https://dariosironart.com/catalogo/1/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://dariosironart.com/es/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://dariosironart.com/catalogo/2/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dariosironart.com/catalogo/3/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dariosironart.com/catalogo/4/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dariosironart.com/catalogo/5/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dariosironart.com/catalogo/6/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dariosironart.com/catalogo/7/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dariosironart.com/catalogo/8/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
+  <!-- ========================================== -->
+  <!-- RUTAS EN INGLÉS (/en/catalog/...)          -->
+  <!-- ========================================== -->
+  <url><loc>https://dariosironart.com/en/catalog/doors/metal-door-lion-heads/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/art/3d-metal-geometric-wall-sculpture/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/doors/wrought-iron-door-heraldic-shields/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/railings/modern-black-metal-stair-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/lighting/classic-wrought-iron-chandelier/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/lighting/medieval-style-wrought-iron-chandelier/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/gates/aluminum-gate-wood-grain-finish/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/gates/classic-aluminum-gate/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/gates/ornate-wrought-iron-driveway-gate/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/railings/modern-aluminum-horizontal-slat-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/art/modern-abstract-metal-sculpture/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/miscellaneous/outdoor-metal-container-bar/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/doors/black-metal-glass-french-doors/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/art/abstract-blue-green-metal-art/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/gates/arched-aluminum-pedestrian-gate/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/gates/arched-metal-driveway-gate/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/doors/black-aluminum-double-front-door/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/miscellaneous/corrugated-metal-commercial-bar-counter/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/railings/custom-aluminum-pool-patio-guardrail/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/art/large-industrial-metal-cog-art/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/railings/laser-cut-metal-balcony-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/miscellaneous/modern-aluminum-outdoor-kitchen-cabinets/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/doors/modern-geometric-aluminum-double-door/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/gates/modern-horizontal-slat-driveway-gate/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/miscellaneous/modern-metal-base-glass-coffee-table/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/doors/ornate-aluminum-french-doors/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/lighting/ornate-metal-outdoor-wall-lantern/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/railings/ornate-wrought-iron-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/railings/ornate-wrought-iron-stair-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/art/steampunk-gear-metal-wall-art/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/gates/wood-look-aluminum-privacy-fence/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/lighting/wrought-iron-chandelier/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/doors/wrought-iron-style-aluminum-entry-door/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/gates/black-aluminum-sliding-gate-and-fence/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/miscellaneous/black-metal-wall-mounted-wine-rack/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/miscellaneous/custom-laser-cut-metal-salon-display/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/miscellaneous/custom-stainless-steel-laundry-countertop/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/art/custom-wrought-iron-rose-sculpture/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/miscellaneous/laser-cut-metal-bar-front-panels/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/railings/laser-cut-metal-staircase-railing-panels/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/art/laser-cut-penny-farthing-wall-art/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/railings/ornate-black-metal-loft-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/en/catalog/railings/outdoor-black-metal-spiral-staircase/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- ========================================== -->
+  <!-- RUTAS EN ESPAÑOL (/es/catalog/...)         -->
+  <!-- ========================================== -->
+  <url><loc>https://dariosironart.com/es/catalog/puertas/metal-door-lion-heads/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/arte/3d-metal-geometric-wall-sculpture/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/puertas/wrought-iron-door-heraldic-shields/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/barandales/modern-black-metal-stair-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/iluminacion/classic-wrought-iron-chandelier/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/iluminacion/medieval-style-wrought-iron-chandelier/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/portones/aluminum-gate-wood-grain-finish/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/portones/classic-aluminum-gate/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/portones/ornate-wrought-iron-driveway-gate/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/barandales/modern-aluminum-horizontal-slat-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/arte/modern-abstract-metal-sculpture/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/miscelaneas/outdoor-metal-container-bar/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/puertas/black-metal-glass-french-doors/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/arte/abstract-blue-green-metal-art/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/portones/arched-aluminum-pedestrian-gate/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/portones/arched-metal-driveway-gate/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/puertas/black-aluminum-double-front-door/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/miscelaneas/corrugated-metal-commercial-bar-counter/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/barandales/custom-aluminum-pool-patio-guardrail/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/arte/large-industrial-metal-cog-art/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/barandales/laser-cut-metal-balcony-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/miscelaneas/modern-aluminum-outdoor-kitchen-cabinets/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/puertas/modern-geometric-aluminum-double-door/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/portones/modern-horizontal-slat-driveway-gate/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/miscelaneas/modern-metal-base-glass-coffee-table/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/puertas/ornate-aluminum-french-doors/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/iluminacion/ornate-metal-outdoor-wall-lantern/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/barandales/ornate-wrought-iron-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/barandales/ornate-wrought-iron-stair-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/arte/steampunk-gear-metal-wall-art/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/portones/wood-look-aluminum-privacy-fence/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/iluminacion/wrought-iron-chandelier/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/puertas/wrought-iron-style-aluminum-entry-door/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/portones/black-aluminum-sliding-gate-and-fence/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/miscelaneas/black-metal-wall-mounted-wine-rack/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/miscelaneas/custom-laser-cut-metal-salon-display/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/miscelaneas/custom-stainless-steel-laundry-countertop/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/arte/custom-wrought-iron-rose-sculpture/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/miscelaneas/laser-cut-metal-bar-front-panels/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/barandales/laser-cut-metal-staircase-railing-panels/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/arte/laser-cut-penny-farthing-wall-art/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/barandales/ornate-black-metal-loft-railing/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dariosironart.com/es/catalog/barandales/outdoor-black-metal-spiral-staircase/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
 </urlset>

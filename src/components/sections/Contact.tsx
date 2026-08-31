@@ -93,7 +93,7 @@ export default function Contact() {
                   <h3 className="font-bold text-white uppercase tracking-wider text-xs">{dict.phone}</h3>
                   <div className="flex items-center gap-2 mt-0.5">
                     <p className="text-zinc-400 text-xs font-mono">{phoneValue}</p>
-                    <button type="button" onClick={() => handleCopy(phoneValue, "phone")} className="text-zinc-500 hover:text-brand-light p-1 rounded hover:bg-zinc-800/40 transition-colors shrink-0">
+                    <button type="button" onClick={() => handleCopy(phoneValue, "phone")} className="text-zinc-500 hover:text-brand-light p-1 rounded hover:bg-zinc-800/40 transition-colors shrink-0" aria-label="Copiar teléfono">
                       {copiedField === "phone" ? <Check className="w-3.5 h-3.5 text-emerald-400 shrink-0" /> : <Copy className="w-3.5 h-3.5 shrink-0" />}
                     </button>
                   </div>
@@ -105,7 +105,7 @@ export default function Contact() {
                   <h3 className="font-bold text-white uppercase tracking-wider text-xs">{dict.email}</h3>
                   <div className="flex items-center gap-2 mt-0.5">
                     <p className="text-zinc-400 text-xs text-brand-light break-all font-mono">{emailValue}</p>
-                    <button type="button" onClick={() => handleCopy(emailValue, "email")} className="text-zinc-500 hover:text-brand-light p-1 rounded hover:bg-zinc-800/40 transition-colors shrink-0">
+                    <button type="button" onClick={() => handleCopy(emailValue, "email")} className="text-zinc-500 hover:text-brand-light p-1 rounded hover:bg-zinc-800/40 transition-colors shrink-0" aria-label="Copiar correo">
                       {copiedField === "email" ? <Check className="w-3.5 h-3.5 text-emerald-400 shrink-0" /> : <Copy className="w-3.5 h-3.5 shrink-0" />}
                     </button>
                   </div>
@@ -172,6 +172,7 @@ export default function Contact() {
               >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <Input id="name" name="name" label={dict.fName} type="text" required value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })} placeholder={dict.fNamePl} toolparamdescription="The full name of the customer" />
+                  {/* El Input de email ahora recibe aria-label automáticamente desde Input.tsx */}
                   <Input id="email" name="email" label={dict.fEmail} type="email" required value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })} placeholder={dict.fEmailPl} toolparamdescription="Contact email address" />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -209,7 +210,7 @@ export default function Contact() {
                             <p className="text-[9px] text-zinc-500 font-mono">{(photo.size / (1024 * 1024)).toFixed(2)} MB</p>
                           </div>
                         </div>
-                        <button type="button" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setPhoto(null); }} className="text-zinc-400 hover:text-red-400 p-1 rounded-full hover:bg-zinc-800/50 transition-colors shrink-0"><X className="w-4 h-4" /></button>
+                        <button type="button" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setPhoto(null); }} className="text-zinc-400 hover:text-red-400 p-1 rounded-full hover:bg-zinc-800/50 transition-colors shrink-0" aria-label="Eliminar foto"><X className="w-4 h-4" /></button>
                       </div>
                     ) : (
                       <div className="flex flex-col items-center text-center gap-1.5 pointer-events-none">
@@ -220,7 +221,7 @@ export default function Contact() {
                     )}
                   </div>
                 </div>
-                <Button type="submit" variant="primary" className="w-full justify-center">
+                <Button type="submit" variant="primary" className="w-full justify-center" aria-label="Enviar formulario">
                   {method === "whatsapp" ? dict.sendWa : dict.sendEmail} <ArrowRight className="w-4 h-4" />
                 </Button>
               </form>

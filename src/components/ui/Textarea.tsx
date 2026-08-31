@@ -18,6 +18,8 @@ export function Textarea({ label, className = "", id, ...props }: TextareaProps)
       )}
       <textarea
         id={id}
+        /* Inyectamos el aria-label para los agentes de IA (WebMCP) */
+        aria-label={props["aria-label"] || label || "Text area"}
         className={`w-full bg-zinc-950 border border-industrial-border focus:border-brand-primary px-4 py-3 text-sm text-white rounded outline-none transition-colors resize-none placeholder:text-zinc-600 ${className}`}
         {...props}
       />

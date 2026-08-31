@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Shield, Home, Sparkles, Palette, Award, CheckCircle2 } from "lucide-react";
+import { Shield, Home, Sparkles, Palette, Award } from "lucide-react";
 import { Card } from "../ui/Card";
 import { fadeUp, staggerContainer, staggerItem } from "@/utils/animations";
 import { useDictionary } from "../DictionaryProvider";
@@ -77,8 +77,9 @@ export default function Services() {
               <strong>Custom ironwork is</strong> the specialized craft of designing, heating, and shaping metals to create personalized architectural structures. If you are looking to install custom metalwork in Miami, our 4-step process ensures a perfect fit, starting from a digital layout to final structural installation complying with Florida codes.
             </p>
           </div>
+          {/* ✅ SAGE Request: Uso de listas ordenadas (ol) para los pasos */}
           <ol className="grid grid-cols-1 md:grid-cols-4 gap-6 list-none p-0 m-0 relative">
-            <div className="hidden md:block absolute top-8 left-0 right-0 h-[1px] bg-industrial-border-high z-0" />
+            <div className="hidden md:block absolute top-8 left-0 right-0 h-[1px] bg-industrial-border-high z-0" aria-hidden="true" />
             
             {dict.howTo.steps.map((step: any, idx: number) => (
               <li key={idx} className="relative z-10 bg-industrial-card border border-industrial-border p-6 rounded-md shadow-lg flex flex-col h-full hover:border-brand-primary/50 transition-colors">

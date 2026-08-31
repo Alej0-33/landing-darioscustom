@@ -1,18 +1,18 @@
 {
   "seo": {
-    "title": "Custom Ironwork & Design in Miami | Quote via WhatsApp",
-    "description": "Custom ironwork workshop in Miami. Exclusive custom design in iron and aluminum: balconies, iron doors, and privacy fences. Quote today.",
-    "keywords": ["custom ironwork miami", "custom design", "iron doors", "privacy fences", "iron balconies miami", "aluminum gates miami", "Darioscustom"]
+    "title": "Custom Ironwork Miami: Iron Doors & Bespoke Metal Design",
+    "description": "Premier custom ironwork workshop in Miami. We fabricate custom iron doors, metal balconies, and privacy fences with bespoke design and artistic forging.",
+    "keywords": ["custom ironwork miami", "bespoke metal design", "iron doors", "artistic forging miami", "metal balconies", "privacy fences", "metal fabrication", "Darioscustom"]
   },
   "header": { 
     "links": { "home": "Home", "about": "About Us", "services": "Services", "catalog": "Catalog", "materials": "Materials", "reviews": "Reviews", "faq": "FAQ" }, 
     "quote": "Quote Ironwork Project" 
   },
   "hero": {
-    "title1": "Luxury custom ",
-    "highlight": "metal work & ironwork",
+    "title1": "Premium custom ironwork & ",
+    "highlight": "bespoke metal design",
     "title2": " in miami",
-    "desc": "We are a custom ironwork workshop in Miami. We specialize in custom design and artistic forging. We create unique pieces to the client's taste. We fabricate iron doors, balconies, railings, and privacy fences. We use premium materials like aluminum, stainless steel 304/316L, bronze, and wrought iron. Every chandelier or gate gets a flawless powder-coated finish.",
+    "desc": "We are a premier custom ironwork workshop in Miami. We fabricate custom iron doors, metal balconies, and privacy fences with bespoke design. Utilizing premium aluminum, stainless steel, and iron, we guarantee highly durable and artistic metal fabrication for luxury properties.",
     "btnQuote": "Request Technical Quote",
     "btnCatalog": "View Ironwork Catalog",
     "cadTag": "Custom Design",
@@ -83,6 +83,11 @@
     "title": "Technical Ironwork Answers",
     "desc": "All key information structured about our materials, local regulations in Miami-Dade and delivery processes.",
     "items": [
+      {
+        "id": "faq-definition-custom-ironwork",
+        "q": "What is custom ironwork and what does the service include?",
+        "a": "Custom ironwork refers to the artistic forging and personalized metal fabrication process. This exclusive service in Miami includes designing, building, and installing custom iron doors, balconies, metal gates, and privacy fences tailored specifically to your property's architecture."
+      },
       {
         "id": "faq-florida-building-code",
         "q": "Does Dario's comply with the Florida Building Code (FBC) for hurricanes?",
@@ -271,6 +276,56 @@
       "title": "Wrought Iron Style Aluminum Entry Door",
       "tags": ["Entry Door", "Aluminum", "Wrought Iron Style", "Lightweight"],
       "description": "Lightweight exterior security door crafted from aluminum but meticulously designed to perfectly mimic the historic, heavy aesthetic of antique wrought iron."
+    },
+    "34": {
+      "title": "Black Aluminum Sliding Gate & Fence",
+      "tags": ["Aluminum", "Sliding Gate", "Privacy Fence", "Modern", "Black Matte"],
+      "description": "Modern black matte aluminum sliding driveway gate integrated with a matching privacy fence. Ensures maximum security and sleek aesthetics for residential properties."
+    },
+    "35": {
+      "title": "Black Metal Wall-Mounted Wine Rack",
+      "tags": ["Wine Rack", "Wall Mounted", "Black Metal", "Interior", "Modern Industrial"],
+      "description": "Elegant wall-mounted wine rack crafted from black metal. A perfect blend of modern industrial design and space-saving functionality for dining rooms or cellars."
+    },
+    "36": {
+      "title": "Custom Laser Cut Metal Salon Display",
+      "tags": ["Commercial Display", "Laser Cut", "Custom Logo", "Metal Shelf"],
+      "description": "Bespoke metal display shelving unit featuring precision laser-cut branding. Designed specifically for commercial salons and boutiques to showcase high-end products."
+    },
+    "37": {
+      "title": "Custom Stainless Steel Laundry Countertop",
+      "tags": ["Stainless Steel", "Countertop", "Utility", "Heavy Duty", "Custom Fit"],
+      "description": "Heavy-duty custom stainless steel countertop designed for laundry and utility rooms. Offers extreme durability, easy maintenance, and a sleek, hygienic surface."
+    },
+    "38": {
+      "title": "Custom Wrought Iron Rose Sculpture",
+      "tags": ["Metal Art", "Wrought Iron", "Hand Forged", "Floral Sculpture", "Unique Piece"],
+      "description": "Exquisite, hand-forged wrought iron rose sculpture. This delicate yet eternal piece of metal art showcases master craftsmanship and makes a perfect romantic gift or decorative accent."
+    },
+    "39": {
+      "title": "Laser Cut Metal Bar Front Panels",
+      "tags": ["Bar Front", "Laser Cut", "Commercial", "Backlit Potential", "Modern Pattern"],
+      "description": "Custom laser-cut metal panels designed to clad commercial or residential bar fronts. The intricate patterns are ideal for backlighting, adding an upscale, dynamic vibe to any entertainment space."
+    },
+    "40": {
+      "title": "Laser Cut Metal Staircase Railing Panels",
+      "tags": ["Stair Railing", "Laser Cut", "Custom Pattern", "Interiors", "Modern Staircase"],
+      "description": "Innovative interior staircase railing featuring custom laser-cut metal panels. Replaces traditional balusters with a continuous, artistic geometric pattern for a highly contemporary look."
+    },
+    "41": {
+      "title": "Laser Cut Penny Farthing Wall Art",
+      "tags": ["Wall Art", "Laser Cut", "Vintage Bicycle", "Metal Decor"],
+      "description": "Charming laser-cut metal wall art depicting a vintage penny-farthing bicycle. A perfect conversation piece that adds a touch of retro whimsy to cafes, studies, or living areas."
+    },
+    "42": {
+      "title": "Ornate Black Metal Loft Railing",
+      "tags": ["Loft Railing", "Black Metal", "Ornate Castings", "Interior", "Luxury Mezzanine"],
+      "description": "Luxurious black metal railing designed for interior lofts and mezzanines. Features ornate cast details and a sturdy top rail, blending classic elegance with structural safety."
+    },
+    "43": {
+      "title": "Outdoor Black Metal Spiral Staircase",
+      "tags": ["Spiral Staircase", "Black Metal", "Outdoor", "Space Saving", "Durable Finish"],
+      "description": "Heavy-duty outdoor spiral staircase crafted from black metal. Designed to provide safe, space-saving access to upper decks or balconies, finished with weather-resistant powder coating."
     }
   }
 }

@@ -21,6 +21,8 @@ export function Select({ label, className = "", id, children, ...props }: Select
       <div className="relative">
         <select
           id={id}
+          /* Inyectamos el aria-label para los agentes de IA (WebMCP) */
+          aria-label={props["aria-label"] || label || "Select field"}
           className={`w-full appearance-none bg-zinc-950 border border-industrial-border focus:border-brand-primary px-4 py-3 pr-10 text-sm text-white rounded outline-none transition-colors cursor-pointer ${className}`}
           {...props}
         >

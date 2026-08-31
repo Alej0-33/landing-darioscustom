@@ -12,7 +12,7 @@ export interface Product {
 export const allProducts: Product[] = [
   {
     id: 1,
-    slug: "1",
+    slug: "metal-door-lion-heads",
     img: "metal-door.webp",
     images: ["metal-door.webp"],
     title: "Metal Door",
@@ -22,7 +22,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 2,
-    slug: "2",
+    slug: "3d-metal-geometric-wall-sculpture",
     img: "3D-Geometric-Copper-Wall-Sculpture.webp",
     images: ["3D-Geometric-Copper-Wall-Sculpture.webp", "3D-Geometric-Copper-Wall-Sculpture2.webp"],
     title: "3D Metal Geometric Wall Sculpture",
@@ -32,7 +32,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 3,
-    slug: "3",
+    slug: "wrought-iron-door-heraldic-shields",
     img: "Forged-Aluminum-Door-with-Heraldic-Crests.webp",
     images: ["Forged-Aluminum-Door-with-Heraldic-Crests.webp", "Forged-Aluminum-Door-with-Heraldic-Crests2.webp", "Forged-Aluminum-Door-with-Heraldic-Crests3.webp", "Forged-Aluminum-Door-with-Heraldic-Crests4.webp", "Heraldic-Crest.webp", "Heraldic-Crest2.webp"],
     title: "Wrought Iron Door with Heraldic Shields",
@@ -42,7 +42,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 4,
-    slug: "4",
+    slug: "modern-black-metal-stair-railing",
     img: "Modern-Black-Stair-Railling.webp",
     images: ["Modern-Black-Stair-Railling.webp", "Modern-Black-Stair-Railling2.webp", "Modern-Black-Stair-Railling3.webp", "Modern-Black-Stair-Railling4.webp", "Modern-Black-Stair-Railling5.webp"],
     title: "Modern Black Metal Stair Railing",
@@ -52,7 +52,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 5,
-    slug: "5",
+    slug: "classic-wrought-iron-chandelier",
     img: "Black-chandelier-with-gold-accents.webp",
     images: ["Black-chandelier-with-gold-accents.webp", "Black-chandelier-with-gold-accents2.webp", "Black-chandelier-with-gold-accents3.webp", "Black-chandelier-with-gold-accents4.webp"],
     title: "Classic Wrought Iron Chandelier",
@@ -62,7 +62,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 6,
-    slug: "6",
+    slug: "medieval-style-wrought-iron-chandelier",
     img: "Chandelier-with-gold-finishes.webp",
     images: ["Chandelier-with-gold-finishes.webp", "Chandelier-with-gold-finishes2.webp", "Chandelier-with-gold-finishes3.webp", "Chandelier-with-gold-finishes4.webp", "Chandelier-with-gold-finishes5.webp"],
     title: "Medieval Style Wrought Iron Chandelier",
@@ -72,7 +72,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 7,
-    slug: "7",
+    slug: "aluminum-gate-wood-grain-finish",
     img: "Aluminum-gate-with-a-wood-grain-paint-finish.webp",
     images: ["Aluminum-gate-with-a-wood-grain-paint-finish.webp", "Aluminum-gate-with-a-wood-grain-paint-finish2.webp"],
     title: "Aluminum Gate with Wood Grain Finish",
@@ -82,7 +82,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 8,
-    slug: "8",
+    slug: "classic-aluminum-gate",
     img: "matte-black-aluminum-gate.webp",
     images: ["matte-black-aluminum-gate.webp"],
     title: "Classic Aluminum Gate",
@@ -92,7 +92,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 9,
-    slug: "9",
+    slug: "ornate-wrought-iron-driveway-gate",
     img: "ornate-wrought-iron-driveway-gate.webp",
     images: ["ornate-wrought-iron-driveway-gate.webp"],
     title: "Ornate Wrought Iron Driveway Gate",
@@ -102,7 +102,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 10,
-    slug: "10",
+    slug: "modern-aluminum-horizontal-slat-railing",
     img: "modern-aluminum-horizontal-slat-railing.webp",
     images: ["modern-aluminum-horizontal-slat-railing.webp"],
     title: "Modern Aluminum Horizontal Slat Railing",
@@ -112,7 +112,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 11,
-    slug: "11",
+    slug: "modern-abstract-metal-sculpture",
     img: "modern-abstract-metal-sculpture.webp",
     images: ["modern-abstract-metal-sculpture.webp", "modern-abstract-metal-sculpture2.webp", "modern-abstract-metal-sculpture3.webp"],
     title: "Modern Abstract Metal Sculpture",
@@ -122,7 +122,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 12,
-    slug: "12",
+    slug: "outdoor-metal-container-bar",
     img: "outdoor-metal-container-bar.webp.webp",
     images: ["outdoor-metal-container-bar.webp.webp", "outdoor-metal-container-bar2.webp.webp", "outdoor-metal-container-bar3.webp.webp"],
     title: "Outdoor Metal Container Bar",
@@ -132,7 +132,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 13,
-    slug: "13",
+    slug: "black-metal-glass-french-doors",
     img: "black-metal-glass-french-doors.webp.webp",
     images: ["black-metal-glass-french-doors.webp.webp"],
     title: "Black Metal & Glass French Doors",
@@ -142,7 +142,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 14,
-    slug: "14",
+    slug: "abstract-blue-green-metal-art",
     img: "abstract-blue-green-metal-art.webp",
     images: ["abstract-blue-green-metal-art.webp"],
     title: "Abstract Blue & Green Metal Art",
@@ -152,7 +152,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 15,
-    slug: "15",
+    slug: "arched-aluminum-pedestrian-gate",
     img: "arched-aluminum-pedestrian-gate.webp",
     images: ["arched-aluminum-pedestrian-gate.webp", "arched-aluminum-pedestrian-gate2.webp", "arched-aluminum-pedestrian-gate3.webp"],
     title: "Arched Aluminum Pedestrian Gate",
@@ -162,7 +162,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 16,
-    slug: "16",
+    slug: "arched-metal-driveway-gate",
     img: "arched-metal-driveway-gate.webp",
     images: ["arched-metal-driveway-gate.webp"],
     title: "Arched Metal Driveway Gate",
@@ -172,7 +172,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 17,
-    slug: "17",
+    slug: "black-aluminum-double-front-door",
     img: "black-aluminum-double-front-door.webp",
     images: ["black-aluminum-double-front-door.webp", "black-aluminum-double-front-door2.webp"],
     title: "Black Aluminum Double Front Door",
@@ -182,7 +182,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 18,
-    slug: "18",
+    slug: "corrugated-metal-commercial-bar-counter",
     img: "corrugated-metal-commercial-bar-counter.webp.webp",
     images: ["corrugated-metal-commercial-bar-counter.webp.webp", "corrugated-metal-commercial-bar-counter2.webp.webp", "corrugated-metal-commercial-bar-counter3.webp.webp", "corrugated-metal-commercial-bar-counter4.webp.webp", "corrugated-metal-commercial-bar-counter5.webp.webp"],
     title: "Corrugated Metal Commercial Bar Counter",
@@ -192,7 +192,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 19,
-    slug: "19",
+    slug: "custom-aluminum-pool-patio-guardrail",
     img: "custom-aluminum-pool-patio-guardrail.webp",
     images: ["custom-aluminum-pool-patio-guardrail.webp", "custom-aluminum-pool-patio-guardrail2.webp", "custom-aluminum-pool-patio-guardrail3.webp", "custom-aluminum-pool-patio-guardrail4.webp"],
     title: "Custom Aluminum Pool Patio Guardrail",
@@ -202,7 +202,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 20,
-    slug: "20",
+    slug: "large-industrial-metal-cog-art",
     img: "large-industrial-metal-cog-art.webp",
     images: ["large-industrial-metal-cog-art.webp"],
     title: "Large Industrial Metal Cog Art",
@@ -212,9 +212,9 @@ export const allProducts: Product[] = [
   },
   {
     id: 21,
-    slug: "21",
+    slug: "laser-cut-metal-balcony-railing",
     img: "laser-cut-metal-balcony-railing.webp",
-    images: ["laser-cut-metal-balcony-railing.webp", "laser-cut-metal-balcony-railing2.webp.webp", "laser-cut-metal-balcony-railing3.webp.webp", "laser-cut-metal-balcony-railing4.webp.webp"],
+    images: ["laser-cut-metal-balcony-railing.webp", "laser-cut-metal-balcony-railing2.webp.webp", "laser-cut-metal-balcony-railing3.webp.webp"],
     title: "Laser Cut Metal Balcony Railing",
     category: "Barandales",
     tags: ["Balcony Railing", "Laser Cut", "CNC", "Privacy"],
@@ -222,7 +222,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 22,
-    slug: "22",
+    slug: "modern-aluminum-outdoor-kitchen-cabinets",
     img: "modern-aluminum-outdoor-kitchen-cabinets.webp.webp",
     images: ["modern-aluminum-outdoor-kitchen-cabinets.webp.webp"],
     title: "Modern Aluminum Outdoor Kitchen Cabinets",
@@ -232,7 +232,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 23,
-    slug: "23",
+    slug: "modern-geometric-aluminum-double-door",
     img: "modern-geometric-aluminum-double-door.webp",
     images: ["modern-geometric-aluminum-double-door.webp", "modern-geometric-aluminum-double-door2.webp"],
     title: "Modern Geometric Aluminum Double Door",
@@ -242,7 +242,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 24,
-    slug: "24",
+    slug: "modern-horizontal-slat-driveway-gate",
     img: "modern-horizontal-slat-driveway-gate.webp",
     images: ["modern-horizontal-slat-driveway-gate.webp"],
     title: "Modern Horizontal Slat Driveway Gate",
@@ -252,7 +252,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 25,
-    slug: "25",
+    slug: "modern-metal-base-glass-coffee-table",
     img: "modern-metal-base-glass-coffee-table.webp",
     images: ["modern-metal-base-glass-coffee-table.webp", "modern-metal-base-glass-coffee-table2.webp", "modern-metal-base-glass-coffee-table3.webp"],
     title: "Modern Metal Base Glass Coffee Table",
@@ -262,7 +262,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 26,
-    slug: "26",
+    slug: "ornate-aluminum-french-doors",
     img: "ornate-aluminum-french-doors-with-sidelights.webp.webp",
     images: ["ornate-aluminum-french-doors-with-sidelights.webp.webp", "ornate-aluminum-french-doors-with-sidelights2.webp.webp", "ornate-aluminum-french-doors-with-sidelights3.webp.webp"],
     title: "Ornate Aluminum French Doors",
@@ -272,7 +272,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 27,
-    slug: "27",
+    slug: "ornate-metal-outdoor-wall-lantern",
     img: "ornate-metal-outdoor-wall-lantern.webp",
     images: ["ornate-metal-outdoor-wall-lantern.webp", "ornate-metal-outdoor-wall-lantern2.webp", "ornate-metal-outdoor-wall-lantern3.webp", "ornate-metal-outdoor-wall-lantern4.webp"],
     title: "Ornate Metal Outdoor Wall Lantern",
@@ -282,7 +282,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 28,
-    slug: "28",
+    slug: "ornate-wrought-iron-railing",
     img: "ornate-wrought-iron-railing.webp",
     images: ["ornate-wrought-iron-railing.webp", "ornate-wrought-iron-railing2.webp", "ornate-wrought-iron-railing3.webp", "ornate-wrought-iron-railing4.webp", "ornate-wrought-iron-railing5.webp", "ornate-wrought-iron-railing6.webp", "ornate-wrought-iron-railing7.webp", "ornate-wrought-iron-railing8.webp"],
     title: "Ornate Wrought Iron Railing",
@@ -292,7 +292,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 29,
-    slug: "29",
+    slug: "ornate-wrought-iron-stair-railing",
     img: "ornate-wrought-iron-stair-railing.webp",
     images: ["ornate-wrought-iron-stair-railing.webp"],
     title: "Ornate Wrought Iron Stair Railing",
@@ -302,7 +302,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 30,
-    slug: "30",
+    slug: "steampunk-gear-metal-wall-art",
     img: "steampunk-gear-metal-wall-art.webp",
     images: ["steampunk-gear-metal-wall-art.webp"],
     title: "Steampunk Gear Metal Wall Art",
@@ -312,7 +312,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 31,
-    slug: "31",
+    slug: "wood-look-aluminum-privacy-fence",
     img: "wood-look-aluminum-privacy-fence.webp.webp",
     images: ["wood-look-aluminum-privacy-fence.webp.webp", "wood-look-aluminum-privacy-fence2.webp.webp", "wood-look-aluminum-privacy-fence3.webp.webp", "wood-look-aluminum-privacy-fence4.webp.webp", "wood-look-aluminum-privacy-fence5.webp.webp"],
     title: "Wood Look Aluminum Privacy Fence",
@@ -322,7 +322,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 32,
-    slug: "32",
+    slug: "wrought-iron-chandelier",
     img: "wrought-iron-chandelier.webp",
     images: ["wrought-iron-chandelier.webp", "wrought-iron-chandelier2.webp", "wrought-iron-chandelier3.webp"],
     title: "Wrought Iron Chandelier",
@@ -332,15 +332,130 @@ export const allProducts: Product[] = [
   },
   {
     id: 33,
-    slug: "33",
+    slug: "wrought-iron-style-aluminum-entry-door",
     img: "wrought-iron-style-aluminum-entry-door.webp",
     images: ["wrought-iron-style-aluminum-entry-door.webp"],
     title: "Wrought Iron Style Aluminum Entry Door",
     category: "Puertas",
     tags: ["Entry Door", "Aluminum", "Wrought Iron Style", "Lightweight"],
     description: "Lightweight aluminum security door designed to perfectly mimic the heavy aesthetic of antique wrought iron.",
+  },
+  {
+    id: 34,
+    slug: "black-aluminum-sliding-gate-and-fence",
+    img: "black-aluminum-sliding-driveway-gate-and-fence.webp",
+    images: ["black-aluminum-sliding-driveway-gate-and-fence.webp"],
+    title: "Black Aluminum Sliding Gate & Fence",
+    category: "Portones",
+    tags: ["Aluminum", "Sliding Gate", "Privacy Fence", "Modern", "Black Matte"],
+    description: "Modern black matte aluminum sliding driveway gate integrated with a matching privacy fence. Ensures maximum security and sleek aesthetics for residential properties."
+  },
+  {
+    id: 35,
+    slug: "black-metal-wall-mounted-wine-rack",
+    img: "black-metal-wall-mounted-wine-rack.webp",
+    images: ["black-metal-wall-mounted-wine-rack.webp", "black-metal-wall-mounted-wine-rack2.webp"],
+    title: "Black Metal Wall-Mounted Wine Rack",
+    category: "Miscelaneas",
+    tags: ["Wine Rack", "Wall Mounted", "Black Metal", "Interior", "Modern Industrial"],
+    description: "Elegant wall-mounted wine rack crafted from black metal. A perfect blend of modern industrial design and space-saving functionality for dining rooms or cellars."
+  },
+  {
+    id: 36,
+    slug: "custom-laser-cut-metal-salon-display",
+    img: "custom-laser-cut-metal-salon-display.webp",
+    images: ["custom-laser-cut-metal-salon-display.webp", "custom-laser-cut-metal-salon-display2.webp"],
+    title: "Custom Laser Cut Metal Salon Display",
+    category: "Miscelaneas",
+    tags: ["Commercial Display", "Laser Cut", "Custom Logo", "Metal Shelf"],
+    description: "Bespoke metal display shelving unit featuring precision laser-cut branding. Designed specifically for commercial salons and boutiques to showcase high-end products."
+  },
+  {
+    id: 37,
+    slug: "custom-stainless-steel-laundry-countertop",
+    img: "custom-stainless-steel-laundry-countertop.webp",
+    images: ["custom-stainless-steel-laundry-countertop.webp"],
+    title: "Custom Stainless Steel Laundry Countertop",
+    category: "Miscelaneas",
+    tags: ["Stainless Steel", "Countertop", "Utility", "Heavy Duty", "Custom Fit"],
+    description: "Heavy-duty custom stainless steel countertop designed for laundry and utility rooms. Offers extreme durability, easy maintenance, and a sleek, hygienic surface."
+  },
+  {
+    id: 38,
+    slug: "custom-wrought-iron-rose-sculpture",
+    img: "custom-wrought-iron-rose.webp",
+    images: ["custom-wrought-iron-rose.webp", "custom-wrought-iron-rose2.webp", "custom-wrought-iron-rose3.webp"],
+    title: "Custom Wrought Iron Rose Sculpture",
+    category: "Arte",
+    tags: ["Metal Art", "Wrought Iron", "Hand Forged", "Floral Sculpture", "Unique Piece"],
+    description: "Exquisite, hand-forged wrought iron rose sculpture. This delicate yet eternal piece of metal art showcases master craftsmanship and makes a perfect romantic gift or decorative accent."
+  },
+  {
+    id: 39,
+    slug: "laser-cut-metal-bar-front-panels",
+    img: "laser-cut-metal-bar-front-panels.webp",
+    images: ["laser-cut-metal-bar-front-panels.webp", "laser-cut-metal-bar-front-panels2.webp", "laser-cut-metal-bar-front-panels3.webp", "laser-cut-metal-bar-front-panels4.webp", "laser-cut-metal-bar-front-panels5.webp"],
+    title: "Laser Cut Metal Bar Front Panels",
+    category: "Miscelaneas",
+    tags: ["Bar Front", "Laser Cut", "Commercial", "Backlit Potential", "Modern Pattern"],
+    description: "Custom laser-cut metal panels designed to clad commercial or residential bar fronts. The intricate patterns are ideal for backlighting, adding an upscale, dynamic vibe to any entertainment space."
+  },
+  {
+    id: 40,
+    slug: "laser-cut-metal-staircase-railing-panels",
+    img: "laser-cut-metal-staircase-railing-panels.webp",
+    images: ["laser-cut-metal-staircase-railing-panels.webp"],
+    title: "Laser Cut Metal Staircase Railing Panels",
+    category: "Barandales",
+    tags: ["Stair Railing", "Laser Cut", "Custom Pattern", "Interiors", "Modern Staircase"],
+    description: "Innovative interior staircase railing featuring custom laser-cut metal panels. Replaces traditional balusters with a continuous, artistic geometric pattern for a highly contemporary look."
+  },
+  {
+    id: 41,
+    slug: "laser-cut-penny-farthing-wall-art",
+    img: "laser-cut-penny-farthing-metal-wall-art.webp",
+    images: ["laser-cut-penny-farthing-metal-wall-art.webp"],
+    title: "Laser Cut Penny Farthing Wall Art",
+    category: "Arte",
+    tags: ["Wall Art", "Laser Cut", "Vintage Bicycle", "Metal Decor"],
+    description: "Charming laser-cut metal wall art depicting a vintage penny-farthing bicycle. A perfect conversation piece that adds a touch of retro whimsy to cafes, studies, or living areas."
+  },
+  {
+    id: 42,
+    slug: "ornate-black-metal-loft-railing",
+    img: "ornate-black-metal-loft-railing.webp",
+    images: ["ornate-black-metal-loft-railing.webp", "ornate-black-metal-loft-railing2.webp", "ornate-black-metal-loft-railing3.webp", "ornate-black-metal-loft-railing4.webp"],
+    title: "Ornate Black Metal Loft Railing",
+    category: "Barandales",
+    tags: ["Loft Railing", "Black Metal", "Ornate Castings", "Interior", "Luxury Mezzanine"],
+    description: "Luxurious black metal railing designed for interior lofts and mezzanines. Features ornate cast details and a sturdy top rail, blending classic elegance with structural safety."
+  },
+  {
+    id: 43,
+    slug: "outdoor-black-metal-spiral-staircase",
+    img: "outdoor-black-metal-spiral-staircase.webp",
+    images: ["outdoor-black-metal-spiral-staircase.webp", "outdoor-black-metal-spiral-staircase2.webp"],
+    title: "Outdoor Black Metal Spiral Staircase",
+    category: "Barandales",
+    tags: ["Spiral Staircase", "Black Metal", "Outdoor", "Space Saving", "Durable Finish"],
+    description: "Heavy-duty outdoor spiral staircase crafted from black metal. Designed to provide safe, space-saving access to upper decks or balconies, finished with weather-resistant powder coating."
   }
 ];
+
+// --- FUNCIONES Y TRADUCTOR DE URLs ---
+export const CATEGORY_SLUGS: Record<string, { en: string; es: string }> = {
+  "Iluminación": { en: "lighting", es: "iluminacion" },
+  "Puertas": { en: "doors", es: "puertas" },
+  "Barandales": { en: "railings", es: "barandales" },
+  "Portones": { en: "gates", es: "portones" },
+  "Arte": { en: "art", es: "arte" },
+  "Miscelaneas": { en: "miscellaneous", es: "miscelaneas" },
+};
+
+export function getCategorySlug(categoryName: string, lang: string): string {
+  const normalizedLang = lang === "es" ? "es" : "en";
+  return CATEGORY_SLUGS[categoryName]?.[normalizedLang] || categoryName.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+}
 
 export function getProductBySlug(slug: string): Product | undefined {
   return allProducts.find((p) => p.slug === slug);

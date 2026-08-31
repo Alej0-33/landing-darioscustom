@@ -1,18 +1,18 @@
 {
   "seo": {
-    "title": "Herrería y Diseño a Medida en Miami | Cotizar por WhatsApp",
-    "description": "Taller de herrería en Miami y forja artística. Diseño a medida en hierro y aluminio: balcones, puertas de hierro, cercas de privacidad. Cotizar hoy.",
-    "keywords": ["herrería a medida miami", "diseño a medida", "puertas de hierro", "forja artistica miami", "balcones de hierro miami", "cercas de privacidad", "Darioscustom"]
+    "title": "Herrería a Medida en Miami: Puertas de Hierro y Diseño Exclusivo",
+    "description": "Taller experto en herrería a medida en Miami. Fabricamos puertas de hierro, balcones y cercas de privacidad con forja artística y diseño exclusivo.",
+    "keywords": ["herrería a medida miami", "diseño exclusivo", "puertas de hierro", "forja artistica miami", "balcones de metal", "cercas de privacidad", "fabricación de metal", "Darioscustom"]
   },
   "header": { 
     "links": { "home": "Inicio", "about": "Nosotros", "services": "Servicios", "catalog": "Catálogo", "materials": "Materiales", "reviews": "Reseñas", "faq": "Preguntas" }, 
     "quote": "Cotizar Proyecto de Herrería" 
   },
   "hero": { 
-    "title1": "Diseño de Metal y Herrería de ", 
-    "highlight": "Alta Costura", 
+    "title1": "Herrería a medida y ", 
+    "highlight": "diseño exclusivo", 
     "title2": " en Miami", 
-    "desc": "Somos un taller de herrería en Miami. Hacemos diseño a medida y forja artística. Creamos piezas únicas al gusto del cliente. Fabricamos puertas de hierro, balcones, barandales y cercas de privacidad. Usamos materiales premium como aluminio, acero inoxidable 304/316L, bronce y acero forjado. Cada candelabro o portón tiene un acabado impecable con pintura electrostática.", 
+    "desc": "Somos expertos en herrería a medida en Miami. Fabricamos puertas de hierro, balcones y cercas de privacidad con diseño exclusivo. Usamos aluminio, acero inoxidable y hierro forjado con acabados premium. Transforma tu propiedad con nuestra forja artística de alta resistencia.", 
     "btnQuote": "Solicitar Cotización Técnica", 
     "btnCatalog": "Ver Catálogo de Herrería", 
     "cadTag": "Diseño a Medida", 
@@ -83,6 +83,11 @@
     "title": "Respuestas Técnicas sobre Herrería",
     "desc": "Toda la información clave estructurada sobre nuestros materiales, regulaciones locales en Miami-Dade y procesos de entrega.",
     "items": [
+      {
+        "id": "faq-definition-custom-ironwork",
+        "q": "¿Qué es la herrería a medida y qué incluye el servicio?",
+        "a": "La herrería a medida es un proceso de forja artística y fabricación personalizada de estructuras metálicas. Este servicio exclusivo en Miami incluye el diseño, construcción e instalación de puertas de hierro, balcones, portones y cercas de privacidad adaptadas exactamente a la arquitectura de su propiedad."
+      },
       {
         "id": "faq-florida-building-code",
         "q": "¿Darioscustom cumple con el Código de Edificación de Florida (FBC) para huracanes?",
@@ -271,6 +276,56 @@
       "title": "Puerta de Aluminio Estilo Hierro Forjado",
       "tags": ["Puerta de Entrada", "Aluminio", "Estilo Forja", "Ligera"],
       "description": "Puerta de seguridad exterior fabricada en aluminio ligero pero elaborada meticulosamente para imitar a la perfección la estética pesada e histórica del hierro forjado antiguo."
+    },
+    "34": {
+      "title": "Portón Corredizo y Cerca de Aluminio Negro",
+      "tags": ["Aluminio", "Portón Corredizo", "Cerca de Privacidad", "Moderno", "Negro Mate"],
+      "description": "Moderno portón corredizo vehicular de aluminio en color negro mate, integrado con una cerca de privacidad a juego. Garantiza máxima seguridad y una estética elegante para propiedades residenciales."
+    },
+    "35": {
+      "title": "Cava de Vinos de Pared en Metal Negro",
+      "tags": ["Cava de Vinos", "Montaje en Pared", "Metal Negro", "Interiores", "Industrial Moderno"],
+      "description": "Elegante botellero montado en la pared, fabricado en metal negro. Una combinación perfecta de diseño industrial moderno y funcionalidad para ahorrar espacio en comedores o bodegas."
+    },
+    "36": {
+      "title": "Exhibidor de Salón en Metal con Corte Láser",
+      "tags": ["Exhibidor Comercial", "Corte Láser", "Logo Personalizado", "Estantería de Metal"],
+      "description": "Estantería de exhibición metálica hecha a medida, con logotipos elaborados mediante corte láser de precisión. Diseñada específicamente para salones y boutiques comerciales para mostrar productos de alta gama."
+    },
+    "37": {
+      "title": "Encimera de Lavandería en Acero Inoxidable a Medida",
+      "tags": ["Acero Inoxidable", "Encimera", "Área de Lavado", "Alta Resistencia", "A Medida"],
+      "description": "Encimera de acero inoxidable resistente diseñada a medida para cuartos de lavado y áreas de servicio. Ofrece durabilidad extrema, fácil mantenimiento y una superficie altamente higiénica."
+    },
+    "38": {
+      "title": "Escultura de Rosa en Hierro Forjado",
+      "tags": ["Arte en Metal", "Hierro Forjado", "Forjado a Mano", "Escultura Floral", "Pieza Única"],
+      "description": "Exquisita escultura de rosa en hierro forjado a mano. Esta delicada pero eterna pieza de arte metálico muestra maestría artesanal y es un regalo romántico o un acento decorativo perfecto."
+    },
+    "39": {
+      "title": "Paneles Frontales de Bar en Metal con Corte Láser",
+      "tags": ["Frente de Bar", "Corte Láser", "Comercial", "Ideal para Retroiluminación", "Patrón Moderno"],
+      "description": "Paneles de metal personalizados con corte láser diseñados para revestir frentes de barras comerciales o residenciales. Los intrincados patrones son ideales para integrar retroiluminación LED, aportando un ambiente exclusivo."
+    },
+    "40": {
+      "title": "Paneles de Barandal de Escalera con Corte Láser",
+      "tags": ["Barandal de Escalera", "Corte Láser", "Patrón Personalizado", "Interiores", "Escalera Moderna"],
+      "description": "Innovadora barandilla de escalera interior con paneles de metal personalizados mediante corte láser. Reemplaza los balaustres tradicionales por un patrón geométrico artístico y continuo para un aspecto ultra contemporáneo."
+    },
+    "41": {
+      "title": "Arte de Pared de Bicicleta Antigua con Corte Láser",
+      "tags": ["Arte de Pared", "Corte Láser", "Bicicleta Vintage", "Decoración en Metal"],
+      "description": "Encantador arte de pared en metal cortado con láser que representa una bicicleta antigua (velocípedo). Una pieza perfecta que añade un toque retro y llamativo a cafés, estudios o salas de estar."
+    },
+    "42": {
+      "title": "Barandal de Loft de Metal Negro Ornamentado",
+      "tags": ["Barandal de Loft", "Metal Negro", "Fundición Ornamentada", "Interiores", "Mezzanine de Lujo"],
+      "description": "Lujosa barandilla de metal negro diseñada para lofts interiores y mezzanines. Cuenta con detalles de fundición ornamentados y un pasamanos resistente, combinando elegancia clásica con seguridad estructural."
+    },
+    "43": {
+      "title": "Escalera de Caracol Exterior en Metal Negro",
+      "tags": ["Escalera de Caracol", "Metal Negro", "Exteriores", "Ahorro de Espacio", "Acabado Duradero"],
+      "description": "Resistente escalera de caracol para exteriores fabricada en metal negro. Diseñada para proporcionar un acceso seguro a terrazas o balcones ahorrando espacio, protegida con pintura en polvo resistente a la intemperie."
     }
   }
 }

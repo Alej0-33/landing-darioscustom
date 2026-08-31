@@ -39,14 +39,19 @@ export default function FAQ() {
     <section id="preguntas" className="py-20 sm:py-24 relative border-t border-[#27272A] bg-[#09090B]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* Interfaz WebMCP declarativa para Agentes de IA (Oculta para usuarios) */}
-      <div className="hidden" aria-hidden="true">
+      {/* Interfaz WebMCP declarativa para Agentes de IA (Oculta para usuarios pero con labels legibles) */}
+      <div className="sr-only">
         <form toolname="searchFAQ" tooldescription="Search the frequently asked questions about custom ironwork, Miami building codes, and powder coating.">
-          <input type="text" name="query" toolparamdescription="The user's search query regarding ironwork services" />
+          {/* ✅ SAGE Request: Etiquetas Label añadidas para los inputs WebMCP */}
+          <label htmlFor="webmcp-query">Search query</label>
+          <input id="webmcp-query" type="text" name="query" toolparamdescription="The user's search query regarding ironwork services" aria-label="Search query" />
         </form>
         <form toolname="submitQuestion" tooldescription="Submit a new technical question to the blacksmith workshop if it is not found in the FAQ.">
-          <input type="text" name="question" toolparamdescription="The technical question about ironwork to submit" />
-          <input type="email" name="email" toolparamdescription="Contact email to receive the answer" />
+          <label htmlFor="webmcp-question">Question</label>
+          <input id="webmcp-question" type="text" name="question" toolparamdescription="The technical question about ironwork to submit" aria-label="Submit Question" />
+          
+          <label htmlFor="webmcp-email">Contact Email</label>
+          <input id="webmcp-email" type="email" name="email" toolparamdescription="Contact email to receive the answer" aria-label="Contact Email" />
         </form>
       </div>
 
@@ -64,6 +69,7 @@ export default function FAQ() {
             <motion.div key={idx} variants={staggerItem}>
               <details className="bg-[#18181B] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-4 group cursor-pointer">
                 <summary className="font-bold text-white text-sm md:text-base uppercase list-none flex justify-between">
+                  {/* Se mantiene el h3 dentro del summary para Featured Snippets */}
                   <h3 id={item.id} className="flex-grow">{item.q}</h3>
                   <span className="text-[#B85227]">+</span>
                 </summary>

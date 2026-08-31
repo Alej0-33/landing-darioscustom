@@ -18,6 +18,8 @@ export function Input({ label, className = "", id, ...props }: InputProps) {
       )}
       <input
         id={id}
+        /* Inyectamos el aria-label para los agentes de IA (WebMCP) */
+        aria-label={props["aria-label"] || label || "Input field"}
         className={`w-full bg-zinc-950 border border-industrial-border focus:border-brand-primary px-4 py-3 text-sm text-white rounded outline-none transition-colors placeholder:text-zinc-600 ${className}`}
         {...props}
       />
