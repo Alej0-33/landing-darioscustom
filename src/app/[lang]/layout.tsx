@@ -39,6 +39,15 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         'max-snippet': -1,
       },
     },
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
+        { url: '/icon.png', type: 'image/png', sizes: '192x192' }
+      ],
+      apple: [
+        { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' } // Opcional, pero recomendado para iOS
+      ]
+    },
     alternates: { 
       canonical: `${SITE_URL}/${resolvedParams.lang}/`,
       languages: { 
