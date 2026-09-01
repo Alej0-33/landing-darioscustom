@@ -59,7 +59,7 @@ export default function Hero() {
             <Button
               variant="secondary"
               className="w-full sm:w-auto"
-              onClick={() => document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => document.getElementById("catalog")?.scrollIntoView({ behavior: "smooth" })}
               aria-label="Explore our custom metalwork catalog"
             >
               {dict.btnCatalog}
