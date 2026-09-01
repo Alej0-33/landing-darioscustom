@@ -24,7 +24,7 @@ export default function Header() {
     { name: dict.links.home, href: `/${lang}/#inicio` },
     { name: dict.links.about, href: `/${lang}/#sobre-nosotros` },
     { name: dict.links.services, href: `/${lang}/#servicios` },
-    { name: dict.links.catalog, href: `/${lang}/#catalog` }, // ID actualizado a #catalog
+    { name: dict.links.catalog, href: `/${lang}/#catalog` },
     { name: dict.links.reviews, href: `/${lang}/#opiniones` },
     { name: dict.links.faq, href: `/${lang}/#preguntas` },
     { name: dict.links.contact, href: `/${lang}/#contacto` },

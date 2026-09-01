@@ -74,8 +74,93 @@ export default function Contact() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(actionSchema) }} />
 
       <div className="max-w-7xl mx-auto px-6">
+        {/* Cambiamos el orden en móvil con flex-col-reverse o grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          <motion.div className="lg:col-span-5" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={slideFromLeft}>
+          
+          {/* FORMULARIO (Ahora se coloca primero en el código para que en móvil aparezca arriba al hacer scroll) */}
+          <motion.div className="lg:col-span-7 lg:order-1 order-1 bg-industrial-card border border-industrial-border p-4 sm:p-8 rounded-lg relative overflow-hidden w-full" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={slideFromRight}>
+            <h3 className="text-md sm:text-lg font-bold uppercase tracking-wider mb-6 text-white">{dict.formTitle}</h3>
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-6">
+              <button type="button" onClick={() => setMethod("whatsapp")} className={`py-2.5 sm:py-3 px-1 sm:px-4 text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded border cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2 transition-all ${ method === "whatsapp" ? "bg-emerald-600/20 border-emerald-500 text-emerald-400" : "bg-[#09090B] border-industrial-border text-zinc-400" }`}>
+                <WhatsAppIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" /> {dict.waQuick}
+              </button>
+              <button type="button" onClick={() => setMethod("email")} className={`py-2.5 sm:py-3 px-1 sm:px-4 text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded border cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2 transition-all ${ method === "email" ? "bg-brand-primary/20 border-brand-primary text-brand-light" : "bg-[#09090B] border-industrial-border text-zinc-400" }`}>
+                <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" /> {dict.emailTrad}
+              </button>
+            </div>
+            {submitted ? (
+              <div className="bg-brand-primary/10 border border-brand-primary text-brand-light p-6 rounded text-center">
+                <h3 className="font-bold text-lg uppercase mb-2">{dict.successTitle}</h3>
+                <p className="text-sm">{dict.successDesc}</p>
+              </div>
+            ) : (
+              <>
+              <form 
+                onSubmit={handleSubmit} 
+                className="space-y-5"
+                toolname="submitQuoteRequest"
+                tooldescription="Submit a request to get a custom ironwork quote via email or WhatsApp."
+              >
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <Input id="name" name="name" label={dict.fName} type="text" required value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })} placeholder={dict.fNamePl} toolparamdescription="The full name of the customer" />
+                  <Input id="email" name="email" label={dict.fEmail} type="email" required value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })} placeholder={dict.fEmailPl} toolparamdescription="Contact email address" />
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <Input id="phone" name="phone" label={dict.fPhone} type="tel" required value={formState.phone} onChange={(e) => setFormState({ ...formState, phone: e.target.value })} placeholder={dict.fPhonePl} toolparamdescription="Contact phone number" />
+                  <Select id="service" name="service" label={dict.fService} value={formState.service} onChange={(e) => setFormState({ ...formState, service: e.target.value })} toolparamdescription="Category of the project">
+                    <option value="Puertas">{(dict.fServiceOpts as any).Puertas}</option>
+                    <option value="Portones">{(dict.fServiceOpts as any).Portones}</option>
+                    <option value="Barandales">{(dict.fServiceOpts as any).Barandales}</option>
+                    <option value="Arte">{(dict.fServiceOpts as any).Arte}</option>
+                    <option value="Iluminación">{(dict.fServiceOpts as any).Iluminación}</option>
+                    <option value="Miscelaneas">{(dict.fServiceOpts as any).Miscelaneas}</option>
+                  </Select>
+                </div>
+                <Textarea id="msg" name="msg" label={dict.fMsg} rows={4} required value={formState.msg} onChange={(e) => setFormState({ ...formState, msg: e.target.value })} placeholder={dict.fMsgPl} toolparamdescription="Message and dimensions of the project" />
+                <div className="space-y-2">
+                  <label htmlFor="photo_upload" className="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">{dict.fPhoto}</label>
+                  <div className="relative border border-dashed border-industrial-border hover:border-brand-primary/50 bg-[#09090B] rounded-md p-4 transition-colors group cursor-pointer flex flex-col items-center justify-center min-h-[90px]">
+                    <input 
+                      id="photo_upload" 
+                      name="photo_upload" 
+                      type="file" 
+                      accept="image/*" 
+                      onChange={(e) => setPhoto(e.target.files ? e.target.files[0] : null)} 
+                      className="absolute inset-0 opacity-0 cursor-pointer z-20" 
+                      aria-label="Subir foto de referencia"
+                      toolparamdescription="Optional reference photo for the custom metalwork project"
+                    />
+
+                    {photo ? (
+                      <div className="flex items-center justify-between w-full z-30 gap-2">
+                        <div className="flex items-center gap-2.5 min-w-0">
+                          <div className="bg-brand-primary/10 border border-brand-primary/20 p-2 rounded text-brand-light shrink-0"><Camera className="w-4 h-4 sm:w-5 sm:h-5" /></div>
+                          <div className="text-left min-w-0">
+                            <p className="text-[11px] sm:text-xs font-semibold text-white truncate max-w-[140px] xs:max-w-[200px] sm:max-w-xs">{photo.name}</p>
+                            <p className="text-[9px] text-zinc-500 font-mono">{(photo.size / (1024 * 1024)).toFixed(2)} MB</p>
+                          </div>
+                        </div>
+                        <button type="button" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setPhoto(null); }} className="text-zinc-400 hover:text-red-400 p-1 rounded-full hover:bg-zinc-800/50 transition-colors shrink-0" aria-label="Eliminar foto"><X className="w-4 h-4" /></button>
+                      </div>
+                    ) : (
+                      <div className="flex flex-col items-center text-center gap-1.5 pointer-events-none">
+                        <Upload className="w-5 h-5 text-zinc-500 group-hover:text-brand-light transition-colors" />
+                        <p className="text-[11px] sm:text-xs text-zinc-400"><span className="text-brand-light font-bold">{dict.uploadClick}</span> {dict.uploadDrag}</p>
+                        <p className="text-[9px] text-zinc-600 font-mono uppercase tracking-wider">JPG, PNG (Max 10MB)</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <Button type="submit" variant="primary" className="w-full justify-center" aria-label="Enviar formulario">
+                  {method === "whatsapp" ? dict.sendWa : dict.sendEmail} <ArrowRight className="w-4 h-4" />
+                </Button>
+              </form>
+              </>
+            )}
+          </motion.div>
+
+          {/* INFORMACIÓN Y SOCIALS (Ahora se coloca después para que en móvil aparezca abajo) */}
+          <motion.div className="lg:col-span-5 lg:order-2 order-2" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={slideFromLeft}>
             <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">{dict.tag}</span>
             <h2 id="contact-title" className="text-2xl sm:text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-6">{dict.title}</h2>
             <p className="text-zinc-400 mb-8 text-xs sm:text-sm md:text-base">{dict.desc}</p>
@@ -145,88 +230,6 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-          </motion.div>
-
-          <motion.div className="lg:col-span-7 bg-industrial-card border border-industrial-border p-4 sm:p-8 rounded-lg relative overflow-hidden w-full" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={slideFromRight}>
-            <h3 className="text-md sm:text-lg font-bold uppercase tracking-wider mb-6 text-white">{dict.formTitle}</h3>
-            <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-6">
-              <button type="button" onClick={() => setMethod("whatsapp")} className={`py-2.5 sm:py-3 px-1 sm:px-4 text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded border cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2 transition-all ${ method === "whatsapp" ? "bg-emerald-600/20 border-emerald-500 text-emerald-400" : "bg-[#09090B] border-industrial-border text-zinc-400" }`}>
-                <WhatsAppIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" /> {dict.waQuick}
-              </button>
-              <button type="button" onClick={() => setMethod("email")} className={`py-2.5 sm:py-3 px-1 sm:px-4 text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded border cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2 transition-all ${ method === "email" ? "bg-brand-primary/20 border-brand-primary text-brand-light" : "bg-[#09090B] border-industrial-border text-zinc-400" }`}>
-                <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" /> {dict.emailTrad}
-              </button>
-            </div>
-            {submitted ? (
-              <div className="bg-brand-primary/10 border border-brand-primary text-brand-light p-6 rounded text-center">
-                <h3 className="font-bold text-lg uppercase mb-2">{dict.successTitle}</h3>
-                <p className="text-sm">{dict.successDesc}</p>
-              </div>
-            ) : (
-              <>
-              <form 
-                onSubmit={handleSubmit} 
-                className="space-y-5"
-                toolname="submitQuoteRequest"
-                tooldescription="Submit a request to get a custom ironwork quote via email or WhatsApp."
-              >
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Input id="name" name="name" label={dict.fName} type="text" required value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })} placeholder={dict.fNamePl} toolparamdescription="The full name of the customer" />
-                  {/* El Input de email ahora recibe aria-label automáticamente desde Input.tsx */}
-                  <Input id="email" name="email" label={dict.fEmail} type="email" required value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })} placeholder={dict.fEmailPl} toolparamdescription="Contact email address" />
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Input id="phone" name="phone" label={dict.fPhone} type="tel" required value={formState.phone} onChange={(e) => setFormState({ ...formState, phone: e.target.value })} placeholder={dict.fPhonePl} toolparamdescription="Contact phone number" />
-                  <Select id="service" name="service" label={dict.fService} value={formState.service} onChange={(e) => setFormState({ ...formState, service: e.target.value })} toolparamdescription="Category of the project">
-                    <option value="Puertas">{(dict.fServiceOpts as any).Puertas}</option>
-                    <option value="Portones">{(dict.fServiceOpts as any).Portones}</option>
-                    <option value="Barandales">{(dict.fServiceOpts as any).Barandales}</option>
-                    <option value="Arte">{(dict.fServiceOpts as any).Arte}</option>
-                    <option value="Iluminación">{(dict.fServiceOpts as any).Iluminación}</option>
-                    <option value="Miscelaneas">{(dict.fServiceOpts as any).Miscelaneas}</option>
-                  </Select>
-                </div>
-                <Textarea id="msg" name="msg" label={dict.fMsg} rows={4} required value={formState.msg} onChange={(e) => setFormState({ ...formState, msg: e.target.value })} placeholder={dict.fMsgPl} toolparamdescription="Message and dimensions of the project" />
-                <div className="space-y-2">
-                  <label htmlFor="photo_upload" className="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">{dict.fPhoto}</label>
-                  <div className="relative border border-dashed border-industrial-border hover:border-brand-primary/50 bg-[#09090B] rounded-md p-4 transition-colors group cursor-pointer flex flex-col items-center justify-center min-h-[90px]">
-                    <input 
-                      id="photo_upload" 
-                      name="photo_upload" 
-                      type="file" 
-                      accept="image/*" 
-                      onChange={(e) => setPhoto(e.target.files ? e.target.files[0] : null)} 
-                      className="absolute inset-0 opacity-0 cursor-pointer z-20" 
-                      aria-label="Subir foto de referencia"
-                      toolparamdescription="Optional reference photo for the custom metalwork project"
-                    />
-
-                    {photo ? (
-                      <div className="flex items-center justify-between w-full z-30 gap-2">
-                        <div className="flex items-center gap-2.5 min-w-0">
-                          <div className="bg-brand-primary/10 border border-brand-primary/20 p-2 rounded text-brand-light shrink-0"><Camera className="w-4 h-4 sm:w-5 sm:h-5" /></div>
-                          <div className="text-left min-w-0">
-                            <p className="text-[11px] sm:text-xs font-semibold text-white truncate max-w-[140px] xs:max-w-[200px] sm:max-w-xs">{photo.name}</p>
-                            <p className="text-[9px] text-zinc-500 font-mono">{(photo.size / (1024 * 1024)).toFixed(2)} MB</p>
-                          </div>
-                        </div>
-                        <button type="button" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setPhoto(null); }} className="text-zinc-400 hover:text-red-400 p-1 rounded-full hover:bg-zinc-800/50 transition-colors shrink-0" aria-label="Eliminar foto"><X className="w-4 h-4" /></button>
-                      </div>
-                    ) : (
-                      <div className="flex flex-col items-center text-center gap-1.5 pointer-events-none">
-                        <Upload className="w-5 h-5 text-zinc-500 group-hover:text-brand-light transition-colors" />
-                        <p className="text-[11px] sm:text-xs text-zinc-400"><span className="text-brand-light font-bold">{dict.uploadClick}</span> {dict.uploadDrag}</p>
-                        <p className="text-[9px] text-zinc-600 font-mono uppercase tracking-wider">JPG, PNG (Max 10MB)</p>
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <Button type="submit" variant="primary" className="w-full justify-center" aria-label="Enviar formulario">
-                  {method === "whatsapp" ? dict.sendWa : dict.sendEmail} <ArrowRight className="w-4 h-4" />
-                </Button>
-              </form>
-              </>
-            )}
           </motion.div>
         </div>
       </div>

@@ -17,8 +17,10 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
-  const dict = await getDictionary(resolvedParams.lang as any);
-  
+  const lang = resolvedParams.lang;
+  const dict = await getDictionary(lang as any);
+  const currentCanonical = `${SITE_URL}/${lang}/`;
+
   return {
     title: dict.seo.title,
     description: dict.seo.description,
@@ -51,7 +53,15 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         "x-default": `${SITE_URL}/en/`
       } 
     },
-    openGraph: { title: dict.seo.title, description: dict.seo.description, url: `${SITE_URL}/${resolvedParams.lang}/`, siteName: "Darioscustom", images: [{ url: "/brand/darioscustom_logo.webp", width: 800, height: 600 }] },
+    openGraph: { 
+      title: dict.seo.title, 
+      description: dict.seo.description, 
+      url: currentCanonical, 
+      siteName: "Darioscustom", 
+      locale: lang === 'es' ? 'es_US' : 'en_US',
+      alternateLocale: lang === 'es' ? 'en_US' : 'es_US',
+      images: [{ url: "/brand/darioscustom_logo.webp", width: 800, height: 600 }] 
+    },
   };
 }
 
