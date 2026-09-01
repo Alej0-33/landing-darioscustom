@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import HomeView, { generateStaticParams as genParams } from "./[lang]/page";
 import { getDictionary } from "@/lib/dictionary";
+import  DictionaryProvider  from "@/components/DictionaryProvider";
 
 export const generateStaticParams = genParams;
 
@@ -56,6 +57,10 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function Page() {
-  // Renderiza la página de inicio en inglés directamente en la raíz "/"
-  return <HomeView params={Promise.resolve({ lang: "en" })} />;
+  const dict = await getDictionary("en");
+  return (
+    <DictionaryProvider dictionary={dict}>
+      <HomeView params={Promise.resolve({ lang: "en" })} />
+    </DictionaryProvider>
+  );
 }
