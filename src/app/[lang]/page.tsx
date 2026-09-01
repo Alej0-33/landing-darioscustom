@@ -165,7 +165,6 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         <Contact />
       </main>
       <Footer />
-      <WhatsAppButton />
     </>
   );
 }

@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { getDictionary } from "@/lib/dictionary";
 import DictionaryProvider from "@/components/DictionaryProvider";
 import { i18n } from "@/i18n.config"; 
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: "--font-montserrat", display: "swap" });
@@ -43,11 +44,10 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       apple: '/icon.png',
     },
     alternates: { 
-      // Fixed: Added trailing slash to match actual route and prevent redirect chain SEO penalty
       canonical: `${SITE_URL}/${resolvedParams.lang}/`,
       languages: { 
-        "en": `${SITE_URL}/en/`, // Self-referencing hreflang
-        "es": `${SITE_URL}/es/`, // Self-referencing hreflang
+        "en": `${SITE_URL}/en/`,
+        "es": `${SITE_URL}/es/`,
         "en-US": `${SITE_URL}/en/`, 
         "es-US": `${SITE_URL}/es/`,
         "x-default": `${SITE_URL}/en/`
@@ -81,6 +81,7 @@ export default async function RootLayout({ children, params }: { children: React
             {isEs ? "Saltar al contenido principal" : "Skip to main content"}
           </a>
           {children}
+          <WhatsAppButton />
         </DictionaryProvider>
       </body>
     </html>

@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Custom Ironwork Miami: Iron Doors & Metal Fabrication",
-    "description": "Premium custom ironwork in Miami. We fabricate custom iron doors, metal balconies, and privacy fences. High durability and bespoke metal design for your home.",
+    "description": "Premium custom ironwork in Miami. We fabricate custom iron doors, balconies & gates. High durability & bespoke metal design.",
     "keywords": ["custom ironwork miami", "bespoke metal design", "iron doors", "artistic forging miami", "metal balconies", "privacy fences", "metal fabrication", "Darioscustom"]
   },
   "header": { 
@@ -137,6 +137,17 @@
     "terms": "Terms of Service" 
   },
   "product": { "home": "Home", "catalog": "Ironwork Catalog", "features": "Technical Features", "quoteBtn": "Request technical quote via WhatsApp", "backBtn": "Back to ironwork catalog", "badges": [ { "label": "Manufacturing", "value": "Custom Design" }, { "label": "Material", "value": "Premium" }, { "label": "Finish", "value": "Electrostatic" } ], "relatedTag": "More options", "relatedTitle": "Other custom design", "viewProd": "View Design Details" },
+  "productFaq": {
+    "title": "Frequently Asked Questions",
+    "q1": "What is the {title} and where is it made?",
+    "a1": "The {title} is a monumental architectural metalwork piece designed exclusively for luxury properties. It is handcrafted by master blacksmiths in our specialized Miami workshop, combining traditional forging techniques with modern hurricane-resistant engineering for South Florida residences.",
+    "q2": "How is the {title} manufactured?",
+    "a2": "The {title} is an exquisite bespoke master-forged metalwork piece handcrafted to exact architectural measurements in our local Miami workshop. It combines heavy-gauge structural metal framing with meticulous hand-forged artistic details, delivering an unyielding fusion of high-end architectural aesthetics and robust modern security for luxury residential estates.",
+    "q3": "What hurricane and wind resistance does this product feature?",
+    "a3": "This heavy-duty architectural metal product is custom-engineered to strictly comply with the rigorous Florida Building Code (FBC) standards. It features reinforced internal framing specifically certified to withstand high-velocity wind loads of up to 175 mph, ensuring absolute structural safety during severe tropical storm seasons.",
+    "q4": "What materials and protective finishes are used?",
+    "a4": "We exclusively utilize premium architectural-grade metal alloys and heavy-gauge structural steel. To guarantee absolute durability against Miami's coastal salt spray and high humidity, we apply an advanced electrostatic powder coating finish baked at over 400 degrees Fahrenheit, creating an impenetrable shield against rust."
+  },
   "whatsappBtn": {
     "hoverMsg1": "Ironwork advice?",
     "hoverMsg2": "Quote your design",
