@@ -28,10 +28,6 @@ export async function generateMetadata(): Promise<Metadata> {
         'max-snippet': -1,
       },
     },
-    icons: {
-      icon: '/icon.png',
-      apple: '/icon.png',
-    },
     alternates: { 
       // La canónica de la raíz apunta por defecto a /en/ o a la raíz limpia según prefieras. 
       // Para alinearla exactamente con SAGE que busca https://dariosironart.com/en:
