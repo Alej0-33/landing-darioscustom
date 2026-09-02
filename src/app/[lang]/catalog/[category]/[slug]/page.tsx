@@ -391,7 +391,9 @@ export default async function ProductPage({ params }: Props) {
                   
                   return (
                     <div key={p.id} className="group relative flex flex-col bg-[#0d0d10] border border-industrial-border hover:border-brand-primary/40 rounded-xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(184,82,39,0.15)]">
-                      <Link href={`/${lang}/catalog/${getCategorySlug(p.category, lang)}/${p.slug}/`} className="absolute inset-0 z-10" aria-label={`${dict.viewProd} ${relatedTitle}`} />
+                      <Link href={`/${lang}/catalog/${getCategorySlug(p.category, lang)}/${p.slug}/`} className="absolute inset-0 z-10" aria-label={`${dict.viewProd} ${relatedTitle}`}>
+                        <span className="sr-only">{dict.viewProd}: {relatedTitle}</span>
+                      </Link>
                       
                       <div className="relative aspect-[4/5] w-full overflow-hidden bg-zinc-950">
                         <img src={`/images/${p.img}`} alt={`${relatedTitle} — Darioscustom`} width={400} height={500} loading="lazy" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100" />

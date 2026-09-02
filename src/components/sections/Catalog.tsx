@@ -89,7 +89,9 @@ export default function Catalog() {
                 >
                   
                   {/* ENLACE PRINCIPAL */}
-                  <Link href={`/${lang}/catalog/${getCategorySlug(p.category, lang)}/${p.slug}/`} className="absolute inset-0 z-10" aria-label={`${dict.viewProd} ${localizedTitle}`} />
+                  <Link href={`/${lang}/catalog/${getCategorySlug(p.category, lang)}/${p.slug}/`} className="absolute inset-0 z-10" aria-label={`${dict.viewProd} ${localizedTitle}`}>
+                    <span className="sr-only">{dict.viewProd}: {localizedTitle}</span>
+                  </Link>
                   
                   {/* CONTENEDOR DE IMAGEN (Full Bleed) */}
                   <div className="relative aspect-[4/5] w-full overflow-hidden bg-zinc-950">
