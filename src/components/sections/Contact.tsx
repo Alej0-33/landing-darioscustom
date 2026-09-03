@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Mail, Phone, ArrowRight, Send, Camera, Upload, X, Copy, Check } from "lucide-react";
+import { MapPin, Mail, Phone, ArrowRight, Send, Copy, Check } from "lucide-react";
 import { slideFromLeft, slideFromRight } from "@/utils/animations";
 import { Button } from "../ui/Button";
 import { Input } from "../ui/Input";
@@ -9,11 +9,16 @@ import { Select } from "../ui/Select";
 import { Textarea } from "../ui/Textarea";
 import { WhatsAppIcon, InstagramIcon, FacebookIcon, TikTokIcon } from "../ui/Icons";
 import { useDictionary } from "../DictionaryProvider";
+// ✅ IMPORTAMOS CATEGORY_SLUGS DESDE PRODUCTS
+import { CATEGORY_SLUGS } from "@/data/products";
+
+// Extraemos las categorías dinámicamente (Ej: ["Iluminación", "Puertas", "Barandales", ...])
+const productCategories = Object.keys(CATEGORY_SLUGS);
 
 export default function Contact() {
   const dict = useDictionary().contact;
-  const [formState, setFormState] = useState({ name: "", email: "", phone: "", service: "Puertas", msg: "" });
-  const [photo, setPhoto] = useState<File | null>(null);
+  // ✅ El valor inicial del select ahora toma la primera categoría automáticamente
+  const [formState, setFormState] = useState({ name: "", email: "", phone: "", service: productCategories[0] || "Puertas", msg: "" });
   const [method, setMethod] = useState<"whatsapp" | "email">("whatsapp");
   const [submitted, setSubmitted] = useState(false);
   const [copiedField, setCopiedField] = useState<string | null>(null);
@@ -34,15 +39,13 @@ export default function Contact() {
     e.preventDefault();
     if (method === "whatsapp") {
       const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "13056478966";
-      const photoNotice = photo ? `%0A${dict.waFormatPhoto} ${dict.waFormatPhotoYes}${photo.name}${dict.waFormatPhotoYesSuffix}` : `%0A${dict.waFormatPhoto} ${dict.waFormatPhotoNo}`;
-      const formattedText = `${dict.waFormatNew}%0A%0A${dict.waFormatName} ${formState.name}%0A${dict.waFormatEmail} ${formState.email}%0A${dict.waFormatPhone} ${formState.phone}%0A${dict.waFormatService} ${formState.service}%0A${dict.waFormatMsg} ${formState.msg}${photoNotice}`;
+      const formattedText = `${dict.waFormatNew}%0A%0A${dict.waFormatName} ${formState.name}%0A${dict.waFormatEmail} ${formState.email}%0A${dict.waFormatPhone} ${formState.phone}%0A${dict.waFormatService} ${formState.service}%0A${dict.waFormatMsg} ${formState.msg}`;
       window.open(`https://wa.me/${waNumber}?text=${formattedText}`, "_blank");
     } else {
       setSubmitted(true);
       setTimeout(() => {
         setSubmitted(false);
-        setFormState({ name: "", email: "", phone: "", service: "Puertas", msg: "" });
-        setPhoto(null);
+        setFormState({ name: "", email: "", phone: "", service: productCategories[0] || "Puertas", msg: "" });
       }, 3500);
     }
   };
@@ -53,21 +56,7 @@ export default function Contact() {
     "@id": "https://dariosironart.com/#contacto",
     "url": "https://dariosironart.com/#contacto",
     "name": "Contact Dario's Custom Iron Art",
-    "description": "Submit a request to get a custom ironwork quote via email or WhatsApp.",
-    "potentialAction": {
-      "@type": "ContactAction",
-      "name": "SubmitQuoteRequest",
-      "description": "Submit a request to get a custom ironwork quote via email or WhatsApp.",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://dariosironart.com/#contacto",
-        "inLanguage": ["en-US", "es-US"],
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
-      }
-    }
+    "description": "Submit a request to get a custom ironwork quote via email or WhatsApp."
   };
 
   return (
@@ -101,52 +90,34 @@ export default function Contact() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <Input id="phone" name="phone" label={dict.fPhone} type="tel" required value={formState.phone} onChange={(e) => setFormState({ ...formState, phone: e.target.value })} placeholder={dict.fPhonePl} />
+                  
+                  {/* ✅ AQUÍ MAPREAMOS LAS CATEGORÍAS DINÁMICAMENTE */}
                   <Select id="service" name="service" label={dict.fService} value={formState.service} onChange={(e) => setFormState({ ...formState, service: e.target.value })}>
-                    <option value="Puertas">{(dict.fServiceOpts as any).Puertas}</option>
-                    <option value="Portones">{(dict.fServiceOpts as any).Portones}</option>
-                    <option value="Barandales">{(dict.fServiceOpts as any).Barandales}</option>
-                    <option value="Arte">{(dict.fServiceOpts as any).Arte}</option>
-                    <option value="Iluminación">{(dict.fServiceOpts as any).Iluminación}</option>
-                    <option value="Miscelaneas">{(dict.fServiceOpts as any).Miscelaneas}</option>
+                    {productCategories.map((cat) => (
+                      <option key={cat} value={cat}>
+                        {(dict.fServiceOpts as any)[cat] || cat}
+                      </option>
+                    ))}
                   </Select>
+
                 </div>
+                
                 <Textarea id="msg" name="msg" label={dict.fMsg} rows={4} required value={formState.msg} onChange={(e) => setFormState({ ...formState, msg: e.target.value })} placeholder={dict.fMsgPl} />
-                <div className="space-y-2">
-                  <label htmlFor="photo_upload" className="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">{dict.fPhoto}</label>
-                  <div className="relative border border-dashed border-industrial-border hover:border-brand-primary/50 bg-[#09090B] rounded-md p-4 transition-colors group cursor-pointer flex flex-col items-center justify-center min-h-[90px]">
-                    <input id="photo_upload" name="photo_upload" type="file" accept="image/*" onChange={(e) => setPhoto(e.target.files ? e.target.files[0] : null)} className="absolute inset-0 opacity-0 cursor-pointer z-20" aria-label="Subir foto de referencia" />
-                    {photo ? (
-                      <div className="flex items-center justify-between w-full z-30 gap-2">
-                        <div className="flex items-center gap-2.5 min-w-0">
-                          <div className="bg-brand-primary/10 border border-brand-primary/20 p-2 rounded text-brand-light shrink-0"><Camera className="w-4 h-4 sm:w-5 sm:h-5" /></div>
-                          <div className="text-left min-w-0">
-                            <p className="text-[11px] sm:text-xs font-semibold text-white truncate max-w-[140px] xs:max-w-[200px] sm:max-w-xs">{photo.name}</p>
-                            <p className="text-[9px] text-zinc-500 font-mono">{(photo.size / (1024 * 1024)).toFixed(2)} MB</p>
-                          </div>
-                        </div>
-                        <button type="button" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setPhoto(null); }} className="text-zinc-400 hover:text-red-400 p-1 rounded-full hover:bg-zinc-800/50 transition-colors shrink-0" aria-label="Eliminar foto"><X className="w-4 h-4" /></button>
-                      </div>
-                    ) : (
-                      <div className="flex flex-col items-center text-center gap-1.5 pointer-events-none">
-                        <Upload className="w-5 h-5 text-zinc-500 group-hover:text-brand-light transition-colors" />
-                        <p className="text-[11px] sm:text-xs text-zinc-400"><span className="text-brand-light font-bold">{dict.uploadClick}</span> {dict.uploadDrag}</p>
-                        <p className="text-[9px] text-zinc-600 font-mono uppercase tracking-wider">JPG, PNG (Max 10MB)</p>
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <Button type="submit" variant="primary" className="w-full justify-center" aria-label="Enviar formulario">
+                
+                <Button type="submit" variant="primary" className="w-full justify-center mt-2" aria-label="Enviar formulario">
                   {method === "whatsapp" ? dict.sendWa : dict.sendEmail} <ArrowRight className="w-4 h-4" />
                 </Button>
               </form>
             )}
           </motion.div>
 
+          {/* INFORMACIÓN Y SOCIALS */}
           <motion.div className="lg:col-span-5 lg:order-2 order-2" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={slideFromLeft}>
             <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">{dict.tag}</span>
             <h2 id="contact-title" className="text-2xl sm:text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-6">{dict.title}</h2>
             <p className="text-zinc-400 mb-8 text-xs sm:text-sm md:text-base">{dict.desc}</p>
             <div className="space-y-6">
+              
               <div className="flex items-start gap-4">
                 <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary shrink-0"><MapPin className="w-5 h-5" /></div>
                 <div className="min-w-0">
@@ -159,6 +130,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+
               <div className="flex items-start gap-4">
                 <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary shrink-0"><Phone className="w-5 h-5" /></div>
                 <div className="min-w-0">
@@ -171,6 +143,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+
               <div className="flex items-start gap-4">
                 <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary shrink-0"><Mail className="w-5 h-5" /></div>
                 <div className="min-w-0">
@@ -183,6 +156,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+
               <div className="flex items-start gap-4">
                 <div className="bg-industrial-card border border-industrial-border p-3 rounded-md shrink-0"><InstagramIcon className="w-5 h-5" /></div>
                 <div className="min-w-0">
@@ -194,6 +168,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+
               <div className="flex items-start gap-4">
                 <div className="bg-industrial-card border border-industrial-border p-3 rounded-md shrink-0"><FacebookIcon className="w-5 h-5" /></div>
                 <div className="min-w-0">
@@ -205,6 +180,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+
               <div className="flex items-start gap-4">
                 <div className="bg-industrial-card border border-industrial-border p-3 rounded-md shrink-0"><TikTokIcon className="w-5 h-5" /></div>
                 <div className="min-w-0">
@@ -216,6 +192,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+
             </div>
           </motion.div>
         </div>

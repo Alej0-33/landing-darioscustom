@@ -4,13 +4,13 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { allProducts, getCategorySlug } from "@/data/products";
+import { allProducts, getCategorySlug, CATEGORY_SLUGS } from "@/data/products";
 import { WhatsAppIcon } from "../ui/Icons";
 import { fadeUp } from "@/utils/animations";
 import { useDictionary } from "../DictionaryProvider";
 import { Button } from "../ui/Button"; 
 
-const categories = ["Todos", "Iluminación", "Puertas", "Barandales", "Portones", "Arte", "Miscelaneas"];
+const categories = ["Todos", ...Object.keys(CATEGORY_SLUGS)];
 
 const INITIAL_VISIBLE = 12;
 
