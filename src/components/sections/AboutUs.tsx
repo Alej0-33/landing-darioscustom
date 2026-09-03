@@ -110,7 +110,7 @@ export default function AboutUs() {
                   className="relative flex-1 md:flex-auto md:h-1/2 min-h-[180px] bg-zinc-950 rounded-xl overflow-hidden group shadow-xl border border-industrial-border hover:border-brand-primary/30 transition-all duration-500"
                 >
                   <Image 
-                    src="/images/dario's6.webp" 
+                    src="/images/dario's9.webp" 
                     alt="Detalle de Soldadura y Metal" 
                     fill 
                     loading="lazy"

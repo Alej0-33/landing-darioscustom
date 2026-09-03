@@ -56,8 +56,10 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         },
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Miami",
+          "streetAddress": "40 West 22nd Street, Bay 3",
+          "addressLocality": "Hialeah",
           "addressRegion": "FL",
+          "postalCode": "33010",
           "addressCountry": "US"
         },
         "geo": {

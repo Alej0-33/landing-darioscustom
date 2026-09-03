@@ -18,8 +18,10 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [copiedField, setCopiedField] = useState<string | null>(null);
 
+  // Centralización de Variables de Entorno
   const phoneValue = process.env.NEXT_PUBLIC_COMPANY_PHONE || "+1 (305) 647-8966";
   const emailValue = process.env.NEXT_PUBLIC_COMPANY_EMAIL || "darios_art@yahoo.com";
+  const addressValue = process.env.NEXT_PUBLIC_COMPANY_ADDRESS || "40 West 22nd Street, Bay 3, Hialeah, FL 33010, USA";
 
   const handleCopy = (text: string, field: string) => {
     navigator.clipboard.writeText(text).then(() => {
@@ -31,7 +33,7 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (method === "whatsapp") {
-      const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "13055550199";
+      const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "13056478966";
       const photoNotice = photo ? `%0A${dict.waFormatPhoto} ${dict.waFormatPhotoYes}${photo.name}${dict.waFormatPhotoYesSuffix}` : `%0A${dict.waFormatPhoto} ${dict.waFormatPhotoNo}`;
       const formattedText = `${dict.waFormatNew}%0A%0A${dict.waFormatName} ${formState.name}%0A${dict.waFormatEmail} ${formState.email}%0A${dict.waFormatPhone} ${formState.phone}%0A${dict.waFormatService} ${formState.service}%0A${dict.waFormatMsg} ${formState.msg}${photoNotice}`;
       window.open(`https://wa.me/${waNumber}?text=${formattedText}`, "_blank");
@@ -70,14 +72,12 @@ export default function Contact() {
 
   return (
     <section id="contacto" className="py-20 sm:py-24 relative border-t border-industrial-border bg-[#0d0d10]">
-      
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(actionSchema) }} />
 
       <div className="max-w-7xl mx-auto px-6">
-        {/* Cambiamos el orden en móvil con flex-col-reverse o grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* FORMULARIO (Ahora se coloca primero en el código para que en móvil aparezca arriba al hacer scroll) */}
+          {/* FORMULARIO */}
           <motion.div className="lg:col-span-7 lg:order-1 order-1 bg-industrial-card border border-industrial-border p-4 sm:p-8 rounded-lg relative overflow-hidden w-full" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={slideFromRight}>
             <h3 className="text-md sm:text-lg font-bold uppercase tracking-wider mb-6 text-white">{dict.formTitle}</h3>
             <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-6">
@@ -94,20 +94,14 @@ export default function Contact() {
                 <p className="text-sm">{dict.successDesc}</p>
               </div>
             ) : (
-              <>
-              <form 
-                onSubmit={handleSubmit} 
-                className="space-y-5"
-                toolname="submitQuoteRequest"
-                tooldescription="Submit a request to get a custom ironwork quote via email or WhatsApp."
-              >
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Input id="name" name="name" label={dict.fName} type="text" required value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })} placeholder={dict.fNamePl} toolparamdescription="The full name of the customer" />
-                  <Input id="email" name="email" label={dict.fEmail} type="email" required value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })} placeholder={dict.fEmailPl} toolparamdescription="Contact email address" />
+                  <Input id="name" name="name" label={dict.fName} type="text" required value={formState.name} onChange={(e) => setFormState({ ...formState, name: e.target.value })} placeholder={dict.fNamePl} />
+                  <Input id="email" name="email" label={dict.fEmail} type="email" required value={formState.email} onChange={(e) => setFormState({ ...formState, email: e.target.value })} placeholder={dict.fEmailPl} />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Input id="phone" name="phone" label={dict.fPhone} type="tel" required value={formState.phone} onChange={(e) => setFormState({ ...formState, phone: e.target.value })} placeholder={dict.fPhonePl} toolparamdescription="Contact phone number" />
-                  <Select id="service" name="service" label={dict.fService} value={formState.service} onChange={(e) => setFormState({ ...formState, service: e.target.value })} toolparamdescription="Category of the project">
+                  <Input id="phone" name="phone" label={dict.fPhone} type="tel" required value={formState.phone} onChange={(e) => setFormState({ ...formState, phone: e.target.value })} placeholder={dict.fPhonePl} />
+                  <Select id="service" name="service" label={dict.fService} value={formState.service} onChange={(e) => setFormState({ ...formState, service: e.target.value })}>
                     <option value="Puertas">{(dict.fServiceOpts as any).Puertas}</option>
                     <option value="Portones">{(dict.fServiceOpts as any).Portones}</option>
                     <option value="Barandales">{(dict.fServiceOpts as any).Barandales}</option>
@@ -116,21 +110,11 @@ export default function Contact() {
                     <option value="Miscelaneas">{(dict.fServiceOpts as any).Miscelaneas}</option>
                   </Select>
                 </div>
-                <Textarea id="msg" name="msg" label={dict.fMsg} rows={4} required value={formState.msg} onChange={(e) => setFormState({ ...formState, msg: e.target.value })} placeholder={dict.fMsgPl} toolparamdescription="Message and dimensions of the project" />
+                <Textarea id="msg" name="msg" label={dict.fMsg} rows={4} required value={formState.msg} onChange={(e) => setFormState({ ...formState, msg: e.target.value })} placeholder={dict.fMsgPl} />
                 <div className="space-y-2">
                   <label htmlFor="photo_upload" className="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">{dict.fPhoto}</label>
                   <div className="relative border border-dashed border-industrial-border hover:border-brand-primary/50 bg-[#09090B] rounded-md p-4 transition-colors group cursor-pointer flex flex-col items-center justify-center min-h-[90px]">
-                    <input 
-                      id="photo_upload" 
-                      name="photo_upload" 
-                      type="file" 
-                      accept="image/*" 
-                      onChange={(e) => setPhoto(e.target.files ? e.target.files[0] : null)} 
-                      className="absolute inset-0 opacity-0 cursor-pointer z-20" 
-                      aria-label="Subir foto de referencia"
-                      toolparamdescription="Optional reference photo for the custom metalwork project"
-                    />
-
+                    <input id="photo_upload" name="photo_upload" type="file" accept="image/*" onChange={(e) => setPhoto(e.target.files ? e.target.files[0] : null)} className="absolute inset-0 opacity-0 cursor-pointer z-20" aria-label="Subir foto de referencia" />
                     {photo ? (
                       <div className="flex items-center justify-between w-full z-30 gap-2">
                         <div className="flex items-center gap-2.5 min-w-0">
@@ -155,11 +139,9 @@ export default function Contact() {
                   {method === "whatsapp" ? dict.sendWa : dict.sendEmail} <ArrowRight className="w-4 h-4" />
                 </Button>
               </form>
-              </>
             )}
           </motion.div>
 
-          {/* INFORMACIÓN Y SOCIALS (Ahora se coloca después para que en móvil aparezca abajo) */}
           <motion.div className="lg:col-span-5 lg:order-2 order-2" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={slideFromLeft}>
             <span className="text-xs uppercase tracking-[0.25em] text-brand-light font-bold">{dict.tag}</span>
             <h2 id="contact-title" className="text-2xl sm:text-3xl md:text-5xl font-black uppercase tracking-tight text-white mt-2 mb-6">{dict.title}</h2>
@@ -167,9 +149,14 @@ export default function Contact() {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="bg-industrial-card border border-industrial-border p-3 rounded-md text-brand-primary shrink-0"><MapPin className="w-5 h-5" /></div>
-                <div>
+                <div className="min-w-0">
                   <h3 className="font-bold text-white uppercase tracking-wider text-xs">{dict.hq}</h3>
-                  <p className="text-zinc-400 text-xs mt-0.5">{process.env.NEXT_PUBLIC_COMPANY_ADDRESS || dict.hqDesc}</p>
+                  <div className="flex items-start gap-2 mt-0.5">
+                    <p className="text-zinc-400 text-xs leading-relaxed break-words">{addressValue}</p>
+                    <button type="button" onClick={() => handleCopy(addressValue, "address")} className="text-zinc-500 hover:text-brand-light p-1 rounded hover:bg-zinc-800/40 transition-colors shrink-0 -mt-1" aria-label="Copiar dirección">
+                      {copiedField === "address" ? <Check className="w-3.5 h-3.5 text-emerald-400 shrink-0" /> : <Copy className="w-3.5 h-3.5 shrink-0" />}
+                    </button>
+                  </div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
