@@ -7,7 +7,7 @@ import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
-import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import type { Metadata } from "next";
 import Reviews from "@/components/sections/Reviews";
 import Location from "@/components/sections/Location";
 import { getDictionary } from "@/lib/dictionary";
@@ -15,6 +15,21 @@ import { i18n } from "@/i18n.config";
 
 export function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
+}
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const SITE_URL = "https://dariosironart.com";
+
+  return {
+    alternates: {
+      canonical: `${SITE_URL}/${resolvedParams.lang}/`,
+      languages: {
+        "en": `${SITE_URL}/en/`,
+        "es": `${SITE_URL}/es/`,
+        "x-default": `${SITE_URL}/en/` // Le dice a Google que por defecto (si el usuario no es español) muestre inglés
+      }
+    }
+  };
 }
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {

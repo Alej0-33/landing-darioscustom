@@ -7,9 +7,19 @@ import type { Metadata } from "next";
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
   const dict = await getDictionary(resolvedParams.lang as any);
+  const SITE_URL = "https://dariosironart.com";
+
   return {
-    title: `${dict.footer.terms} | Darioscustom`,
-    description: "Terms of Service and conditions for Dario's Custom Iron Art Inc."
+    title: dict.footer.terms,
+    description: "Terms of Service and conditions for Dario's Custom Iron Art Inc.",
+    alternates: {
+      canonical: `${SITE_URL}/${resolvedParams.lang}/terms/`,
+      languages: {
+        "en": `${SITE_URL}/en/terms/`,
+        "es": `${SITE_URL}/es/terms/`,
+        "x-default": `${SITE_URL}/en/terms/`
+      }
+    }
   };
 }
 

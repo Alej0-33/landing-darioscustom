@@ -48,19 +48,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const localizedTitle = productsTranslations[product.id]?.title || product.title;
   const localizedDesc = productsTranslations[product.id]?.description || product.description;
 
-  const canonicalUrl = `https://dariosironart.com/${lang}/catalog/${category}/${slug}/`;
+  // Calculamos los slugs correctos para el hreflang
+  const categoryEn = getCategorySlug(product.category, "en");
+  const categoryEs = getCategorySlug(product.category, "es");
 
   return {
-    title: `${localizedTitle} | Darioscustom Miami`,
+    title: `${localizedTitle}`,
     description: localizedDesc,
-    authors: [{ name: "Dario - Master Metal Craftsman", url: "https://dariosironart.com" }],
     alternates: {
-      canonical: canonicalUrl,
+      canonical: `https://dariosironart.com/${lang}/catalog/${category}/${slug}/`,
+      languages: {
+        "en": `https://dariosironart.com/en/catalog/${categoryEn}/${slug}/`,
+        "es": `https://dariosironart.com/es/catalog/${categoryEs}/${slug}/`,
+        "x-default": `https://dariosironart.com/en/catalog/${categoryEn}/${slug}/`
+      }
     },
     openGraph: {
       title: `${localizedTitle} | Darioscustom`,
       description: localizedDesc,
-      url: canonicalUrl,
+      url: `https://dariosironart.com/${lang}/catalog/${category}/${slug}/`,
       images: [{ url: `/images/${product.img}`, alt: localizedTitle }],
     },
   };

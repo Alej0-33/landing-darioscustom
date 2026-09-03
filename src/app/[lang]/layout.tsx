@@ -20,10 +20,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const resolvedParams = await params;
   const lang = resolvedParams.lang;
   const dict = await getDictionary(lang as any);
-  const currentCanonical = `${SITE_URL}/${lang}/`;
 
   return {
-    title: dict.seo.title,
+    title: {
+      template: `%s | Darioscustom`,
+      default: dict.seo.title,
+    },
     description: dict.seo.description,
     keywords: dict.seo.keywords,
     authors: [{ name: "Dario - Master Metal Craftsman", url: SITE_URL }],
@@ -45,23 +47,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         { url: '/icon.png', type: 'image/png', sizes: '192x192' }
       ],
       apple: [
-        { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' } // Opcional, pero recomendado para iOS
+        { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
       ]
-    },
-    alternates: { 
-      canonical: `${SITE_URL}/${resolvedParams.lang}/`,
-      languages: { 
-        "en": `${SITE_URL}/en/`,
-        "es": `${SITE_URL}/es/`,
-        "en-US": `${SITE_URL}/en/`, 
-        "es-US": `${SITE_URL}/es/`,
-        "x-default": `${SITE_URL}/en/`
-      } 
     },
     openGraph: { 
       title: dict.seo.title, 
       description: dict.seo.description, 
-      url: currentCanonical, 
+      url: `${SITE_URL}/${lang}/`, 
       siteName: "Darioscustom", 
       locale: lang === 'es' ? 'es_US' : 'en_US',
       alternateLocale: lang === 'es' ? 'en_US' : 'es_US',
