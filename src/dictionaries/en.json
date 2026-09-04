@@ -60,7 +60,7 @@
       ]
     }
   },
-  "catalog": { "tag": "Detailed Catalog", "title": "HANDCRAFTED IRONWORK MADE TO MEASURE", "desc": "Explore our tailored ironwork collection in Miami. Filter by category and request a technical quote for your architectural project.", "categories": { "Todos": "All", "Iluminación": "Lighting", "Puertas": "Doors", "Barandales": "Railings", "Portones": "Gates", "Arte": "Art", "Miscelaneas": "Miscellaneous" }, "specId": "SPEC-ID // DC-00", "quoteBtn": "Quote design via WhatsApp", "msgPart1": "Hello Dario's Custom Ironwork, I am interested in quoting the metal fabrication product", "msgPart2": "from your online ironwork catalog." },
+  "catalog": { "tag": "Detailed Catalog", "title": "HANDCRAFTED IRONWORK MADE TO MEASURE", "desc": "Explore our tailored ironwork collection in Miami. Filter by category and request a technical quote for your architectural project.", "categories": { "All": "All", "Lighting": "Lighting", "Doors": "Doors", "Railings": "Railings", "Gates": "Gates", "Art": "Art", "Miscellaneous": "Miscellaneous" }, "specId": "SPEC-ID // DC-00", "quoteBtn": "Quote design via WhatsApp", "msgPart1": "Hello Dario's Custom Ironwork, I am interested in quoting the metal fabrication product", "msgPart2": "from your online ironwork catalog.", "loadMore": "Load More Products" },
   "whyus": {
     "tag": "Our Difference", "title": "Unique Pieces to the Client's Taste", "desc1": "At Dario's Custom Iron Art, we don't sell mass-produced items. We specialize in tailored ironwork in Miami with unique styling. We adapt to your space's architecture working with multiple materials like stainless steel and bronze.", "desc2": "We serve residential projects with iron doors, balconies, and privacy fences. From heavy chandeliers to monumental doors. We guarantee top-tier artistic forging.", "quote": "\"Excellence in bespoke design is defined by the precision in every metal detail.\"",
     "items": [
@@ -174,9 +174,9 @@
       "description": "Contemporary railing system fabricated from premium aluminum with a horizontal slat design providing privacy and optimal airflow. Its powder-coated electrostatic finish ensures extreme resistance against saltpeter and humidity, perfect for balconies and terraces in coastal areas."
     },
     "11": {
-      "title": "Modern Abstract Metal Sculpture",
-      "tags": ["Sculpture", "Metal Art", "Abstract Design", "Indoor/Outdoor", "Unique Piece"],
-      "description": "Exquisite contemporary art piece created from solid metal. This abstract sculpture stands out for its fluid lines and ability to interact with natural light, creating dynamic shadows. Treated to withstand the elements, it is the perfect focal point for gardens, lobbies, or minimalist architectural spaces."
+      "title": "Polished White Marble Cubic Pedestal Base",
+      "tags": ["Marble Pedestal", "White Marble", "Cubic Base", "Display Stand", "Luxury Decor"],
+      "description": "Luxurious polished white marble cubic pedestal. Ideal for securely displaying sculptures and art, offering a sleek, minimalist aesthetic to any space."
     },
     "12": {
       "title": "Outdoor Metal Container Bar",

@@ -60,7 +60,25 @@
       ]
     }
   },
-  "catalog": { "tag": "Catálogo Detallado", "title": "HERRERIA ARTESANAL HECHA A TU MEDIDA", "desc": "Explora nuestra colección de herrería en Miami. Filtra por categoría y solicita una cotización técnica para tu diseño a medida.", "categories": { "Todos": "Todos", "Iluminación": "Iluminación", "Puertas": "Puertas", "Barandales": "Barandales", "Portones": "Portones", "Arte": "Arte", "Miscelaneas": "Miscelaneas" }, "specId": "SPEC-ID // DC-00", "quoteBtn": "Cotizar diseño por WhatsApp", "msgPart1": "Hola Dario's custom iron art, estoy interesado en cotizar el producto", "msgPart2": "de su catálogo de herrería online." },
+  "catalog": { 
+    "tag": "Catálogo Detallado", 
+    "title": "HERRERIA ARTESANAL HECHA A TU MEDIDA", 
+    "desc": "Explora nuestra colección de herrería en Miami. Filtra por categoría y solicita una cotización técnica para tu diseño a medida.", 
+    "categories": { 
+      "All": "Todos", 
+      "Lighting": "Iluminación", 
+      "Doors": "Puertas", 
+      "Railings": "Barandales", 
+      "Gates": "Portones", 
+      "Art": "Arte", 
+      "Miscellaneous": "Miscelaneas" 
+    }, 
+    "specId": "SPEC-ID // DC-00", 
+    "quoteBtn": "Cotizar diseño por WhatsApp", 
+    "msgPart1": "Hola Dario's custom iron art, estoy interesado en cotizar el producto", 
+    "msgPart2": "de su catálogo de herrería online.", 
+    "loadMore": "Cargar Más Productos" 
+  },
   "whyus": {
     "tag": "Nuestra Diferencia", "title": "Piezas Únicas al Gusto del Cliente", "desc1": "En Dario's Custom Iron Art no vendemos en serie. Hacemos herrería en Miami solo a medida. Nos adaptamos a tu espacio y tu estilo. Usamos hierro, aluminio, acero y bronce.",     "desc2": "Hacemos puertas de hierro, balcones y cercas para casas. También forjamos candelabros y puertas grandes. Todo con arte y calidad.", "quote": "\"El buen diseño se ve en cada detalle del metal.\"",
     "items": [
@@ -511,38 +529,38 @@
       }
     },
     "11": {
-      "title": "Escultura Abstracta Moderna en Metal",
-      "tags": ["Escultura", "Arte en Metal", "Diseño Abstracto", "Exteriores e Interiores", "Pieza Única"],
-      "description": "Exquisita pieza de arte contemporáneo creada a partir de metal sólido. Esta escultura abstracta destaca por sus líneas fluidas y su capacidad de interactuar con la luz natural, creando sombras dinámicas. Tratada para resistir la intemperie, es el punto focal perfecto para jardines, vestíbulos o espacios arquitectónicos minimalistas.",
+      "title": "Base de Pedestal Cúbico de Mármol Blanco Pulido",
+      "tags": ["Pedestal de Mármol", "Mármol Blanco", "Base Cúbica", "Soporte de Exhibición", "Decoración de Lujo"],
+      "description": "Lujoso pedestal cúbico de mármol blanco pulido. Ideal para exhibir esculturas y arte, aportando una estética elegante y minimalista a cualquier espacio.",
       "extendedContent": {
-        "subtitle": "Esculturas Metálicas de Vanguardia y Puntos Focales Arquitectónicos para Espacios de Lujo en Miami",
-        "intro": "El arte y la metalurgia convergen en la Escultura Abstracta Moderna en Metal, una creación original del maestro artesano Darío. Diseñada para atrios interiores de lujo, sedes corporativas y jardines residenciales de alta gama en Miami y Doral, esta pieza utiliza líneas orgánicas y metal industrial para evocar movimiento, profundidad y emoción.",
+        "subtitle": "Elegantes Pedestales de Exhibición de Mármol Blanco para Interiores de Lujo en Miami",
+        "intro": "Eleve sus colecciones de arte, arreglos florales o exhibiciones arquitectónicas con nuestra Base de Pedestal Cúbico de Mármol Blanco Pulido. Diseñada para interiores residenciales de alta gama, galerías contemporáneas y lujosos vestíbulos corporativos en Miami, esta exquisita pieza de mármol aporta una sofisticación atemporal y elegancia minimalista a cualquier entorno.",
         "sections": [
           {
-            "heading": "Manipulación de Metal Fluido y Trabajo Manual",
-            "text": "Dar forma a placas de acero sólido y aleaciones en formas orgánicas y fluidas requiere una flexión térmica avanzada y soldadura TIG de precisión. Cada curva es pulida a mano y contorneada para atrapar la luz natural y artificial desde todos los ángulos."
+            "heading": "Mármol Blanco Natural de Primera Calidad",
+            "text": "Elaborado a partir de mármol blanco de alta calidad cuidadosamente seleccionado, que presenta vetas sutiles y elegantes. Cada pieza es cortada y pulida meticulosamente hasta lograr un acabado brillante y de alto brillo que refleja maravillosamente la luz ambiental."
           },
           {
-            "heading": "Adaptabilidad a Exteriores e Interiores Resistente al Clima",
-            "text": "Tratada con selladores especializados para exteriores o pátinas arquitectónicas, esta escultura puede instalarse como una imponente pieza de arte en el césped o junto a la piscina sin temor a la intemperie o la corrosión ambiental."
+            "heading": "Proporciones Geométricas Impecables",
+            "text": "Diseñado con una geometría cúbica precisa, este pedestal presenta bordes limpios y afilados, y una simetría impecable, convirtiéndolo en un complemento estructural perfecto tanto para diseños de interiores ultramodernos como clásicos."
           },
           {
-            "heading": "Ubicación a Medida y Personalización de Escala",
-            "text": "Disponible en varias escalas, desde piezas llamativas para mesas hasta instalaciones monumentales de jardín de más de 3 metros, adaptadas específicamente para complementar su arquitectura paisajística o su diseño interior minimalista."
+            "heading": "Exhibición Versátil y de Alta Resistencia",
+            "text": "Diseñado para soportar un peso sustancial de forma segura, sirve como la base fundamental ideal para esculturas pesadas de bronce o metal, grandes jarrones botánicos o piezas de arte de gran impacto sin comprometer la estabilidad."
           },
           {
-            "heading": "Ingeniería de Base Segura",
-            "text": "Anclada de forma segura a pedestales interiores ocultos o cimientos de hormigón armado de alta resistencia para exhibición al aire libre, garantizando una estabilidad absoluta bajo fuertes vientos."
+            "heading": "Durabilidad y Fácil Mantenimiento",
+            "text": "Tratado y sellado profesionalmente para proteger la piedra porosa contra manchas menores y el desgaste diario. Esta robusta estructura de mármol mantiene su apariencia prístina y pulida con un cuidado de rutina simple."
           }
         ],
         "specificationsTable": [
-          { "label": "Material Principal", "value": "Acero Sólido, Acero Corten o Aleaciones de Aluminio Marino" },
-          { "label": "Forma Artística", "value": "Forma Tridimensional Abstracta Contorneada a Mano" },
-          { "label": "Opciones de Acabado", "value": "Metal Pulido, Pátina Oxidada o Pintura en Polvo Resistente a la Intemperie" },
-          { "label": "Lugar de Fabricación", "value": "Esculpido a Mano en el Taller de Miami, Florida" },
-          { "label": "Ubicación", "value": "Clasificado para Galería Interior / Jardín Exterior y Patio" },
-          { "label": "Montaje", "value": "Placa Base Personalizada o Anclajes Estructurales Ocultos" },
-          { "label": "Exclusividad", "value": "Cada pieza está hecha a mano y firmada como una obra de arte única" }
+          { "label": "Material Principal", "value": "Mármol Blanco Sólido de Primera Calidad" },
+          { "label": "Forma Arquitectónica", "value": "Pedestal / Plinto Cúbico Geométrico" },
+          { "label": "Opciones de Acabado", "value": "Piedra Pulida de Alto Brillo" },
+          { "label": "Estilo de Diseño", "value": "Minimalista Moderno / Clásico Contemporáneo" },
+          { "label": "Ubicación", "value": "Interiores / Galerías Exteriores Cubiertas" },
+          { "label": "Capacidad de Carga", "value": "Soporte de Alta Densidad para Obras de Arte Pesadas" },
+          { "label": "Exclusividad", "value": "Las vetas de la piedra natural garantizan que cada base sea 100% única" }
         ]
       }
     },

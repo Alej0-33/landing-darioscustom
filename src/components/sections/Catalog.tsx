@@ -10,7 +10,7 @@ import { fadeUp } from "@/utils/animations";
 import { useDictionary } from "../DictionaryProvider";
 import { Button } from "../ui/Button"; 
 
-const categories = ["Todos", ...Object.keys(CATEGORY_SLUGS)];
+const categories = ["All", ...Object.keys(CATEGORY_SLUGS)];
 
 const INITIAL_VISIBLE = 12;
 
@@ -21,10 +21,10 @@ export default function Catalog() {
   const pathname = usePathname();
   const lang = pathname?.split('/')[1] || 'en';
   
-  const [activeCategory, setActiveCategory] = useState("Todos");
+  const [activeCategory, setActiveCategory] = useState("All");
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
 
-  const filteredProducts = activeCategory === "Todos" 
+  const filteredProducts = activeCategory === "All" 
     ? allProducts 
     : allProducts.filter((p) => p.category === activeCategory);
 
