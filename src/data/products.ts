@@ -427,47 +427,6 @@ export const allProducts: Product[] = [
     }
   },
   {
-    id: 11,
-    slug: "polished-white-marble-cubic-pedestal-base",
-    img: "polished-white-marble-cubic-pedestal-base.webp",
-    images: ["polished-white-marble-cubic-pedestal-base.webp", "polished-white-marble-cubic-pedestal-base2.webp", "polished-white-marble-cubic-pedestal-base3.webp"],
-    title: "Polished White Marble Cubic Pedestal Base",
-    category: "Miscellaneous", 
-    tags: ["Marble Pedestal", "White Marble", "Cubic Base", "Display Stand", "Luxury Decor"],
-    description: "Luxurious polished white marble cubic pedestal. Ideal for securely displaying sculptures and art, offering a sleek, minimalist aesthetic to any space.",
-    extendedContent: {
-      subtitle: "Elegant White Marble Display Pedestals for Luxury Miami Interiors",
-      intro: "Elevate your art collections, floral arrangements, or architectural displays with our Polished White Marble Cubic Pedestal Base. Designed for high-end residential interiors, contemporary galleries, and luxury corporate lobbies across Miami, this exquisite marble piece brings timeless sophistication and minimalist elegance to any environment.",
-      sections: [
-        {
-          heading: "Premium Natural White Marble",
-          text: "Crafted from carefully selected, high-grade white marble featuring subtle, elegant veining. Each piece is meticulously cut and polished to a brilliant, high-gloss finish that beautifully reflects ambient light."
-        },
-        {
-          heading: "Flawless Geometric Proportions",
-          text: "Engineered with precise cubic geometry, this pedestal features clean, sharp edges and flawless symmetry, making it a perfect structural complement to both ultra-modern and classic interior designs."
-        },
-        {
-          heading: "Versatile & Heavy-Duty Display",
-          text: "Designed to securely support substantial weight, it serves as the ideal foundational base for heavy bronze or metal sculptures, large botanical vases, or statement art pieces without compromising stability."
-        },
-        {
-          heading: "Durability & Easy Maintenance",
-          text: "Professionally treated and sealed to protect the porous stone against minor stains and everyday wear. This robust marble structure maintains its pristine, polished appearance with simple, routine care."
-        }
-      ],
-      specificationsTable: [
-        { label: "Primary Material", value: "Premium Solid White Marble" },
-        { label: "Architectural Form", value: "Geometric Cubic Pedestal / Plinth" },
-        { label: "Finish Options", value: "High-Gloss Polished Stone" },
-        { label: "Design Style", value: "Modern Minimalist / Contemporary Classic" },
-        { label: "Placement", value: "Indoor / Covered Outdoor Galleries" },
-        { label: "Weight Capacity", value: "High-Density Support for Heavy Artworks" },
-        { label: "Uniqueness", value: "Natural Stone Veining Ensures Each Base is 100% Unique" }
-      ]
-    }
-  },
-  {
     id: 12,
     slug: "outdoor-metal-container-bar",
     img: "outdoor-metal-container-bar.webp",
