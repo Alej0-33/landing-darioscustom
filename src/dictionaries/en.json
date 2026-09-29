@@ -42,7 +42,7 @@
       { "title": "Precision CNC Laser & Sculptures", "desc": "We create privacy panels, decorative doors, and sculptures. We offer specialized finishes in various materials for luxury projects." },
       { "title": "Chandeliers & Lamps", "desc": "We fabricate architectural wrought iron chandeliers and lamps for high ceilings. We design from scratch including safe weight calculation." }
     ],
-    "matTitle": "High-End Materials and Artistic Finish", "matHeaders": ["Material", "Resistance", "Usage & Artistic Ironwork"],
+    "matTitle": "Materials & Applications", "matHeaders": ["Material", "Resistance", "Uses & Characteristics"],
     "materials": [
       { "name": "Aluminum", "res": "Extreme", "desc": "Does not rust. An Excellent choice for fencing, gates, and other outdoor achitectural applications in humid, tropical climates." },
       { "name": "Stainless Steel 304 or 316L", "res": "Extreme", "desc": "Highly corrosion resistant, 316L is recommended for premium outdoor applications, especially  in marine and high-humidity environments." },
@@ -54,7 +54,7 @@
       "steps": [
         { "title": "Initial Request", "desc": "Send us your initial measurements and reference photos via WhatsApp or our contact form. We will discuss your specific tastes and requirements to create a unique custom ironwork piece. This initial consultation helps us understand your vision." },
         { "title": "On-site Consultation", "desc": "We will conduct a detailed on-site consultation to take precise measurements, review the project requirements, and recommend the most suitable materials and fabrication approach." },
-        { "title": "Precision Fabrication", "desc": "Every bespoke piece is fabricated with close attention to proportion, detail, structural integrity, and finish. Our craftsmen combine traditional metalworking techniques with modern fabrication methods to execute each design with precision and exacting standards. Select pieces are finished with durable powder coating for added protection and a refined, long lasting appearance." },
+        { "title": "Precision Fabrication", "desc": "Every bespoke piece is fabricated with close attention to proportion, detail, structural integrity, and finish. Our craftsmen combine traditional blacksmithing and hand-forging techniques with modern fabrication methods to execute each design with precision and exacting standards. Select pieces are finished with durable powder coating for added protection and a refined, long lasting appearance." },
         { "title": "Professional Installation", "desc": "Our team will deliver and install your finished metalwork on site. We provide clean, secure installations, ensuring every project is completed with close attention to detail, fit, and finish." }
       ]
     }

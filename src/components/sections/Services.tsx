@@ -73,9 +73,7 @@ export default function Services() {
             <h2 id="how-it-works-title" className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white mb-6">
               {dict.howTo.title}
             </h2>
-            <p className="text-zinc-400 max-w-3xl mx-auto text-sm leading-relaxed">
-              <strong>Custom ironwork is</strong> the specialized craft of designing, heating, and shaping metals to create personalized architectural structures. If you are looking to install custom metalwork in Miami, our 4-step process ensures a perfect fit, starting from a digital layout to final structural installation complying with Florida codes.
-            </p>
+            
           </div>
           {/* ✅ SAGE Request: Uso de listas ordenadas (ol) para los pasos */}
           <ol className="grid grid-cols-1 md:grid-cols-4 gap-6 list-none p-0 m-0 relative">
