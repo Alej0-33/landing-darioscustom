@@ -9,9 +9,8 @@
     "quote": "Cotizar Proyecto de Herrería" 
   },
   "hero": { 
-    "title1": "Diseno y Fabricacion ", 
-    "highlight": "en metal a medida.", 
-    "title2": " Piezas unicas. Acabados excepcionales.", 
+    "title1": "Diseño y Fabricacion en metal a medida.", 
+    "title2": "Piezas unicas. Acabados excepcionales.", 
     "desc": "Creamos <strong>portones, barandas, cercas, esculturas, piezas de arte, puertas y otros elementos arquitectonicos en metal</strong>, disenados y fabricados a medida para cada. proyecto. Combinamos diseno, precision artesanal y acabados de calta calidad para residencias y espacios comerciales en miami y el sur de florida. <strong>Tambien fabricamos piezas y proyectos especiales para exportacion, atendiendo clientes fuera de los estaods unidos.</strong>", 
     "btnQuote": "Solicitar Cotización Técnica", 
     "btnCatalog": "Ver Catálogo de Herrería", 
@@ -62,8 +61,9 @@
   },
   "catalog": { 
     "tag": "Catálogo Detallado", 
-    "title": "HERRERIA ARTESANAL HECHA A TU MEDIDA", 
-    "desc": "Explora nuestra colección de herrería en Miami. Filtra por categoría y solicita una cotización técnica para tu diseño a medida.", 
+    "title1": "HERRERÍA ARTESANAL", 
+    "title2": "HECHA A TU MEDIDA", 
+    "desc": "Explora nuestra selecta colección de herrería y solicita una cotización personalizada para tu proyecto.", 
     "categories": { 
       "All": "Todos", 
       "Lighting": "Iluminación", 
@@ -77,7 +77,8 @@
     "quoteBtn": "Cotizar diseño por WhatsApp", 
     "msgPart1": "Hola Dario's custom iron art, estoy interesado en cotizar el producto", 
     "msgPart2": "de su catálogo de herrería online.", 
-    "loadMore": "Cargar Más Productos" 
+    "loadMore": "Cargar Más Productos",
+    "viewProd": "Ver producto"
   },
   "whyus": {
     "tag": "Nuestra Diferencia", "title": "Piezas Únicas al Gusto del Cliente", "desc1": "En Dario's Custom Iron Art no vendemos en serie. Hacemos herrería en Miami solo a medida. Nos adaptamos a tu espacio y tu estilo. Usamos hierro, aluminio, acero y bronce.",     "desc2": "Hacemos puertas de hierro, balcones y cercas para casas. También forjamos candelabros y puertas grandes. Todo con arte y calidad.", "quote": "\"El buen diseño se ve en cada detalle del metal.\"",

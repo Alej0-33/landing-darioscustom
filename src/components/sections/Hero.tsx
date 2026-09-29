@@ -25,28 +25,36 @@ export default function Hero() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-50px" }}
-        className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center w-full"
+        // 1. Se aumentó el gap (lg:gap-20) para dar más respiro entre columnas
+        className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center w-full"
       >
         
-        {/* Columna Izquierda (Textos y Botones) - Ocupa 5 columnas */}
-        <motion.div variants={slideFromLeft} className="lg:col-span-5 flex flex-col items-start text-left z-20">
+        {/* Columna Izquierda (Textos y Botones) - 2. Ahora ocupa 6 columnas para no aplastar el texto */}
+        <motion.div variants={slideFromLeft} className="lg:col-span-6 flex flex-col items-start text-left z-20">
+          
+          {/* 3. Aumentado el margen inferior (mb-10) del título general */}
           <motion.h1
             variants={fadeUp}
-            className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] mb-6 uppercase text-white font-sans"
+            className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] mb-10 uppercase text-white font-sans"
           >
-            {dict.title1} <span className="text-brand-primary">{dict.highlight}</span> {dict.title2}
+            {dict.title1}
+            <br />
+            {/* 3. Aumentado el espacio superior (mt-4) del segundo título */}
+            <span className="text-2xl sm:text-3xl lg:text-4xl text-brand-primary tracking-wide font-bold mt-4 inline-block">
+              {dict.title2}
+            </span>
           </motion.h1>
 
-          {/* Se actualizó la descripción para renderizar el HTML (las negritas) correctamente */}
+          {/* 3. Aumentado el margen inferior (mb-12) y el max-width (max-w-xl) para mejor lectura */}
           <motion.p
             variants={fadeUp}
-            className="text-zinc-400 text-base lg:text-lg mb-8 max-w-lg font-normal leading-relaxed [&>strong]:text-white [&>strong]:font-semibold"
+            className="text-white text-base lg:text-lg mb-12 max-w-xl lg:pr-6 font-normal leading-relaxed [&>strong]:font-black"
             dangerouslySetInnerHTML={{ __html: dict.desc }}
           />
 
           <motion.div
             variants={fadeUp}
-            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+            className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto"
           >
             <Button
               variant="primary"
@@ -67,14 +75,14 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Columna Derecha (Video Gigante y Horizontal) - Ocupa 7 columnas */}
-        <motion.div variants={slideFromRight} className="lg:col-span-7 relative flex flex-col justify-center items-center w-full mt-10 lg:mt-0">
+        {/* Columna Derecha (Video) - Ocupa 6 columnas */}
+        <motion.div variants={slideFromRight} className="lg:col-span-6 relative flex flex-col justify-center items-center lg:items-end w-full mt-14 lg:mt-0">
           
           {/* Glow específico detrás del video */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-4/5 bg-brand-primary/20 blur-[100px] -z-10 rounded-full pointer-events-none" />
 
-          {/* Contenedor del video: sin límite de ancho (w-full), adaptándose a la proporción de 16:9 */}
-          <div className="relative w-full overflow-hidden rounded-xl sm:rounded-2xl shadow-2xl ring-1 ring-white/10 bg-industrial-bg/50 backdrop-blur-sm group">
+          {/* 4. Se encogió un poco el video en desktop (lg:w-11/12 ml-auto) para dar más respiro central */}
+          <div className="relative w-full lg:w-11/12 ml-auto overflow-hidden rounded-xl sm:rounded-2xl shadow-2xl ring-1 ring-white/10 bg-industrial-bg/50 backdrop-blur-sm group">
             <video 
               src="/videos/cnc-laser-cutting-stainless-steel-business-awning.mp4"
               autoPlay
@@ -83,7 +91,7 @@ export default function Hero() {
               playsInline
               className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-[1.02]"
             />
-            {/* Efecto de marco interno muy sutil para darle profundidad a la pantalla */}
+            {/* Efecto de marco interno muy sutil */}
             <div className="absolute inset-0 rounded-xl sm:rounded-2xl shadow-[inset_0_0_40px_rgba(0,0,0,0.6)] pointer-events-none" />
           </div>
           

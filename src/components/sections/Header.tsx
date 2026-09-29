@@ -61,7 +61,6 @@ export default function Header() {
             </div>
             <span className="font-black text-[10px] sm:text-xs md:text-sm xl:text-base tracking-wider text-white leading-none whitespace-nowrap">
               DARIO'S CUSTOM <span className="text-brand-primary">IRON ART</span>
-              <span className="block text-[7px] sm:text-[8px] font-semibold tracking-[0.3em] text-zinc-500 mt-0.5">INC</span>
             </span>
           </a>
 
