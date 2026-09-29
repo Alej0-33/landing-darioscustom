@@ -37,12 +37,12 @@ export default function Hero() {
             {dict.title1} <span className="text-brand-primary">{dict.highlight}</span> {dict.title2}
           </motion.h1>
 
+          {/* Se actualizó la descripción para renderizar el HTML (las negritas) correctamente */}
           <motion.p
             variants={fadeUp}
-            className="text-zinc-400 text-base lg:text-lg mb-8 max-w-lg font-normal leading-relaxed"
-          >
-            {dict.desc}
-          </motion.p>
+            className="text-zinc-400 text-base lg:text-lg mb-8 max-w-lg font-normal leading-relaxed [&>strong]:text-white [&>strong]:font-semibold"
+            dangerouslySetInnerHTML={{ __html: dict.desc }}
+          />
 
           <motion.div
             variants={fadeUp}
@@ -85,8 +85,6 @@ export default function Hero() {
             />
             {/* Efecto de marco interno muy sutil para darle profundidad a la pantalla */}
             <div className="absolute inset-0 rounded-xl sm:rounded-2xl shadow-[inset_0_0_40px_rgba(0,0,0,0.6)] pointer-events-none" />
-            
-            
           </div>
           
         </motion.div>
